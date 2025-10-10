@@ -7,10 +7,8 @@ import org.springframework.stereotype.Service;
 import java.io.File;
 import java.io.IOException;
 import java.nio.file.*;
-import java.util.Comparator;
-import java.util.HashMap;
-import java.util.Map;
-import java.util.Objects;
+import java.util.*;
+import java.util.stream.Collectors;
 
 /**
  * 插件服务器<br/>
@@ -32,6 +30,12 @@ public class PluginService {
     private String pluginRuntimeDir;
 
     /**
+     * 资源格式白名单
+     */
+    @Value("${plugin.pass-format}")
+    private String passFormat;
+
+    /**
      * 插件注册表
      */
     private final PluginRegistry registry;
@@ -42,6 +46,18 @@ public class PluginService {
      */
     public PluginService(PluginRegistry registry) {
         this.registry = registry;
+    }
+
+    /**
+     * 格式裁剪<br/>
+     * 把配置文件中标定的字符串形式的资源格式白名单，以逗号裁剪为资源格式白名单集合
+     * @return 资源格式白名单
+     */
+    private Set<String> getAllFormat() {
+        return Arrays.stream(passFormat.split(","))
+                .map(String::trim)
+                .filter(s -> !s.isEmpty())
+                .collect(Collectors.toSet());
     }
 
     /**
@@ -56,6 +72,10 @@ public class PluginService {
         // 清理插件注册表
         registry.clear();
 
+        // 拿到白名单格式集合
+        Set<String> formatSet = getAllFormat();
+        log.info("资源格式白名单：{}", formatSet);
+
         // 遍历插件资源（每个插件就是一个SB项目）
         for (File pluginDir : Objects.requireNonNull(rootDir.listFiles(File::isDirectory))) {
             // 在目录下找资源（等于就是直接去项目目录内的静态资源目录下找东西）
@@ -66,7 +86,7 @@ public class PluginService {
             File targetDir = new File(runtimeDir, pluginDir.getName());
             // 把插件资源复制到映射目录内同名文件内
             try {
-                copyFolder(staticDir.toPath(), targetDir.toPath());
+                copyFolder(staticDir.toPath(), targetDir.toPath(), formatSet);
             } catch (Exception e) {
                 throw new RuntimeException(e);
             }
@@ -82,21 +102,22 @@ public class PluginService {
                         .filter(Files::isRegularFile)
                         // 循环处理
                         .forEach(path -> {
-                            // 获取当前处理的文件的相对路径
-                            String relativePath = staticDir.toPath().relativize(path).toString().replace("\\", "/");
-                            // 用当前处理的文件的文件名截取出它的文件格式
+                            // 获取当前文件的格式
                             String fileName = path.getFileName().toString().toLowerCase();
-                            // 格式过滤组
-                            if (fileName.endsWith(".html")) {
-                                // 若这个格式是新的就塞进通过的类型集合（computeIfAbsent只允许没有对应值的或不为null的key加入集合）
-                                meta.computeIfAbsent("html", k -> new java.util.ArrayList<String>());
-                                ((java.util.List<String>) meta.get("html")).add(relativePath);
-                            } else if (fileName.endsWith(".js")) {
-                                meta.computeIfAbsent("js", k -> new java.util.ArrayList<String>());
-                                ((java.util.List<String>) meta.get("js")).add(relativePath);
-                            } else if (fileName.endsWith(".css")) {
-                                meta.computeIfAbsent("css", k -> new java.util.ArrayList<String>());
-                                ((java.util.List<String>) meta.get("css")).add(relativePath);
+                            // 遍历白名单
+                            for (String ext : formatSet) {
+                                // 若文件名末尾与白名单中允许的格式匹配
+                                if (fileName.endsWith(ext)) {
+                                    // 删掉格式前的‘.’
+                                    String type = ext.substring(1);
+                                    // 在注册表中找找有没有这个格式
+                                    meta.computeIfAbsent(type, k -> new ArrayList<String>());
+                                    // 获取路径
+                                    String relativePath = staticDir.toPath().relativize(path).toString().replace("\\", "/");
+                                    // 把格式和路径塞进集合里
+                                    ((List<String>) meta.get(type)).add(relativePath);
+                                    break;
+                                }
                             }
                         });
             } catch (IOException e) {
@@ -115,21 +136,31 @@ public class PluginService {
      * 将源目录内的东西复制到目标目录内
      * @param source 源目录
      * @param target 目标目录
+     * @param formatSet 白名单集合
      */
-    private void copyFolder(Path source, Path target) {
+    private void copyFolder(Path source, Path target, Set<String> formatSet) {
         try {
             // 遍历源目录
             Files.walk(source).forEach(s -> {
                 try {
                     // 得到相对于源目录与目标目录的路径
                     Path d = target.resolve(source.relativize(s));
-                    // 若拿到的东西是文件就复制进目标目录，是目录就创建
+                    // 若是目录
                     if (Files.isDirectory(s)) {
+                        // 是否存在
                         if (!Files.exists(d)) {
+                            // 不存在就创建
                             Files.createDirectories(d);
                         }
+                    // 若是文件
                     } else {
-                        Files.copy(s, d, StandardCopyOption.REPLACE_EXISTING);
+                        // 获取文件名
+                        String fileName = s.getFileName().toString().toLowerCase();
+                        // 若格式存在与白名单中
+                        if (formatSet.stream().anyMatch(fileName::endsWith)) {
+                            // 创建
+                            Files.copy(s, d, StandardCopyOption.REPLACE_EXISTING);
+                        }
                     }
                 } catch (IOException e) {
                     throw new RuntimeException(e);

@@ -23,3 +23,5 @@ plugin:
     root-dir: D:\planOfElectronicHamster\9，Great plan\3，第四次尝试（进行中）\greatPlan\src\main\java\com\ljf\greatplan\docking\plugins
     # 插件资源映射
     runtime-dir: D:\planOfElectronicHamster\9，Great plan\3，第四次尝试（进行中）\greatPlan\plugins-runtime
+    # 格式白名单
+    pass-format: .html,.css
