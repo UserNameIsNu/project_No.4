@@ -74,13 +74,39 @@ public class PluginService {
             // 定义资源类型，与资源路径（相对于插件内的静态资源目录下的路径）
             Map<String, Object> meta = new HashMap<>();
             meta.put("id", pluginDir.getName());
-            meta.put("html", "index.html");
-            meta.put("js", "js/index.js");
-            meta.put("css", "css/index.css");
+
+            try {
+                // 遍历资源目录
+                Files.walk(staticDir.toPath())
+                        // 若文件不是不存在或是个隐藏文件啥的特殊文件就继续注册
+                        .filter(Files::isRegularFile)
+                        // 循环处理
+                        .forEach(path -> {
+                            // 获取当前处理的文件的相对路径
+                            String relativePath = staticDir.toPath().relativize(path).toString().replace("\\", "/");
+                            // 用当前处理的文件的文件名截取出它的文件格式
+                            String fileName = path.getFileName().toString().toLowerCase();
+                            // 格式过滤组
+                            if (fileName.endsWith(".html")) {
+                                // 若这个格式是新的就塞进通过的类型集合（computeIfAbsent只允许没有对应值的或不为null的key加入集合）
+                                meta.computeIfAbsent("html", k -> new java.util.ArrayList<String>());
+                                ((java.util.List<String>) meta.get("html")).add(relativePath);
+                            } else if (fileName.endsWith(".js")) {
+                                meta.computeIfAbsent("js", k -> new java.util.ArrayList<String>());
+                                ((java.util.List<String>) meta.get("js")).add(relativePath);
+                            } else if (fileName.endsWith(".css")) {
+                                meta.computeIfAbsent("css", k -> new java.util.ArrayList<String>());
+                                ((java.util.List<String>) meta.get("css")).add(relativePath);
+                            }
+                        });
+            } catch (IOException e) {
+                throw new RuntimeException("扫描插件文件失败: " + pluginDir.getName(), e);
+            }
 
             // 注册插件至插件注册表
             registry.register(pluginDir.getName(), meta);
             log.info("已注册的插件数量：{}", registry.getAll().size());
+            log.info("允许并通过的文件类型：{}", meta.keySet());
         }
     }
 
