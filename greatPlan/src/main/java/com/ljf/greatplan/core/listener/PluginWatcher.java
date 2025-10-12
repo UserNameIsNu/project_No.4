@@ -37,7 +37,7 @@ public class PluginWatcher {
 
     /**
      * 监听线程<br/>
-     * 在运行时监听插件目录，做个异步就不用和核心逻辑抢位置
+     * 创建一个监听线程，用来在运行时监听插件目录的变化，且做个异步就不用和核心逻辑抢位置
      */
     @PostConstruct
     public void startWatching() {

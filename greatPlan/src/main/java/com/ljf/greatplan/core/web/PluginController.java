@@ -1,5 +1,6 @@
 package com.ljf.greatplan.core.web;
 
+import com.ljf.greatplan.core.service.PluginRegistry;
 import com.ljf.greatplan.core.service.PluginService;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
@@ -26,11 +27,11 @@ public class PluginController {
     }
 
     /**
-     * 获取插件注册表
-     * @return 插件注册表信息
+     * 获取插件注册表信息
+     * @return 插件对象集合
      */
     @GetMapping("/api/plugins")
-    public Iterable<Map<String, Object>> getPlugins() {
+    public Iterable<PluginRegistry.PluginInfo> getPlugins() {
         return pluginService.getAllPlugins();
     }
 }

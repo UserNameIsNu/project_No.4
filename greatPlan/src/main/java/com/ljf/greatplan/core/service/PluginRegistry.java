@@ -2,6 +2,8 @@ package com.ljf.greatplan.core.service;
 
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Component;
+
+import java.net.URLClassLoader;
 import java.util.*;
 import java.util.concurrent.ConcurrentHashMap;
 
@@ -13,10 +15,23 @@ import java.util.concurrent.ConcurrentHashMap;
 @Slf4j
 public class PluginRegistry {
     /**
-     * 插件注册表<br/>
-     * <插件名, <资源类型, 资源于插件内的静态访问地址>>
+     * 插件对象<br/>
+     * 整个内部类，定义插件对象，储存插件信息。
+     * 目前只存一个对象，包含：<插件（补充包）名, 插件包含的资源集合对象>。
+     * 资源集合对象包含：<资源类型, 资源文件名>。
      */
-    private final Map<String, Map<String, Object>> registry = new ConcurrentHashMap<>();
+    public static class PluginInfo {
+        /**
+         * 插件信息对象
+         */
+        public Map<String, Object> meta;
+    }
+
+    /**
+     * 插件注册表<br/>
+     * 包含：<插件名, 插件对象>
+     */
+    private final Map<String, PluginInfo> registry = new ConcurrentHashMap<>();
 
     /**
      * 注册插件信息
@@ -24,23 +39,40 @@ public class PluginRegistry {
      * @param meta 插件包含的资源表
      */
     public void register(String id, Map<String, Object> meta) {
-        registry.put(id, meta);
+        // 创建插件对象
+        PluginInfo info = new PluginInfo();
+        // 储存插件信息对象
+        info.meta = meta;
+        // 将新的插件注册至插件注册表
+        registry.put(id, info);
         log.info("注册了新的插件：{}", id);
     }
 
     /**
-     * 删除插件信息
+     * 删除指定插件信息
      * @param id 插件名
      */
     public void remove(String id) {
+        // 跟据key删除插件注册表中指定插件对象
         registry.remove(id);
         log.info("删除了一个插件：{}", id);
+    }
+
+    /**
+     * 获取指定插件对象
+     * @param id 对象名
+     * @return 插件对象
+     */
+    public PluginInfo get(String id) {
+        // 根据key查询插件注册表
+        return registry.get(id);
     }
 
     /**
      * 清理插件注册表的所有内容
      */
     public void clear() {
+        // 清空插件注册表
         registry.clear();
     }
 
@@ -48,7 +80,8 @@ public class PluginRegistry {
      * 获取插件注册表的所有内容
      * @return 插件注册表的内容
      */
-    public Collection<Map<String, Object>> getAll() {
+    public Collection<PluginInfo> getAll() {
+        // 获取插件注册表内容
         return registry.values();
     }
 }

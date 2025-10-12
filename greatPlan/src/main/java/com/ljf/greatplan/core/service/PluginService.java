@@ -54,9 +54,14 @@ public class PluginService {
      * @return 资源格式白名单
      */
     private Set<String> getAllFormat() {
+        // 转为流操作
+        // 根据逗号分割这个字符串
         return Arrays.stream(passFormat.split(","))
+                // 把割好的东西装进临时集合里
                 .map(String::trim)
+                // 只保留不为空的值
                 .filter(s -> !s.isEmpty())
+                // 把结果保存为Set集合
                 .collect(Collectors.toSet());
     }
 
@@ -78,8 +83,8 @@ public class PluginService {
 
         // 遍历插件资源（每个插件就是一个SB项目）
         for (File pluginDir : Objects.requireNonNull(rootDir.listFiles(File::isDirectory))) {
-            // 在目录下找资源（等于就是直接去项目目录内的静态资源目录下找东西）
-            File staticDir = new File(pluginDir, "src/main/resources/static");
+            // 在目录下找资源
+            File staticDir = new File(pluginDir, "resources");
             // 没有资源就跳过这层目录
             if (!staticDir.exists()) continue;
             // 在映射目录内创建文件
@@ -176,7 +181,7 @@ public class PluginService {
      * 就是把插件注册表里面注册的插件全部拿出来看看
      * @return 注册表内容（可以做增强循环的Map）
      */
-    public Iterable<Map<String, Object>> getAllPlugins() {
+    public Iterable<PluginRegistry.PluginInfo> getAllPlugins() {
         return registry.getAll();
     }
 
@@ -186,17 +191,10 @@ public class PluginService {
      * @param pluginId 插件名
      */
     public void removePlugin(String pluginId) {
-        // 根据插件注册器的地址与给定的插件名打开这个目录
+        // 删除静态资源
         File targetDir = new File(pluginRuntimeDir, pluginId);
-        // 只要地址有效（有东西）
-        if (targetDir.exists()) {
-            try {
-                // 删除文件夹
-                deleteFolder(targetDir.toPath());
-            } catch (Exception e) {
-                e.printStackTrace();
-            }
-        }
+        if (targetDir.exists()) deleteFolder(targetDir.toPath());
+
         // 清理插件注册表
         registry.remove(pluginId);
         log.info("已卸载一个插件：{}", pluginId);
