@@ -8,14 +8,14 @@ async function loadPlugin(meta) {
     container.id = "plugin-" + meta.id;
     area.appendChild(container);
 
-    const base = "/plugins/" + meta.id + "/"; // runtime-dir 映射
+    const base = "/plugins/"; // 直接映射到 plugins 目录
 
     // 加载 CSS
     if (meta.css && meta.css.length) {
         meta.css.forEach(cssFile => {
             const link = document.createElement("link");
             link.rel = "stylesheet";
-            link.href = base + cssFile;
+            link.href = base + cssFile;  // meta.css 已经包含 pluginName
             document.head.appendChild(link);
         });
     }
@@ -32,7 +32,7 @@ async function loadPlugin(meta) {
             await new Promise((resolve, reject) => {
                 const script = document.createElement("script");
                 script.src = base + jsFile;
-                script.onload = resolve;   // 确保 JS 加载完才执行下一个
+                script.onload = resolve;
                 script.onerror = reject;
                 document.body.appendChild(script);
             });
@@ -50,7 +50,7 @@ async function refreshPlugins() {
     area.innerHTML = "";
 
     for (const plugin of list) {
-        await loadPlugin(plugin.meta); // 确保按顺序加载插件
+        await loadPlugin(plugin); // 确保按顺序加载插件
     }
 }
 

@@ -1,6 +1,5 @@
 package com.ljf.greatplan.config;
 
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.support.BeanDefinitionRegistry;
 import org.springframework.beans.factory.support.GenericBeanDefinition;
 import org.springframework.context.ApplicationContext;
@@ -8,10 +7,10 @@ import org.springframework.context.ConfigurableApplicationContext;
 import org.springframework.context.annotation.Configuration;
 
 /**
- * 外来豆子注册器<br/>
- * 用于将加入的补充包中的Bean（若有需要）注册进核心包的主容器。
- * 不过注册后就算卸载补充包，与其相关的Bean是不会被删除的，不过留几个幽灵豆子倒是没啥影响。
- * 且一般就是给运行时加入的补充包用，核心包启动时就存在的补充包会在核心包启动时一并加载管理。
+ * 动态豆子注册器<br/>
+ * 用于将加入的插件中的Bean（若有需要）注册进核心包的主容器。
+ * 不过注册后就算卸载插件，与其相关的Bean是不会被删除的，不过留几个幽灵豆子倒是没啥影响。
+ * 且一般就是给运行时加入的插件用，核心包启动时就存在的插件会在核心包启动时一并加载管理。
  */
 @Configuration
 public class DynamicBeanRegistrar {

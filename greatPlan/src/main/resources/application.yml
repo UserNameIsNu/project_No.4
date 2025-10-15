@@ -17,11 +17,13 @@ server:
             enabled: true
             charset: UTF-8
             force: true
-# 插件配置
+# 补充包配置
 plugin:
-    # 插件资源
-    root-dir: D:\planOfElectronicHamster\9，GreatPlan\4，第四次尝试（进行中）\greatPlan\src\main\java\com\ljf\greatplan\docking\plugins
-    # 插件资源映射
-    runtime-dir: D:\planOfElectronicHamster\9，GreatPlan\4，第四次尝试（进行中）\greatPlan\plugins-runtime
-    # 格式白名单
+    # 插件源码目录
+    source-dir: src/main/java/com/ljf/greatplan/docking/plugins
+#    source-dir: classes/com/ljf/greatplan/docking/plugins
+    # 插件资源目录
+    resource-dir: src/main/resources/static/plugins
+#    resource-dir: classes/static/plugins
+    # 允许注册至核心包的资源文件格式白名单
     pass-format: .html,.css,.js
