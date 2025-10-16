@@ -1,4 +1,4 @@
-package com.ljf.greatplan.util;
+package com.ljf.greatplan.util.other;
 
 import java.util.Arrays;
 import java.util.Set;

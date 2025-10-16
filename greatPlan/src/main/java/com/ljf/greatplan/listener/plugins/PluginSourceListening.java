@@ -1,16 +1,14 @@
-package com.ljf.greatplan.docking.listener;
+package com.ljf.greatplan.listener.plugins;
 
-import com.ljf.greatplan.config.DynamicBeanRegistrar;
-import com.ljf.greatplan.util.PluginCompiler;
+import com.ljf.greatplan.util.plugins.PluginCompiler;
+import com.ljf.greatplan.util.plugins.SubContainersManager;
 import jakarta.annotation.PostConstruct;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Component;
 
 import java.io.File;
-import java.io.FileFilter;
-import java.net.URL;
-import java.net.URLClassLoader;
+import java.net.MalformedURLException;
 import java.nio.file.*;
 import java.util.List;
 
@@ -28,9 +26,9 @@ public class PluginSourceListening {
     private String pluginSourceDir;
 
     /**
-     * 动态豆子注册器
+     * 子容器管理器
      */
-    private final DynamicBeanRegistrar dynamicBeanRegistrar;
+    private final SubContainersManager subContainersManager;
 
     /**
      * 插件编译器
@@ -39,10 +37,11 @@ public class PluginSourceListening {
 
     /**
      * 构造器
-     * @param dynamicBeanRegistrar
+     * @param subContainersManager
+     * @param pluginCompiler
      */
-    public PluginSourceListening(DynamicBeanRegistrar dynamicBeanRegistrar, PluginCompiler pluginCompiler) {
-        this.dynamicBeanRegistrar = dynamicBeanRegistrar;
+    public PluginSourceListening(SubContainersManager subContainersManager, PluginCompiler pluginCompiler) {
+        this.subContainersManager = subContainersManager;
         this.pluginCompiler = pluginCompiler;
     }
 
@@ -62,7 +61,8 @@ public class PluginSourceListening {
                 WatchService watchService = FileSystems.getDefault().newWatchService();
                 // 监听指定目录的一种事件
                 dir.toPath().register(watchService,
-                        StandardWatchEventKinds.ENTRY_CREATE);
+                        StandardWatchEventKinds.ENTRY_CREATE,
+                        StandardWatchEventKinds.ENTRY_DELETE);
                 log.info("开始监听源码目录：{}", dir.getAbsolutePath());
 
                 // 掐个死循环
@@ -82,6 +82,9 @@ public class PluginSourceListening {
                             if (newPluginDir.isDirectory()) {
                                 registerPluginBeans(newPluginDir);
                             }
+                        // 插件拔掉了就卸载对应的子容器
+                        } else if (kind == StandardWatchEventKinds.ENTRY_DELETE) {
+                            subContainersManager.unloadSubContainer(fileName.toString());
                         }
                     }
 
@@ -102,16 +105,18 @@ public class PluginSourceListening {
      */
     private void registerPluginBeans(File pluginDir) {
         try {
-            log.info("准备热编译并注册插件：{}", pluginDir.getName());
+            log.info("准备热编译：{}", pluginDir.getName());
             // 根据给定的地址，试图将这里面的所有玩意转成class对象
             List<Class<?>> classes = pluginCompiler.sourceHotCompiler(pluginDir);
             // 使用动态豆子注册器注册这些所有class对象为Bean至主容器
-            for (Class<?> clazz : classes) {
-                dynamicBeanRegistrar.registerBeanDynamically(clazz);
-                log.info("✅ 成功注册插件 Bean：{}", clazz.getName());
+            try {
+                subContainersManager.mountSubContainer(pluginDir.getName(), classes, pluginDir);
+            } catch (MalformedURLException e) {
+                log.error("❌ 子容器创建失败：{}", pluginDir.getName(), e);
             }
+            log.info("✅ 成功创建子容器：{}", pluginDir.getName());
         } catch (Exception e) {
-            log.error("❌ 插件注册失败：{}", pluginDir.getName(), e);
+            log.error("❌ 子容器创建失败：{}", pluginDir.getName(), e);
         }
     }
 }

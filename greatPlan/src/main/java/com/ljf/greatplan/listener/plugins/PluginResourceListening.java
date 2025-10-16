@@ -1,4 +1,4 @@
-package com.ljf.greatplan.docking.listener;
+package com.ljf.greatplan.listener.plugins;
 
 import com.ljf.greatplan.core.service.PluginService;
 import jakarta.annotation.PostConstruct;
