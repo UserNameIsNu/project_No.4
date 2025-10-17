@@ -1,6 +1,13 @@
+/*
+ * Copyright (c) 2025 404
+ * Licensed under the MIT License.
+ * See LICENSE file in the project root for license information.
+ *
+ */
+
 package com.ljf.greatplan.core.service;
 
-import com.ljf.greatplan.util.other.IOAndSerializationAndString;
+import com.ljf.greatplan.util.other.SerializationAndString;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.core.io.Resource;
@@ -53,7 +60,7 @@ public class PluginService {
         pluginRegistryManager.clear();
 
         // 获取插件资源格式白名单
-        Set<String> formatSet = IOAndSerializationAndString.getAllFormat(passFormat);
+        Set<String> formatSet = SerializationAndString.splitStrings(passFormat, ",");
         Map<String, Map<String, Object>> pluginMetaMap = new HashMap<>();
 
         try {

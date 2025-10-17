@@ -20,10 +20,10 @@ server:
 # 补充包配置
 plugin:
     # 插件源码目录
-    source-dir: src/main/java/com/ljf/greatplan/docking/plugins
-#    source-dir: classes/com/ljf/greatplan/docking/plugins
+#    source-dir: src/main/java/com/ljf/greatplan/docking/plugins
+    source-dir: classes/com/ljf/greatplan/docking/plugins
     # 插件资源目录
-    resource-dir: src/main/resources/static/plugins
-#    resource-dir: classes/static/plugins
+#    resource-dir: src/main/resources/static/plugins
+    resource-dir: classes/static/plugins
     # 允许注册至核心包的资源文件格式白名单
     pass-format: .html,.css,.js

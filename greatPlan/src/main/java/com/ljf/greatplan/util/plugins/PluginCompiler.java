@@ -1,5 +1,13 @@
+/*
+ * Copyright (c) 2025 404
+ * Licensed under the MIT License.
+ * See LICENSE file in the project root for license information.
+ *
+ */
+
 package com.ljf.greatplan.util.plugins;
 
+import com.ljf.greatplan.util.other.FileIO;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Component;
 
@@ -33,16 +41,7 @@ public class PluginCompiler {
         }
 
         // 所有.java文件集合
-        List<File> javaFiles = null;
-        try {
-            // 打开这个目录，把所有.java文件拉出来
-            javaFiles = Files.walk(pluginDir.toPath())
-                    .filter(p -> p.toString().endsWith(".java"))
-                    .map(java.nio.file.Path::toFile)
-                    .collect(Collectors.toList());
-        } catch (IOException e) {
-            throw new RuntimeException(e);
-        }
+        List<File> javaFiles = FileIO.fileCollector(pluginDir, ".java");
 
         // 检查是否有拉到.java
         if (javaFiles.isEmpty()) {
@@ -54,32 +53,8 @@ public class PluginCompiler {
         File outputDir = new File(pluginDir, "out-classes");
         if (!outputDir.exists()) outputDir.mkdirs();
 
-        // 创建编译器实例
-        JavaCompiler compiler = ToolProvider.getSystemJavaCompiler();
-        if (compiler == null) {
-            throw new IllegalStateException("未找到系统 Java 编译器，请使用 JDK 运行，而不是 JRE！");
-        }
-
-        // 配置编译任务
-        StandardJavaFileManager fileManager = compiler.getStandardFileManager(null, null, null);
-        // 将.java文件集合转为编译单元（任务单元）
-        Iterable<? extends JavaFileObject> compilationUnits =
-                fileManager.getJavaFileObjectsFromFiles(javaFiles);
-        // 指定输出路径
-        List<String> options = Arrays.asList("-d", outputDir.getAbsolutePath());
-        // 创建编译任务（默认输出流, 文件管理器, 不使用自定义诊断监听, 编译参数, 不限制编译目标类名, 源文件集）
-        JavaCompiler.CompilationTask task = compiler.getTask(null, fileManager, null, options, null, compilationUnits);
-        // 执行编译任务并获取任务执行结果
-        boolean success = task.call();
-        try {
-            // 关闭文件管理器
-            fileManager.close();
-        } catch (IOException e) {
-            throw new RuntimeException(e);
-        }
-
         // 判断任执行结果
-        if (!success) {
+        if (!startCompiler(javaFiles, outputDir)) {
             throw new RuntimeException("插件编译失败：" + pluginDir.getName());
         }
         log.info("✅ 插件源码编译成功：{}", pluginDir.getName());
@@ -97,15 +72,7 @@ public class PluginCompiler {
         }
 
         // 这回就是扫描编译结果输出目录，把编译后的.class文件拉出来
-        List<File> classFiles = null;
-        try {
-            classFiles = Files.walk(outputDir.toPath())
-                    .filter(p -> p.toString().endsWith(".class"))
-                    .map(java.nio.file.Path::toFile)
-                    .collect(Collectors.toList());
-        } catch (IOException e) {
-            throw new RuntimeException(e);
-        }
+        List<File> classFiles = FileIO.fileCollector(outputDir, ".class");
 
         // 用于存放最后的所有文件编译后且转换后的class对象
         List<Class<?>> loadedClasses = new ArrayList<>();
@@ -128,5 +95,38 @@ public class PluginCompiler {
         }
     // 返回所有处理好的class对象
     return loadedClasses;
+    }
+
+    /**
+     * 启动编译<br/>
+     * 创建并启动编译任务。
+     * @param files 需要编译的文件集合
+     * @param outputDir 编译输出目录
+     * @return 是否成功
+     */
+    private boolean startCompiler(List<File> files, File outputDir) {
+        // 创建编译器实例
+        JavaCompiler compiler = ToolProvider.getSystemJavaCompiler();
+        if (compiler == null) {
+            throw new IllegalStateException("未找到系统 Java 编译器，请使用 JDK 运行，而不是 JRE！");
+        }
+        // 配置编译任务
+        StandardJavaFileManager fileManager = compiler.getStandardFileManager(null, null, null);
+        // 将.java文件集合转为编译单元（任务单元）
+        Iterable<? extends JavaFileObject> compilationUnits =
+                fileManager.getJavaFileObjectsFromFiles(files);
+        // 指定输出路径
+        List<String> options = Arrays.asList("-d", outputDir.getAbsolutePath());
+        // 创建编译任务（默认输出流, 文件管理器, 不使用自定义诊断监听, 编译参数, 不限制编译目标类名, 源文件集）
+        JavaCompiler.CompilationTask task = compiler.getTask(null, fileManager, null, options, null, compilationUnits);
+        // 执行编译任务并获取任务执行结果
+        boolean success = task.call();
+        try {
+            // 关闭文件管理器
+            fileManager.close();
+        } catch (IOException e) {
+            throw new RuntimeException(e);
+        }
+        return success;
     }
 }
