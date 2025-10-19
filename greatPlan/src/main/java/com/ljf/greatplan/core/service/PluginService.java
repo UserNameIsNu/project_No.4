@@ -9,6 +9,7 @@ package com.ljf.greatplan.core.service;
 
 import com.ljf.greatplan.util.other.SerializationAndString;
 import lombok.extern.slf4j.Slf4j;
+import org.apache.commons.codec.digest.DigestUtils;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.core.io.Resource;
 import org.springframework.core.io.support.PathMatchingResourcePatternResolver;
@@ -71,6 +72,9 @@ public class PluginService {
             for (Resource res : resources) {
                 // 获取资源名
                 String filename = res.getFilename().toLowerCase();
+                // 计算文件哈希
+                byte[] fileBytes = res.getInputStream().readAllBytes();
+                String hash = DigestUtils.md5Hex(fileBytes);
                 // 获取插件名
                 String pluginName = res.getURL().toString()
                         .replaceFirst(".*/static/plugins/", "")
@@ -78,8 +82,10 @@ public class PluginService {
                 // 创建插件资源信息对象
                 pluginMetaMap.computeIfAbsent(pluginName, k -> {
                     Map<String, Object> meta = new HashMap<>();
-                    // 初始化一个标记，就放个插件名，标记这个对象的所属插件
+                    // 初始化标记，就放个插件名，标记这个对象的所属插件
                     meta.put("id", pluginName);
+                    // 额外加一个文件哈希作为版本标识，用于告诉前端这个是不是新文件（是否被修改过）
+                    meta.put("versions", new HashMap<String, String>());
                     return meta;
                 });
                 // 取出上面创建并初始化的插件资源信息对象
@@ -97,6 +103,9 @@ public class PluginService {
                                 .replaceFirst(".*/static/plugins/", "");
                         // 添加资源（类型与名字）
                         ((List<String>) meta.get(type)).add(relativePath);
+                        // 添加文件哈希（文件版本号）
+                        Map<String, String> versions = (Map<String, String>) meta.get("versions");
+                        versions.put(relativePath, hash);
                         break;
                     }
                 }

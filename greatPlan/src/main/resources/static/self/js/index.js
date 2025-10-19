@@ -1,65 +1,88 @@
-/*
- * Copyright (c) 2025 404
- * Licensed under the MIT License.
- * See LICENSE file in the project root for license information.
- *
- */
-
 window.CoreAPI = {
     log: msg => console.log("[CoreAPI]", msg)
 };
 
+// 存储已加载的插件资源版本
+window.loadedPlugins = {};
+
 async function loadPlugin(meta) {
     const area = document.getElementById("plugins-area");
-    const container = document.createElement("div");
-    container.id = "plugin-" + meta.id;
-    area.appendChild(container);
+    let container = document.getElementById("plugin-" + meta.id);
 
-    const base = "/plugins/"; // 直接映射到 plugins 目录
+    if (!container) {
+        container = document.createElement("div");
+        container.id = "plugin-" + meta.id;
+        area.appendChild(container);
+    }
 
-    // 加载 CSS
+    const base = "/plugins/";
+    const loaded = window.loadedPlugins[meta.id] || {};
+    window.loadedPlugins[meta.id] = loaded;
+
+    // CSS
     if (meta.css && meta.css.length) {
         meta.css.forEach(cssFile => {
-            const link = document.createElement("link");
-            link.rel = "stylesheet";
-            link.href = base + cssFile;  // meta.css 已经包含 pluginName
-            document.head.appendChild(link);
+            const hash = meta.versions?.[cssFile] || '';
+            if (loaded[cssFile] !== hash) { // 仅在版本变化时刷新
+                // 移除旧的 link
+                const oldLink = document.querySelector(`link[data-plugin="${meta.id}"][href*="${cssFile}"]`);
+                if (oldLink) oldLink.remove();
+
+                const link = document.createElement("link");
+                link.rel = "stylesheet";
+                link.setAttribute("data-plugin", meta.id);
+                link.href = base + cssFile + "?v=" + hash;
+                document.head.appendChild(link);
+
+                loaded[cssFile] = hash;
+            }
         });
     }
 
-    // 加载 HTML
+    // HTML
     if (meta.html && meta.html.length) {
-        const html = await fetch(base + meta.html[0]).then(r => r.text());
-        container.innerHTML = html;
-    }
-
-    // 加载 JS
-    if (meta.js && meta.js.length) {
-        for (const jsFile of meta.js) {
-            await new Promise((resolve, reject) => {
-                const script = document.createElement("script");
-                script.src = base + jsFile;
-                script.onload = resolve;
-                script.onerror = reject;
-                document.body.appendChild(script);
-            });
+        const htmlFile = meta.html[0];
+        const hash = meta.versions?.[htmlFile] || '';
+        if (loaded[htmlFile] !== hash) {
+            const html = await fetch(base + htmlFile + "?v=" + hash).then(r => r.text());
+            container.innerHTML = html;
+            loaded[htmlFile] = hash;
         }
     }
 
-    CoreAPI.log(`插件 ${meta.id} 已加载`);
+    // JS
+    if (meta.js && meta.js.length) {
+        for (const jsFile of meta.js) {
+            const hash = meta.versions?.[jsFile] || '';
+            if (loaded[jsFile] !== hash) {
+                const oldScript = document.querySelector(`script[data-plugin="${meta.id}"][src*="${jsFile}"]`);
+                if (oldScript) oldScript.remove();
+
+                await new Promise((resolve, reject) => {
+                    const script = document.createElement("script");
+                    script.src = base + jsFile + "?v=" + hash;
+                    script.setAttribute("data-plugin", meta.id);
+                    script.onload = resolve;
+                    script.onerror = reject;
+                    document.body.appendChild(script);
+                });
+
+                loaded[jsFile] = hash;
+            }
+        }
+    }
+
+    CoreAPI.log(`插件 ${meta.id} 已加载/刷新`);
 }
 
 async function refreshPlugins() {
     const res = await fetch("/api/plugins");
     const list = await res.json();
 
-    const area = document.getElementById("plugins-area");
-    area.innerHTML = "";
-
     for (const plugin of list) {
-        await loadPlugin(plugin); // 确保按顺序加载插件
+        await loadPlugin(plugin);
     }
 }
 
 window.addEventListener("DOMContentLoaded", refreshPlugins);
-setInterval(refreshPlugins, 3000);
+setInterval(refreshPlugins, 500);

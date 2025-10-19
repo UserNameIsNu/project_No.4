@@ -10,6 +10,9 @@ package com.ljf.greatplan.listener.plugins;
 import com.ljf.greatplan.core.service.PluginService;
 import jakarta.annotation.PostConstruct;
 import lombok.extern.slf4j.Slf4j;
+import org.apache.commons.io.monitor.FileAlterationListenerAdaptor;
+import org.apache.commons.io.monitor.FileAlterationMonitor;
+import org.apache.commons.io.monitor.FileAlterationObserver;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Component;
 
@@ -54,57 +57,59 @@ public class PluginResourceListening {
         // 扫描插件目录，注册装载存在的插件
         pluginService.pluginsScanner();
 
-        // 创建监听线程
-        new Thread(() -> {
-            try {
-                // 创建用于监听目录文件变化的对象（Java NIO自带的，头一次见）
-                WatchService watchService = FileSystems.getDefault().newWatchService();
-                // 监听指定目录的两种事件
-                dir.toPath().register(watchService,
-                        StandardWatchEventKinds.ENTRY_CREATE,
-                        StandardWatchEventKinds.ENTRY_DELETE);
-                log.info("开始监听资源目录：{}", dir.getAbsolutePath());
+        try {
+            // 创建文件观察者（会递归监听子目录）
+            FileAlterationObserver observer = new FileAlterationObserver(dir);
 
-                // 掐个死循环
-                while (true) {
-                    // 持续获取监听对象是否被触发的标记
-                    WatchKey key = watchService.take();
-                    // 是否需要重扫插件
-                    boolean changed = false;
-
-                    // 遍历触发了监听事件的事件列表
-                    for (WatchEvent<?> event : key.pollEvents()) {
-                        // 获取事件类型与触发的目录
-                        WatchEvent.Kind<?> kind = event.kind();
-                        Path fileName = (Path) event.context();
-
-                        // 若目录出现变化（有新东西或没了啥东西）就标记需要重扫目录
-                        if (kind == StandardWatchEventKinds.ENTRY_CREATE ||
-                                kind == StandardWatchEventKinds.ENTRY_DELETE) {
-                            changed = true;
-                            // 若出现了删除事件，就卸载这个被删除的插件
-                            if (kind == StandardWatchEventKinds.ENTRY_DELETE) {
-                                pluginService.removePlugin(fileName.toString());
-                            }
-                        }
-                    }
-
-                    // 检查重扫标记
-                    if (changed) {
-                        // 若需要重扫，等待1s再扫（太急了怕炸）
-                        Thread.sleep(1000);
-                        // 调用插件扫描器，重新扫描注册
-                        pluginService.pluginsScanner();
-                    }
-
-                    // 重置事件触发标记
-                    key.reset();
+            // 监听器：响应文件创建、删除、修改事件
+            observer.addListener(new FileAlterationListenerAdaptor() {
+                @Override
+                public void onFileCreate(File file) {
+                    log.info("检测到插件新增：{}", file.getName());
+                    safeRescan();
                 }
 
-            } catch (Exception e) {
-                e.printStackTrace();
-            }
-            // 定义线程名，并启动
-        }, "Resource-Listening").start();
+                @Override
+                public void onFileDelete(File file) {
+                    log.info("检测到插件删除：{}", file.getName());
+                    pluginService.removePlugin(file.getName());
+                    safeRescan();
+                }
+
+                @Override
+                public void onFileChange(File file) {
+                    log.info("检测到插件修改：{}", file.getName());
+                    safeRescan();
+                }
+
+                private void safeRescan() {
+                    try {
+                        Thread.sleep(1000); // 防止文件写入未完成
+                        pluginService.pluginsScanner();
+                    } catch (InterruptedException e) {
+                        Thread.currentThread().interrupt();
+                    } catch (Exception e) {
+                        log.error("插件重新扫描失败", e);
+                    }
+                }
+            });
+
+            // 0.5秒刷新一次
+            long interval = 500L;
+            FileAlterationMonitor monitor = new FileAlterationMonitor(interval, observer);
+
+            // 启动独立线程
+            new Thread(() -> {
+                try {
+                    monitor.start();
+                    log.info("启动插件目录监听成功：{}", dir.getAbsolutePath());
+                } catch (Exception e) {
+                    log.error("插件目录监听启动失败", e);
+                }
+            }, "Plugin-Resource-Monitor").start();
+
+        } catch (Exception e) {
+            log.error("插件目录监听器初始化失败", e);
+        }
     }
 }
