@@ -5,9 +5,9 @@
  *
  */
 
-package com.ljf.greatplan.util.plugins;
+package com.ljf.greatplan.general.tools.pluginsTools;
 
-import com.ljf.greatplan.util.other.FileIO;
+import com.ljf.greatplan.general.tools.generalTools.FileIO;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Component;
 
@@ -17,9 +17,7 @@ import java.io.IOException;
 import java.net.MalformedURLException;
 import java.net.URL;
 import java.net.URLClassLoader;
-import java.nio.file.Files;
 import java.util.*;
-import java.util.stream.Collectors;
 
 /**
  * 插件编译器<br/>

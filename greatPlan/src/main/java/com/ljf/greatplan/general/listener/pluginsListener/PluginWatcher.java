@@ -5,22 +5,13 @@
  *
  */
 
-package com.ljf.greatplan.listener.plugins;
-
-import com.ljf.greatplan.core.service.PluginService;
-import jakarta.annotation.PostConstruct;
-import lombok.extern.slf4j.Slf4j;
-import org.springframework.beans.factory.annotation.Value;
-import org.springframework.stereotype.Component;
-
-import java.io.File;
-import java.nio.file.*;
+package com.ljf.greatplan.general.listener.pluginsListener;
 
 /**
  * 插件监听器（弃用）<br/>
  * 用运行时监听插件目录，引发装载或卸载行为
  * <br/>——————<br/>
- * V0.6.14.7中弃用，并被{@link PluginResourceListening}和{@link PluginSourceListening}代替。
+ * V0.6.14.7中弃用，并被{@link PluginResourceListener}和{@link PluginSourceListener}代替。
  */
 @Deprecated
 //@Component

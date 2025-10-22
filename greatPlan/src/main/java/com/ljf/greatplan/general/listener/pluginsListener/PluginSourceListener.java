@@ -5,10 +5,10 @@
  *
  */
 
-package com.ljf.greatplan.listener.plugins;
+package com.ljf.greatplan.general.listener.pluginsListener;
 
-import com.ljf.greatplan.util.plugins.PluginCompiler;
-import com.ljf.greatplan.util.plugins.SubContainersManager;
+import com.ljf.greatplan.general.tools.pluginsTools.PluginCompiler;
+import com.ljf.greatplan.general.tools.pluginsTools.SubContainersManager;
 import jakarta.annotation.PostConstruct;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Value;
@@ -25,7 +25,7 @@ import java.util.List;
  */
 @Component
 @Slf4j
-public class PluginSourceListening {
+public class PluginSourceListener {
     /**
      * 插件源码地址
      */
@@ -47,7 +47,7 @@ public class PluginSourceListening {
      * @param subContainersManager
      * @param pluginCompiler
      */
-    public PluginSourceListening(SubContainersManager subContainersManager, PluginCompiler pluginCompiler) {
+    public PluginSourceListener(SubContainersManager subContainersManager, PluginCompiler pluginCompiler) {
         this.subContainersManager = subContainersManager;
         this.pluginCompiler = pluginCompiler;
     }

@@ -5,7 +5,7 @@
  *
  */
 
-package com.ljf.greatplan.listener.plugins;
+package com.ljf.greatplan.general.listener.pluginsListener;
 
 import com.ljf.greatplan.core.service.PluginService;
 import jakarta.annotation.PostConstruct;
@@ -17,7 +17,6 @@ import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Component;
 
 import java.io.File;
-import java.nio.file.*;
 
 /**
  * 插件（资源）监听器<br/>
@@ -25,7 +24,7 @@ import java.nio.file.*;
  */
 @Component
 @Slf4j
-public class PluginResourceListening {
+public class PluginResourceListener {
     /**
      * 插件资源地址
      */
@@ -41,7 +40,7 @@ public class PluginResourceListening {
      * 构造器
      * @param pluginService
      */
-    public PluginResourceListening(PluginService pluginService) {
+    public PluginResourceListener(PluginService pluginService) {
         this.pluginService = pluginService;
     }
 

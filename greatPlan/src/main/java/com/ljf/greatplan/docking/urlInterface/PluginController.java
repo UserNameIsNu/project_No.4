@@ -5,7 +5,7 @@
  *
  */
 
-package com.ljf.greatplan.docking.api;
+package com.ljf.greatplan.docking.urlInterface;
 
 import com.ljf.greatplan.core.service.PluginRegistryManager;
 import org.springframework.web.bind.annotation.GetMapping;

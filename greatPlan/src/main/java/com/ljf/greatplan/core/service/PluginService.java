@@ -7,7 +7,7 @@
 
 package com.ljf.greatplan.core.service;
 
-import com.ljf.greatplan.util.other.SerializationAndString;
+import com.ljf.greatplan.general.tools.generalTools.SerializationAndString;
 import lombok.extern.slf4j.Slf4j;
 import org.apache.commons.codec.digest.DigestUtils;
 import org.springframework.beans.factory.annotation.Value;

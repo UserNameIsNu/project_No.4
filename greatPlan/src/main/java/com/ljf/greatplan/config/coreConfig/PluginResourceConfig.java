@@ -5,7 +5,7 @@
  *
  */
 
-package com.ljf.greatplan.config;
+package com.ljf.greatplan.config.coreConfig;
 
 import org.springframework.context.annotation.Configuration;
 import org.springframework.web.servlet.config.annotation.ResourceHandlerRegistry;

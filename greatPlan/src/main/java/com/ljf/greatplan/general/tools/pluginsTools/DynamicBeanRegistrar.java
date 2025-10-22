@@ -5,14 +5,7 @@
  *
  */
 
-package com.ljf.greatplan.util.plugins;
-
-import com.ljf.greatplan.listener.plugins.PluginResourceListening;
-import org.springframework.beans.factory.support.BeanDefinitionRegistry;
-import org.springframework.beans.factory.support.GenericBeanDefinition;
-import org.springframework.context.ApplicationContext;
-import org.springframework.context.ConfigurableApplicationContext;
-import org.springframework.context.annotation.Configuration;
+package com.ljf.greatplan.general.tools.pluginsTools;
 
 /**
  * 动态豆子注册器（弃用）<br/>

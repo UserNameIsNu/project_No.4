@@ -5,7 +5,7 @@
  *
  */
 
-package com.ljf.greatplan.util.other;
+package com.ljf.greatplan.general.tools.generalTools;
 
 import java.util.Arrays;
 import java.util.Set;
