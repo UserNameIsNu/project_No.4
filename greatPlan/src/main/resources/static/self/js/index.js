@@ -1,3 +1,38 @@
+/*
+ * Copyright (c) 2025 404
+ * Licensed under the MIT License.
+ * See LICENSE file in the project root for license information.
+ *
+ */
+
+const allNodes = {};
+const roots = [];
+
+document.addEventListener('DOMContentLoaded', () => {
+    const treeContainer = document.getElementById('treeContainer');
+
+    // 🔹 页面加载时获取根目录
+    fetchRootDirectory(treeContainer);
+});
+
+document.getElementById('directoryForm').addEventListener('submit', function(e) {
+    e.preventDefault();
+
+    const formData = new FormData(this);
+    const treeContainer = document.getElementById('treeContainer');
+
+    fetch('http://127.0.0.1:8080/api/file', {
+        method: 'POST',
+        body: formData
+    })
+        .then(response => response.json())
+        .then(data => {
+            mergeAndRepairTree(data);
+            renderAllRoots(treeContainer);
+        })
+        .catch(error => console.error('扫描错误:', error));
+});
+
 window.CoreAPI = {
     log: msg => console.log("[CoreAPI]", msg)
 };
@@ -19,6 +54,143 @@ function unloadPlugin(pluginId) {
     // 清理缓存记录
     delete window.loadedPlugins[pluginId];
     CoreAPI.log(`插件 ${pluginId} 已卸载`);
+}
+
+function fetchRootDirectory(container) {
+    fetch('http://127.0.0.1:8080/api/file/load', {
+        method: 'POST'
+        // 不传 path 即返回根目录
+    })
+        .then(res => res.json())
+        .then(data => {
+            mergeAndRepairTree(data);
+            renderAllRoots(container);
+        })
+        .catch(err => console.error('获取根目录失败:', err));
+}
+
+function mergeAndRepairTree(newData) {
+    for (const [id, node] of Object.entries(newData)) {
+        const existing = allNodes[id];
+        if (!existing) {
+            allNodes[id] = structuredClone(node);
+        } else {
+            if ((!existing.childNode || existing.childNode.length === 0) &&
+                node.childNode && node.childNode.length > 0) {
+                existing.childNode = [...node.childNode];
+            }
+            if (!existing.parentNode && node.parentNode)
+                existing.parentNode = node.parentNode;
+        }
+    }
+
+    for (const node of Object.values(allNodes)) {
+        if (node.parentNode && allNodes[node.parentNode]) {
+            const parent = allNodes[node.parentNode];
+            parent.childNode = parent.childNode || [];
+            if (!parent.childNode.includes(node.id)) parent.childNode.push(node.id);
+        }
+    }
+
+    for (const node of Object.values(allNodes)) {
+        let current = node;
+        while (current.parentNode && allNodes[current.parentNode]) {
+            const parent = allNodes[current.parentNode];
+            parent.childNode = parent.childNode || [];
+            if (!parent.childNode.includes(current.id)) parent.childNode.push(current.id);
+            current = parent;
+        }
+    }
+
+    const recalculatedRoots = Object.values(allNodes)
+        .filter(node => !node.parentNode || !allNodes[node.parentNode])
+        .map(node => node.id);
+
+    roots.length = 0;
+    roots.push(...new Set(recalculatedRoots));
+}
+
+function renderAllRoots(container) {
+    container.innerHTML = '';
+    const ul = document.createElement('ul');
+    roots.forEach(rootId => {
+        const rootNode = allNodes[rootId];
+        if (rootNode) ul.appendChild(buildTreeHtml(rootNode));
+    });
+    container.appendChild(ul);
+}
+
+function buildTreeHtml(node) {
+    const li = document.createElement('li');
+
+    // 🔹 如果 name 为空，从 path 提取
+    const displayName = node.name || (node.path ? node.path.split(/[\\/]/).filter(Boolean).pop() : '未知');
+
+    if (node.nodeType === "DIRECTORY") {
+        li.classList.add("directory");
+        li.textContent = "📁 " + displayName;
+
+        li.addEventListener("click", (e) => {
+            e.stopPropagation();
+
+            const hasChildren = node.childNode && node.childNode.length > 0;
+            const fullyScanned = node.scanStatus === "FULLY_SCANNED";
+
+            if (hasChildren || fullyScanned) {
+                li.classList.toggle("collapsed");
+            } else {
+                fetchSubDirectory(node, li);
+            }
+        });
+
+        const ul = document.createElement('ul');
+        if (node.childNode && node.childNode.length > 0) {
+            node.childNode.forEach(childId => {
+                const childNode = allNodes[childId];
+                if (childNode) ul.appendChild(buildTreeHtml(childNode));
+            });
+        }
+        li.appendChild(ul);
+    } else {
+        li.classList.add("file");
+        li.textContent = "📄 " + displayName + (node.fileType ? "." + node.fileType : '');
+    }
+
+    return li;
+}
+
+/** 请求子目录内容并合并渲染 */
+function fetchSubDirectory(node, liElement) {
+    const formData = new FormData();
+    formData.append('path', node.path);
+
+    fetch('http://127.0.0.1:8080/api/file', {
+        method: 'POST',
+        body: formData
+    })
+        .then(res => res.json())
+        .then(data => {
+            mergeAndRepairTree(data);
+
+            // 清空旧的 UL
+            let ul = liElement.querySelector('ul');
+            if (!ul) {
+                ul = document.createElement('ul');
+                liElement.appendChild(ul);
+            }
+            ul.innerHTML = '';
+
+            // 渲染新子节点
+            if (node.childNode && node.childNode.length > 0) {
+                node.childNode.forEach(childId => {
+                    const childNode = allNodes[childId];
+                    if (childNode) ul.appendChild(buildTreeHtml(childNode));
+                });
+            }
+
+            liElement.classList.remove("collapsed"); // 展开
+        })
+        .catch(err => console.error('获取子目录失败:', err));
 }
 
 /**

@@ -1,0 +1,41 @@
+/*
+ * Copyright (c) 2025 404
+ * Licensed under the MIT License.
+ * See LICENSE file in the project root for license information.
+ *
+ */
+
+body {
+    font-family: Consolas, monospace;
+    background-color: #f8f9fa;
+    color: #333;
+    margin: 20px;
+}
+#directoryForm {
+    margin-bottom: 20px;
+}
+input[type="text"] {
+    padding: 8px;
+    width: 400px;
+}
+button {
+    padding: 8px 16px;
+    cursor: pointer;
+}
+.tree {
+    font-size: 14px;
+    line-height: 1.6;
+    user-select: none;
+}
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding-left: 20px;
+    border-left: 1px dotted #ccc;
+}
+li {
+    margin: 4px 0;
+}
+.collapsed > ul {
+    display: none;
+}

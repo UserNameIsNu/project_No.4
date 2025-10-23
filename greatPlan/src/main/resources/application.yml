@@ -1,18 +1,13 @@
 spring:
     application:
         name: greatPlan
-    # 延时停机时长
     lifecycle:
         timeout-per-shutdown-phase: 30s
 server:
-    # 服务端口
     port: 8080
-    # 延时停机
     shutdown: graceful
     servlet:
-        # 上下文起始路径
         context-path: /
-        # 编码
         encoding:
             enabled: true
             charset: UTF-8
@@ -27,3 +22,12 @@ plugin:
 #    resource-dir: classes/static/plugins
     # 允许注册至核心包的资源文件格式白名单
     pass-format: .html,.css,.js
+# 文件系统扫描配置
+scan:
+    # 扫描深度（all为全量扫描）
+    depth: 1
+    # 扫描类型
+    # 一般显示/NORMAL：和windows文件管理器一样且不包括隐藏文件
+    # 显示隐藏/SHOW_HIDDEN：在上一个的基础上额外显示windows文件管理器中可选的隐藏文件
+    # 显示所有/SHOW_ALL：显示windows文件管理器中都不显示的各种奇怪文件
+    show-type: SHOW_HIDDEN

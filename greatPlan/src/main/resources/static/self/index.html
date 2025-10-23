@@ -10,10 +10,19 @@
     <head>
         <meta charset="UTF-8">
         <title>Title</title>
-        <script src="/self/js/index.js"></script>
+        <link href="css/index.css" type="text/css" rel="stylesheet">
     </head>
     <body>
         <p>主页</p>
+        <!--  插件渲染空间  -->
         <div id="plugins-area"></div>
+
+        <form id="directoryForm">
+            <input type="text" name="path" placeholder="输入目录路径">
+            <button type="submit">扫描</button>
+        </form>
+        <div id="treeContainer" class="tree"></div>
+
+        <script src="js/index.js"></script>
     </body>
 </html>
