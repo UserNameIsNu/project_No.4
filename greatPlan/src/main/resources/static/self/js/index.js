@@ -8,6 +8,23 @@
 const allNodes = {};
 const roots = [];
 
+/** 统一的请求封装函数（适配后端 StandardViewResponseObject<T>） */
+async function fetchStandard(url, options = {}) {
+    try {
+        const res = await fetch(url, options);
+        const json = await res.json();
+
+        if (json.code !== 200) {
+            throw new Error(json.message || "请求失败");
+        }
+
+        return json.data;
+    } catch (err) {
+        console.error(`[Fetch Error] ${url}:`, err.message);
+        throw err;
+    }
+}
+
 document.addEventListener('DOMContentLoaded', () => {
     const treeContainer = document.getElementById('treeContainer');
 
@@ -21,16 +38,15 @@ document.getElementById('directoryForm').addEventListener('submit', function(e) 
     const formData = new FormData(this);
     const treeContainer = document.getElementById('treeContainer');
 
-    fetch('http://127.0.0.1:8080/api/file', {
+    fetchStandard('http://127.0.0.1:8080/api/file', {
         method: 'POST',
         body: formData
     })
-        .then(response => response.json())
         .then(data => {
             mergeAndRepairTree(data);
             renderAllRoots(treeContainer);
         })
-        .catch(error => console.error('扫描错误:', error));
+        .catch(error => console.error('扫描错误:', error.message));
 });
 
 window.CoreAPI = {
@@ -56,17 +72,16 @@ function unloadPlugin(pluginId) {
     CoreAPI.log(`插件 ${pluginId} 已卸载`);
 }
 
+/**
+ * 获取根目录（POST /api/file/load）
+ */
 function fetchRootDirectory(container) {
-    fetch('http://127.0.0.1:8080/api/file/load', {
-        method: 'POST'
-        // 不传 path 即返回根目录
-    })
-        .then(res => res.json())
+    fetchStandard('http://127.0.0.1:8080/api/file/load', { method: 'POST' })
         .then(data => {
             mergeAndRepairTree(data);
             renderAllRoots(container);
         })
-        .catch(err => console.error('获取根目录失败:', err));
+        .catch(err => console.error('获取根目录失败:', err.message));
 }
 
 function mergeAndRepairTree(newData) {
@@ -164,11 +179,10 @@ function fetchSubDirectory(node, liElement) {
     const formData = new FormData();
     formData.append('path', node.path);
 
-    fetch('http://127.0.0.1:8080/api/file', {
+    fetchStandard('http://127.0.0.1:8080/api/file', {
         method: 'POST',
         body: formData
     })
-        .then(res => res.json())
         .then(data => {
             mergeAndRepairTree(data);
 
@@ -190,7 +204,7 @@ function fetchSubDirectory(node, liElement) {
 
             liElement.classList.remove("collapsed"); // 展开
         })
-        .catch(err => console.error('获取子目录失败:', err));
+        .catch(err => console.error('获取子目录失败:', err.message));
 }
 
 /**
@@ -270,8 +284,7 @@ async function loadPlugin(meta) {
  */
 async function refreshPlugins() {
     try {
-        const res = await fetch("/api/plugins");
-        const registry = await res.json();
+        const registry = await fetchStandard("/api/plugins");
 
         const oldMap = Object.fromEntries(window.lastPluginRegistry.map(p => [p.id, p]));
         const newMap = Object.fromEntries(registry.map(p => [p.id, p]));
@@ -304,7 +317,7 @@ async function refreshPlugins() {
         // 更新注册表快照
         window.lastPluginRegistry = registry;
     } catch (err) {
-        console.error("刷新插件失败:", err);
+        console.error("刷新插件失败:", err.message);
     }
 }
 

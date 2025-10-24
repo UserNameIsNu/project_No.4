@@ -8,6 +8,7 @@
 package com.ljf.greatplan.core.web;
 
 import com.ljf.greatplan.core.entity.Node;
+import com.ljf.greatplan.core.entity.StandardViewResponseObject;
 import com.ljf.greatplan.general.scanner.SpecifyDirectoryScanner;
 import com.ljf.greatplan.general.tools.generalTools.FileIO;
 import org.springframework.web.bind.annotation.*;
@@ -21,7 +22,7 @@ import java.util.Map;
  */
 @RestController
 @RequestMapping("/api/file")
-public class FileController {
+public class FileController extends BaseController{
     /**
      * 指定目录扫描器
      */
@@ -42,8 +43,8 @@ public class FileController {
      * @return 节点树
      */
     @PostMapping
-    public Map<String, Node> getDirectory(@RequestParam String path) {
-        return scanner.initialScanner(path).getTree();
+    public StandardViewResponseObject<Map<String, Node>>  getDirectory(@RequestParam String path) {
+        return success(scanner.initialScanner(path).getTree());
     }
 
     /**
@@ -52,8 +53,8 @@ public class FileController {
      * @return 节点树
      */
     @PostMapping("/load")
-    public Map<String, Node> getRootDirectory() {
+    public StandardViewResponseObject<Map<String, Node>> getRootDirectory() {
         List<String> roots = FileIO.getRoot();
-        return scanner.scanDirList(roots);
+        return success(scanner.scanDirList(roots));
     }
 }

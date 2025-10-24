@@ -7,7 +7,9 @@
 
 package com.ljf.greatplan.docking.urlInterface;
 
+import com.ljf.greatplan.core.entity.StandardViewResponseObject;
 import com.ljf.greatplan.core.service.PluginRegistryManager;
+import com.ljf.greatplan.core.web.BaseController;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
@@ -22,7 +24,7 @@ import java.util.stream.Collectors;
  */
 @RestController
 @RequestMapping("/api/plugins")
-public class PluginController {
+public class PluginController extends BaseController {
     /**
      * 插件注册表管理器
      */
@@ -42,9 +44,11 @@ public class PluginController {
      * @return 插件资源对象集合
      */
     @GetMapping
-    public List<Map<String, Object>> getPluginsRegistry() {
-        return registryManager.getAll().stream()
+    public StandardViewResponseObject<List<Map<String, Object>>> getPluginsRegistry() {
+        return success(
+                registryManager.getAll().stream()
                 .map(plugin -> plugin.getPluginResourceInfo()) // 直接返回注册信息
-                .collect(Collectors.toList());
+                .collect(Collectors.toList())
+        );
     }
 }
