@@ -1,0 +1,34 @@
+
+================= 2025-10-28T15:25:00.430775900 =================
+错误类型：java.lang.ArithmeticException
+错误消息：/ by zero
+位置：com.ljf.greatplan.general.tools.generalTools.FileIO.getRoot (FileIO.java:87)
+调用链：
+  [0] com.ljf.greatplan.general.tools.generalTools.FileIO.getRoot(FileIO.java:87)
+  [1] jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+  [2] java.lang.reflect.Method.invoke(Method.java:580)
+  [3] org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:360)
+  [4] org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:196)
+  [5] org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+  [6] org.springframework.aop.aspectj.AspectJAfterThrowingAdvice.invoke(AspectJAfterThrowingAdvice.java:64)
+  [7] org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+  [8] org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:97)
+  [9] org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+========================================================
+
+================= 2025-10-28T15:25:00.431782 =================
+错误类型：java.lang.ArithmeticException
+错误消息：/ by zero
+位置：com.ljf.greatplan.general.tools.generalTools.FileIO.getRoot (FileIO.java:87)
+调用链：
+  [0] com.ljf.greatplan.general.tools.generalTools.FileIO.getRoot(FileIO.java:87)
+  [1] jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+  [2] java.lang.reflect.Method.invoke(Method.java:580)
+  [3] org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:360)
+  [4] org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:196)
+  [5] org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+  [6] org.springframework.aop.aspectj.AspectJAfterThrowingAdvice.invoke(AspectJAfterThrowingAdvice.java:64)
+  [7] org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+  [8] org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:97)
+  [9] org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+========================================================

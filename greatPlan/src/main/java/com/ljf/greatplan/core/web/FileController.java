@@ -29,11 +29,18 @@ public class FileController extends BaseController{
     private SpecifyDirectoryScanner scanner;
 
     /**
+     * 文件IO工具类
+     */
+    private FileIO fileIO;
+
+    /**
      * 构造器
      * @param scanner
+     * @param fileIO
      */
-    public FileController(SpecifyDirectoryScanner scanner) {
+    public FileController(SpecifyDirectoryScanner scanner, FileIO fileIO) {
         this.scanner = scanner;
+        this.fileIO = fileIO;
     }
 
     /**
@@ -54,7 +61,7 @@ public class FileController extends BaseController{
      */
     @PostMapping("/load")
     public StandardViewResponseObject<Map<String, Node>> getRootDirectory() {
-        List<String> roots = FileIO.getRoot();
+        List<String> roots = fileIO.getRoot();
         return success(scanner.scanDirList(roots));
     }
 }

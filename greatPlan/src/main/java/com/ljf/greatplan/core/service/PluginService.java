@@ -44,10 +44,17 @@ public class PluginService {
     private final PluginRegistryManager pluginRegistryManager;
 
     /**
+     * 序列化与字符串工具类
+     */
+    private SerializationAndString serializationAndString;
+
+    /**
      * 构造器
+     * @param serializationAndString
      * @param pluginRegistryManager
      */
-    public PluginService(PluginRegistryManager pluginRegistryManager) {
+    public PluginService(SerializationAndString serializationAndString, PluginRegistryManager pluginRegistryManager) {
+        this.serializationAndString = serializationAndString;
         this.pluginRegistryManager = pluginRegistryManager;
     }
 
@@ -61,7 +68,7 @@ public class PluginService {
         pluginRegistryManager.clear();
 
         // 获取插件资源格式白名单
-        Set<String> formatSet = SerializationAndString.splitStrings(passFormat, ",");
+        Set<String> formatSet = serializationAndString.splitStrings(passFormat, ",");
         Map<String, Map<String, Object>> pluginMetaMap = new HashMap<>();
 
         try {

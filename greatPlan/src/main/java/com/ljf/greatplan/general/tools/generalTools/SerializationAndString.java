@@ -7,6 +7,8 @@
 
 package com.ljf.greatplan.general.tools.generalTools;
 
+import org.springframework.stereotype.Component;
+
 import java.util.Arrays;
 import java.util.Set;
 import java.util.stream.Collectors;
@@ -15,6 +17,7 @@ import java.util.stream.Collectors;
  * 序列化与字符串工具类<br/>
  * 封装了序列化操作与字符串操作相关的方法。
  */
+@Component
 public class SerializationAndString {
     /**
      * 分割字符串<br/>
@@ -23,7 +26,7 @@ public class SerializationAndString {
      * @param separator 分割符
      * @return 分割后的成员集合
      */
-    public static Set<String> splitStrings(String str, String separator) {
+    public Set<String> splitStrings(String str, String separator) {
         // 转为流操作
         // 根据逗号分割这个字符串
         return Arrays.stream(str.split(separator))

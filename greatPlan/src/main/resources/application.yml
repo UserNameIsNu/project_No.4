@@ -31,3 +31,9 @@ scan:
     # 显示隐藏/SHOW_HIDDEN：在上一个的基础上额外显示windows文件管理器中可选的隐藏文件
     # 显示所有/SHOW_ALL：显示windows文件管理器中都不显示的各种奇怪文件
     show-type: SHOW_HIDDEN
+# 异常日志写入配置
+error-log:
+    # 异常日志写入地址
+    path: log
+    # 调用链打印深度（all为完全打印）
+    stackTrace-deep: 10

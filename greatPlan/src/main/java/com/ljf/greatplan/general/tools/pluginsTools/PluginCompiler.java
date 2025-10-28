@@ -27,6 +27,19 @@ import java.util.*;
 @Component
 public class PluginCompiler {
     /**
+     * 文件IO工具类
+     */
+    private FileIO fileIO;
+
+    /**
+     * 构造器
+     * @param fileIO
+     */
+    public PluginCompiler(FileIO fileIO) {
+        this.fileIO = fileIO;
+    }
+
+    /**
      * 源码热编译器<br/>
      * 用于加载给定的目录，并将其中所有的java做成class
      * @param pluginDir 有需要编译为class文件的文件的目录
@@ -39,7 +52,7 @@ public class PluginCompiler {
         }
 
         // 所有.java文件集合
-        List<File> javaFiles = FileIO.fileCollector(pluginDir, ".java");
+        List<File> javaFiles = fileIO.fileCollector(pluginDir, ".java");
 
         // 检查是否有拉到.java
         if (javaFiles.isEmpty()) {
@@ -70,7 +83,7 @@ public class PluginCompiler {
         }
 
         // 这回就是扫描编译结果输出目录，把编译后的.class文件拉出来
-        List<File> classFiles = FileIO.fileCollector(outputDir, ".class");
+        List<File> classFiles = fileIO.fileCollector(outputDir, ".class");
 
         // 用于存放最后的所有文件编译后且转换后的class对象
         List<Class<?>> loadedClasses = new ArrayList<>();

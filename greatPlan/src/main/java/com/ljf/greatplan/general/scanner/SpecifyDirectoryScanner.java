@@ -33,6 +33,11 @@ import java.util.*;
 @Component
 public class SpecifyDirectoryScanner {
     /**
+     * 文件IO工具类
+     */
+    private FileIO fileIO;
+
+    /**
      * 扫描深度
      */
     @Value("${scan.depth}")
@@ -43,6 +48,14 @@ public class SpecifyDirectoryScanner {
      */
     @Value("${scan.show-type}")
     private String showType;
+
+    /**
+     * 构造器
+     * @param fileIO
+     */
+    public SpecifyDirectoryScanner(FileIO fileIO) {
+        this.fileIO = fileIO;
+    }
 
     /**
      * 扫描一组目录<br/>
@@ -197,7 +210,7 @@ public class SpecifyDirectoryScanner {
         // 填充基本字段（目录节点继承的那家伙的字段）
         // 子节点集不设置，在扫描结束后才会赋进去
         // 节点ID
-        node.setId(FileIO.generateId(dir));
+        node.setId(fileIO.generateId(dir));
         // 节点名
         node.setName(dir.getName());
         // 节点类型
@@ -227,9 +240,9 @@ public class SpecifyDirectoryScanner {
 
         // 也是填充基本字段
         // 节点ID
-        node.setId(FileIO.generateId(file));
+        node.setId(fileIO.generateId(file));
         // 节点名
-        node.setName(FileIO.stripExtension(file.getName()));
+        node.setName(fileIO.stripExtension(file.getName()));
         // 节点类型
         node.setNodeType(NodeType.File);
         // 节点路径
@@ -241,7 +254,7 @@ public class SpecifyDirectoryScanner {
         // 文件大小
         node.setSize(String.valueOf(file.length()));
         // 文件类型（后缀嘛）
-        node.setFileType(FileIO.getFileExtension(file.getName()));
+        node.setFileType(fileIO.getFileExtension(file.getName()));
 
         return node;
     }
