@@ -32,3 +32,1125 @@
   [8] org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:97)
   [9] org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
 ========================================================
+
+================= 2025-10-28T16:22:36.806383500 =================
+错误类型：java.lang.ArithmeticException
+错误消息：/ by zero
+位置：com.ljf.greatplan.general.tools.generalTools.FileIO.getRoot (FileIO.java:87)
+调用链：
+  [0] com.ljf.greatplan.general.tools.generalTools.FileIO.getRoot(FileIO.java:87)
+  [1] jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+  [2] java.lang.reflect.Method.invoke(Method.java:580)
+  [3] org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:360)
+  [4] org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:196)
+  [5] org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+  [6] org.springframework.aop.aspectj.AspectJAfterThrowingAdvice.invoke(AspectJAfterThrowingAdvice.java:64)
+  [7] org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+  [8] org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:97)
+  [9] org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+========================================================
+
+================= 2025-10-28T16:22:36.807295300 =================
+错误类型：java.lang.ArithmeticException
+错误消息：/ by zero
+位置：com.ljf.greatplan.general.tools.generalTools.FileIO.getRoot (FileIO.java:87)
+调用链：
+  [0] com.ljf.greatplan.general.tools.generalTools.FileIO.getRoot(FileIO.java:87)
+  [1] jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+  [2] java.lang.reflect.Method.invoke(Method.java:580)
+  [3] org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:360)
+  [4] org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:196)
+  [5] org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+  [6] org.springframework.aop.aspectj.AspectJAfterThrowingAdvice.invoke(AspectJAfterThrowingAdvice.java:64)
+  [7] org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+  [8] org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:97)
+  [9] org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+========================================================
+
+================= 2025-10-28T16:22:38.602592 =================
+错误类型：java.lang.ArithmeticException
+错误消息：/ by zero
+位置：com.ljf.greatplan.general.tools.generalTools.FileIO.getRoot (FileIO.java:87)
+调用链：
+  [0] com.ljf.greatplan.general.tools.generalTools.FileIO.getRoot(FileIO.java:87)
+  [1] jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+  [2] java.lang.reflect.Method.invoke(Method.java:580)
+  [3] org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:360)
+  [4] org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:196)
+  [5] org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+  [6] org.springframework.aop.aspectj.AspectJAfterThrowingAdvice.invoke(AspectJAfterThrowingAdvice.java:64)
+  [7] org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+  [8] org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:97)
+  [9] org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+========================================================
+
+================= 2025-10-28T16:22:38.603591200 =================
+错误类型：java.lang.ArithmeticException
+错误消息：/ by zero
+位置：com.ljf.greatplan.general.tools.generalTools.FileIO.getRoot (FileIO.java:87)
+调用链：
+  [0] com.ljf.greatplan.general.tools.generalTools.FileIO.getRoot(FileIO.java:87)
+  [1] jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+  [2] java.lang.reflect.Method.invoke(Method.java:580)
+  [3] org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:360)
+  [4] org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:196)
+  [5] org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+  [6] org.springframework.aop.aspectj.AspectJAfterThrowingAdvice.invoke(AspectJAfterThrowingAdvice.java:64)
+  [7] org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+  [8] org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:97)
+  [9] org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+========================================================
+
+================= 2025-10-29T16:14:31.978582500 =================
+错误类型：java.lang.NullPointerException
+错误消息：Cannot invoke "java.util.List.isEmpty()" because the return value of "com.ljf.greatplan.core.entity.Node.getChildNode()" is null
+位置：com.ljf.greatplan.core.entity.NodeTree.getEndNodes (NodeTree.java:95)
+调用链：
+  [0] com.ljf.greatplan.core.entity.NodeTree.getEndNodes(NodeTree.java:95)
+  [1] jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+  [2] java.lang.reflect.Method.invoke(Method.java:580)
+  [3] org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:360)
+  [4] org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:196)
+  [5] org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+  [6] org.springframework.aop.aspectj.AspectJAfterThrowingAdvice.invoke(AspectJAfterThrowingAdvice.java:64)
+  [7] org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+  [8] org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:97)
+  [9] org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+========================================================
+
+================= 2025-10-29T16:14:31.980151300 =================
+错误类型：java.lang.NullPointerException
+错误消息：Cannot invoke "java.util.List.isEmpty()" because the return value of "com.ljf.greatplan.core.entity.Node.getChildNode()" is null
+位置：com.ljf.greatplan.core.entity.NodeTree.getEndNodes (NodeTree.java:95)
+调用链：
+  [0] com.ljf.greatplan.core.entity.NodeTree.getEndNodes(NodeTree.java:95)
+  [1] jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+  [2] java.lang.reflect.Method.invoke(Method.java:580)
+  [3] org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:360)
+  [4] org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:196)
+  [5] org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+  [6] org.springframework.aop.aspectj.AspectJAfterThrowingAdvice.invoke(AspectJAfterThrowingAdvice.java:64)
+  [7] org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+  [8] org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:97)
+  [9] org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+========================================================
+
+================= 2025-10-29T16:14:32.992097800 =================
+错误类型：java.lang.NullPointerException
+错误消息：Cannot invoke "java.util.List.isEmpty()" because the return value of "com.ljf.greatplan.core.entity.Node.getChildNode()" is null
+位置：com.ljf.greatplan.core.entity.NodeTree.getEndNodes (NodeTree.java:95)
+调用链：
+  [0] com.ljf.greatplan.core.entity.NodeTree.getEndNodes(NodeTree.java:95)
+  [1] jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+  [2] java.lang.reflect.Method.invoke(Method.java:580)
+  [3] org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:360)
+  [4] org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:196)
+  [5] org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+  [6] org.springframework.aop.aspectj.AspectJAfterThrowingAdvice.invoke(AspectJAfterThrowingAdvice.java:64)
+  [7] org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+  [8] org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:97)
+  [9] org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+========================================================
+
+================= 2025-10-29T16:14:32.993089500 =================
+错误类型：java.lang.NullPointerException
+错误消息：Cannot invoke "java.util.List.isEmpty()" because the return value of "com.ljf.greatplan.core.entity.Node.getChildNode()" is null
+位置：com.ljf.greatplan.core.entity.NodeTree.getEndNodes (NodeTree.java:95)
+调用链：
+  [0] com.ljf.greatplan.core.entity.NodeTree.getEndNodes(NodeTree.java:95)
+  [1] jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+  [2] java.lang.reflect.Method.invoke(Method.java:580)
+  [3] org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:360)
+  [4] org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:196)
+  [5] org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+  [6] org.springframework.aop.aspectj.AspectJAfterThrowingAdvice.invoke(AspectJAfterThrowingAdvice.java:64)
+  [7] org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+  [8] org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:97)
+  [9] org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+========================================================
+
+================= 2025-10-29T16:14:33.988347300 =================
+错误类型：java.lang.NullPointerException
+错误消息：Cannot invoke "java.util.List.isEmpty()" because the return value of "com.ljf.greatplan.core.entity.Node.getChildNode()" is null
+位置：com.ljf.greatplan.core.entity.NodeTree.getEndNodes (NodeTree.java:95)
+调用链：
+  [0] com.ljf.greatplan.core.entity.NodeTree.getEndNodes(NodeTree.java:95)
+  [1] jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+  [2] java.lang.reflect.Method.invoke(Method.java:580)
+  [3] org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:360)
+  [4] org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:196)
+  [5] org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+  [6] org.springframework.aop.aspectj.AspectJAfterThrowingAdvice.invoke(AspectJAfterThrowingAdvice.java:64)
+  [7] org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+  [8] org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:97)
+  [9] org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+========================================================
+
+================= 2025-10-29T16:14:33.989265600 =================
+错误类型：java.lang.NullPointerException
+错误消息：Cannot invoke "java.util.List.isEmpty()" because the return value of "com.ljf.greatplan.core.entity.Node.getChildNode()" is null
+位置：com.ljf.greatplan.core.entity.NodeTree.getEndNodes (NodeTree.java:95)
+调用链：
+  [0] com.ljf.greatplan.core.entity.NodeTree.getEndNodes(NodeTree.java:95)
+  [1] jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+  [2] java.lang.reflect.Method.invoke(Method.java:580)
+  [3] org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:360)
+  [4] org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:196)
+  [5] org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+  [6] org.springframework.aop.aspectj.AspectJAfterThrowingAdvice.invoke(AspectJAfterThrowingAdvice.java:64)
+  [7] org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+  [8] org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:97)
+  [9] org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+========================================================
+
+================= 2025-10-29T16:14:34.982154900 =================
+错误类型：java.lang.NullPointerException
+错误消息：Cannot invoke "java.util.List.isEmpty()" because the return value of "com.ljf.greatplan.core.entity.Node.getChildNode()" is null
+位置：com.ljf.greatplan.core.entity.NodeTree.getEndNodes (NodeTree.java:95)
+调用链：
+  [0] com.ljf.greatplan.core.entity.NodeTree.getEndNodes(NodeTree.java:95)
+  [1] jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+  [2] java.lang.reflect.Method.invoke(Method.java:580)
+  [3] org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:360)
+  [4] org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:196)
+  [5] org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+  [6] org.springframework.aop.aspectj.AspectJAfterThrowingAdvice.invoke(AspectJAfterThrowingAdvice.java:64)
+  [7] org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+  [8] org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:97)
+  [9] org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+========================================================
+
+================= 2025-10-29T16:14:34.982881200 =================
+错误类型：java.lang.NullPointerException
+错误消息：Cannot invoke "java.util.List.isEmpty()" because the return value of "com.ljf.greatplan.core.entity.Node.getChildNode()" is null
+位置：com.ljf.greatplan.core.entity.NodeTree.getEndNodes (NodeTree.java:95)
+调用链：
+  [0] com.ljf.greatplan.core.entity.NodeTree.getEndNodes(NodeTree.java:95)
+  [1] jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+  [2] java.lang.reflect.Method.invoke(Method.java:580)
+  [3] org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:360)
+  [4] org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:196)
+  [5] org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+  [6] org.springframework.aop.aspectj.AspectJAfterThrowingAdvice.invoke(AspectJAfterThrowingAdvice.java:64)
+  [7] org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+  [8] org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:97)
+  [9] org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+========================================================
+
+================= 2025-10-29T16:14:35.975571800 =================
+错误类型：java.lang.NullPointerException
+错误消息：Cannot invoke "java.util.List.isEmpty()" because the return value of "com.ljf.greatplan.core.entity.Node.getChildNode()" is null
+位置：com.ljf.greatplan.core.entity.NodeTree.getEndNodes (NodeTree.java:95)
+调用链：
+  [0] com.ljf.greatplan.core.entity.NodeTree.getEndNodes(NodeTree.java:95)
+  [1] jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+  [2] java.lang.reflect.Method.invoke(Method.java:580)
+  [3] org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:360)
+  [4] org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:196)
+  [5] org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+  [6] org.springframework.aop.aspectj.AspectJAfterThrowingAdvice.invoke(AspectJAfterThrowingAdvice.java:64)
+  [7] org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+  [8] org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:97)
+  [9] org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+========================================================
+
+================= 2025-10-29T16:14:35.976490100 =================
+错误类型：java.lang.NullPointerException
+错误消息：Cannot invoke "java.util.List.isEmpty()" because the return value of "com.ljf.greatplan.core.entity.Node.getChildNode()" is null
+位置：com.ljf.greatplan.core.entity.NodeTree.getEndNodes (NodeTree.java:95)
+调用链：
+  [0] com.ljf.greatplan.core.entity.NodeTree.getEndNodes(NodeTree.java:95)
+  [1] jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+  [2] java.lang.reflect.Method.invoke(Method.java:580)
+  [3] org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:360)
+  [4] org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:196)
+  [5] org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+  [6] org.springframework.aop.aspectj.AspectJAfterThrowingAdvice.invoke(AspectJAfterThrowingAdvice.java:64)
+  [7] org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+  [8] org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:97)
+  [9] org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+========================================================
+
+================= 2025-10-29T16:25:28.156846800 =================
+错误类型：java.lang.NullPointerException
+错误消息：Cannot invoke "com.ljf.greatplan.core.entity.Node.getChildNode()" because "parentNode" is null
+位置：com.ljf.greatplan.core.entity.NodeTree.delNode (NodeTree.java:61)
+调用链：
+  [0] com.ljf.greatplan.core.entity.NodeTree.delNode(NodeTree.java:61)
+  [1] jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+  [2] java.lang.reflect.Method.invoke(Method.java:580)
+  [3] org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:360)
+  [4] org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:196)
+  [5] org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+  [6] org.springframework.aop.aspectj.AspectJAfterThrowingAdvice.invoke(AspectJAfterThrowingAdvice.java:64)
+  [7] org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+  [8] org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:97)
+  [9] org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+========================================================
+
+================= 2025-10-29T16:25:28.158362700 =================
+错误类型：java.lang.NullPointerException
+错误消息：Cannot invoke "com.ljf.greatplan.core.entity.Node.getChildNode()" because "parentNode" is null
+位置：com.ljf.greatplan.core.entity.NodeTree.delNode (NodeTree.java:61)
+调用链：
+  [0] com.ljf.greatplan.core.entity.NodeTree.delNode(NodeTree.java:61)
+  [1] jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+  [2] java.lang.reflect.Method.invoke(Method.java:580)
+  [3] org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:360)
+  [4] org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:196)
+  [5] org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+  [6] org.springframework.aop.aspectj.AspectJAfterThrowingAdvice.invoke(AspectJAfterThrowingAdvice.java:64)
+  [7] org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+  [8] org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:97)
+  [9] org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+========================================================
+
+================= 2025-10-29T16:25:29.158513100 =================
+错误类型：java.lang.NullPointerException
+错误消息：Cannot invoke "com.ljf.greatplan.core.entity.Node.getChildNode()" because "parentNode" is null
+位置：com.ljf.greatplan.general.timeer.NodeColdForgetfulness.tracedBack (NodeColdForgetfulness.java:132)
+调用链：
+  [0] com.ljf.greatplan.general.timeer.NodeColdForgetfulness.tracedBack(NodeColdForgetfulness.java:132)
+  [1] com.ljf.greatplan.general.timeer.NodeColdForgetfulness.clean(NodeColdForgetfulness.java:99)
+  [2] com.ljf.greatplan.general.timeer.NodeColdForgetfulness.decayAndPrune(NodeColdForgetfulness.java:65)
+  [3] jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+  [4] java.lang.reflect.Method.invoke(Method.java:580)
+  [5] org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:360)
+  [6] org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:196)
+  [7] org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+  [8] org.springframework.aop.aspectj.AspectJAfterThrowingAdvice.invoke(AspectJAfterThrowingAdvice.java:64)
+  [9] org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+========================================================
+
+================= 2025-10-29T16:25:30.156258200 =================
+错误类型：java.lang.NullPointerException
+错误消息：Cannot invoke "com.ljf.greatplan.core.entity.Node.getChildNode()" because "parentNode" is null
+位置：com.ljf.greatplan.general.timeer.NodeColdForgetfulness.tracedBack (NodeColdForgetfulness.java:132)
+调用链：
+  [0] com.ljf.greatplan.general.timeer.NodeColdForgetfulness.tracedBack(NodeColdForgetfulness.java:132)
+  [1] com.ljf.greatplan.general.timeer.NodeColdForgetfulness.clean(NodeColdForgetfulness.java:99)
+  [2] com.ljf.greatplan.general.timeer.NodeColdForgetfulness.decayAndPrune(NodeColdForgetfulness.java:65)
+  [3] jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+  [4] java.lang.reflect.Method.invoke(Method.java:580)
+  [5] org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:360)
+  [6] org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:196)
+  [7] org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+  [8] org.springframework.aop.aspectj.AspectJAfterThrowingAdvice.invoke(AspectJAfterThrowingAdvice.java:64)
+  [9] org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+========================================================
+
+================= 2025-10-29T16:25:31.165377 =================
+错误类型：java.lang.NullPointerException
+错误消息：Cannot invoke "com.ljf.greatplan.core.entity.Node.getChildNode()" because "parentNode" is null
+位置：com.ljf.greatplan.general.timeer.NodeColdForgetfulness.tracedBack (NodeColdForgetfulness.java:132)
+调用链：
+  [0] com.ljf.greatplan.general.timeer.NodeColdForgetfulness.tracedBack(NodeColdForgetfulness.java:132)
+  [1] com.ljf.greatplan.general.timeer.NodeColdForgetfulness.clean(NodeColdForgetfulness.java:99)
+  [2] com.ljf.greatplan.general.timeer.NodeColdForgetfulness.decayAndPrune(NodeColdForgetfulness.java:65)
+  [3] jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+  [4] java.lang.reflect.Method.invoke(Method.java:580)
+  [5] org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:360)
+  [6] org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:196)
+  [7] org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+  [8] org.springframework.aop.aspectj.AspectJAfterThrowingAdvice.invoke(AspectJAfterThrowingAdvice.java:64)
+  [9] org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+========================================================
+
+================= 2025-10-29T16:25:32.162061200 =================
+错误类型：java.lang.NullPointerException
+错误消息：Cannot invoke "com.ljf.greatplan.core.entity.Node.getChildNode()" because "parentNode" is null
+位置：com.ljf.greatplan.general.timeer.NodeColdForgetfulness.tracedBack (NodeColdForgetfulness.java:132)
+调用链：
+  [0] com.ljf.greatplan.general.timeer.NodeColdForgetfulness.tracedBack(NodeColdForgetfulness.java:132)
+  [1] com.ljf.greatplan.general.timeer.NodeColdForgetfulness.clean(NodeColdForgetfulness.java:99)
+  [2] com.ljf.greatplan.general.timeer.NodeColdForgetfulness.decayAndPrune(NodeColdForgetfulness.java:65)
+  [3] jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+  [4] java.lang.reflect.Method.invoke(Method.java:580)
+  [5] org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:360)
+  [6] org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:196)
+  [7] org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+  [8] org.springframework.aop.aspectj.AspectJAfterThrowingAdvice.invoke(AspectJAfterThrowingAdvice.java:64)
+  [9] org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+========================================================
+
+================= 2025-10-29T16:25:33.157575500 =================
+错误类型：java.lang.NullPointerException
+错误消息：Cannot invoke "com.ljf.greatplan.core.entity.Node.getChildNode()" because "parentNode" is null
+位置：com.ljf.greatplan.general.timeer.NodeColdForgetfulness.tracedBack (NodeColdForgetfulness.java:132)
+调用链：
+  [0] com.ljf.greatplan.general.timeer.NodeColdForgetfulness.tracedBack(NodeColdForgetfulness.java:132)
+  [1] com.ljf.greatplan.general.timeer.NodeColdForgetfulness.clean(NodeColdForgetfulness.java:99)
+  [2] com.ljf.greatplan.general.timeer.NodeColdForgetfulness.decayAndPrune(NodeColdForgetfulness.java:65)
+  [3] jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+  [4] java.lang.reflect.Method.invoke(Method.java:580)
+  [5] org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:360)
+  [6] org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:196)
+  [7] org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+  [8] org.springframework.aop.aspectj.AspectJAfterThrowingAdvice.invoke(AspectJAfterThrowingAdvice.java:64)
+  [9] org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+========================================================
+
+================= 2025-10-29T16:25:34.153371600 =================
+错误类型：java.lang.NullPointerException
+错误消息：Cannot invoke "com.ljf.greatplan.core.entity.Node.getChildNode()" because "parentNode" is null
+位置：com.ljf.greatplan.general.timeer.NodeColdForgetfulness.tracedBack (NodeColdForgetfulness.java:132)
+调用链：
+  [0] com.ljf.greatplan.general.timeer.NodeColdForgetfulness.tracedBack(NodeColdForgetfulness.java:132)
+  [1] com.ljf.greatplan.general.timeer.NodeColdForgetfulness.clean(NodeColdForgetfulness.java:99)
+  [2] com.ljf.greatplan.general.timeer.NodeColdForgetfulness.decayAndPrune(NodeColdForgetfulness.java:65)
+  [3] jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+  [4] java.lang.reflect.Method.invoke(Method.java:580)
+  [5] org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:360)
+  [6] org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:196)
+  [7] org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+  [8] org.springframework.aop.aspectj.AspectJAfterThrowingAdvice.invoke(AspectJAfterThrowingAdvice.java:64)
+  [9] org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+========================================================
+
+================= 2025-10-29T16:33:27.757592700 =================
+错误类型：java.lang.NullPointerException
+错误消息：Cannot invoke "com.ljf.greatplan.core.entity.Node.getChildNode()" because "parentNode" is null
+位置：com.ljf.greatplan.general.timeer.NodeColdForgetfulness.tracedBack (NodeColdForgetfulness.java:133)
+调用链：
+  [0] com.ljf.greatplan.general.timeer.NodeColdForgetfulness.tracedBack(NodeColdForgetfulness.java:133)
+  [1] com.ljf.greatplan.general.timeer.NodeColdForgetfulness.clean(NodeColdForgetfulness.java:99)
+  [2] com.ljf.greatplan.general.timeer.NodeColdForgetfulness.decayAndPrune(NodeColdForgetfulness.java:65)
+  [3] jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+  [4] java.lang.reflect.Method.invoke(Method.java:580)
+  [5] org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:360)
+  [6] org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:196)
+  [7] org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+  [8] org.springframework.aop.aspectj.AspectJAfterThrowingAdvice.invoke(AspectJAfterThrowingAdvice.java:64)
+  [9] org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+========================================================
+
+================= 2025-10-29T16:33:28.764815 =================
+错误类型：java.lang.NullPointerException
+错误消息：Cannot invoke "com.ljf.greatplan.core.entity.Node.getChildNode()" because "parentNode" is null
+位置：com.ljf.greatplan.general.timeer.NodeColdForgetfulness.tracedBack (NodeColdForgetfulness.java:133)
+调用链：
+  [0] com.ljf.greatplan.general.timeer.NodeColdForgetfulness.tracedBack(NodeColdForgetfulness.java:133)
+  [1] com.ljf.greatplan.general.timeer.NodeColdForgetfulness.clean(NodeColdForgetfulness.java:99)
+  [2] com.ljf.greatplan.general.timeer.NodeColdForgetfulness.decayAndPrune(NodeColdForgetfulness.java:65)
+  [3] jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+  [4] java.lang.reflect.Method.invoke(Method.java:580)
+  [5] org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:360)
+  [6] org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:196)
+  [7] org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+  [8] org.springframework.aop.aspectj.AspectJAfterThrowingAdvice.invoke(AspectJAfterThrowingAdvice.java:64)
+  [9] org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+========================================================
+
+================= 2025-10-29T16:33:29.762642900 =================
+错误类型：java.lang.NullPointerException
+错误消息：Cannot invoke "com.ljf.greatplan.core.entity.Node.getChildNode()" because "parentNode" is null
+位置：com.ljf.greatplan.general.timeer.NodeColdForgetfulness.tracedBack (NodeColdForgetfulness.java:133)
+调用链：
+  [0] com.ljf.greatplan.general.timeer.NodeColdForgetfulness.tracedBack(NodeColdForgetfulness.java:133)
+  [1] com.ljf.greatplan.general.timeer.NodeColdForgetfulness.clean(NodeColdForgetfulness.java:99)
+  [2] com.ljf.greatplan.general.timeer.NodeColdForgetfulness.decayAndPrune(NodeColdForgetfulness.java:65)
+  [3] jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+  [4] java.lang.reflect.Method.invoke(Method.java:580)
+  [5] org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:360)
+  [6] org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:196)
+  [7] org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+  [8] org.springframework.aop.aspectj.AspectJAfterThrowingAdvice.invoke(AspectJAfterThrowingAdvice.java:64)
+  [9] org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+========================================================
+
+================= 2025-10-29T16:33:30.756669200 =================
+错误类型：java.lang.NullPointerException
+错误消息：Cannot invoke "com.ljf.greatplan.core.entity.Node.getChildNode()" because "parentNode" is null
+位置：com.ljf.greatplan.general.timeer.NodeColdForgetfulness.tracedBack (NodeColdForgetfulness.java:133)
+调用链：
+  [0] com.ljf.greatplan.general.timeer.NodeColdForgetfulness.tracedBack(NodeColdForgetfulness.java:133)
+  [1] com.ljf.greatplan.general.timeer.NodeColdForgetfulness.clean(NodeColdForgetfulness.java:99)
+  [2] com.ljf.greatplan.general.timeer.NodeColdForgetfulness.decayAndPrune(NodeColdForgetfulness.java:65)
+  [3] jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+  [4] java.lang.reflect.Method.invoke(Method.java:580)
+  [5] org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:360)
+  [6] org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:196)
+  [7] org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+  [8] org.springframework.aop.aspectj.AspectJAfterThrowingAdvice.invoke(AspectJAfterThrowingAdvice.java:64)
+  [9] org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+========================================================
+
+================= 2025-10-29T16:33:31.765596 =================
+错误类型：java.lang.NullPointerException
+错误消息：Cannot invoke "com.ljf.greatplan.core.entity.Node.getChildNode()" because "parentNode" is null
+位置：com.ljf.greatplan.general.timeer.NodeColdForgetfulness.tracedBack (NodeColdForgetfulness.java:133)
+调用链：
+  [0] com.ljf.greatplan.general.timeer.NodeColdForgetfulness.tracedBack(NodeColdForgetfulness.java:133)
+  [1] com.ljf.greatplan.general.timeer.NodeColdForgetfulness.clean(NodeColdForgetfulness.java:99)
+  [2] com.ljf.greatplan.general.timeer.NodeColdForgetfulness.decayAndPrune(NodeColdForgetfulness.java:65)
+  [3] jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+  [4] java.lang.reflect.Method.invoke(Method.java:580)
+  [5] org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:360)
+  [6] org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:196)
+  [7] org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+  [8] org.springframework.aop.aspectj.AspectJAfterThrowingAdvice.invoke(AspectJAfterThrowingAdvice.java:64)
+  [9] org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+========================================================
+
+================= 2025-10-29T16:33:32.763283200 =================
+错误类型：java.lang.NullPointerException
+错误消息：Cannot invoke "com.ljf.greatplan.core.entity.Node.getChildNode()" because "parentNode" is null
+位置：com.ljf.greatplan.general.timeer.NodeColdForgetfulness.tracedBack (NodeColdForgetfulness.java:133)
+调用链：
+  [0] com.ljf.greatplan.general.timeer.NodeColdForgetfulness.tracedBack(NodeColdForgetfulness.java:133)
+  [1] com.ljf.greatplan.general.timeer.NodeColdForgetfulness.clean(NodeColdForgetfulness.java:99)
+  [2] com.ljf.greatplan.general.timeer.NodeColdForgetfulness.decayAndPrune(NodeColdForgetfulness.java:65)
+  [3] jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+  [4] java.lang.reflect.Method.invoke(Method.java:580)
+  [5] org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:360)
+  [6] org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:196)
+  [7] org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+  [8] org.springframework.aop.aspectj.AspectJAfterThrowingAdvice.invoke(AspectJAfterThrowingAdvice.java:64)
+  [9] org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+========================================================
+
+================= 2025-10-29T16:33:33.757559500 =================
+错误类型：java.lang.NullPointerException
+错误消息：Cannot invoke "com.ljf.greatplan.core.entity.Node.getChildNode()" because "parentNode" is null
+位置：com.ljf.greatplan.general.timeer.NodeColdForgetfulness.tracedBack (NodeColdForgetfulness.java:133)
+调用链：
+  [0] com.ljf.greatplan.general.timeer.NodeColdForgetfulness.tracedBack(NodeColdForgetfulness.java:133)
+  [1] com.ljf.greatplan.general.timeer.NodeColdForgetfulness.clean(NodeColdForgetfulness.java:99)
+  [2] com.ljf.greatplan.general.timeer.NodeColdForgetfulness.decayAndPrune(NodeColdForgetfulness.java:65)
+  [3] jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+  [4] java.lang.reflect.Method.invoke(Method.java:580)
+  [5] org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:360)
+  [6] org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:196)
+  [7] org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+  [8] org.springframework.aop.aspectj.AspectJAfterThrowingAdvice.invoke(AspectJAfterThrowingAdvice.java:64)
+  [9] org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+========================================================
+
+================= 2025-10-29T16:33:34.755380300 =================
+错误类型：java.lang.NullPointerException
+错误消息：Cannot invoke "com.ljf.greatplan.core.entity.Node.getChildNode()" because "parentNode" is null
+位置：com.ljf.greatplan.general.timeer.NodeColdForgetfulness.tracedBack (NodeColdForgetfulness.java:133)
+调用链：
+  [0] com.ljf.greatplan.general.timeer.NodeColdForgetfulness.tracedBack(NodeColdForgetfulness.java:133)
+  [1] com.ljf.greatplan.general.timeer.NodeColdForgetfulness.clean(NodeColdForgetfulness.java:99)
+  [2] com.ljf.greatplan.general.timeer.NodeColdForgetfulness.decayAndPrune(NodeColdForgetfulness.java:65)
+  [3] jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+  [4] java.lang.reflect.Method.invoke(Method.java:580)
+  [5] org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:360)
+  [6] org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:196)
+  [7] org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+  [8] org.springframework.aop.aspectj.AspectJAfterThrowingAdvice.invoke(AspectJAfterThrowingAdvice.java:64)
+  [9] org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+========================================================
+
+================= 2025-10-29T16:33:35.765834700 =================
+错误类型：java.lang.NullPointerException
+错误消息：Cannot invoke "com.ljf.greatplan.core.entity.Node.getChildNode()" because "parentNode" is null
+位置：com.ljf.greatplan.general.timeer.NodeColdForgetfulness.tracedBack (NodeColdForgetfulness.java:133)
+调用链：
+  [0] com.ljf.greatplan.general.timeer.NodeColdForgetfulness.tracedBack(NodeColdForgetfulness.java:133)
+  [1] com.ljf.greatplan.general.timeer.NodeColdForgetfulness.clean(NodeColdForgetfulness.java:99)
+  [2] com.ljf.greatplan.general.timeer.NodeColdForgetfulness.decayAndPrune(NodeColdForgetfulness.java:65)
+  [3] jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+  [4] java.lang.reflect.Method.invoke(Method.java:580)
+  [5] org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:360)
+  [6] org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:196)
+  [7] org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+  [8] org.springframework.aop.aspectj.AspectJAfterThrowingAdvice.invoke(AspectJAfterThrowingAdvice.java:64)
+  [9] org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+========================================================
+
+================= 2025-10-29T16:33:36.763243200 =================
+错误类型：java.lang.NullPointerException
+错误消息：Cannot invoke "com.ljf.greatplan.core.entity.Node.getChildNode()" because "parentNode" is null
+位置：com.ljf.greatplan.general.timeer.NodeColdForgetfulness.tracedBack (NodeColdForgetfulness.java:133)
+调用链：
+  [0] com.ljf.greatplan.general.timeer.NodeColdForgetfulness.tracedBack(NodeColdForgetfulness.java:133)
+  [1] com.ljf.greatplan.general.timeer.NodeColdForgetfulness.clean(NodeColdForgetfulness.java:99)
+  [2] com.ljf.greatplan.general.timeer.NodeColdForgetfulness.decayAndPrune(NodeColdForgetfulness.java:65)
+  [3] jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+  [4] java.lang.reflect.Method.invoke(Method.java:580)
+  [5] org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:360)
+  [6] org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:196)
+  [7] org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+  [8] org.springframework.aop.aspectj.AspectJAfterThrowingAdvice.invoke(AspectJAfterThrowingAdvice.java:64)
+  [9] org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+========================================================
+
+================= 2025-10-29T16:33:37.767440 =================
+错误类型：java.lang.NullPointerException
+错误消息：Cannot invoke "com.ljf.greatplan.core.entity.Node.getChildNode()" because "parentNode" is null
+位置：com.ljf.greatplan.general.timeer.NodeColdForgetfulness.tracedBack (NodeColdForgetfulness.java:133)
+调用链：
+  [0] com.ljf.greatplan.general.timeer.NodeColdForgetfulness.tracedBack(NodeColdForgetfulness.java:133)
+  [1] com.ljf.greatplan.general.timeer.NodeColdForgetfulness.clean(NodeColdForgetfulness.java:99)
+  [2] com.ljf.greatplan.general.timeer.NodeColdForgetfulness.decayAndPrune(NodeColdForgetfulness.java:65)
+  [3] jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+  [4] java.lang.reflect.Method.invoke(Method.java:580)
+  [5] org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:360)
+  [6] org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:196)
+  [7] org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+  [8] org.springframework.aop.aspectj.AspectJAfterThrowingAdvice.invoke(AspectJAfterThrowingAdvice.java:64)
+  [9] org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+========================================================
+
+================= 2025-10-29T16:33:38.760088 =================
+错误类型：java.lang.NullPointerException
+错误消息：Cannot invoke "com.ljf.greatplan.core.entity.Node.getChildNode()" because "parentNode" is null
+位置：com.ljf.greatplan.general.timeer.NodeColdForgetfulness.tracedBack (NodeColdForgetfulness.java:133)
+调用链：
+  [0] com.ljf.greatplan.general.timeer.NodeColdForgetfulness.tracedBack(NodeColdForgetfulness.java:133)
+  [1] com.ljf.greatplan.general.timeer.NodeColdForgetfulness.clean(NodeColdForgetfulness.java:99)
+  [2] com.ljf.greatplan.general.timeer.NodeColdForgetfulness.decayAndPrune(NodeColdForgetfulness.java:65)
+  [3] jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+  [4] java.lang.reflect.Method.invoke(Method.java:580)
+  [5] org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:360)
+  [6] org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:196)
+  [7] org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+  [8] org.springframework.aop.aspectj.AspectJAfterThrowingAdvice.invoke(AspectJAfterThrowingAdvice.java:64)
+  [9] org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+========================================================
+
+================= 2025-10-29T16:33:39.755552 =================
+错误类型：java.lang.NullPointerException
+错误消息：Cannot invoke "com.ljf.greatplan.core.entity.Node.getChildNode()" because "parentNode" is null
+位置：com.ljf.greatplan.general.timeer.NodeColdForgetfulness.tracedBack (NodeColdForgetfulness.java:133)
+调用链：
+  [0] com.ljf.greatplan.general.timeer.NodeColdForgetfulness.tracedBack(NodeColdForgetfulness.java:133)
+  [1] com.ljf.greatplan.general.timeer.NodeColdForgetfulness.clean(NodeColdForgetfulness.java:99)
+  [2] com.ljf.greatplan.general.timeer.NodeColdForgetfulness.decayAndPrune(NodeColdForgetfulness.java:65)
+  [3] jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+  [4] java.lang.reflect.Method.invoke(Method.java:580)
+  [5] org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:360)
+  [6] org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:196)
+  [7] org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+  [8] org.springframework.aop.aspectj.AspectJAfterThrowingAdvice.invoke(AspectJAfterThrowingAdvice.java:64)
+  [9] org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+========================================================
+
+================= 2025-10-29T16:33:40.755083900 =================
+错误类型：java.lang.NullPointerException
+错误消息：Cannot invoke "com.ljf.greatplan.core.entity.Node.getChildNode()" because "parentNode" is null
+位置：com.ljf.greatplan.general.timeer.NodeColdForgetfulness.tracedBack (NodeColdForgetfulness.java:133)
+调用链：
+  [0] com.ljf.greatplan.general.timeer.NodeColdForgetfulness.tracedBack(NodeColdForgetfulness.java:133)
+  [1] com.ljf.greatplan.general.timeer.NodeColdForgetfulness.clean(NodeColdForgetfulness.java:99)
+  [2] com.ljf.greatplan.general.timeer.NodeColdForgetfulness.decayAndPrune(NodeColdForgetfulness.java:65)
+  [3] jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+  [4] java.lang.reflect.Method.invoke(Method.java:580)
+  [5] org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:360)
+  [6] org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:196)
+  [7] org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+  [8] org.springframework.aop.aspectj.AspectJAfterThrowingAdvice.invoke(AspectJAfterThrowingAdvice.java:64)
+  [9] org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+========================================================
+
+================= 2025-10-29T16:33:41.753249600 =================
+错误类型：java.lang.NullPointerException
+错误消息：Cannot invoke "com.ljf.greatplan.core.entity.Node.getChildNode()" because "parentNode" is null
+位置：com.ljf.greatplan.general.timeer.NodeColdForgetfulness.tracedBack (NodeColdForgetfulness.java:133)
+调用链：
+  [0] com.ljf.greatplan.general.timeer.NodeColdForgetfulness.tracedBack(NodeColdForgetfulness.java:133)
+  [1] com.ljf.greatplan.general.timeer.NodeColdForgetfulness.clean(NodeColdForgetfulness.java:99)
+  [2] com.ljf.greatplan.general.timeer.NodeColdForgetfulness.decayAndPrune(NodeColdForgetfulness.java:65)
+  [3] jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+  [4] java.lang.reflect.Method.invoke(Method.java:580)
+  [5] org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:360)
+  [6] org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:196)
+  [7] org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+  [8] org.springframework.aop.aspectj.AspectJAfterThrowingAdvice.invoke(AspectJAfterThrowingAdvice.java:64)
+  [9] org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+========================================================
+
+================= 2025-10-29T16:33:42.763010200 =================
+错误类型：java.lang.NullPointerException
+错误消息：Cannot invoke "com.ljf.greatplan.core.entity.Node.getChildNode()" because "parentNode" is null
+位置：com.ljf.greatplan.general.timeer.NodeColdForgetfulness.tracedBack (NodeColdForgetfulness.java:133)
+调用链：
+  [0] com.ljf.greatplan.general.timeer.NodeColdForgetfulness.tracedBack(NodeColdForgetfulness.java:133)
+  [1] com.ljf.greatplan.general.timeer.NodeColdForgetfulness.clean(NodeColdForgetfulness.java:99)
+  [2] com.ljf.greatplan.general.timeer.NodeColdForgetfulness.decayAndPrune(NodeColdForgetfulness.java:65)
+  [3] jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+  [4] java.lang.reflect.Method.invoke(Method.java:580)
+  [5] org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:360)
+  [6] org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:196)
+  [7] org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+  [8] org.springframework.aop.aspectj.AspectJAfterThrowingAdvice.invoke(AspectJAfterThrowingAdvice.java:64)
+  [9] org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+========================================================
+
+================= 2025-10-29T16:33:43.761079 =================
+错误类型：java.lang.NullPointerException
+错误消息：Cannot invoke "com.ljf.greatplan.core.entity.Node.getChildNode()" because "parentNode" is null
+位置：com.ljf.greatplan.general.timeer.NodeColdForgetfulness.tracedBack (NodeColdForgetfulness.java:133)
+调用链：
+  [0] com.ljf.greatplan.general.timeer.NodeColdForgetfulness.tracedBack(NodeColdForgetfulness.java:133)
+  [1] com.ljf.greatplan.general.timeer.NodeColdForgetfulness.clean(NodeColdForgetfulness.java:99)
+  [2] com.ljf.greatplan.general.timeer.NodeColdForgetfulness.decayAndPrune(NodeColdForgetfulness.java:65)
+  [3] jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+  [4] java.lang.reflect.Method.invoke(Method.java:580)
+  [5] org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:360)
+  [6] org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:196)
+  [7] org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+  [8] org.springframework.aop.aspectj.AspectJAfterThrowingAdvice.invoke(AspectJAfterThrowingAdvice.java:64)
+  [9] org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+========================================================
+
+================= 2025-10-29T16:33:44.760097 =================
+错误类型：java.lang.NullPointerException
+错误消息：Cannot invoke "com.ljf.greatplan.core.entity.Node.getChildNode()" because "parentNode" is null
+位置：com.ljf.greatplan.general.timeer.NodeColdForgetfulness.tracedBack (NodeColdForgetfulness.java:133)
+调用链：
+  [0] com.ljf.greatplan.general.timeer.NodeColdForgetfulness.tracedBack(NodeColdForgetfulness.java:133)
+  [1] com.ljf.greatplan.general.timeer.NodeColdForgetfulness.clean(NodeColdForgetfulness.java:99)
+  [2] com.ljf.greatplan.general.timeer.NodeColdForgetfulness.decayAndPrune(NodeColdForgetfulness.java:65)
+  [3] jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+  [4] java.lang.reflect.Method.invoke(Method.java:580)
+  [5] org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:360)
+  [6] org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:196)
+  [7] org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+  [8] org.springframework.aop.aspectj.AspectJAfterThrowingAdvice.invoke(AspectJAfterThrowingAdvice.java:64)
+  [9] org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+========================================================
+
+================= 2025-10-29T16:33:45.753839400 =================
+错误类型：java.lang.NullPointerException
+错误消息：Cannot invoke "com.ljf.greatplan.core.entity.Node.getChildNode()" because "parentNode" is null
+位置：com.ljf.greatplan.general.timeer.NodeColdForgetfulness.tracedBack (NodeColdForgetfulness.java:133)
+调用链：
+  [0] com.ljf.greatplan.general.timeer.NodeColdForgetfulness.tracedBack(NodeColdForgetfulness.java:133)
+  [1] com.ljf.greatplan.general.timeer.NodeColdForgetfulness.clean(NodeColdForgetfulness.java:99)
+  [2] com.ljf.greatplan.general.timeer.NodeColdForgetfulness.decayAndPrune(NodeColdForgetfulness.java:65)
+  [3] jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+  [4] java.lang.reflect.Method.invoke(Method.java:580)
+  [5] org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:360)
+  [6] org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:196)
+  [7] org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+  [8] org.springframework.aop.aspectj.AspectJAfterThrowingAdvice.invoke(AspectJAfterThrowingAdvice.java:64)
+  [9] org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+========================================================
+
+================= 2025-10-29T16:33:46.760740300 =================
+错误类型：java.lang.NullPointerException
+错误消息：Cannot invoke "com.ljf.greatplan.core.entity.Node.getChildNode()" because "parentNode" is null
+位置：com.ljf.greatplan.general.timeer.NodeColdForgetfulness.tracedBack (NodeColdForgetfulness.java:133)
+调用链：
+  [0] com.ljf.greatplan.general.timeer.NodeColdForgetfulness.tracedBack(NodeColdForgetfulness.java:133)
+  [1] com.ljf.greatplan.general.timeer.NodeColdForgetfulness.clean(NodeColdForgetfulness.java:99)
+  [2] com.ljf.greatplan.general.timeer.NodeColdForgetfulness.decayAndPrune(NodeColdForgetfulness.java:65)
+  [3] jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+  [4] java.lang.reflect.Method.invoke(Method.java:580)
+  [5] org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:360)
+  [6] org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:196)
+  [7] org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+  [8] org.springframework.aop.aspectj.AspectJAfterThrowingAdvice.invoke(AspectJAfterThrowingAdvice.java:64)
+  [9] org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+========================================================
+
+================= 2025-10-29T16:33:47.768787900 =================
+错误类型：java.lang.NullPointerException
+错误消息：Cannot invoke "com.ljf.greatplan.core.entity.Node.getChildNode()" because "parentNode" is null
+位置：com.ljf.greatplan.general.timeer.NodeColdForgetfulness.tracedBack (NodeColdForgetfulness.java:133)
+调用链：
+  [0] com.ljf.greatplan.general.timeer.NodeColdForgetfulness.tracedBack(NodeColdForgetfulness.java:133)
+  [1] com.ljf.greatplan.general.timeer.NodeColdForgetfulness.clean(NodeColdForgetfulness.java:99)
+  [2] com.ljf.greatplan.general.timeer.NodeColdForgetfulness.decayAndPrune(NodeColdForgetfulness.java:65)
+  [3] jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+  [4] java.lang.reflect.Method.invoke(Method.java:580)
+  [5] org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:360)
+  [6] org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:196)
+  [7] org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+  [8] org.springframework.aop.aspectj.AspectJAfterThrowingAdvice.invoke(AspectJAfterThrowingAdvice.java:64)
+  [9] org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+========================================================
+
+================= 2025-10-29T16:33:48.764204100 =================
+错误类型：java.lang.NullPointerException
+错误消息：Cannot invoke "com.ljf.greatplan.core.entity.Node.getChildNode()" because "parentNode" is null
+位置：com.ljf.greatplan.general.timeer.NodeColdForgetfulness.tracedBack (NodeColdForgetfulness.java:133)
+调用链：
+  [0] com.ljf.greatplan.general.timeer.NodeColdForgetfulness.tracedBack(NodeColdForgetfulness.java:133)
+  [1] com.ljf.greatplan.general.timeer.NodeColdForgetfulness.clean(NodeColdForgetfulness.java:99)
+  [2] com.ljf.greatplan.general.timeer.NodeColdForgetfulness.decayAndPrune(NodeColdForgetfulness.java:65)
+  [3] jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+  [4] java.lang.reflect.Method.invoke(Method.java:580)
+  [5] org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:360)
+  [6] org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:196)
+  [7] org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+  [8] org.springframework.aop.aspectj.AspectJAfterThrowingAdvice.invoke(AspectJAfterThrowingAdvice.java:64)
+  [9] org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+========================================================
+
+================= 2025-10-29T16:33:49.762082 =================
+错误类型：java.lang.NullPointerException
+错误消息：Cannot invoke "com.ljf.greatplan.core.entity.Node.getChildNode()" because "parentNode" is null
+位置：com.ljf.greatplan.general.timeer.NodeColdForgetfulness.tracedBack (NodeColdForgetfulness.java:133)
+调用链：
+  [0] com.ljf.greatplan.general.timeer.NodeColdForgetfulness.tracedBack(NodeColdForgetfulness.java:133)
+  [1] com.ljf.greatplan.general.timeer.NodeColdForgetfulness.clean(NodeColdForgetfulness.java:99)
+  [2] com.ljf.greatplan.general.timeer.NodeColdForgetfulness.decayAndPrune(NodeColdForgetfulness.java:65)
+  [3] jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+  [4] java.lang.reflect.Method.invoke(Method.java:580)
+  [5] org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:360)
+  [6] org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:196)
+  [7] org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+  [8] org.springframework.aop.aspectj.AspectJAfterThrowingAdvice.invoke(AspectJAfterThrowingAdvice.java:64)
+  [9] org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+========================================================
+
+================= 2025-10-29T16:33:50.758459100 =================
+错误类型：java.lang.NullPointerException
+错误消息：Cannot invoke "com.ljf.greatplan.core.entity.Node.getChildNode()" because "parentNode" is null
+位置：com.ljf.greatplan.general.timeer.NodeColdForgetfulness.tracedBack (NodeColdForgetfulness.java:133)
+调用链：
+  [0] com.ljf.greatplan.general.timeer.NodeColdForgetfulness.tracedBack(NodeColdForgetfulness.java:133)
+  [1] com.ljf.greatplan.general.timeer.NodeColdForgetfulness.clean(NodeColdForgetfulness.java:99)
+  [2] com.ljf.greatplan.general.timeer.NodeColdForgetfulness.decayAndPrune(NodeColdForgetfulness.java:65)
+  [3] jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+  [4] java.lang.reflect.Method.invoke(Method.java:580)
+  [5] org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:360)
+  [6] org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:196)
+  [7] org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+  [8] org.springframework.aop.aspectj.AspectJAfterThrowingAdvice.invoke(AspectJAfterThrowingAdvice.java:64)
+  [9] org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+========================================================
+
+================= 2025-10-29T16:33:51.766665200 =================
+错误类型：java.lang.NullPointerException
+错误消息：Cannot invoke "com.ljf.greatplan.core.entity.Node.getChildNode()" because "parentNode" is null
+位置：com.ljf.greatplan.general.timeer.NodeColdForgetfulness.tracedBack (NodeColdForgetfulness.java:133)
+调用链：
+  [0] com.ljf.greatplan.general.timeer.NodeColdForgetfulness.tracedBack(NodeColdForgetfulness.java:133)
+  [1] com.ljf.greatplan.general.timeer.NodeColdForgetfulness.clean(NodeColdForgetfulness.java:99)
+  [2] com.ljf.greatplan.general.timeer.NodeColdForgetfulness.decayAndPrune(NodeColdForgetfulness.java:65)
+  [3] jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+  [4] java.lang.reflect.Method.invoke(Method.java:580)
+  [5] org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:360)
+  [6] org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:196)
+  [7] org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+  [8] org.springframework.aop.aspectj.AspectJAfterThrowingAdvice.invoke(AspectJAfterThrowingAdvice.java:64)
+  [9] org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+========================================================
+
+================= 2025-10-29T16:33:52.762753700 =================
+错误类型：java.lang.NullPointerException
+错误消息：Cannot invoke "com.ljf.greatplan.core.entity.Node.getChildNode()" because "parentNode" is null
+位置：com.ljf.greatplan.general.timeer.NodeColdForgetfulness.tracedBack (NodeColdForgetfulness.java:133)
+调用链：
+  [0] com.ljf.greatplan.general.timeer.NodeColdForgetfulness.tracedBack(NodeColdForgetfulness.java:133)
+  [1] com.ljf.greatplan.general.timeer.NodeColdForgetfulness.clean(NodeColdForgetfulness.java:99)
+  [2] com.ljf.greatplan.general.timeer.NodeColdForgetfulness.decayAndPrune(NodeColdForgetfulness.java:65)
+  [3] jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+  [4] java.lang.reflect.Method.invoke(Method.java:580)
+  [5] org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:360)
+  [6] org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:196)
+  [7] org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+  [8] org.springframework.aop.aspectj.AspectJAfterThrowingAdvice.invoke(AspectJAfterThrowingAdvice.java:64)
+  [9] org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+========================================================
+
+================= 2025-10-29T16:33:53.758746300 =================
+错误类型：java.lang.NullPointerException
+错误消息：Cannot invoke "com.ljf.greatplan.core.entity.Node.getChildNode()" because "parentNode" is null
+位置：com.ljf.greatplan.general.timeer.NodeColdForgetfulness.tracedBack (NodeColdForgetfulness.java:133)
+调用链：
+  [0] com.ljf.greatplan.general.timeer.NodeColdForgetfulness.tracedBack(NodeColdForgetfulness.java:133)
+  [1] com.ljf.greatplan.general.timeer.NodeColdForgetfulness.clean(NodeColdForgetfulness.java:99)
+  [2] com.ljf.greatplan.general.timeer.NodeColdForgetfulness.decayAndPrune(NodeColdForgetfulness.java:65)
+  [3] jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+  [4] java.lang.reflect.Method.invoke(Method.java:580)
+  [5] org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:360)
+  [6] org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:196)
+  [7] org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+  [8] org.springframework.aop.aspectj.AspectJAfterThrowingAdvice.invoke(AspectJAfterThrowingAdvice.java:64)
+  [9] org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+========================================================
+
+================= 2025-10-29T16:33:54.754670300 =================
+错误类型：java.lang.NullPointerException
+错误消息：Cannot invoke "com.ljf.greatplan.core.entity.Node.getChildNode()" because "parentNode" is null
+位置：com.ljf.greatplan.general.timeer.NodeColdForgetfulness.tracedBack (NodeColdForgetfulness.java:133)
+调用链：
+  [0] com.ljf.greatplan.general.timeer.NodeColdForgetfulness.tracedBack(NodeColdForgetfulness.java:133)
+  [1] com.ljf.greatplan.general.timeer.NodeColdForgetfulness.clean(NodeColdForgetfulness.java:99)
+  [2] com.ljf.greatplan.general.timeer.NodeColdForgetfulness.decayAndPrune(NodeColdForgetfulness.java:65)
+  [3] jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+  [4] java.lang.reflect.Method.invoke(Method.java:580)
+  [5] org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:360)
+  [6] org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:196)
+  [7] org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+  [8] org.springframework.aop.aspectj.AspectJAfterThrowingAdvice.invoke(AspectJAfterThrowingAdvice.java:64)
+  [9] org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+========================================================
+
+================= 2025-10-29T16:33:55.767121500 =================
+错误类型：java.lang.NullPointerException
+错误消息：Cannot invoke "com.ljf.greatplan.core.entity.Node.getChildNode()" because "parentNode" is null
+位置：com.ljf.greatplan.general.timeer.NodeColdForgetfulness.tracedBack (NodeColdForgetfulness.java:133)
+调用链：
+  [0] com.ljf.greatplan.general.timeer.NodeColdForgetfulness.tracedBack(NodeColdForgetfulness.java:133)
+  [1] com.ljf.greatplan.general.timeer.NodeColdForgetfulness.clean(NodeColdForgetfulness.java:99)
+  [2] com.ljf.greatplan.general.timeer.NodeColdForgetfulness.decayAndPrune(NodeColdForgetfulness.java:65)
+  [3] jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+  [4] java.lang.reflect.Method.invoke(Method.java:580)
+  [5] org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:360)
+  [6] org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:196)
+  [7] org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+  [8] org.springframework.aop.aspectj.AspectJAfterThrowingAdvice.invoke(AspectJAfterThrowingAdvice.java:64)
+  [9] org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+========================================================
+
+================= 2025-10-29T16:33:56.758712300 =================
+错误类型：java.lang.NullPointerException
+错误消息：Cannot invoke "com.ljf.greatplan.core.entity.Node.getChildNode()" because "parentNode" is null
+位置：com.ljf.greatplan.general.timeer.NodeColdForgetfulness.tracedBack (NodeColdForgetfulness.java:133)
+调用链：
+  [0] com.ljf.greatplan.general.timeer.NodeColdForgetfulness.tracedBack(NodeColdForgetfulness.java:133)
+  [1] com.ljf.greatplan.general.timeer.NodeColdForgetfulness.clean(NodeColdForgetfulness.java:99)
+  [2] com.ljf.greatplan.general.timeer.NodeColdForgetfulness.decayAndPrune(NodeColdForgetfulness.java:65)
+  [3] jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+  [4] java.lang.reflect.Method.invoke(Method.java:580)
+  [5] org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:360)
+  [6] org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:196)
+  [7] org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+  [8] org.springframework.aop.aspectj.AspectJAfterThrowingAdvice.invoke(AspectJAfterThrowingAdvice.java:64)
+  [9] org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+========================================================
+
+================= 2025-10-29T16:33:57.757238300 =================
+错误类型：java.lang.NullPointerException
+错误消息：Cannot invoke "com.ljf.greatplan.core.entity.Node.getChildNode()" because "parentNode" is null
+位置：com.ljf.greatplan.general.timeer.NodeColdForgetfulness.tracedBack (NodeColdForgetfulness.java:133)
+调用链：
+  [0] com.ljf.greatplan.general.timeer.NodeColdForgetfulness.tracedBack(NodeColdForgetfulness.java:133)
+  [1] com.ljf.greatplan.general.timeer.NodeColdForgetfulness.clean(NodeColdForgetfulness.java:99)
+  [2] com.ljf.greatplan.general.timeer.NodeColdForgetfulness.decayAndPrune(NodeColdForgetfulness.java:65)
+  [3] jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+  [4] java.lang.reflect.Method.invoke(Method.java:580)
+  [5] org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:360)
+  [6] org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:196)
+  [7] org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+  [8] org.springframework.aop.aspectj.AspectJAfterThrowingAdvice.invoke(AspectJAfterThrowingAdvice.java:64)
+  [9] org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+========================================================
+
+================= 2025-10-29T16:33:58.768378500 =================
+错误类型：java.lang.NullPointerException
+错误消息：Cannot invoke "com.ljf.greatplan.core.entity.Node.getChildNode()" because "parentNode" is null
+位置：com.ljf.greatplan.general.timeer.NodeColdForgetfulness.tracedBack (NodeColdForgetfulness.java:133)
+调用链：
+  [0] com.ljf.greatplan.general.timeer.NodeColdForgetfulness.tracedBack(NodeColdForgetfulness.java:133)
+  [1] com.ljf.greatplan.general.timeer.NodeColdForgetfulness.clean(NodeColdForgetfulness.java:99)
+  [2] com.ljf.greatplan.general.timeer.NodeColdForgetfulness.decayAndPrune(NodeColdForgetfulness.java:65)
+  [3] jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+  [4] java.lang.reflect.Method.invoke(Method.java:580)
+  [5] org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:360)
+  [6] org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:196)
+  [7] org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+  [8] org.springframework.aop.aspectj.AspectJAfterThrowingAdvice.invoke(AspectJAfterThrowingAdvice.java:64)
+  [9] org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+========================================================
+
+================= 2025-10-29T16:33:59.764200800 =================
+错误类型：java.lang.NullPointerException
+错误消息：Cannot invoke "com.ljf.greatplan.core.entity.Node.getChildNode()" because "parentNode" is null
+位置：com.ljf.greatplan.general.timeer.NodeColdForgetfulness.tracedBack (NodeColdForgetfulness.java:133)
+调用链：
+  [0] com.ljf.greatplan.general.timeer.NodeColdForgetfulness.tracedBack(NodeColdForgetfulness.java:133)
+  [1] com.ljf.greatplan.general.timeer.NodeColdForgetfulness.clean(NodeColdForgetfulness.java:99)
+  [2] com.ljf.greatplan.general.timeer.NodeColdForgetfulness.decayAndPrune(NodeColdForgetfulness.java:65)
+  [3] jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+  [4] java.lang.reflect.Method.invoke(Method.java:580)
+  [5] org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:360)
+  [6] org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:196)
+  [7] org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+  [8] org.springframework.aop.aspectj.AspectJAfterThrowingAdvice.invoke(AspectJAfterThrowingAdvice.java:64)
+  [9] org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+========================================================
+
+================= 2025-10-29T16:34:00.757465900 =================
+错误类型：java.lang.NullPointerException
+错误消息：Cannot invoke "com.ljf.greatplan.core.entity.Node.getChildNode()" because "parentNode" is null
+位置：com.ljf.greatplan.general.timeer.NodeColdForgetfulness.tracedBack (NodeColdForgetfulness.java:133)
+调用链：
+  [0] com.ljf.greatplan.general.timeer.NodeColdForgetfulness.tracedBack(NodeColdForgetfulness.java:133)
+  [1] com.ljf.greatplan.general.timeer.NodeColdForgetfulness.clean(NodeColdForgetfulness.java:99)
+  [2] com.ljf.greatplan.general.timeer.NodeColdForgetfulness.decayAndPrune(NodeColdForgetfulness.java:65)
+  [3] jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+  [4] java.lang.reflect.Method.invoke(Method.java:580)
+  [5] org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:360)
+  [6] org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:196)
+  [7] org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+  [8] org.springframework.aop.aspectj.AspectJAfterThrowingAdvice.invoke(AspectJAfterThrowingAdvice.java:64)
+  [9] org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+========================================================
+
+================= 2025-10-29T16:34:01.754344700 =================
+错误类型：java.lang.NullPointerException
+错误消息：Cannot invoke "com.ljf.greatplan.core.entity.Node.getChildNode()" because "parentNode" is null
+位置：com.ljf.greatplan.general.timeer.NodeColdForgetfulness.tracedBack (NodeColdForgetfulness.java:133)
+调用链：
+  [0] com.ljf.greatplan.general.timeer.NodeColdForgetfulness.tracedBack(NodeColdForgetfulness.java:133)
+  [1] com.ljf.greatplan.general.timeer.NodeColdForgetfulness.clean(NodeColdForgetfulness.java:99)
+  [2] com.ljf.greatplan.general.timeer.NodeColdForgetfulness.decayAndPrune(NodeColdForgetfulness.java:65)
+  [3] jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+  [4] java.lang.reflect.Method.invoke(Method.java:580)
+  [5] org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:360)
+  [6] org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:196)
+  [7] org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+  [8] org.springframework.aop.aspectj.AspectJAfterThrowingAdvice.invoke(AspectJAfterThrowingAdvice.java:64)
+  [9] org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+========================================================
+
+================= 2025-10-29T16:34:02.762890 =================
+错误类型：java.lang.NullPointerException
+错误消息：Cannot invoke "com.ljf.greatplan.core.entity.Node.getChildNode()" because "parentNode" is null
+位置：com.ljf.greatplan.general.timeer.NodeColdForgetfulness.tracedBack (NodeColdForgetfulness.java:133)
+调用链：
+  [0] com.ljf.greatplan.general.timeer.NodeColdForgetfulness.tracedBack(NodeColdForgetfulness.java:133)
+  [1] com.ljf.greatplan.general.timeer.NodeColdForgetfulness.clean(NodeColdForgetfulness.java:99)
+  [2] com.ljf.greatplan.general.timeer.NodeColdForgetfulness.decayAndPrune(NodeColdForgetfulness.java:65)
+  [3] jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+  [4] java.lang.reflect.Method.invoke(Method.java:580)
+  [5] org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:360)
+  [6] org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:196)
+  [7] org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+  [8] org.springframework.aop.aspectj.AspectJAfterThrowingAdvice.invoke(AspectJAfterThrowingAdvice.java:64)
+  [9] org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+========================================================
+
+================= 2025-10-29T16:34:03.764042900 =================
+错误类型：java.lang.NullPointerException
+错误消息：Cannot invoke "com.ljf.greatplan.core.entity.Node.getChildNode()" because "parentNode" is null
+位置：com.ljf.greatplan.general.timeer.NodeColdForgetfulness.tracedBack (NodeColdForgetfulness.java:133)
+调用链：
+  [0] com.ljf.greatplan.general.timeer.NodeColdForgetfulness.tracedBack(NodeColdForgetfulness.java:133)
+  [1] com.ljf.greatplan.general.timeer.NodeColdForgetfulness.clean(NodeColdForgetfulness.java:99)
+  [2] com.ljf.greatplan.general.timeer.NodeColdForgetfulness.decayAndPrune(NodeColdForgetfulness.java:65)
+  [3] jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+  [4] java.lang.reflect.Method.invoke(Method.java:580)
+  [5] org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:360)
+  [6] org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:196)
+  [7] org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+  [8] org.springframework.aop.aspectj.AspectJAfterThrowingAdvice.invoke(AspectJAfterThrowingAdvice.java:64)
+  [9] org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+========================================================
+
+================= 2025-10-29T16:34:04.762832600 =================
+错误类型：java.lang.NullPointerException
+错误消息：Cannot invoke "com.ljf.greatplan.core.entity.Node.getChildNode()" because "parentNode" is null
+位置：com.ljf.greatplan.general.timeer.NodeColdForgetfulness.tracedBack (NodeColdForgetfulness.java:133)
+调用链：
+  [0] com.ljf.greatplan.general.timeer.NodeColdForgetfulness.tracedBack(NodeColdForgetfulness.java:133)
+  [1] com.ljf.greatplan.general.timeer.NodeColdForgetfulness.clean(NodeColdForgetfulness.java:99)
+  [2] com.ljf.greatplan.general.timeer.NodeColdForgetfulness.decayAndPrune(NodeColdForgetfulness.java:65)
+  [3] jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+  [4] java.lang.reflect.Method.invoke(Method.java:580)
+  [5] org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:360)
+  [6] org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:196)
+  [7] org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+  [8] org.springframework.aop.aspectj.AspectJAfterThrowingAdvice.invoke(AspectJAfterThrowingAdvice.java:64)
+  [9] org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+========================================================
+
+================= 2025-10-29T16:34:05.757648 =================
+错误类型：java.lang.NullPointerException
+错误消息：Cannot invoke "com.ljf.greatplan.core.entity.Node.getChildNode()" because "parentNode" is null
+位置：com.ljf.greatplan.general.timeer.NodeColdForgetfulness.tracedBack (NodeColdForgetfulness.java:133)
+调用链：
+  [0] com.ljf.greatplan.general.timeer.NodeColdForgetfulness.tracedBack(NodeColdForgetfulness.java:133)
+  [1] com.ljf.greatplan.general.timeer.NodeColdForgetfulness.clean(NodeColdForgetfulness.java:99)
+  [2] com.ljf.greatplan.general.timeer.NodeColdForgetfulness.decayAndPrune(NodeColdForgetfulness.java:65)
+  [3] jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+  [4] java.lang.reflect.Method.invoke(Method.java:580)
+  [5] org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:360)
+  [6] org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:196)
+  [7] org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+  [8] org.springframework.aop.aspectj.AspectJAfterThrowingAdvice.invoke(AspectJAfterThrowingAdvice.java:64)
+  [9] org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+========================================================
+
+================= 2025-10-29T16:34:35.670889100 =================
+错误类型：java.lang.NullPointerException
+错误消息：Cannot invoke "com.ljf.greatplan.core.entity.Node.getChildNode()" because "parentNode" is null
+位置：com.ljf.greatplan.general.timeer.NodeColdForgetfulness.tracedBack (NodeColdForgetfulness.java:132)
+调用链：
+  [0] com.ljf.greatplan.general.timeer.NodeColdForgetfulness.tracedBack(NodeColdForgetfulness.java:132)
+  [1] com.ljf.greatplan.general.timeer.NodeColdForgetfulness.clean(NodeColdForgetfulness.java:99)
+  [2] com.ljf.greatplan.general.timeer.NodeColdForgetfulness.decayAndPrune(NodeColdForgetfulness.java:65)
+  [3] jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+  [4] java.lang.reflect.Method.invoke(Method.java:580)
+  [5] org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:360)
+  [6] org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:196)
+  [7] org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+  [8] org.springframework.aop.aspectj.AspectJAfterThrowingAdvice.invoke(AspectJAfterThrowingAdvice.java:64)
+  [9] org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+========================================================
+
+================= 2025-10-29T16:34:36.663451900 =================
+错误类型：java.lang.NullPointerException
+错误消息：Cannot invoke "com.ljf.greatplan.core.entity.Node.getChildNode()" because "parentNode" is null
+位置：com.ljf.greatplan.general.timeer.NodeColdForgetfulness.tracedBack (NodeColdForgetfulness.java:132)
+调用链：
+  [0] com.ljf.greatplan.general.timeer.NodeColdForgetfulness.tracedBack(NodeColdForgetfulness.java:132)
+  [1] com.ljf.greatplan.general.timeer.NodeColdForgetfulness.clean(NodeColdForgetfulness.java:99)
+  [2] com.ljf.greatplan.general.timeer.NodeColdForgetfulness.decayAndPrune(NodeColdForgetfulness.java:65)
+  [3] jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+  [4] java.lang.reflect.Method.invoke(Method.java:580)
+  [5] org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:360)
+  [6] org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:196)
+  [7] org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+  [8] org.springframework.aop.aspectj.AspectJAfterThrowingAdvice.invoke(AspectJAfterThrowingAdvice.java:64)
+  [9] org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+========================================================
+
+================= 2025-10-29T16:34:37.658032800 =================
+错误类型：java.lang.NullPointerException
+错误消息：Cannot invoke "com.ljf.greatplan.core.entity.Node.getChildNode()" because "parentNode" is null
+位置：com.ljf.greatplan.general.timeer.NodeColdForgetfulness.tracedBack (NodeColdForgetfulness.java:132)
+调用链：
+  [0] com.ljf.greatplan.general.timeer.NodeColdForgetfulness.tracedBack(NodeColdForgetfulness.java:132)
+  [1] com.ljf.greatplan.general.timeer.NodeColdForgetfulness.clean(NodeColdForgetfulness.java:99)
+  [2] com.ljf.greatplan.general.timeer.NodeColdForgetfulness.decayAndPrune(NodeColdForgetfulness.java:65)
+  [3] jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+  [4] java.lang.reflect.Method.invoke(Method.java:580)
+  [5] org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:360)
+  [6] org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:196)
+  [7] org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+  [8] org.springframework.aop.aspectj.AspectJAfterThrowingAdvice.invoke(AspectJAfterThrowingAdvice.java:64)
+  [9] org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+========================================================
+
+================= 2025-10-29T16:34:38.655103300 =================
+错误类型：java.lang.NullPointerException
+错误消息：Cannot invoke "com.ljf.greatplan.core.entity.Node.getChildNode()" because "parentNode" is null
+位置：com.ljf.greatplan.general.timeer.NodeColdForgetfulness.tracedBack (NodeColdForgetfulness.java:132)
+调用链：
+  [0] com.ljf.greatplan.general.timeer.NodeColdForgetfulness.tracedBack(NodeColdForgetfulness.java:132)
+  [1] com.ljf.greatplan.general.timeer.NodeColdForgetfulness.clean(NodeColdForgetfulness.java:99)
+  [2] com.ljf.greatplan.general.timeer.NodeColdForgetfulness.decayAndPrune(NodeColdForgetfulness.java:65)
+  [3] jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+  [4] java.lang.reflect.Method.invoke(Method.java:580)
+  [5] org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:360)
+  [6] org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:196)
+  [7] org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+  [8] org.springframework.aop.aspectj.AspectJAfterThrowingAdvice.invoke(AspectJAfterThrowingAdvice.java:64)
+  [9] org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+========================================================
+
+================= 2025-10-29T16:34:39.667325500 =================
+错误类型：java.lang.NullPointerException
+错误消息：Cannot invoke "com.ljf.greatplan.core.entity.Node.getChildNode()" because "parentNode" is null
+位置：com.ljf.greatplan.general.timeer.NodeColdForgetfulness.tracedBack (NodeColdForgetfulness.java:132)
+调用链：
+  [0] com.ljf.greatplan.general.timeer.NodeColdForgetfulness.tracedBack(NodeColdForgetfulness.java:132)
+  [1] com.ljf.greatplan.general.timeer.NodeColdForgetfulness.clean(NodeColdForgetfulness.java:99)
+  [2] com.ljf.greatplan.general.timeer.NodeColdForgetfulness.decayAndPrune(NodeColdForgetfulness.java:65)
+  [3] jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+  [4] java.lang.reflect.Method.invoke(Method.java:580)
+  [5] org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:360)
+  [6] org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:196)
+  [7] org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+  [8] org.springframework.aop.aspectj.AspectJAfterThrowingAdvice.invoke(AspectJAfterThrowingAdvice.java:64)
+  [9] org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+========================================================

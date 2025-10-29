@@ -39,3 +39,8 @@ li {
 .collapsed > ul {
     display: none;
 }
+
+.heat-updated {
+    transition: color 0.3s ease;
+    color: #ff5c5c;
+}

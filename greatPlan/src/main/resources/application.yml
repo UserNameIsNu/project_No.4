@@ -37,3 +37,11 @@ error-log:
     path: log
     # 调用链打印深度（all为完全打印）
     stackTrace-deep: 10
+# 节点热度衰减配置
+node-attenuation:
+    # 衰减速度（ms），最好和前端的获取速度一致
+    speed: 1000
+    # 衰减量（每刻度衰减的热度）
+    num: 1
+    # 起始阈值（节点树中的节点数量超过这个值才会开始衰减）
+    starter-threshold: 1

@@ -38,6 +38,11 @@ public class SpecifyDirectoryScanner {
     private FileIO fileIO;
 
     /**
+     * 节点树
+     */
+    private NodeTree nodeTree;
+
+    /**
      * 扫描深度
      */
     @Value("${scan.depth}")
@@ -52,9 +57,11 @@ public class SpecifyDirectoryScanner {
     /**
      * 构造器
      * @param fileIO
+     * @param nodeTree
      */
-    public SpecifyDirectoryScanner(FileIO fileIO) {
+    public SpecifyDirectoryScanner(FileIO fileIO, NodeTree nodeTree) {
         this.fileIO = fileIO;
+        this.nodeTree = nodeTree;
     }
 
     /**
@@ -68,16 +75,13 @@ public class SpecifyDirectoryScanner {
         // 所以扫描深度0就行，不用下探
         String max = maxDepth;
         maxDepth = "0";
-        Map<String, Node> nodeTree = new HashMap<>();
         for (String root : roots) {
-            // 获取一个盘，拿到树
-            Map<String, Node> tree = initialScanner(root).getTree();
             // 塞进树
-            nodeTree.putAll(tree);
+            nodeTree.addNodes(initialScanner(root));
         }
         // 恢复扫描深度
         maxDepth = max;
-        return nodeTree;
+        return nodeTree.getTree();
     }
 
     /**
@@ -88,10 +92,7 @@ public class SpecifyDirectoryScanner {
      * @param startPath 起始目录
      * @return 节点树
      */
-    public NodeTree initialScanner(String startPath) {
-        // 创建节点树骨架
-        Map<String, Node> nodeMap = new HashMap<>();
-
+    public Map<String, Node> initialScanner(String startPath) {
         // 打开目录
         File startDir = new File(startPath);
         // 非空/是否为目录判断
@@ -102,13 +103,13 @@ public class SpecifyDirectoryScanner {
         // 创建根节点（就是创建目录节点（根一定是目录的嘛））
         DirectoryNode rootNode = createDirectoryNode(startDir, null);
         // 加入节点树
-        nodeMap.put(rootNode.getId(), rootNode);
+        nodeTree.addNode(rootNode);
 
         // 递归扫描这个目录
-        depthScanner(startDir, rootNode, nodeMap, 0);
+        depthScanner(startDir, rootNode, 0);
 
         // 返回最终的节点树
-        return new NodeTree(nodeMap);
+        return nodeTree.getTree();
     }
 
     /**
@@ -118,12 +119,10 @@ public class SpecifyDirectoryScanner {
      * 可以是目录探完的极限，也可以是目录太深搞得递归爆炸:)
      * @param dir 目标目录
      * @param parentNode 这个目录的父节点
-     * @param nodeMap 节点树
      * @param currentDepth 当前已达深度
      */
     private void depthScanner(File dir,
                                DirectoryNode parentNode,
-                               Map<String, Node> nodeMap,
                                int currentDepth) {
         // 是否超出扫描深度限制（全量扫描跳过）
         if (!maxDepth.equals("all")) {
@@ -173,18 +172,18 @@ public class SpecifyDirectoryScanner {
                 // 把这个目录创建为目录类型节点
                 DirectoryNode childDir = createDirectoryNode(file, parentNode.getId());
                 // 加入节点树
-                nodeMap.put(childDir.getId(), childDir);
+                nodeTree.addNode(childDir);
                 // 节点ID加入节点ID集
                 childIds.add(childDir.getId());
 
                 // 进行递归，继续探这个子目录
-                depthScanner(file, childDir, nodeMap, currentDepth + 1);
+                depthScanner(file, childDir, currentDepth + 1);
             // 若命中文件
             } else {
                 // 把这个目录创建为文件类型节点
                 FileNode fileNode = createFileNode(file, parentNode.getId());
                 // 加入节点树
-                nodeMap.put(fileNode.getId(), fileNode);
+                nodeTree.addNode(fileNode);
                 // 节点ID加入节点ID集
                 childIds.add(fileNode.getId());
             }

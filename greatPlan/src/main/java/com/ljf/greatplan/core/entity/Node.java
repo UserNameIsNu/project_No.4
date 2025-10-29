@@ -12,6 +12,7 @@ import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
+import java.util.ArrayList;
 import java.util.List;
 
 /**
@@ -51,5 +52,10 @@ public class Node {
     /**
      * 子节点集
      */
-    private List<String> childNode;
+    private List<String> childNode = new ArrayList<>();
+
+    /**
+     * 点击热度
+     */
+    private Integer clickHeat = 100;
 }

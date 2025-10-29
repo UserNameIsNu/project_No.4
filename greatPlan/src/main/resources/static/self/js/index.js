@@ -6,18 +6,14 @@
  */
 
 const allNodes = {};
-const roots = [];
+const roots = { list: [] }; // 小改动：用对象包装更安全
 
 /** 统一的请求封装函数（适配后端 StandardViewResponseObject<T>） */
 async function fetchStandard(url, options = {}) {
     try {
         const res = await fetch(url, options);
         const json = await res.json();
-
-        if (json.code !== 200) {
-            throw new Error(json.message || "请求失败");
-        }
-
+        if (json.code !== 200) throw new Error(json.message || "请求失败");
         return json.data;
     } catch (err) {
         console.error(`[Fetch Error] ${url}:`, err.message);
@@ -25,75 +21,69 @@ async function fetchStandard(url, options = {}) {
     }
 }
 
-document.addEventListener('DOMContentLoaded', () => {
-    const treeContainer = document.getElementById('treeContainer');
-
-    // 🔹 页面加载时获取根目录
+document.addEventListener("DOMContentLoaded", () => {
+    const treeContainer = document.getElementById("treeContainer");
     fetchRootDirectory(treeContainer);
 });
 
-document.getElementById('directoryForm').addEventListener('submit', function(e) {
+document.getElementById("directoryForm").addEventListener("submit", function (e) {
     e.preventDefault();
-
     const formData = new FormData(this);
-    const treeContainer = document.getElementById('treeContainer');
+    const treeContainer = document.getElementById("treeContainer");
 
-    fetchStandard('http://127.0.0.1:8080/api/file', {
-        method: 'POST',
-        body: formData
+    fetchStandard("http://127.0.0.1:8080/api/file", {
+        method: "POST",
+        body: formData,
     })
-        .then(data => {
+        .then((data) => {
             mergeAndRepairTree(data);
             renderAllRoots(treeContainer);
         })
-        .catch(error => console.error('扫描错误:', error.message));
+        .catch((error) => console.error("扫描错误:", error.message));
 });
 
-window.CoreAPI = {
-    log: msg => console.log("[CoreAPI]", msg)
-};
-
-// 存储已加载的插件资源版本（文件级）
+window.CoreAPI = { log: (msg) => console.log("[CoreAPI]", msg) };
 window.loadedPlugins = {};
-// 存储上次从后端拿到的插件注册表（插件级）
 window.lastPluginRegistry = [];
 
-/**
- * 卸载插件（清理CSS、JS、HTML）
- */
+/** 卸载插件（清理CSS、JS、HTML） */
 function unloadPlugin(pluginId) {
-    // 移除 CSS/JS
-    document.querySelectorAll(`[data-plugin="${pluginId}"]`).forEach(e => e.remove());
-    // 移除 HTML 容器
+    document.querySelectorAll(`[data-plugin="${pluginId}"]`).forEach((e) => e.remove());
     const container = document.getElementById("plugin-" + pluginId);
     if (container) container.remove();
-    // 清理缓存记录
     delete window.loadedPlugins[pluginId];
     CoreAPI.log(`插件 ${pluginId} 已卸载`);
 }
 
-/**
- * 获取根目录（POST /api/file/load）
- */
+/** 获取根目录（POST /api/file/load） */
 function fetchRootDirectory(container) {
-    fetchStandard('http://127.0.0.1:8080/api/file/load', { method: 'POST' })
-        .then(data => {
+    fetchStandard("http://127.0.0.1:8080/api/file/load", { method: "POST" })
+        .then((data) => {
             mergeAndRepairTree(data);
             renderAllRoots(container);
         })
-        .catch(err => console.error('获取根目录失败:', err.message));
+        .catch((err) => console.error("获取根目录失败:", err.message));
 }
 
+/**
+ * 🔹 合并节点数据（不重绘整个树）
+ * 🔹 若仅热度变化，则只更新热度显示
+ */
 function mergeAndRepairTree(newData) {
     for (const [id, node] of Object.entries(newData)) {
         const existing = allNodes[id];
         if (!existing) {
             allNodes[id] = structuredClone(node);
         } else {
-            if ((!existing.childNode || existing.childNode.length === 0) &&
-                node.childNode && node.childNode.length > 0) {
-                existing.childNode = [...node.childNode];
+            // 检查热度是否变化
+            if (node.clickHeat !== undefined && node.clickHeat !== existing.clickHeat) {
+                existing.clickHeat = node.clickHeat;
+                updateNodeHeatDisplay(id, node.clickHeat);
             }
+
+            // 修复树结构
+            if ((!existing.childNode || existing.childNode.length === 0) && node.childNode?.length > 0)
+                existing.childNode = [...node.childNode];
             if (!existing.parentNode && node.parentNode)
                 existing.parentNode = node.parentNode;
         }
@@ -107,60 +97,63 @@ function mergeAndRepairTree(newData) {
         }
     }
 
-    for (const node of Object.values(allNodes)) {
-        let current = node;
-        while (current.parentNode && allNodes[current.parentNode]) {
-            const parent = allNodes[current.parentNode];
-            parent.childNode = parent.childNode || [];
-            if (!parent.childNode.includes(current.id)) parent.childNode.push(current.id);
-            current = parent;
-        }
-    }
-
     const recalculatedRoots = Object.values(allNodes)
-        .filter(node => !node.parentNode || !allNodes[node.parentNode])
-        .map(node => node.id);
+        .filter((node) => !node.parentNode || !allNodes[node.parentNode])
+        .map((node) => node.id);
 
-    roots.length = 0;
-    roots.push(...new Set(recalculatedRoots));
+    roots.list.length = 0;
+    roots.list.push(...new Set(recalculatedRoots));
 }
 
+/** 🔸 仅更新节点热度显示（不刷新整棵树） */
+function updateNodeHeatDisplay(id, newHeat) {
+    const el = document.querySelector(`[data-node-id="${id}"] .node-label`);
+    if (!el) return;
+
+    const oldText = el.textContent.replace(/\(\d+\)$/, "").trim();
+    el.textContent = `${oldText} (${newHeat})`;
+
+    el.classList.add("heat-updated");
+    setTimeout(() => el.classList.remove("heat-updated"), 300);
+}
+
+/** 渲染整棵树（首次加载时使用） */
 function renderAllRoots(container) {
-    container.innerHTML = '';
-    const ul = document.createElement('ul');
-    roots.forEach(rootId => {
+    container.innerHTML = "";
+    const ul = document.createElement("ul");
+    roots.list.forEach((rootId) => {
         const rootNode = allNodes[rootId];
         if (rootNode) ul.appendChild(buildTreeHtml(rootNode));
     });
     container.appendChild(ul);
 }
 
+/** 生成节点 DOM */
 function buildTreeHtml(node) {
-    const li = document.createElement('li');
+    const li = document.createElement("li");
+    li.dataset.nodeId = node.id;
 
-    // 🔹 如果 name 为空，从 path 提取
-    const displayName = node.name || (node.path ? node.path.split(/[\\/]/).filter(Boolean).pop() : '未知');
+    const displayName = node.name || (node.path ? node.path.split(/[\\/]/).filter(Boolean).pop() : "未知");
+    const heatInfo = node.clickHeat !== undefined ? ` (${node.clickHeat})` : "";
+
+    const label = document.createElement("span");
+    label.className = "node-label";
+    label.textContent = (node.nodeType === "DIRECTORY" ? "📁 " : "📄 ") + displayName + heatInfo;
+    li.appendChild(label);
 
     if (node.nodeType === "DIRECTORY") {
         li.classList.add("directory");
-        li.textContent = "📁 " + displayName;
-
-        li.addEventListener("click", (e) => {
+        label.addEventListener("click", (e) => {
             e.stopPropagation();
-
-            const hasChildren = node.childNode && node.childNode.length > 0;
+            const hasChildren = node.childNode?.length > 0;
             const fullyScanned = node.scanStatus === "FULLY_SCANNED";
-
-            if (hasChildren || fullyScanned) {
-                li.classList.toggle("collapsed");
-            } else {
-                fetchSubDirectory(node, li);
-            }
+            if (hasChildren || fullyScanned) li.classList.toggle("collapsed");
+            else fetchSubDirectory(node, li);
         });
 
-        const ul = document.createElement('ul');
-        if (node.childNode && node.childNode.length > 0) {
-            node.childNode.forEach(childId => {
+        const ul = document.createElement("ul");
+        if (node.childNode?.length > 0) {
+            node.childNode.forEach((childId) => {
                 const childNode = allNodes[childId];
                 if (childNode) ul.appendChild(buildTreeHtml(childNode));
             });
@@ -168,52 +161,38 @@ function buildTreeHtml(node) {
         li.appendChild(ul);
     } else {
         li.classList.add("file");
-        li.textContent = "📄 " + displayName + (node.fileType ? "." + node.fileType : '');
     }
 
     return li;
 }
 
-/** 请求子目录内容并合并渲染 */
+/** 请求子目录内容并渲染 */
 function fetchSubDirectory(node, liElement) {
     const formData = new FormData();
-    formData.append('path', node.path);
+    formData.append("path", node.path);
 
-    fetchStandard('http://127.0.0.1:8080/api/file', {
-        method: 'POST',
-        body: formData
-    })
-        .then(data => {
+    fetchStandard("http://127.0.0.1:8080/api/file", { method: "POST", body: formData })
+        .then((data) => {
             mergeAndRepairTree(data);
-
-            // 清空旧的 UL
-            let ul = liElement.querySelector('ul');
+            let ul = liElement.querySelector("ul");
             if (!ul) {
-                ul = document.createElement('ul');
+                ul = document.createElement("ul");
                 liElement.appendChild(ul);
             }
-            ul.innerHTML = '';
-
-            // 渲染新子节点
-            if (node.childNode && node.childNode.length > 0) {
-                node.childNode.forEach(childId => {
-                    const childNode = allNodes[childId];
-                    if (childNode) ul.appendChild(buildTreeHtml(childNode));
-                });
-            }
-
-            liElement.classList.remove("collapsed"); // 展开
+            ul.innerHTML = "";
+            node.childNode?.forEach((childId) => {
+                const childNode = allNodes[childId];
+                if (childNode) ul.appendChild(buildTreeHtml(childNode));
+            });
+            liElement.classList.remove("collapsed");
         })
-        .catch(err => console.error('获取子目录失败:', err.message));
+        .catch((err) => console.error("获取子目录失败:", err.message));
 }
 
-/**
- * 加载/刷新插件（文件级版本检测）
- */
+/** 加载/刷新插件 */
 async function loadPlugin(meta) {
     const area = document.getElementById("plugins-area");
     let container = document.getElementById("plugin-" + meta.id);
-
     if (!container) {
         container = document.createElement("div");
         container.id = "plugin-" + meta.id;
@@ -224,44 +203,39 @@ async function loadPlugin(meta) {
     const loaded = window.loadedPlugins[meta.id] || {};
     window.loadedPlugins[meta.id] = loaded;
 
-    // 加载 CSS
-    if (meta.css && meta.css.length) {
-        meta.css.forEach(cssFile => {
-            const hash = meta.versions?.[cssFile] || '';
-            if (loaded[cssFile] !== hash) { // 文件版本变化才刷新
-                const oldLink = document.querySelector(`link[data-plugin="${meta.id}"][href*="${cssFile}"]`);
-                if (oldLink) oldLink.remove();
-
+    // CSS
+    if (meta.css?.length) {
+        meta.css.forEach((cssFile) => {
+            const hash = meta.versions?.[cssFile] || "";
+            if (loaded[cssFile] !== hash) {
+                document.querySelector(`link[data-plugin="${meta.id}"][href*="${cssFile}"]`)?.remove();
                 const link = document.createElement("link");
                 link.rel = "stylesheet";
                 link.setAttribute("data-plugin", meta.id);
                 link.href = base + cssFile + "?v=" + hash;
                 document.head.appendChild(link);
-
                 loaded[cssFile] = hash;
             }
         });
     }
 
-    // 加载 HTML
-    if (meta.html && meta.html.length) {
+    // HTML
+    if (meta.html?.length) {
         const htmlFile = meta.html[0];
-        const hash = meta.versions?.[htmlFile] || '';
+        const hash = meta.versions?.[htmlFile] || "";
         if (loaded[htmlFile] !== hash) {
-            const html = await fetch(base + htmlFile + "?v=" + hash).then(r => r.text());
+            const html = await fetch(base + htmlFile + "?v=" + hash).then((r) => r.text());
             container.innerHTML = html;
             loaded[htmlFile] = hash;
         }
     }
 
-    // 加载 JS
-    if (meta.js && meta.js.length) {
+    // JS
+    if (meta.js?.length) {
         for (const jsFile of meta.js) {
-            const hash = meta.versions?.[jsFile] || '';
+            const hash = meta.versions?.[jsFile] || "";
             if (loaded[jsFile] !== hash) {
-                const oldScript = document.querySelector(`script[data-plugin="${meta.id}"][src*="${jsFile}"]`);
-                if (oldScript) oldScript.remove();
-
+                document.querySelector(`script[data-plugin="${meta.id}"][src*="${jsFile}"]`)?.remove();
                 await new Promise((resolve, reject) => {
                     const script = document.createElement("script");
                     script.src = base + jsFile + "?v=" + hash;
@@ -270,7 +244,6 @@ async function loadPlugin(meta) {
                     script.onerror = reject;
                     document.body.appendChild(script);
                 });
-
                 loaded[jsFile] = hash;
             }
         }
@@ -279,26 +252,21 @@ async function loadPlugin(meta) {
     CoreAPI.log(`插件 ${meta.id} 已加载/刷新`);
 }
 
-/**
- * 刷新插件注册表（插件级对比 + 文件级版本检测）
- */
+/** 刷新插件注册表 */
 async function refreshPlugins() {
     try {
         const registry = await fetchStandard("/api/plugins");
+        const oldMap = Object.fromEntries(window.lastPluginRegistry.map((p) => [p.id, p]));
+        const newMap = Object.fromEntries(registry.map((p) => [p.id, p]));
 
-        const oldMap = Object.fromEntries(window.lastPluginRegistry.map(p => [p.id, p]));
-        const newMap = Object.fromEntries(registry.map(p => [p.id, p]));
-
-        // 检查新增插件
         for (const id in newMap) {
             if (!oldMap[id]) {
                 CoreAPI.log(`检测到新插件：${id}`);
                 await loadPlugin(newMap[id]);
             } else {
-                // 检查版本变化（文件级）
                 const oldVer = oldMap[id].versions || {};
                 const newVer = newMap[id].versions || {};
-                const changedFiles = Object.keys(newVer).filter(f => newVer[f] !== oldVer[f]);
+                const changedFiles = Object.keys(newVer).filter((f) => newVer[f] !== oldVer[f]);
                 if (changedFiles.length > 0) {
                     CoreAPI.log(`检测到插件 ${id} 文件变化：${changedFiles.join(", ")}`);
                     await loadPlugin(newMap[id]);
@@ -306,7 +274,6 @@ async function refreshPlugins() {
             }
         }
 
-        // 检查被删除的插件
         for (const id in oldMap) {
             if (!newMap[id]) {
                 CoreAPI.log(`检测到插件被移除：${id}`);
@@ -314,13 +281,71 @@ async function refreshPlugins() {
             }
         }
 
-        // 更新注册表快照
         window.lastPluginRegistry = registry;
     } catch (err) {
         console.error("刷新插件失败:", err.message);
     }
 }
 
-// 启动自动刷新
+/** 轮询同步最新节点树（热度、增删节点） */
+async function pollAndSyncTree(container) {
+    try {
+        const data = await fetchStandard("/api/file/tree", { method: "POST" });
+
+        const newIds = new Set(Object.keys(data));
+        const oldIds = new Set(Object.keys(allNodes));
+
+        // 1️⃣ 删除前端已有但后端不存在的节点（排除根节点）
+        for (const id of oldIds) {
+            if (!newIds.has(id) && !roots.list.includes(id)) {
+                delete allNodes[id];
+                const el = container.querySelector(`[data-node-id="${id}"]`);
+                if (el) el.remove();
+            }
+        }
+
+        // 2️⃣ 合并新数据并更新热度
+        for (const [id, node] of Object.entries(data)) {
+            const existing = allNodes[id];
+            if (!existing) {
+                // 新节点，直接加入
+                allNodes[id] = structuredClone(node);
+                // 这里可以选择立即渲染到 DOM
+                // 例如找到父节点的 UL
+                const parentEl = node.parentNode
+                    ? container.querySelector(`[data-node-id="${node.parentNode}"] > ul`)
+                    : container.querySelector("ul"); // 根节点
+                if (parentEl) parentEl.appendChild(buildTreeHtml(node));
+            } else {
+                // 已有节点，只更新热度
+                if (node.clickHeat !== undefined && node.clickHeat !== existing.clickHeat) {
+                    existing.clickHeat = node.clickHeat;
+                    updateNodeHeatDisplay(id, node.clickHeat);
+                }
+                // 修复 parent/child 信息
+                if ((!existing.childNode || existing.childNode.length === 0) && node.childNode?.length > 0)
+                    existing.childNode = [...node.childNode];
+                if (!existing.parentNode && node.parentNode)
+                    existing.parentNode = node.parentNode;
+            }
+        }
+
+        // 3️⃣ 更新根节点集合
+        const recalculatedRoots = Object.values(allNodes)
+            .filter((node) => !node.parentNode || !allNodes[node.parentNode])
+            .map((node) => node.id);
+
+        roots.list.length = 0;
+        roots.list.push(...new Set(recalculatedRoots));
+
+    } catch (err) {
+        console.error("轮询同步节点树失败:", err.message);
+    }
+}
+
+// 启动轮询，每秒一次
+const treeContainer = document.getElementById("treeContainer");
+setInterval(() => pollAndSyncTree(treeContainer), 1000);
+
 window.addEventListener("DOMContentLoaded", refreshPlugins);
 setInterval(refreshPlugins, 1000);
