@@ -126,10 +126,33 @@ public class SpecifyDirectoryScanner {
                                int currentDepth) {
         // 是否超出扫描深度限制（全量扫描跳过）
         if (!maxDepth.equals("all")) {
-            if (currentDepth >= Integer.parseInt(maxDepth)) {
-                // 标记为部分扫描状态（因为到达深度限制，而不是扫到底）
-                parentNode.setScanStatus(ScanStatus.PARTIAL_SCAN);
-                // 退出扫描
+            int limit = Integer.parseInt(maxDepth);
+            // 是否达到甚至超出深度限制
+            if (currentDepth >= limit) {
+                // 到了，那么收一下尾
+                File[] children = dir.listFiles();
+                boolean hasUnscannedDeeper = false;
+                // 若当前目标目录不是空的
+                if (children != null) {
+                    // 遍历这个目录内的所有东西
+                    for (File child : children) {
+                        // 若发现目录
+                        if (child.isDirectory()) {
+                            // 直接用 child（当前目录的直接子目录）多探一层
+                            File[] grandChildren = child.listFiles();
+                            // 还有孙子？！
+                            if (grandChildren != null && grandChildren.length > 0) {
+                                // 标记一下
+                                hasUnscannedDeeper = true;
+                            }
+                        }
+                    }
+                }
+                // 当前目录下存在更深级，那么当前目录的父节点需要设置为部分扫描
+                // 反之，若不存在更深级，那么就设置为完全扫描
+                parentNode.setScanStatus(
+                        hasUnscannedDeeper ? ScanStatus.PARTIAL_SCAN : ScanStatus.FULLY_SCANNED
+                );
                 return;
             }
         }
@@ -191,8 +214,29 @@ public class SpecifyDirectoryScanner {
 
         // 给父节点（就是当前这个方法中命中的目录）设置子节点集
         parentNode.setChildNode(childIds);
+        // 检查父节点下的子节点集的节点扫描状态
+        // 确保不会只打开直接子级，没有打开实际存在的更深级，但提前被标记为完全扫描
+        boolean isFilly = false;
+        List<Node> nodes = new ArrayList<>();
+        for (String nodeId : parentNode.getChildNode()) {
+            nodes.add(nodeTree.getNodeById(nodeId));
+        }
+        for (Node node : nodes) {
+            // 若为目录节点
+            if (node.getNodeType() == NodeType.DIRECTORY) {
+                DirectoryNode dn = (DirectoryNode) node;
+                // 若存在哪怕一个不是完全扫描状态的节点，直接标记并中断检查
+                if (dn.getScanStatus() == ScanStatus.PARTIAL_SCAN || dn.getScanStatus() == ScanStatus.NOT_SCANNED) {
+                    isFilly = true;
+                    break;
+                }
+            }
+        }
         // 给父节点设置扫描状态为完全扫描，没有更深的目录或文件了
-        parentNode.setScanStatus(ScanStatus.FULLY_SCANNED);
+        if (!isFilly) {
+            // 没有发现非完全扫描状态的直接子节点，可以标记为完全扫描了
+            parentNode.setScanStatus(ScanStatus.FULLY_SCANNED);
+        }
     }
 
     /**

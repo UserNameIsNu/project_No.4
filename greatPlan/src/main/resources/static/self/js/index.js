@@ -5,6 +5,16 @@
  *
  */
 
+// 禁止刷新
+window.addEventListener("keydown", (e) => {
+    if ((e.key === "F5") || (e.ctrlKey && e.key === "r")) {
+        e.preventDefault();
+    }
+});
+window.addEventListener("beforeunload", (e) => {
+    e.preventDefault();
+});
+
 const allNodes = {};
 const roots = { list: [] }; // 小改动：用对象包装更安全
 
@@ -97,12 +107,7 @@ function mergeAndRepairTree(newData) {
         }
     }
 
-    const recalculatedRoots = Object.values(allNodes)
-        .filter((node) => !node.parentNode || !allNodes[node.parentNode])
-        .map((node) => node.id);
-
-    roots.list.length = 0;
-    roots.list.push(...new Set(recalculatedRoots));
+    rebuildFullTree(document.getElementById("treeContainer"));
 }
 
 /** 🔸 仅更新节点热度显示（不刷新整棵树） */
@@ -139,16 +144,35 @@ function buildTreeHtml(node) {
     const label = document.createElement("span");
     label.className = "node-label";
     label.textContent = (node.nodeType === "DIRECTORY" ? "📁 " : "📄 ") + displayName + heatInfo;
+
     li.appendChild(label);
 
     if (node.nodeType === "DIRECTORY") {
         li.classList.add("directory");
+
         label.addEventListener("click", (e) => {
             e.stopPropagation();
-            const hasChildren = node.childNode?.length > 0;
-            const fullyScanned = node.scanStatus === "FULLY_SCANNED";
-            if (hasChildren || fullyScanned) li.classList.toggle("collapsed");
-            else fetchSubDirectory(node, li);
+
+            const isCold = node.clickHeat === 0;
+            const ul = li.querySelector("ul");
+            const hasVisibleChildren = ul && ul.children.length > 0;
+
+            if (hasVisibleChildren && !isCold) {
+                // DOM 上有子节点且未冷却 → 展开/收起
+                li.classList.toggle("collapsed");
+            } else {
+                // DOM 上没有子节点 或 已冷却 → 强制请求扫描
+                fetchSubDirectory(node, li);
+            }
+
+            // 🔹 无条件发送热度增长请求
+            if (node.id) {
+                fetch("/api/file/click", {
+                    method: "POST",
+                    headers: { "Content-Type": "application/x-www-form-urlencoded" },
+                    body: new URLSearchParams({ nodeId: node.id })
+                }).catch(err => console.error("热度增长失败:", err.message));
+            }
         });
 
         const ul = document.createElement("ul");
@@ -187,6 +211,36 @@ function fetchSubDirectory(node, liElement) {
             liElement.classList.remove("collapsed");
         })
         .catch((err) => console.error("获取子目录失败:", err.message));
+}
+
+/** 🔁 全量修复渲染树结构 */
+function rebuildFullTree(container) {
+    // 1️⃣ 清空 DOM
+    container.innerHTML = "";
+
+    // 2️⃣ 修复父子引用（防止脏数据）
+    for (const node of Object.values(allNodes)) {
+        if (node.parentNode && allNodes[node.parentNode]) {
+            const parent = allNodes[node.parentNode];
+            parent.childNode = parent.childNode || [];
+            if (!parent.childNode.includes(node.id)) parent.childNode.push(node.id);
+        }
+    }
+
+    // 3️⃣ 重新计算根节点
+    const recalculatedRoots = Object.values(allNodes)
+        .filter((node) => !node.parentNode || !allNodes[node.parentNode])
+        .map((node) => node.id);
+    roots.list.length = 0;
+    roots.list.push(...new Set(recalculatedRoots));
+
+    // 4️⃣ 重新渲染
+    const ul = document.createElement("ul");
+    for (const rootId of roots.list) {
+        const rootNode = allNodes[rootId];
+        if (rootNode) ul.appendChild(buildTreeHtml(rootNode));
+    }
+    container.appendChild(ul);
 }
 
 /** 加载/刷新插件 */
@@ -331,13 +385,7 @@ async function pollAndSyncTree(container) {
         }
 
         // 3️⃣ 更新根节点集合
-        const recalculatedRoots = Object.values(allNodes)
-            .filter((node) => !node.parentNode || !allNodes[node.parentNode])
-            .map((node) => node.id);
-
-        roots.list.length = 0;
-        roots.list.push(...new Set(recalculatedRoots));
-
+        rebuildFullTree(container);
     } catch (err) {
         console.error("轮询同步节点树失败:", err.message);
     }
