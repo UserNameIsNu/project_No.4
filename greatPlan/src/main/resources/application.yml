@@ -31,6 +31,10 @@ scan:
     # 显示隐藏/SHOW_HIDDEN：在上一个的基础上额外显示windows文件管理器中可选的隐藏文件
     # 显示所有/SHOW_ALL：显示windows文件管理器中都不显示的各种奇怪文件
     show-type: SHOW_HIDDEN
+# 文件系统监听配置
+listener:
+    # 防抖间隔（ms），最少需要间隔多久才能触发一次监听组重建行为
+    anti-shake-intervals: 1000
 # 异常日志写入配置
 error-log:
     # 异常日志写入地址

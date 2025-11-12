@@ -20517,3 +20517,360 @@
   [8] org.springframework.aop.aspectj.AspectJAfterThrowingAdvice.invoke(AspectJAfterThrowingAdvice.java:64)
   [9] org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
 ========================================================
+
+================= 2025-11-10T11:48:43.392559300 =================
+错误类型：java.lang.NullPointerException
+错误消息：Cannot invoke "com.ljf.greatplan.core.entity.Node.getChildNode()" because "parentNode" is null
+位置：com.ljf.greatplan.core.entity.NodeTree.delNode (NodeTree.java:61)
+调用链：
+  [0] com.ljf.greatplan.core.entity.NodeTree.delNode(NodeTree.java:61)
+  [1] jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+  [2] java.lang.reflect.Method.invoke(Method.java:580)
+  [3] org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:360)
+  [4] org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:196)
+  [5] org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+  [6] org.springframework.aop.aspectj.AspectJAfterThrowingAdvice.invoke(AspectJAfterThrowingAdvice.java:64)
+  [7] org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+  [8] org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:97)
+  [9] org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+========================================================
+
+================= 2025-11-10T11:48:43.394968700 =================
+错误类型：java.lang.NullPointerException
+错误消息：Cannot invoke "com.ljf.greatplan.core.entity.Node.getChildNode()" because "parentNode" is null
+位置：com.ljf.greatplan.core.entity.NodeTree.delNode (NodeTree.java:61)
+调用链：
+  [0] com.ljf.greatplan.core.entity.NodeTree.delNode(NodeTree.java:61)
+  [1] jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+  [2] java.lang.reflect.Method.invoke(Method.java:580)
+  [3] org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:360)
+  [4] org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:196)
+  [5] org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+  [6] org.springframework.aop.aspectj.AspectJAfterThrowingAdvice.invoke(AspectJAfterThrowingAdvice.java:64)
+  [7] org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+  [8] org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:97)
+  [9] org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+========================================================
+
+================= 2025-11-10T11:48:44.399634900 =================
+错误类型：java.lang.NullPointerException
+错误消息：Cannot invoke "com.ljf.greatplan.core.entity.Node.getChildNode()" because "parentNode" is null
+位置：com.ljf.greatplan.general.timeer.NodeColdForgetfulness.tracedBack (NodeColdForgetfulness.java:132)
+调用链：
+  [0] com.ljf.greatplan.general.timeer.NodeColdForgetfulness.tracedBack(NodeColdForgetfulness.java:132)
+  [1] com.ljf.greatplan.general.timeer.NodeColdForgetfulness.clean(NodeColdForgetfulness.java:99)
+  [2] com.ljf.greatplan.general.timeer.NodeColdForgetfulness.decayAndPrune(NodeColdForgetfulness.java:65)
+  [3] jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+  [4] java.lang.reflect.Method.invoke(Method.java:580)
+  [5] org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:360)
+  [6] org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:196)
+  [7] org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+  [8] org.springframework.aop.aspectj.AspectJAfterThrowingAdvice.invoke(AspectJAfterThrowingAdvice.java:64)
+  [9] org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+========================================================
+
+================= 2025-11-10T11:48:45.397736600 =================
+错误类型：java.lang.NullPointerException
+错误消息：Cannot invoke "com.ljf.greatplan.core.entity.Node.getChildNode()" because "parentNode" is null
+位置：com.ljf.greatplan.general.timeer.NodeColdForgetfulness.tracedBack (NodeColdForgetfulness.java:132)
+调用链：
+  [0] com.ljf.greatplan.general.timeer.NodeColdForgetfulness.tracedBack(NodeColdForgetfulness.java:132)
+  [1] com.ljf.greatplan.general.timeer.NodeColdForgetfulness.clean(NodeColdForgetfulness.java:99)
+  [2] com.ljf.greatplan.general.timeer.NodeColdForgetfulness.decayAndPrune(NodeColdForgetfulness.java:65)
+  [3] jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+  [4] java.lang.reflect.Method.invoke(Method.java:580)
+  [5] org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:360)
+  [6] org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:196)
+  [7] org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+  [8] org.springframework.aop.aspectj.AspectJAfterThrowingAdvice.invoke(AspectJAfterThrowingAdvice.java:64)
+  [9] org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+========================================================
+
+================= 2025-11-10T11:48:46.397239800 =================
+错误类型：java.lang.NullPointerException
+错误消息：Cannot invoke "com.ljf.greatplan.core.entity.Node.getChildNode()" because "parentNode" is null
+位置：com.ljf.greatplan.general.timeer.NodeColdForgetfulness.tracedBack (NodeColdForgetfulness.java:132)
+调用链：
+  [0] com.ljf.greatplan.general.timeer.NodeColdForgetfulness.tracedBack(NodeColdForgetfulness.java:132)
+  [1] com.ljf.greatplan.general.timeer.NodeColdForgetfulness.clean(NodeColdForgetfulness.java:99)
+  [2] com.ljf.greatplan.general.timeer.NodeColdForgetfulness.decayAndPrune(NodeColdForgetfulness.java:65)
+  [3] jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+  [4] java.lang.reflect.Method.invoke(Method.java:580)
+  [5] org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:360)
+  [6] org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:196)
+  [7] org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+  [8] org.springframework.aop.aspectj.AspectJAfterThrowingAdvice.invoke(AspectJAfterThrowingAdvice.java:64)
+  [9] org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+========================================================
+
+================= 2025-11-10T11:48:47.392987900 =================
+错误类型：java.lang.NullPointerException
+错误消息：Cannot invoke "com.ljf.greatplan.core.entity.Node.getChildNode()" because "parentNode" is null
+位置：com.ljf.greatplan.general.timeer.NodeColdForgetfulness.tracedBack (NodeColdForgetfulness.java:132)
+调用链：
+  [0] com.ljf.greatplan.general.timeer.NodeColdForgetfulness.tracedBack(NodeColdForgetfulness.java:132)
+  [1] com.ljf.greatplan.general.timeer.NodeColdForgetfulness.clean(NodeColdForgetfulness.java:99)
+  [2] com.ljf.greatplan.general.timeer.NodeColdForgetfulness.decayAndPrune(NodeColdForgetfulness.java:65)
+  [3] jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+  [4] java.lang.reflect.Method.invoke(Method.java:580)
+  [5] org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:360)
+  [6] org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:196)
+  [7] org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+  [8] org.springframework.aop.aspectj.AspectJAfterThrowingAdvice.invoke(AspectJAfterThrowingAdvice.java:64)
+  [9] org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+========================================================
+
+================= 2025-11-10T11:48:58.399485200 =================
+错误类型：java.lang.NullPointerException
+错误消息：Cannot invoke "com.ljf.greatplan.core.entity.Node.getChildNode()" because "parentNode" is null
+位置：com.ljf.greatplan.general.timeer.NodeColdForgetfulness.tracedBack (NodeColdForgetfulness.java:132)
+调用链：
+  [0] com.ljf.greatplan.general.timeer.NodeColdForgetfulness.tracedBack(NodeColdForgetfulness.java:132)
+  [1] com.ljf.greatplan.general.timeer.NodeColdForgetfulness.clean(NodeColdForgetfulness.java:99)
+  [2] com.ljf.greatplan.general.timeer.NodeColdForgetfulness.decayAndPrune(NodeColdForgetfulness.java:65)
+  [3] jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+  [4] java.lang.reflect.Method.invoke(Method.java:580)
+  [5] org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:360)
+  [6] org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:196)
+  [7] org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+  [8] org.springframework.aop.aspectj.AspectJAfterThrowingAdvice.invoke(AspectJAfterThrowingAdvice.java:64)
+  [9] org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+========================================================
+
+================= 2025-11-10T11:48:59.398460300 =================
+错误类型：java.lang.NullPointerException
+错误消息：Cannot invoke "com.ljf.greatplan.core.entity.Node.getChildNode()" because "parentNode" is null
+位置：com.ljf.greatplan.general.timeer.NodeColdForgetfulness.tracedBack (NodeColdForgetfulness.java:132)
+调用链：
+  [0] com.ljf.greatplan.general.timeer.NodeColdForgetfulness.tracedBack(NodeColdForgetfulness.java:132)
+  [1] com.ljf.greatplan.general.timeer.NodeColdForgetfulness.clean(NodeColdForgetfulness.java:99)
+  [2] com.ljf.greatplan.general.timeer.NodeColdForgetfulness.decayAndPrune(NodeColdForgetfulness.java:65)
+  [3] jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+  [4] java.lang.reflect.Method.invoke(Method.java:580)
+  [5] org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:360)
+  [6] org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:196)
+  [7] org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+  [8] org.springframework.aop.aspectj.AspectJAfterThrowingAdvice.invoke(AspectJAfterThrowingAdvice.java:64)
+  [9] org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+========================================================
+
+================= 2025-11-10T11:49:00.391082400 =================
+错误类型：java.lang.NullPointerException
+错误消息：Cannot invoke "com.ljf.greatplan.core.entity.Node.getChildNode()" because "parentNode" is null
+位置：com.ljf.greatplan.general.timeer.NodeColdForgetfulness.tracedBack (NodeColdForgetfulness.java:132)
+调用链：
+  [0] com.ljf.greatplan.general.timeer.NodeColdForgetfulness.tracedBack(NodeColdForgetfulness.java:132)
+  [1] com.ljf.greatplan.general.timeer.NodeColdForgetfulness.clean(NodeColdForgetfulness.java:99)
+  [2] com.ljf.greatplan.general.timeer.NodeColdForgetfulness.decayAndPrune(NodeColdForgetfulness.java:65)
+  [3] jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+  [4] java.lang.reflect.Method.invoke(Method.java:580)
+  [5] org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:360)
+  [6] org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:196)
+  [7] org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+  [8] org.springframework.aop.aspectj.AspectJAfterThrowingAdvice.invoke(AspectJAfterThrowingAdvice.java:64)
+  [9] org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+========================================================
+
+================= 2025-11-10T11:49:01.392700800 =================
+错误类型：java.lang.NullPointerException
+错误消息：Cannot invoke "com.ljf.greatplan.core.entity.Node.getChildNode()" because "parentNode" is null
+位置：com.ljf.greatplan.general.timeer.NodeColdForgetfulness.tracedBack (NodeColdForgetfulness.java:132)
+调用链：
+  [0] com.ljf.greatplan.general.timeer.NodeColdForgetfulness.tracedBack(NodeColdForgetfulness.java:132)
+  [1] com.ljf.greatplan.general.timeer.NodeColdForgetfulness.clean(NodeColdForgetfulness.java:99)
+  [2] com.ljf.greatplan.general.timeer.NodeColdForgetfulness.decayAndPrune(NodeColdForgetfulness.java:65)
+  [3] jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+  [4] java.lang.reflect.Method.invoke(Method.java:580)
+  [5] org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:360)
+  [6] org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:196)
+  [7] org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+  [8] org.springframework.aop.aspectj.AspectJAfterThrowingAdvice.invoke(AspectJAfterThrowingAdvice.java:64)
+  [9] org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+========================================================
+
+================= 2025-11-11T19:07:55.095632300 =================
+错误类型：java.lang.ClassCastException
+错误消息：class java.util.concurrent.ConcurrentHashMap$ValuesView cannot be cast to class java.util.List (java.util.concurrent.ConcurrentHashMap$ValuesView and java.util.List are in module java.base of loader 'bootstrap')
+位置：com.ljf.greatplan.general.listener.fileSystemListener.FileSystemListener.buildListeningUnits (FileSystemListener.java:68)
+调用链：
+  [0] com.ljf.greatplan.general.listener.fileSystemListener.FileSystemListener.buildListeningUnits(FileSystemListener.java:68)
+  [1] jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+  [2] java.lang.reflect.Method.invoke(Method.java:580)
+  [3] org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:360)
+  [4] org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:196)
+  [5] org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+  [6] org.springframework.aop.aspectj.AspectJAfterThrowingAdvice.invoke(AspectJAfterThrowingAdvice.java:64)
+  [7] org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+  [8] org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:97)
+  [9] org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+========================================================
+
+================= 2025-11-11T19:07:55.098638800 =================
+错误类型：java.lang.ClassCastException
+错误消息：class java.util.concurrent.ConcurrentHashMap$ValuesView cannot be cast to class java.util.List (java.util.concurrent.ConcurrentHashMap$ValuesView and java.util.List are in module java.base of loader 'bootstrap')
+位置：com.ljf.greatplan.general.listener.fileSystemListener.FileSystemListener.buildListeningUnits (FileSystemListener.java:68)
+调用链：
+  [0] com.ljf.greatplan.general.listener.fileSystemListener.FileSystemListener.buildListeningUnits(FileSystemListener.java:68)
+  [1] jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+  [2] java.lang.reflect.Method.invoke(Method.java:580)
+  [3] org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:360)
+  [4] org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:196)
+  [5] org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+  [6] org.springframework.aop.aspectj.AspectJAfterThrowingAdvice.invoke(AspectJAfterThrowingAdvice.java:64)
+  [7] org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+  [8] org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:97)
+  [9] org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+========================================================
+
+================= 2025-11-11T19:07:55.100143 =================
+错误类型：java.lang.ClassCastException
+错误消息：class java.util.concurrent.ConcurrentHashMap$ValuesView cannot be cast to class java.util.List (java.util.concurrent.ConcurrentHashMap$ValuesView and java.util.List are in module java.base of loader 'bootstrap')
+位置：com.ljf.greatplan.general.listener.fileSystemListener.FileSystemListener.buildListeningUnits (FileSystemListener.java:68)
+调用链：
+  [0] com.ljf.greatplan.general.listener.fileSystemListener.FileSystemListener.buildListeningUnits(FileSystemListener.java:68)
+  [1] jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+  [2] java.lang.reflect.Method.invoke(Method.java:580)
+  [3] org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:360)
+  [4] org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:196)
+  [5] org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+  [6] org.springframework.aop.aspectj.AspectJAfterThrowingAdvice.invoke(AspectJAfterThrowingAdvice.java:64)
+  [7] org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+  [8] org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:97)
+  [9] org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+========================================================
+
+================= 2025-11-12T09:07:42.718070200 =================
+错误类型：org.springframework.beans.factory.BeanCreationException
+错误消息：Error creating bean with name 'listeningUnit' defined in file [D:\planOfElectronicHamster\9_GreatPlan\4_第四次尝试（进行中）\greatPlan\target\classes\com\ljf\greatplan\core\entity\ListeningUnit.class]: Could not resolve matching constructor on bean class [com.ljf.greatplan.core.entity.ListeningUnit] (hint: specify index/type/name arguments for simple parameters to avoid type ambiguities. You should also check the consistency of arguments when mixing indexed and named arguments, especially in case of bean definition inheritance)
+位置：org.springframework.beans.factory.support.ConstructorResolver.autowireConstructor (ConstructorResolver.java:291)
+调用链：
+  [0] org.springframework.beans.factory.support.ConstructorResolver.autowireConstructor(ConstructorResolver.java:291)
+  [1] org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireConstructor(AbstractAutowireCapableBeanFactory.java:1395)
+  [2] org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1232)
+  [3] org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:569)
+  [4] org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:529)
+  [5] org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:357)
+  [6] org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:227)
+  [7] org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveNamedBean(DefaultListableBeanFactory.java:1605)
+  [8] org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveNamedBean(DefaultListableBeanFactory.java:1563)
+  [9] org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveBean(DefaultListableBeanFactory.java:563)
+========================================================
+
+================= 2025-11-12T09:07:42.720055 =================
+错误类型：org.springframework.beans.factory.BeanCreationException
+错误消息：Error creating bean with name 'listeningUnit' defined in file [D:\planOfElectronicHamster\9_GreatPlan\4_第四次尝试（进行中）\greatPlan\target\classes\com\ljf\greatplan\core\entity\ListeningUnit.class]: Could not resolve matching constructor on bean class [com.ljf.greatplan.core.entity.ListeningUnit] (hint: specify index/type/name arguments for simple parameters to avoid type ambiguities. You should also check the consistency of arguments when mixing indexed and named arguments, especially in case of bean definition inheritance)
+位置：org.springframework.beans.factory.support.ConstructorResolver.autowireConstructor (ConstructorResolver.java:291)
+调用链：
+  [0] org.springframework.beans.factory.support.ConstructorResolver.autowireConstructor(ConstructorResolver.java:291)
+  [1] org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireConstructor(AbstractAutowireCapableBeanFactory.java:1395)
+  [2] org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1232)
+  [3] org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:569)
+  [4] org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:529)
+  [5] org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:357)
+  [6] org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:227)
+  [7] org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveNamedBean(DefaultListableBeanFactory.java:1605)
+  [8] org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveNamedBean(DefaultListableBeanFactory.java:1563)
+  [9] org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveBean(DefaultListableBeanFactory.java:563)
+========================================================
+
+================= 2025-11-12T09:07:42.721054 =================
+错误类型：org.springframework.beans.factory.BeanCreationException
+错误消息：Error creating bean with name 'listeningUnit' defined in file [D:\planOfElectronicHamster\9_GreatPlan\4_第四次尝试（进行中）\greatPlan\target\classes\com\ljf\greatplan\core\entity\ListeningUnit.class]: Could not resolve matching constructor on bean class [com.ljf.greatplan.core.entity.ListeningUnit] (hint: specify index/type/name arguments for simple parameters to avoid type ambiguities. You should also check the consistency of arguments when mixing indexed and named arguments, especially in case of bean definition inheritance)
+位置：org.springframework.beans.factory.support.ConstructorResolver.autowireConstructor (ConstructorResolver.java:291)
+调用链：
+  [0] org.springframework.beans.factory.support.ConstructorResolver.autowireConstructor(ConstructorResolver.java:291)
+  [1] org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireConstructor(AbstractAutowireCapableBeanFactory.java:1395)
+  [2] org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1232)
+  [3] org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:569)
+  [4] org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:529)
+  [5] org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:357)
+  [6] org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:227)
+  [7] org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveNamedBean(DefaultListableBeanFactory.java:1605)
+  [8] org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveNamedBean(DefaultListableBeanFactory.java:1563)
+  [9] org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveBean(DefaultListableBeanFactory.java:563)
+========================================================
+
+================= 2025-11-12T09:08:48.392387900 =================
+错误类型：org.springframework.beans.factory.BeanCreationException
+错误消息：Error creating bean with name 'listeningUnit' defined in file [D:\planOfElectronicHamster\9_GreatPlan\4_第四次尝试（进行中）\greatPlan\target\classes\com\ljf\greatplan\core\entity\ListeningUnit.class]: Could not resolve matching constructor on bean class [com.ljf.greatplan.core.entity.ListeningUnit] (hint: specify index/type/name arguments for simple parameters to avoid type ambiguities. You should also check the consistency of arguments when mixing indexed and named arguments, especially in case of bean definition inheritance)
+位置：org.springframework.beans.factory.support.ConstructorResolver.autowireConstructor (ConstructorResolver.java:291)
+调用链：
+  [0] org.springframework.beans.factory.support.ConstructorResolver.autowireConstructor(ConstructorResolver.java:291)
+  [1] org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireConstructor(AbstractAutowireCapableBeanFactory.java:1395)
+  [2] org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1232)
+  [3] org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:569)
+  [4] org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:529)
+  [5] org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:357)
+  [6] org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:227)
+  [7] org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveNamedBean(DefaultListableBeanFactory.java:1605)
+  [8] org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveNamedBean(DefaultListableBeanFactory.java:1563)
+  [9] org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveBean(DefaultListableBeanFactory.java:563)
+========================================================
+
+================= 2025-11-12T09:08:48.395586800 =================
+错误类型：org.springframework.beans.factory.BeanCreationException
+错误消息：Error creating bean with name 'listeningUnit' defined in file [D:\planOfElectronicHamster\9_GreatPlan\4_第四次尝试（进行中）\greatPlan\target\classes\com\ljf\greatplan\core\entity\ListeningUnit.class]: Could not resolve matching constructor on bean class [com.ljf.greatplan.core.entity.ListeningUnit] (hint: specify index/type/name arguments for simple parameters to avoid type ambiguities. You should also check the consistency of arguments when mixing indexed and named arguments, especially in case of bean definition inheritance)
+位置：org.springframework.beans.factory.support.ConstructorResolver.autowireConstructor (ConstructorResolver.java:291)
+调用链：
+  [0] org.springframework.beans.factory.support.ConstructorResolver.autowireConstructor(ConstructorResolver.java:291)
+  [1] org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireConstructor(AbstractAutowireCapableBeanFactory.java:1395)
+  [2] org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1232)
+  [3] org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:569)
+  [4] org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:529)
+  [5] org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:357)
+  [6] org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:227)
+  [7] org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveNamedBean(DefaultListableBeanFactory.java:1605)
+  [8] org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveNamedBean(DefaultListableBeanFactory.java:1563)
+  [9] org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveBean(DefaultListableBeanFactory.java:563)
+========================================================
+
+================= 2025-11-12T09:08:48.396113 =================
+错误类型：org.springframework.beans.factory.BeanCreationException
+错误消息：Error creating bean with name 'listeningUnit' defined in file [D:\planOfElectronicHamster\9_GreatPlan\4_第四次尝试（进行中）\greatPlan\target\classes\com\ljf\greatplan\core\entity\ListeningUnit.class]: Could not resolve matching constructor on bean class [com.ljf.greatplan.core.entity.ListeningUnit] (hint: specify index/type/name arguments for simple parameters to avoid type ambiguities. You should also check the consistency of arguments when mixing indexed and named arguments, especially in case of bean definition inheritance)
+位置：org.springframework.beans.factory.support.ConstructorResolver.autowireConstructor (ConstructorResolver.java:291)
+调用链：
+  [0] org.springframework.beans.factory.support.ConstructorResolver.autowireConstructor(ConstructorResolver.java:291)
+  [1] org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireConstructor(AbstractAutowireCapableBeanFactory.java:1395)
+  [2] org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1232)
+  [3] org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:569)
+  [4] org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:529)
+  [5] org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:357)
+  [6] org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:227)
+  [7] org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveNamedBean(DefaultListableBeanFactory.java:1605)
+  [8] org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveNamedBean(DefaultListableBeanFactory.java:1563)
+  [9] org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveBean(DefaultListableBeanFactory.java:563)
+========================================================
+
+================= 2025-11-12T09:17:31.740366200 =================
+错误类型：java.lang.StackOverflowError
+错误消息：null
+位置：org.springframework.aop.aspectj.AbstractAspectJAdvice.currentJoinPoint (AbstractAspectJAdvice.java:86)
+调用链：
+  [0] org.springframework.aop.aspectj.AbstractAspectJAdvice.currentJoinPoint(AbstractAspectJAdvice.java:86)
+  [1] org.springframework.aop.aspectj.AbstractAspectJAdvice.getJoinPoint(AbstractAspectJAdvice.java:665)
+  [2] org.springframework.aop.aspectj.AbstractAspectJAdvice.invokeAdviceMethod(AbstractAspectJAdvice.java:624)
+  [3] org.springframework.aop.aspectj.AspectJAfterThrowingAdvice.invoke(AspectJAfterThrowingAdvice.java:68)
+  [4] org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+  [5] org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:97)
+  [6] org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+  [7] org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:728)
+  [8] com.ljf.greatplan.core.entity.NodeTree$$SpringCGLIB$$0.getNodeById(<generated>:-1)
+  [9] com.ljf.greatplan.core.entity.ListeningTree.branchCut(ListeningTree.java:116)
+========================================================
+
+================= 2025-11-12T09:17:31.741365700 =================
+错误类型：java.lang.StackOverflowError
+错误消息：null
+位置：org.springframework.aop.aspectj.AbstractAspectJAdvice.currentJoinPoint (AbstractAspectJAdvice.java:86)
+调用链：
+  [0] org.springframework.aop.aspectj.AbstractAspectJAdvice.currentJoinPoint(AbstractAspectJAdvice.java:86)
+  [1] org.springframework.aop.aspectj.AbstractAspectJAdvice.getJoinPoint(AbstractAspectJAdvice.java:665)
+  [2] org.springframework.aop.aspectj.AbstractAspectJAdvice.invokeAdviceMethod(AbstractAspectJAdvice.java:624)
+  [3] org.springframework.aop.aspectj.AspectJAfterThrowingAdvice.invoke(AspectJAfterThrowingAdvice.java:68)
+  [4] org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+  [5] org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:97)
+  [6] org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+  [7] org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:728)
+  [8] com.ljf.greatplan.core.entity.NodeTree$$SpringCGLIB$$0.getNodeById(<generated>:-1)
+  [9] com.ljf.greatplan.core.entity.ListeningTree.branchCut(ListeningTree.java:116)
+========================================================

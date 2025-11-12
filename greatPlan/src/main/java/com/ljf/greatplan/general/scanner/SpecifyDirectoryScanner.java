@@ -7,12 +7,10 @@
 
 package com.ljf.greatplan.general.scanner;
 
-import com.ljf.greatplan.core.entity.DirectoryNode;
-import com.ljf.greatplan.core.entity.FileNode;
-import com.ljf.greatplan.core.entity.Node;
-import com.ljf.greatplan.core.entity.NodeTree;
+import com.ljf.greatplan.core.entity.*;
 import com.ljf.greatplan.core.enums.NodeType;
 import com.ljf.greatplan.core.enums.ScanStatus;
+import com.ljf.greatplan.general.listener.fileSystemListener.FileSystemListener;
 import com.ljf.greatplan.general.tools.generalTools.FileIO;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Component;
@@ -38,6 +36,16 @@ public class SpecifyDirectoryScanner {
     private FileIO fileIO;
 
     /**
+     * 监听树
+     */
+    private ListeningTree listeningTree;
+
+    /**
+     * 文件系统监听器
+     */
+    private FileSystemListener fileSystemListener;
+
+    /**
      * 节点树
      */
     private NodeTree nodeTree;
@@ -57,16 +65,21 @@ public class SpecifyDirectoryScanner {
     /**
      * 构造器
      * @param fileIO
+     * @param listeningTree
+     * @param fileSystemListener
      * @param nodeTree
      */
-    public SpecifyDirectoryScanner(FileIO fileIO, NodeTree nodeTree) {
+    public SpecifyDirectoryScanner(FileIO fileIO, ListeningTree listeningTree, FileSystemListener fileSystemListener, NodeTree nodeTree) {
         this.fileIO = fileIO;
+        this.listeningTree = listeningTree;
+        this.fileSystemListener = fileSystemListener;
         this.nodeTree = nodeTree;
     }
 
     /**
      * 扫描一组目录<br/>
      * 扫描后把这组玩意塞进节点树里。
+     * 监听树需要依赖节点树构建，所以在节点树首次被初始化，也就是这里装填根节点后就可以被同步触发了。
      * @param roots 目录集合
      * @return 节点树
      */
@@ -81,6 +94,8 @@ public class SpecifyDirectoryScanner {
         }
         // 恢复扫描深度
         maxDepth = max;
+        // 激活监听树，进行首次路径段构建，然后启动监听组
+        fileSystemListener.requestRebuild("初始化点");
         return nodeTree.getTree();
     }
 

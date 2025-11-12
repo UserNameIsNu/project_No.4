@@ -10,6 +10,7 @@ package com.ljf.greatplan.general.timeer;
 import com.ljf.greatplan.core.entity.Node;
 import com.ljf.greatplan.core.entity.NodeTree;
 import com.ljf.greatplan.core.enums.NodeType;
+import com.ljf.greatplan.general.listener.fileSystemListener.FileSystemListener;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.scheduling.annotation.Scheduled;
@@ -32,6 +33,11 @@ public class NodeColdForgetfulness {
     private final NodeTree nodeTree;
 
     /**
+     * 文件系统监听器
+     */
+    private FileSystemListener fileSystemListener;
+
+    /**
      * 衰减量（每刻度衰减的热度）
      */
     @Value("${node-attenuation.num}")
@@ -46,9 +52,11 @@ public class NodeColdForgetfulness {
     /**
      * 构造器
      * @param nodeTree
+     * @param fileSystemListener
      */
-    public NodeColdForgetfulness(NodeTree nodeTree) {
+    public NodeColdForgetfulness(NodeTree nodeTree, FileSystemListener fileSystemListener) {
         this.nodeTree = nodeTree;
+        this.fileSystemListener = fileSystemListener;
     }
 
     /**
@@ -102,6 +110,11 @@ public class NodeColdForgetfulness {
         // 删除预备删除节点集合中的所有节点
         for (Node node : delNodes) {
             nodeTree.delNode(node);
+        }
+
+        // 若确实删了点啥，那就需要重建监听了
+        if (!delNodes.isEmpty()) {
+            fileSystemListener.requestRebuild("冷遗忘点");
         }
     }
 
