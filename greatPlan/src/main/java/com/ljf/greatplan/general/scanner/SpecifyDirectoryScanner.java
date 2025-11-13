@@ -81,7 +81,6 @@ public class SpecifyDirectoryScanner {
     /**
      * 扫描一组目录<br/>
      * 扫描后把这组玩意塞进节点树里。
-     * 监听树需要依赖节点树构建，所以在节点树首次被初始化，也就是这里装填根节点后就可以被同步触发了。
      * @param roots 目录集合
      * @return 节点树
      */
@@ -96,8 +95,6 @@ public class SpecifyDirectoryScanner {
         }
         // 恢复扫描深度
         maxDepth = max;
-        // 激活监听树，进行首次路径段构建，然后启动监听组
-        fileSystemListener.requestRebuild("初始化点");
         return nodeTree.getTree();
     }
 
@@ -126,6 +123,9 @@ public class SpecifyDirectoryScanner {
         // 递归扫描这个目录
         depthScanner(startDir, rootNode, 0);
         log.info("__________节点树构建完成");
+
+        // 重建路径段与监听树，重建监听组
+        fileSystemListener.requestRebuild("初始扫描器");
 
         // 返回最终的节点树
         return nodeTree.getTree();
