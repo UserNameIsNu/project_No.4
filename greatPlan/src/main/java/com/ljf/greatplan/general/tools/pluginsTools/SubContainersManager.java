@@ -41,7 +41,7 @@ public class SubContainersManager {
 
     /**
      * 构造器
-     * @param parentContext
+     * @param parentContext 应用程序上下文（父容器）
      */
     public SubContainersManager(ApplicationContext parentContext) {
         this.parentContext = parentContext;
@@ -77,7 +77,7 @@ public class SubContainersManager {
         pluginContext.refresh();
         // 把子容器加入插件独立上下文保存（保存引用）
         pluginContexts.put(pluginName, pluginContext);
-        log.info("创建了一个子容器：{}", pluginName);
+        log.info("__________创建了子容器{}", pluginName);
     }
 
     /**
@@ -92,12 +92,12 @@ public class SubContainersManager {
         if (context != null) {
             try {
                 context.close();
-                log.info("🧹 已卸载并销毁插件子容器：{}", pluginName);
+                log.info("__________子容器{}已被销毁", pluginName);
             } catch (Exception e) {
-                log.error("❌ 卸载插件子容器 {} 失败", pluginName, e);
+                log.error("__________子容器{}销毁失败", pluginName, e);
             }
         } else {
-            log.warn("插件 {} 未找到对应子容器", pluginName);
+            log.error("__________子容器{}不存在", pluginName);
         }
     }
 }

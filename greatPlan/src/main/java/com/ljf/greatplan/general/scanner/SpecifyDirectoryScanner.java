@@ -12,6 +12,7 @@ import com.ljf.greatplan.core.enums.NodeType;
 import com.ljf.greatplan.core.enums.ScanStatus;
 import com.ljf.greatplan.general.listener.fileSystemListener.FileSystemListener;
 import com.ljf.greatplan.general.tools.generalTools.FileIO;
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Component;
 
@@ -29,6 +30,7 @@ import java.util.*;
  * 强烈建议不要对超深目录进行全量扫描，现在的逻辑撑不住。
  */
 @Component
+@Slf4j
 public class SpecifyDirectoryScanner {
     /**
      * 文件IO工具类
@@ -53,21 +55,21 @@ public class SpecifyDirectoryScanner {
     /**
      * 扫描深度
      */
-    @Value("${scan.depth}")
+    @Value("${great-plan.file-system.scan.depth}")
     private String maxDepth;
 
     /**
      * 扫描类型
      */
-    @Value("${scan.show-type}")
+    @Value("${great-plan.file-system.scan.show-type}")
     private String showType;
 
     /**
      * 构造器
-     * @param fileIO
-     * @param listeningTree
-     * @param fileSystemListener
-     * @param nodeTree
+     * @param fileIO 文件IO工具类
+     * @param listeningTree 监听树
+     * @param fileSystemListener 文件系统监听器
+     * @param nodeTree 节点树
      */
     public SpecifyDirectoryScanner(FileIO fileIO, ListeningTree listeningTree, FileSystemListener fileSystemListener, NodeTree nodeTree) {
         this.fileIO = fileIO;
@@ -108,11 +110,12 @@ public class SpecifyDirectoryScanner {
      * @return 节点树
      */
     public Map<String, Node> initialScanner(String startPath) {
+        log.info("__________启动初始扫描器");
         // 打开目录
         File startDir = new File(startPath);
         // 非空/是否为目录判断
         if (!startDir.exists() || !startDir.isDirectory()) {
-            throw new IllegalArgumentException("指定的路径不存在或不是目录：" + startPath);
+            log.error("__________指定的路径不存在或不是目录：{}", startPath);
         }
 
         // 创建根节点（就是创建目录节点（根一定是目录的嘛））
@@ -122,6 +125,7 @@ public class SpecifyDirectoryScanner {
 
         // 递归扫描这个目录
         depthScanner(startDir, rootNode, 0);
+        log.info("__________节点树构建完成");
 
         // 返回最终的节点树
         return nodeTree.getTree();
@@ -139,6 +143,7 @@ public class SpecifyDirectoryScanner {
     private void depthScanner(File dir,
                                DirectoryNode parentNode,
                                int currentDepth) {
+        log.info("__________启动深度扫描器");
         // 是否超出扫描深度限制（全量扫描跳过）
         if (!maxDepth.equals("all")) {
             int limit = Integer.parseInt(maxDepth);

@@ -40,19 +40,26 @@ public class NodeColdForgetfulness {
     /**
      * 衰减量（每刻度衰减的热度）
      */
-    @Value("${node-attenuation.num}")
+    @Value("${great-plan.node-attenuation.num}")
     private Integer num;
 
     /**
      * 起始阈值（节点树中的节点数量超过这个值才会开始衰减）
      */
-    @Value("${node-attenuation.starter-threshold}")
+    @Value("${great-plan.node-attenuation.starter-threshold}")
     private Integer starterThreshold;
 
     /**
+     * 首次延时<br/>
+     * 为避免首次启动程序时，这玩意赶在节点树构建前就开始衰减。
+     * 让定时任务等一下子。
+     */
+    private boolean firstWait = false;
+
+    /**
      * 构造器
-     * @param nodeTree
-     * @param fileSystemListener
+     * @param nodeTree 节点树
+     * @param fileSystemListener 文件系统监听器
      */
     public NodeColdForgetfulness(NodeTree nodeTree, FileSystemListener fileSystemListener) {
         this.nodeTree = nodeTree;
@@ -62,9 +69,21 @@ public class NodeColdForgetfulness {
     /**
      * 定时任务（fixedRateString = 每隔多少毫秒执行一次）
      */
-    @Scheduled(fixedRateString = "${node-attenuation.speed}")
+    @Scheduled(fixedRateString = "${great-plan.node-attenuation.speed}")
     public void decayAndPrune() {
-        System.out.println(nodeTree.getTree());
+        try {
+            // 不要急着开始衰减，等待其它结构（如节点树）完成初始化后才开始
+            // 要不然框架肯定是先加载出来，但节点树还没初始化这里就开始衰减
+            // 可不就会喷空树
+            // 且这玩意项目启动时缓一次就行，后续不用等了，要不然和任务间隔延时会叠加的
+            if (!firstWait) {
+                Thread.sleep(1000);
+                firstWait = true;
+            }
+        } catch (InterruptedException e) {
+            log.error("__________线程异常中断", e);
+        }
+        log.info("__________发生了一次衰减，当前节点树：{}", nodeTree.getTree());
         // 阈值判断
         if (nodeTree.getTree().size() > starterThreshold) {
             // 衰减

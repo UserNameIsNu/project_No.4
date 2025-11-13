@@ -7,6 +7,7 @@
 
 package com.ljf.greatplan.config.coreConfig;
 
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.web.servlet.config.annotation.ResourceHandlerRegistry;
 import org.springframework.web.servlet.config.annotation.WebMvcConfigurer;
@@ -16,6 +17,7 @@ import org.springframework.web.servlet.config.annotation.WebMvcConfigurer;
  * 设置插件资源的路径映射配置
  */
 @Configuration
+@Slf4j
 public class PluginResourceConfig implements WebMvcConfigurer {
     /**
      * 添加资源处理器
@@ -26,5 +28,6 @@ public class PluginResourceConfig implements WebMvcConfigurer {
         // 在资源处理器注册表中添加插件资源的映射路径
         registry.addResourceHandler("/plugins/**")
                 .addResourceLocations("file:src/main/resources/static/plugins/");
+        log.info("__________插件资源路径映射完成");
     }
 }

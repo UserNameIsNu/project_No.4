@@ -1,5 +1,6 @@
 package com.ljf.greatplan.config.coreConfig;
 
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.web.servlet.config.annotation.CorsRegistry;
 import org.springframework.web.servlet.config.annotation.WebMvcConfigurer;
@@ -9,7 +10,12 @@ import org.springframework.web.servlet.config.annotation.WebMvcConfigurer;
  * 配置跨域映射，让页面可以顺利访问url
  */
 @Configuration
+@Slf4j
 public class MvcConfig implements WebMvcConfigurer {
+    /**
+     * 添加跨域映射
+     * @param registry 注册表
+     */
     @Override
     public void addCorsMappings(CorsRegistry registry) {
         registry.addMapping("/**")  // 允许所有路径
@@ -18,5 +24,6 @@ public class MvcConfig implements WebMvcConfigurer {
                 .allowedHeaders("*")  // 允许所有请求头
                 .allowCredentials(true)  // 允许发送cookie
                 .maxAge(3600);  // 预检请求的有效期，单位为秒
+        log.info("__________跨域配置已注册");
     }
 }

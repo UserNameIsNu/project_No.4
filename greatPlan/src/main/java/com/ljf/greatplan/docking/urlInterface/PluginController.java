@@ -32,7 +32,7 @@ public class PluginController extends BaseController {
 
     /**
      * 构造器
-     * @param registryManager
+     * @param registryManager 插件注册表管理器
      */
     public PluginController(PluginRegistryManager registryManager) {
         this.registryManager = registryManager;

@@ -30,13 +30,13 @@ public class FileIO {
     /**
      * 异常日志地址
      */
-    @Value("${error-log.path}")
+    @Value("${great-plan.error-log.path}")
     private String errorLogPath;
 
     /**
      * 调用链打印深度
      */
-    @Value("${error-log.stackTrace-deep}")
+    @Value("${great-plan.error-log.stackTrace-deep}")
     private String stackTraceDeep;
 
     /**

@@ -29,13 +29,13 @@ public class PluginService {
     /**
      * 插件资源目录
      */
-    @Value("${plugin.resource-dir}")
+    @Value("${great-plan.plugin.resource-dir}")
     private String pluginResourcePath;
 
     /**
      * 资源格式白名单
      */
-    @Value("${plugin.pass-format}")
+    @Value("${great-plan.plugin.pass-format}")
     private String passFormat;
 
     /**
@@ -50,8 +50,8 @@ public class PluginService {
 
     /**
      * 构造器
-     * @param serializationAndString
-     * @param pluginRegistryManager
+     * @param serializationAndString 序列化与字符串工具类
+     * @param pluginRegistryManager 插件注册表管理器
      */
     public PluginService(SerializationAndString serializationAndString, PluginRegistryManager pluginRegistryManager) {
         this.serializationAndString = serializationAndString;
@@ -70,6 +70,7 @@ public class PluginService {
         // 获取插件资源格式白名单
         Set<String> formatSet = serializationAndString.splitStrings(passFormat, ",");
         Map<String, Map<String, Object>> pluginMetaMap = new HashMap<>();
+        log.info("__________插件资源格式白名单：{}", formatSet);
 
         try {
             // 扫描资源目录
@@ -123,10 +124,9 @@ public class PluginService {
                     pluginRegistryManager.registerPlugin(pluginName, meta)
             );
 
-            log.info("已注册插件数：{}", pluginRegistryManager.getAll().size());
-
+            log.info("__________已注册插件数：{}", pluginRegistryManager.getAll().size());
         } catch (IOException e) {
-            throw new RuntimeException("扫描插件资源失败", e);
+            log.error("__________扫描插件资源失败", e);
         }
     }
 
@@ -138,5 +138,6 @@ public class PluginService {
     public void removePlugin(String id) {
         // 卸载指定插件
         pluginRegistryManager.uninstallPlugin(id);
+        log.info("__________卸载了一个插件：{}", id);
     }
 }

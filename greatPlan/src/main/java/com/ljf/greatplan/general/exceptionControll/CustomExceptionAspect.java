@@ -29,7 +29,7 @@ public class CustomExceptionAspect {
 
     /**
      * 构造器
-     * @param fileIO
+     * @param fileIO 文件IO工具类
      */
     public CustomExceptionAspect(FileIO fileIO) {
         this.fileIO = fileIO;
@@ -51,5 +51,6 @@ public class CustomExceptionAspect {
     @AfterThrowing(pointcut = "globalMethods()", throwing = "e")
     public void handleException(Throwable e) {
         fileIO.exceptionWrite(e);
+        log.error("__________捕获了一次错误并已写入日志", e);
     }
 }

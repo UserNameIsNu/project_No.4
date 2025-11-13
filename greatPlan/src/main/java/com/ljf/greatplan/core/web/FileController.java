@@ -12,6 +12,7 @@ import com.ljf.greatplan.core.entity.StandardViewResponseObject;
 import com.ljf.greatplan.core.service.FileSystemService;
 import com.ljf.greatplan.general.scanner.SpecifyDirectoryScanner;
 import com.ljf.greatplan.general.tools.generalTools.FileIO;
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
@@ -23,6 +24,7 @@ import java.util.Map;
  */
 @RestController
 @RequestMapping("/api/file")
+@Slf4j
 public class FileController extends BaseController{
     /**
      * 指定目录扫描器
@@ -41,9 +43,9 @@ public class FileController extends BaseController{
 
     /**
      * 构造器
-     * @param scanner
-     * @param fileSystemService
-     * @param fileIO
+     * @param scanner 指定目录扫描器
+     * @param fileSystemService 文件系统服务器
+     * @param fileIO 文件IO工具类
      */
     public FileController(SpecifyDirectoryScanner scanner, FileSystemService fileSystemService, FileIO fileIO) {
         this.scanner = scanner;
@@ -59,6 +61,7 @@ public class FileController extends BaseController{
      */
     @PostMapping
     public StandardViewResponseObject<Map<String, Node>>  getDirectory(@RequestParam String path) {
+        log.info("__________扫描指定路径并返回节点树的请求");
         return success(scanner.initialScanner(path));
     }
 
@@ -69,6 +72,7 @@ public class FileController extends BaseController{
      */
     @PostMapping("/load")
     public StandardViewResponseObject<Map<String, Node>> getRootDirectory() {
+        log.info("__________初始化扫描并返回节点树的请求");
         List<String> roots = fileIO.getRoot();
         return success(scanner.scanDirList(roots));
     }
@@ -80,6 +84,7 @@ public class FileController extends BaseController{
      */
     @PostMapping("/click")
     public StandardViewResponseObject<Void> popularityIncreases(@RequestParam String nodeId) {
+        log.info("__________指定节点热度增长的请求");
         fileSystemService.popularityIncreases(nodeId);
         return success();
     }
@@ -90,6 +95,7 @@ public class FileController extends BaseController{
      */
     @PostMapping("/tree")
     public StandardViewResponseObject<Map<String, Node>> getTree() {
+        log.info("__________获取最新节点树的请求");
         return success(fileSystemService.getTree());
     }
 }

@@ -36,10 +36,12 @@ public class PluginRegistryManager {
          * 插件版本
          */
         private String version;
+
         /**
          * 源码路径
          */
         private String sourcePath;
+
         /**
          * 资源路径
          */
@@ -64,7 +66,6 @@ public class PluginRegistryManager {
         info.pluginResourceInfo = pluginResourceInfo;
         // 将插件对象注册至插件注册表
         pluginRegistry.put(id, info);
-        log.info("注册了一个插件：{}", id);
     }
 
     /**
@@ -74,7 +75,6 @@ public class PluginRegistryManager {
     public void uninstallPlugin(String id) {
         // 跟据插件名删除插件注册表中指定插件对象
         pluginRegistry.remove(id);
-        log.info("卸载了一个插件：{}", id);
     }
 
     /**

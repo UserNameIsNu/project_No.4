@@ -12,40 +12,44 @@ server:
             enabled: true
             charset: UTF-8
             force: true
-# 补充包配置
-plugin:
-    # 插件源码目录
-    source-dir: src/main/java/com/ljf/greatplan/docking/plugins
-#    source-dir: classes/com/ljf/greatplan/docking/plugins
-    # 插件资源目录
-    resource-dir: src/main/resources/static/plugins
-#    resource-dir: classes/static/plugins
-    # 允许注册至核心包的资源文件格式白名单
-    pass-format: .html,.css,.js
-# 文件系统扫描配置
-scan:
-    # 扫描深度（all为全量扫描）
-    depth: 1
-    # 扫描类型
-    # 一般显示/NORMAL：和windows文件管理器一样且不包括隐藏文件
-    # 显示隐藏/SHOW_HIDDEN：在上一个的基础上额外显示windows文件管理器中可选的隐藏文件
-    # 显示所有/SHOW_ALL：显示windows文件管理器中都不显示的各种奇怪文件
-    show-type: SHOW_HIDDEN
-# 文件系统监听配置
-listener:
-    # 防抖间隔（ms），最少需要间隔多久才能触发一次监听组重建行为
-    anti-shake-intervals: 1000
-# 异常日志写入配置
-error-log:
-    # 异常日志写入地址
-    path: log
-    # 调用链打印深度（all为完全打印）
-    stackTrace-deep: 10
-# 节点热度衰减配置
-node-attenuation:
-    # 衰减速度（ms），最好和前端的获取速度一致
-    speed: 1000
-    # 衰减量（每刻度衰减的热度）
-    num: 1
-    # 起始阈值（节点树中的节点数量超过这个值才会开始衰减）
-    starter-threshold: 1
+# 自定义配置
+great-plan:
+    # 插件基本配置
+    plugin:
+        # 插件源码目录
+        source-dir: src/main/java/com/ljf/greatplan/docking/plugins
+        #    source-dir: classes/com/ljf/greatplan/docking/plugins
+        # 插件资源目录
+        resource-dir: src/main/resources/static/plugins
+        #    resource-dir: classes/static/plugins
+        # 允许注册至核心包的资源文件格式白名单
+        pass-format: .html,.css,.js
+    # 文件系统配置
+    file-system:
+        # 扫描配置
+        scan:
+            # 扫描深度（all为全量扫描）
+            depth: 1
+            # 扫描类型
+            # 一般显示/NORMAL：和windows文件管理器一样且不包括隐藏文件
+            # 显示隐藏/SHOW_HIDDEN：在上一个的基础上额外显示windows文件管理器中可选的隐藏文件
+            # 显示所有/SHOW_ALL：显示windows文件管理器中都不显示的各种奇怪文件
+            show-type: SHOW_HIDDEN
+        # 监听配置
+        listener:
+            # 防抖间隔（ms），最少需要间隔多久才能触发一次监听组重建行为
+            anti-shake-intervals: 1000
+    # 异常日志写入配置
+    error-log:
+        # 异常日志写入地址
+        path: log
+        # 调用链打印深度（all为完全打印）
+        stackTrace-deep: 10
+    # 节点衰减配置
+    node-attenuation:
+        # 衰减速度（ms），最好和前端的获取速度一致
+        speed: 1000
+        # 衰减量（每刻度衰减的热度）
+        num: 1
+        # 起始阈值（节点树中的节点数量超过这个值才会开始衰减）
+        starter-threshold: 1

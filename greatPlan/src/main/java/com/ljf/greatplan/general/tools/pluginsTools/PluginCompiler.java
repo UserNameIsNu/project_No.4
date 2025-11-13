@@ -33,7 +33,7 @@ public class PluginCompiler {
 
     /**
      * 构造器
-     * @param fileIO
+     * @param fileIO 文件IO工具类
      */
     public PluginCompiler(FileIO fileIO) {
         this.fileIO = fileIO;
@@ -48,7 +48,8 @@ public class PluginCompiler {
     public List<Class<?>> sourceHotCompiler(File pluginDir) {
         // 检查这个目录是否存在
         if (!pluginDir.exists()) {
-            throw new RuntimeException("插件目录不存在：" + pluginDir.getAbsolutePath());
+            log.error("__________不存在的目录：{}", pluginDir.getAbsolutePath());
+            throw new RuntimeException();
         }
 
         // 所有.java文件集合
@@ -56,7 +57,7 @@ public class PluginCompiler {
 
         // 检查是否有拉到.java
         if (javaFiles.isEmpty()) {
-            log.warn("目录 {} 中没有 .java 文件", pluginDir);
+            log.error("__________插件{}中没有找到可供编译的 .java 文件", pluginDir);
             return Collections.emptyList();
         }
 
@@ -66,9 +67,10 @@ public class PluginCompiler {
 
         // 判断任执行结果
         if (!startCompiler(javaFiles, outputDir)) {
-            throw new RuntimeException("插件编译失败：" + pluginDir.getName());
+            log.error("__________插件{}编译失败", pluginDir.getName());
+            throw new RuntimeException();
         }
-        log.info("✅ 插件源码编译成功：{}", pluginDir.getName());
+        log.info("__________插件{}编译成功", pluginDir.getName());
 
         // 创建类加载器实例
         URLClassLoader loader = null;
@@ -99,9 +101,9 @@ public class PluginCompiler {
                 Class<?> clazz = loader.loadClass(className);
                 // 加入临时容器
                 loadedClasses.add(clazz);
-                log.info("📦 已加载插件类：{}", className);
+                log.info("__________已加载：{}", className);
             } catch (ClassNotFoundException e) {
-                log.warn("无法加载类 {}: {}", className, e.getMessage());
+                log.error("__________无法加载：{}", className, e);
             }
         }
     // 返回所有处理好的class对象
@@ -119,7 +121,8 @@ public class PluginCompiler {
         // 创建编译器实例
         JavaCompiler compiler = ToolProvider.getSystemJavaCompiler();
         if (compiler == null) {
-            throw new IllegalStateException("未找到系统 Java 编译器，请使用 JDK 运行，而不是 JRE！");
+            log.error("__________未找到Java编译器，确保使用JDK运行");
+            throw new IllegalStateException();
         }
         // 配置编译任务
         StandardJavaFileManager fileManager = compiler.getStandardFileManager(null, null, null);

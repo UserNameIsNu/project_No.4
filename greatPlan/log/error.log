@@ -20874,3 +20874,258 @@
   [8] com.ljf.greatplan.core.entity.NodeTree$$SpringCGLIB$$0.getNodeById(<generated>:-1)
   [9] com.ljf.greatplan.core.entity.ListeningTree.branchCut(ListeningTree.java:116)
 ========================================================
+
+================= 2025-11-13T09:21:26.285369500 =================
+错误类型：java.lang.NullPointerException
+错误消息：Cannot invoke "java.lang.Integer.intValue()" because the return value of "com.ljf.greatplan.core.entity.Node.getClickHeat()" is null
+位置：com.ljf.greatplan.general.timeer.NodeColdForgetfulness.attenuation (NodeColdForgetfulness.java:85)
+调用链：
+  [0] com.ljf.greatplan.general.timeer.NodeColdForgetfulness.attenuation(NodeColdForgetfulness.java:85)
+  [1] com.ljf.greatplan.general.timeer.NodeColdForgetfulness.decayAndPrune(NodeColdForgetfulness.java:71)
+  [2] jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+  [3] java.lang.reflect.Method.invoke(Method.java:580)
+  [4] org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:360)
+  [5] org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:196)
+  [6] org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+  [7] org.springframework.aop.aspectj.AspectJAfterThrowingAdvice.invoke(AspectJAfterThrowingAdvice.java:64)
+  [8] org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+  [9] org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:97)
+========================================================
+
+================= 2025-11-13T09:21:27.281432600 =================
+错误类型：java.lang.NullPointerException
+错误消息：Cannot invoke "java.lang.Integer.intValue()" because the return value of "com.ljf.greatplan.core.entity.Node.getClickHeat()" is null
+位置：com.ljf.greatplan.general.timeer.NodeColdForgetfulness.attenuation (NodeColdForgetfulness.java:85)
+调用链：
+  [0] com.ljf.greatplan.general.timeer.NodeColdForgetfulness.attenuation(NodeColdForgetfulness.java:85)
+  [1] com.ljf.greatplan.general.timeer.NodeColdForgetfulness.decayAndPrune(NodeColdForgetfulness.java:71)
+  [2] jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+  [3] java.lang.reflect.Method.invoke(Method.java:580)
+  [4] org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:360)
+  [5] org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:196)
+  [6] org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+  [7] org.springframework.aop.aspectj.AspectJAfterThrowingAdvice.invoke(AspectJAfterThrowingAdvice.java:64)
+  [8] org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+  [9] org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:97)
+========================================================
+
+================= 2025-11-13T09:21:28.271638800 =================
+错误类型：java.lang.NullPointerException
+错误消息：Cannot invoke "java.lang.Integer.intValue()" because the return value of "com.ljf.greatplan.core.entity.Node.getClickHeat()" is null
+位置：com.ljf.greatplan.general.timeer.NodeColdForgetfulness.attenuation (NodeColdForgetfulness.java:85)
+调用链：
+  [0] com.ljf.greatplan.general.timeer.NodeColdForgetfulness.attenuation(NodeColdForgetfulness.java:85)
+  [1] com.ljf.greatplan.general.timeer.NodeColdForgetfulness.decayAndPrune(NodeColdForgetfulness.java:71)
+  [2] jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+  [3] java.lang.reflect.Method.invoke(Method.java:580)
+  [4] org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:360)
+  [5] org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:196)
+  [6] org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+  [7] org.springframework.aop.aspectj.AspectJAfterThrowingAdvice.invoke(AspectJAfterThrowingAdvice.java:64)
+  [8] org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+  [9] org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:97)
+========================================================
+
+================= 2025-11-13T09:21:29.277778 =================
+错误类型：java.lang.NullPointerException
+错误消息：Cannot invoke "java.lang.Integer.intValue()" because the return value of "com.ljf.greatplan.core.entity.Node.getClickHeat()" is null
+位置：com.ljf.greatplan.general.timeer.NodeColdForgetfulness.attenuation (NodeColdForgetfulness.java:85)
+调用链：
+  [0] com.ljf.greatplan.general.timeer.NodeColdForgetfulness.attenuation(NodeColdForgetfulness.java:85)
+  [1] com.ljf.greatplan.general.timeer.NodeColdForgetfulness.decayAndPrune(NodeColdForgetfulness.java:71)
+  [2] jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+  [3] java.lang.reflect.Method.invoke(Method.java:580)
+  [4] org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:360)
+  [5] org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:196)
+  [6] org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+  [7] org.springframework.aop.aspectj.AspectJAfterThrowingAdvice.invoke(AspectJAfterThrowingAdvice.java:64)
+  [8] org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+  [9] org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:97)
+========================================================
+
+================= 2025-11-13T09:21:30.270828300 =================
+错误类型：java.lang.NullPointerException
+错误消息：Cannot invoke "java.lang.Integer.intValue()" because the return value of "com.ljf.greatplan.core.entity.Node.getClickHeat()" is null
+位置：com.ljf.greatplan.general.timeer.NodeColdForgetfulness.attenuation (NodeColdForgetfulness.java:85)
+调用链：
+  [0] com.ljf.greatplan.general.timeer.NodeColdForgetfulness.attenuation(NodeColdForgetfulness.java:85)
+  [1] com.ljf.greatplan.general.timeer.NodeColdForgetfulness.decayAndPrune(NodeColdForgetfulness.java:71)
+  [2] jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+  [3] java.lang.reflect.Method.invoke(Method.java:580)
+  [4] org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:360)
+  [5] org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:196)
+  [6] org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+  [7] org.springframework.aop.aspectj.AspectJAfterThrowingAdvice.invoke(AspectJAfterThrowingAdvice.java:64)
+  [8] org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+  [9] org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:97)
+========================================================
+
+================= 2025-11-13T09:21:31.275473300 =================
+错误类型：java.lang.NullPointerException
+错误消息：Cannot invoke "java.lang.Integer.intValue()" because the return value of "com.ljf.greatplan.core.entity.Node.getClickHeat()" is null
+位置：com.ljf.greatplan.general.timeer.NodeColdForgetfulness.attenuation (NodeColdForgetfulness.java:85)
+调用链：
+  [0] com.ljf.greatplan.general.timeer.NodeColdForgetfulness.attenuation(NodeColdForgetfulness.java:85)
+  [1] com.ljf.greatplan.general.timeer.NodeColdForgetfulness.decayAndPrune(NodeColdForgetfulness.java:71)
+  [2] jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+  [3] java.lang.reflect.Method.invoke(Method.java:580)
+  [4] org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:360)
+  [5] org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:196)
+  [6] org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+  [7] org.springframework.aop.aspectj.AspectJAfterThrowingAdvice.invoke(AspectJAfterThrowingAdvice.java:64)
+  [8] org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+  [9] org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:97)
+========================================================
+
+================= 2025-11-13T09:21:32.270524500 =================
+错误类型：java.lang.NullPointerException
+错误消息：Cannot invoke "java.lang.Integer.intValue()" because the return value of "com.ljf.greatplan.core.entity.Node.getClickHeat()" is null
+位置：com.ljf.greatplan.general.timeer.NodeColdForgetfulness.attenuation (NodeColdForgetfulness.java:85)
+调用链：
+  [0] com.ljf.greatplan.general.timeer.NodeColdForgetfulness.attenuation(NodeColdForgetfulness.java:85)
+  [1] com.ljf.greatplan.general.timeer.NodeColdForgetfulness.decayAndPrune(NodeColdForgetfulness.java:71)
+  [2] jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+  [3] java.lang.reflect.Method.invoke(Method.java:580)
+  [4] org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:360)
+  [5] org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:196)
+  [6] org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+  [7] org.springframework.aop.aspectj.AspectJAfterThrowingAdvice.invoke(AspectJAfterThrowingAdvice.java:64)
+  [8] org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+  [9] org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:97)
+========================================================
+
+================= 2025-11-13T09:22:04.229030400 =================
+错误类型：java.lang.NullPointerException
+错误消息：Cannot invoke "java.lang.Integer.intValue()" because the return value of "com.ljf.greatplan.core.entity.Node.getClickHeat()" is null
+位置：com.ljf.greatplan.general.timeer.NodeColdForgetfulness.attenuation (NodeColdForgetfulness.java:85)
+调用链：
+  [0] com.ljf.greatplan.general.timeer.NodeColdForgetfulness.attenuation(NodeColdForgetfulness.java:85)
+  [1] com.ljf.greatplan.general.timeer.NodeColdForgetfulness.decayAndPrune(NodeColdForgetfulness.java:71)
+  [2] jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+  [3] java.lang.reflect.Method.invoke(Method.java:580)
+  [4] org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:360)
+  [5] org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:196)
+  [6] org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+  [7] org.springframework.aop.aspectj.AspectJAfterThrowingAdvice.invoke(AspectJAfterThrowingAdvice.java:64)
+  [8] org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+  [9] org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:97)
+========================================================
+
+================= 2025-11-13T09:22:05.220361 =================
+错误类型：java.lang.NullPointerException
+错误消息：Cannot invoke "java.lang.Integer.intValue()" because the return value of "com.ljf.greatplan.core.entity.Node.getClickHeat()" is null
+位置：com.ljf.greatplan.general.timeer.NodeColdForgetfulness.attenuation (NodeColdForgetfulness.java:85)
+调用链：
+  [0] com.ljf.greatplan.general.timeer.NodeColdForgetfulness.attenuation(NodeColdForgetfulness.java:85)
+  [1] com.ljf.greatplan.general.timeer.NodeColdForgetfulness.decayAndPrune(NodeColdForgetfulness.java:71)
+  [2] jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+  [3] java.lang.reflect.Method.invoke(Method.java:580)
+  [4] org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:360)
+  [5] org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:196)
+  [6] org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+  [7] org.springframework.aop.aspectj.AspectJAfterThrowingAdvice.invoke(AspectJAfterThrowingAdvice.java:64)
+  [8] org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+  [9] org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:97)
+========================================================
+
+================= 2025-11-13T09:22:06.228240900 =================
+错误类型：java.lang.NullPointerException
+错误消息：Cannot invoke "java.lang.Integer.intValue()" because the return value of "com.ljf.greatplan.core.entity.Node.getClickHeat()" is null
+位置：com.ljf.greatplan.general.timeer.NodeColdForgetfulness.attenuation (NodeColdForgetfulness.java:85)
+调用链：
+  [0] com.ljf.greatplan.general.timeer.NodeColdForgetfulness.attenuation(NodeColdForgetfulness.java:85)
+  [1] com.ljf.greatplan.general.timeer.NodeColdForgetfulness.decayAndPrune(NodeColdForgetfulness.java:71)
+  [2] jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+  [3] java.lang.reflect.Method.invoke(Method.java:580)
+  [4] org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:360)
+  [5] org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:196)
+  [6] org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+  [7] org.springframework.aop.aspectj.AspectJAfterThrowingAdvice.invoke(AspectJAfterThrowingAdvice.java:64)
+  [8] org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+  [9] org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:97)
+========================================================
+
+================= 2025-11-13T09:22:44.983003 =================
+错误类型：java.lang.NullPointerException
+错误消息：Cannot invoke "java.lang.Integer.intValue()" because the return value of "com.ljf.greatplan.core.entity.Node.getClickHeat()" is null
+位置：com.ljf.greatplan.general.timeer.NodeColdForgetfulness.attenuation (NodeColdForgetfulness.java:85)
+调用链：
+  [0] com.ljf.greatplan.general.timeer.NodeColdForgetfulness.attenuation(NodeColdForgetfulness.java:85)
+  [1] com.ljf.greatplan.general.timeer.NodeColdForgetfulness.decayAndPrune(NodeColdForgetfulness.java:71)
+  [2] jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+  [3] java.lang.reflect.Method.invoke(Method.java:580)
+  [4] org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:360)
+  [5] org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:196)
+  [6] org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+  [7] org.springframework.aop.aspectj.AspectJAfterThrowingAdvice.invoke(AspectJAfterThrowingAdvice.java:64)
+  [8] org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+  [9] org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:97)
+========================================================
+
+================= 2025-11-13T09:22:45.978943800 =================
+错误类型：java.lang.NullPointerException
+错误消息：Cannot invoke "java.lang.Integer.intValue()" because the return value of "com.ljf.greatplan.core.entity.Node.getClickHeat()" is null
+位置：com.ljf.greatplan.general.timeer.NodeColdForgetfulness.attenuation (NodeColdForgetfulness.java:85)
+调用链：
+  [0] com.ljf.greatplan.general.timeer.NodeColdForgetfulness.attenuation(NodeColdForgetfulness.java:85)
+  [1] com.ljf.greatplan.general.timeer.NodeColdForgetfulness.decayAndPrune(NodeColdForgetfulness.java:71)
+  [2] jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+  [3] java.lang.reflect.Method.invoke(Method.java:580)
+  [4] org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:360)
+  [5] org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:196)
+  [6] org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+  [7] org.springframework.aop.aspectj.AspectJAfterThrowingAdvice.invoke(AspectJAfterThrowingAdvice.java:64)
+  [8] org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+  [9] org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:97)
+========================================================
+
+================= 2025-11-13T09:22:46.973390100 =================
+错误类型：java.lang.NullPointerException
+错误消息：Cannot invoke "java.lang.Integer.intValue()" because the return value of "com.ljf.greatplan.core.entity.Node.getClickHeat()" is null
+位置：com.ljf.greatplan.general.timeer.NodeColdForgetfulness.attenuation (NodeColdForgetfulness.java:85)
+调用链：
+  [0] com.ljf.greatplan.general.timeer.NodeColdForgetfulness.attenuation(NodeColdForgetfulness.java:85)
+  [1] com.ljf.greatplan.general.timeer.NodeColdForgetfulness.decayAndPrune(NodeColdForgetfulness.java:71)
+  [2] jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+  [3] java.lang.reflect.Method.invoke(Method.java:580)
+  [4] org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:360)
+  [5] org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:196)
+  [6] org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+  [7] org.springframework.aop.aspectj.AspectJAfterThrowingAdvice.invoke(AspectJAfterThrowingAdvice.java:64)
+  [8] org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+  [9] org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:97)
+========================================================
+
+================= 2025-11-13T09:22:47.978461100 =================
+错误类型：java.lang.NullPointerException
+错误消息：Cannot invoke "java.lang.Integer.intValue()" because the return value of "com.ljf.greatplan.core.entity.Node.getClickHeat()" is null
+位置：com.ljf.greatplan.general.timeer.NodeColdForgetfulness.attenuation (NodeColdForgetfulness.java:85)
+调用链：
+  [0] com.ljf.greatplan.general.timeer.NodeColdForgetfulness.attenuation(NodeColdForgetfulness.java:85)
+  [1] com.ljf.greatplan.general.timeer.NodeColdForgetfulness.decayAndPrune(NodeColdForgetfulness.java:71)
+  [2] jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+  [3] java.lang.reflect.Method.invoke(Method.java:580)
+  [4] org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:360)
+  [5] org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:196)
+  [6] org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+  [7] org.springframework.aop.aspectj.AspectJAfterThrowingAdvice.invoke(AspectJAfterThrowingAdvice.java:64)
+  [8] org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+  [9] org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:97)
+========================================================
+
+================= 2025-11-13T11:47:29.236413800 =================
+错误类型：java.lang.NullPointerException
+错误消息：Cannot invoke "com.ljf.greatplan.core.entity.Node.getNodeType()" because the return value of "com.ljf.greatplan.core.entity.NodeTree.getNodeById(String)" is null
+位置：com.ljf.greatplan.core.entity.ListeningTree.branchCut (ListeningTree.java:120)
+调用链：
+  [0] com.ljf.greatplan.core.entity.ListeningTree.branchCut(ListeningTree.java:120)
+  [1] com.ljf.greatplan.core.entity.ListeningTree.rootTraversal(ListeningTree.java:76)
+  [2] jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+  [3] java.lang.reflect.Method.invoke(Method.java:580)
+  [4] org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:360)
+  [5] org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:196)
+  [6] org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+  [7] org.springframework.aop.aspectj.AspectJAfterThrowingAdvice.invoke(AspectJAfterThrowingAdvice.java:64)
+  [8] org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+  [9] org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:97)
+========================================================

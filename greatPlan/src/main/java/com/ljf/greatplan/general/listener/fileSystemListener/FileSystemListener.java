@@ -50,13 +50,13 @@ public class FileSystemListener {
     /**
      * 防抖间隔（最少需要间隔多久才能触发一次监听组重建行为）
      */
-    @Value("${listener.anti-shake-intervals}")
+    @Value("${great-plan.file-system.listener.anti-shake-intervals}")
     private Integer antiShakeIntervals;
 
     /**
      * 构造器
-     * @param listeningTree
-     * @param listeningUnitGroup
+     * @param listeningTree 监听树对象
+     * @param listeningUnitGroup 监听单元组对象
      */
     public FileSystemListener(ListeningTree listeningTree, ListeningUnitGroup listeningUnitGroup) {
         this.listeningTree = listeningTree;
@@ -69,7 +69,7 @@ public class FileSystemListener {
      * 收录到监听单元组后直接启动监听任务。
      */
     public void buildListeningGroup() {
-        log.info("开始构建监听组...");
+        log.info("__________开始构建监听组");
 
         // 从监听树获取所有路径段
         List<List<String>> pathSegments = new ArrayList<>(listeningTree.getTree().values());
@@ -85,10 +85,10 @@ public class FileSystemListener {
             listeningUnitGroup.addListeningUnit(listeningTree.getPathSegmentId(segment), unit);
             // 启动
             unit.start();
-            log.info("监听单元已启动，指向的路径段为：{}", segment);
+            log.info("__________监听单元启动，指向{}路径段", segment);
         }
 
-        log.info("监听组构建完成，共 {} 个监听单元。", pathSegments.size());
+        log.info("__________监听组构建完成，组内共{}个单元", pathSegments.size());
     }
 
     /**
@@ -99,8 +99,6 @@ public class FileSystemListener {
      * 只能是防一手了。
      */
     private synchronized void rebuildListeningGroup() {
-        System.out.println("进行了一次监听组重建");
-        System.out.println("新的监听组：" + listeningUnitGroup.getListeningUnits());
         // 清空监听单元组
         listeningUnitGroup.delListeningUnitGroup();
         // 清空监听树
@@ -125,7 +123,8 @@ public class FileSystemListener {
         // 重新设置时间
         lastRebuildTime.set(now);
         // 重建（异步执行重建，免得和监听单元尤其和主程序流打架）
-        System.out.println("请求重建触发者: " + triggerName + "，时间: " + now);
+        log.info("__________收到监听组重建请求");
+        log.info("__________请求申请者：{}", triggerName + "，时间: " + now);
         CompletableFuture.runAsync(this::rebuildListeningGroup);
     }
 }

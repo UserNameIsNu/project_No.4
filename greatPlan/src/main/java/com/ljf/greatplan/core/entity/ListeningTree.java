@@ -10,6 +10,7 @@ package com.ljf.greatplan.core.entity;
 import com.ljf.greatplan.core.enums.NodeType;
 import com.ljf.greatplan.general.tools.generalTools.FileIO;
 import lombok.Getter;
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Component;
 
 import java.io.File;
@@ -28,6 +29,7 @@ import java.util.concurrent.ConcurrentHashMap;
  */
 @Component
 @Getter
+@Slf4j
 public class ListeningTree {
     /**
      * 监听树（路径段最上级地址与最下级地址的哈希拼接出来的ID， 路径段组）
@@ -46,8 +48,8 @@ public class ListeningTree {
 
     /**
      * 构造器
-     * @param nodeTree
-     * @param fileIO
+     * @param nodeTree 节点树
+     * @param fileIO 文件IO工具类
      */
     public ListeningTree(NodeTree nodeTree, FileIO fileIO) {
         this.nodeTree = nodeTree;
@@ -79,6 +81,8 @@ public class ListeningTree {
             // 起始点与结束点拼接做哈希，当作key
             tree.put(getPathSegmentId(pathSegments), pathSegments);
         }
+
+        log.info("__________路径段截取完成，监听树已建立");
     }
 
     /**
@@ -148,6 +152,7 @@ public class ListeningTree {
      */
     public void resetTree() {
         tree = new ConcurrentHashMap<>();
+        log.info("__________监听树已重置");
     }
 
     /**

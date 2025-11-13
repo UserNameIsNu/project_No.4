@@ -26,7 +26,7 @@ public class FileSystemService {
 
     /**
      * 构造器
-     * @param nodeTree
+     * @param nodeTree 节点树
      */
     public FileSystemService(NodeTree nodeTree) {
         this.nodeTree = nodeTree;

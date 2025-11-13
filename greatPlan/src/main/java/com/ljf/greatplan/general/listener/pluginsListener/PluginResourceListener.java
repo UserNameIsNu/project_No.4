@@ -28,7 +28,7 @@ public class PluginResourceListener {
     /**
      * 插件资源地址
      */
-    @Value("${plugin.resource-dir}")
+    @Value("${great-plan.plugin.resource-dir}")
     private String pluginSResourceDir;
 
     /**
@@ -38,7 +38,7 @@ public class PluginResourceListener {
 
     /**
      * 构造器
-     * @param pluginService
+     * @param pluginService 插件服务器
      */
     public PluginResourceListener(PluginService pluginService) {
         this.pluginService = pluginService;
@@ -64,20 +64,20 @@ public class PluginResourceListener {
             observer.addListener(new FileAlterationListenerAdaptor() {
                 @Override
                 public void onFileCreate(File file) {
-                    log.info("检测到插件新增：{}", file.getName());
+                    log.info("__________检测到插件新增：{}", file.getName());
                     safeRescan();
                 }
 
                 @Override
                 public void onFileDelete(File file) {
-                    log.info("检测到插件删除：{}", file.getName());
+                    log.info("__________检测到插件删除：{}", file.getName());
                     pluginService.removePlugin(file.getName());
                     safeRescan();
                 }
 
                 @Override
                 public void onFileChange(File file) {
-                    log.info("检测到插件修改：{}", file.getName());
+                    log.info("__________检测到插件修改：{}", file.getName());
                     safeRescan();
                 }
 
@@ -88,7 +88,7 @@ public class PluginResourceListener {
                     } catch (InterruptedException e) {
                         Thread.currentThread().interrupt();
                     } catch (Exception e) {
-                        log.error("插件重新扫描失败", e);
+                        log.error("__________插件重新扫描失败", e);
                     }
                 }
             });
@@ -101,14 +101,14 @@ public class PluginResourceListener {
             new Thread(() -> {
                 try {
                     monitor.start();
-                    log.info("启动插件目录监听成功：{}", dir.getAbsolutePath());
+                    log.info("__________开始监听插件资源目录：{}", dir.getAbsolutePath());
                 } catch (Exception e) {
-                    log.error("插件目录监听启动失败", e);
+                    log.error("__________插件资源目录监听启动失败", e);
                 }
             }, "Plugin-Resource-Monitor").start();
 
         } catch (Exception e) {
-            log.error("插件目录监听器初始化失败", e);
+            log.error("__________插件资源目录监听初始化失败", e);
         }
     }
 }

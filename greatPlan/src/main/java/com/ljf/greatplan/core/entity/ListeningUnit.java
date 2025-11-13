@@ -52,7 +52,7 @@ public class ListeningUnit extends Thread{
 
     /**
      * 构造器
-     * @param fileSystemListener
+     * @param fileSystemListener 文件系统监听器
      */
     @Autowired
     public ListeningUnit(FileSystemListener fileSystemListener) {
@@ -61,7 +61,7 @@ public class ListeningUnit extends Thread{
 
     /**
      * 设置路径段
-     * @param pathSegment
+     * @param pathSegment 路径段
      */
     public void setPathSegment(List<String> pathSegment) {
         this.pathSegment = pathSegment;
@@ -80,7 +80,7 @@ public class ListeningUnit extends Thread{
                 watchService.close();
             }
         } catch (IOException e) {
-            log.error("关闭 WatchService 失败：{}", pathSegment, e);
+            log.error("__________监听单元关闭失败：{}", pathSegment, e);
         }
     }
 
@@ -124,7 +124,7 @@ public class ListeningUnit extends Thread{
                         boolean rebuildScheduled = false;
                         for (WatchEvent<?> event : key.pollEvents()) {
                             if (!rebuildScheduled) {
-                                System.out.println("触发了事件");
+                                log.info("__________监听到一次事件发生");
                                 // 重建监听组
                                 fileSystemListener.requestRebuild(getName());
                                 // 不要再喷提示啦！
@@ -134,15 +134,19 @@ public class ListeningUnit extends Thread{
                         // 重置触发标记
                         key.reset();
                     } catch (ClosedWatchServiceException e) {
-                        log.info("监听单元已关闭，线程退出：{}", pathSegment);
+                        if (running) {
+                            log.error("__________监听单元异常关闭：{}", pathSegment, e);
+                        } else {
+                            log.info("__________监听单元正常关闭：{}", pathSegment);
+                        }
                         break;
                     } catch (InterruptedException e) {
-                        log.info("监听线程被中断：{}", pathSegment);
+                        log.error("__________监听单元异常中断：{}", pathSegment, e);
                         break;
                     }
                 }
             } catch (Exception e) {
-                e.printStackTrace();
+                log.error("__________监听单元发生未知异常：{}", pathSegment, e);
             } finally {
                 // 若不管啥原因（目前只有如单元正在处理时，有家伙申请了监听组重建），这个单元在处理完一次，或没处理完事件后莫名被关闭了
                 // 那么就直接销毁得了
@@ -151,7 +155,7 @@ public class ListeningUnit extends Thread{
                 }
             }
         } catch (IOException e) {
-            e.printStackTrace();
+            log.error("__________监听单元的依赖WatchService发生未知异常：{}", pathSegment, e);
         }
     }
 }

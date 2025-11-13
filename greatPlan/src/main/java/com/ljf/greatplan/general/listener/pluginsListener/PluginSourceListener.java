@@ -29,7 +29,7 @@ public class PluginSourceListener {
     /**
      * 插件源码地址
      */
-    @Value("${plugin.source-dir}")
+    @Value("${great-plan.plugin.source-dir}")
     private String pluginSourceDir;
 
     /**
@@ -44,8 +44,8 @@ public class PluginSourceListener {
 
     /**
      * 构造器
-     * @param subContainersManager
-     * @param pluginCompiler
+     * @param subContainersManager 子容器管理器
+     * @param pluginCompiler 插件编译器
      */
     public PluginSourceListener(SubContainersManager subContainersManager, PluginCompiler pluginCompiler) {
         this.subContainersManager = subContainersManager;
@@ -70,7 +70,7 @@ public class PluginSourceListener {
                 dir.toPath().register(watchService,
                         StandardWatchEventKinds.ENTRY_CREATE,
                         StandardWatchEventKinds.ENTRY_DELETE);
-                log.info("开始监听源码目录：{}", dir.getAbsolutePath());
+                log.info("__________开始监听插件源码目录：{}", dir.getAbsolutePath());
 
                 // 掐个死循环
                 while (true) {
@@ -100,7 +100,7 @@ public class PluginSourceListener {
                 }
 
             } catch (Exception e) {
-                log.error("插件源码监听出错", e);
+                log.error("__________插件源码目录监听启动失败", e);
             }
         }, "Source-Listening").start();
     }
@@ -112,18 +112,19 @@ public class PluginSourceListener {
      */
     private void registerPluginBeans(File pluginDir) {
         try {
-            log.info("准备热编译：{}", pluginDir.getName());
             // 根据给定的地址，试图将这里面的所有玩意转成class对象
             List<Class<?>> classes = pluginCompiler.sourceHotCompiler(pluginDir);
+            log.info("__________插件{}热编译完成", pluginDir.getName());
             // 使用动态豆子注册器注册这些所有class对象为Bean至主容器
             try {
+                log.info("__________准备创建子容器并注册插件");
                 subContainersManager.mountSubContainer(pluginDir.getName(), classes, pluginDir);
             } catch (MalformedURLException e) {
-                log.error("❌ 子容器创建失败：{}", pluginDir.getName(), e);
+                log.error("__________子容器创建失败：{}", pluginDir.getName(), e);
             }
-            log.info("✅ 成功创建子容器：{}", pluginDir.getName());
+            log.info("__________子容器创建成功：{}", pluginDir.getName());
         } catch (Exception e) {
-            log.error("❌ 子容器创建失败：{}", pluginDir.getName(), e);
+            log.error("__________子容器创建失败：{}", pluginDir.getName(), e);
         }
     }
 }
