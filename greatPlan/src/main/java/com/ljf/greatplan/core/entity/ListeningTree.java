@@ -67,7 +67,7 @@ public class ListeningTree {
         List<List<String>> pathSegmentsGroup = new ArrayList<>();
 
         // 取得根节点
-        List<String> roots = fileIO.getRoot();
+        List<String> roots = nodeTree.getRootNode();
         // 遍历以切割树枝
         for (String root : roots) {
             // 把这个根节点拉出来先

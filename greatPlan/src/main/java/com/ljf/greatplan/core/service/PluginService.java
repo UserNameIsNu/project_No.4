@@ -125,6 +125,8 @@ public class PluginService {
             );
 
             log.info("__________已注册插件数：{}", pluginRegistryManager.getAll().size());
+            // 打印插件注册表
+            printRegistry();
         } catch (IOException e) {
             log.error("__________扫描插件资源失败", e);
         }
@@ -139,5 +141,35 @@ public class PluginService {
         // 卸载指定插件
         pluginRegistryManager.uninstallPlugin(id);
         log.info("__________卸载了一个插件：{}", id);
+    }
+
+    /**
+     * 打印注册表<br/>
+     * 尽可能好看点的把插件注册表打印到控制台
+     */
+    public void printRegistry() {
+        // 遍历插件注册表
+        for (PluginRegistryManager.Plugin plugin : pluginRegistryManager.getAll()) {
+            log.info("__________已注册：");
+            // 使用键进行遍历
+            for (String key : plugin.getPluginResourceInfo().keySet()) {
+                if (plugin.getPluginResourceInfo().get(key).getClass() == String.class) {
+                    // 版本号
+                    log.info("____________________插件——{}:{}", key, plugin.getPluginResourceInfo().get(key));
+                } else if (plugin.getPluginResourceInfo().get(key).getClass() == ArrayList.class) {
+                    // 文件路径
+                    List<String> list = (List<String>) plugin.getPluginResourceInfo().get(key);
+                    for (String s : list) {
+                        log.info("____________________文件——{}:{}", key, s);
+                    }
+                } else if (plugin.getPluginResourceInfo().get(key).getClass() == HashMap.class) {
+                    // 版本号
+                    Map<String, String> map = (Map<String, String>) plugin.getPluginResourceInfo().get(key);
+                    for (String s : map.keySet()) {
+                        log.info("____________________文件版本号——{}:{}", s, map.get(s));
+                    }
+                }
+            }
+        }
     }
 }

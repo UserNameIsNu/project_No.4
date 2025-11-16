@@ -98,4 +98,21 @@ public class NodeTree {
         }
         return nodes;
     }
+
+    /**
+     * 获取根节点集合<br/>
+     * 没有父节点的就是根节点。
+     * @return 根节点结合
+     */
+    public List<String> getRootNode() {
+        List<String> nodes = new ArrayList<>();
+        // 遍历所有节点
+        for (Node node : tree.values()) {
+            // 若这个节点没有子节点就加入末节点集合
+            if (node.getParentNode() == null) {
+                nodes.add(node.getPath());
+            }
+        }
+        return nodes;
+    }
 }

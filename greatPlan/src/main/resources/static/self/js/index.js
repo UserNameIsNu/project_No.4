@@ -5,6 +5,8 @@
  *
  */
 
+// 弃用
+
 // 禁止刷新
 window.addEventListener("keydown", (e) => {
     if ((e.key === "F5") || (e.ctrlKey && e.key === "r")) {
