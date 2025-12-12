@@ -5,7 +5,7 @@
  *
  */
 
-package com.ljf.greatplan.docking.plugins.otherModel;
+package com.ljf.greatplan.docking.plugins.testModel;
 
 public class dtfgu {
 }

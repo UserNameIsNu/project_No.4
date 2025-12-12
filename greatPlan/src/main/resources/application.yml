@@ -3,6 +3,13 @@ spring:
         name: greatPlan
     lifecycle:
         timeout-per-shutdown-phase: 30s
+    ai:
+        openai:
+            api-key: sk-ljwEo4Ns0fTg11h4MjJICmVOisE4i1A1kbmATWkG8zWYLJD7
+            chat:
+                options:
+                    model: gpt-4o-mini
+            base-url: https://api.qingyuntop.top
 server:
     port: 8080
     shutdown: graceful
@@ -18,10 +25,10 @@ great-plan:
     plugin:
         # 插件源码目录
         source-dir: src/main/java/com/ljf/greatplan/docking/plugins
-        #    source-dir: classes/com/ljf/greatplan/docking/plugins
+        #source-dir: classes/com/ljf/greatplan/docking/plugins
         # 插件资源目录
         resource-dir: src/main/resources/static/plugins
-        #    resource-dir: classes/static/plugins
+        #resource-dir: classes/static/plugins
         # 允许注册至核心包的资源文件格式白名单
         pass-format: .html,.css,.js
     # 文件系统配置

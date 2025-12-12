@@ -8,6 +8,6 @@ class GreatPlanApplicationTests {
 
     @Test
     void contextLoads() {
-
     }
+
 }

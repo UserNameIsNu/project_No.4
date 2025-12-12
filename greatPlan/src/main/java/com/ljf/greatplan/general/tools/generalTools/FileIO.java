@@ -12,6 +12,8 @@ import org.springframework.stereotype.Component;
 
 import java.io.File;
 import java.io.IOException;
+import java.net.URISyntaxException;
+import java.net.URL;
 import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.Paths;
@@ -54,7 +56,7 @@ public class FileIO {
                     // 仅抓取指定格式的文件
                     .filter(p -> p.toString().endsWith(format))
                     // 加入一个临时集合
-                    .map(java.nio.file.Path::toFile)
+                    .map(Path::toFile)
                     // 转换为List
                     .collect(Collectors.toList());
         } catch (IOException e) {
@@ -216,5 +218,25 @@ public class FileIO {
         } catch (IOException e) {
             throw new RuntimeException(e);
         }
+    }
+
+    /**
+     * 获取指定类的绝对路径集合<br/>
+     * 任意一组类的绝对路径集合。
+     * @param filePaths 类的class对象
+     * @return File对象集合
+     */
+    public List<File> getTargetFileABPaths(List<Class<?>> filePaths) {
+        List<File> files = new ArrayList<>();
+        for (Class clazz : filePaths) {
+            URL url = clazz.getResource(clazz.getSimpleName() + ".class");
+            try {
+                File file = new File(url.toURI());
+                files.add(file);
+            } catch (URISyntaxException e) {
+                throw new RuntimeException(e);
+            }
+        }
+        return files;
     }
 }
