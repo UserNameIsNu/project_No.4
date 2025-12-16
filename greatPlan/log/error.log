@@ -304,3 +304,88 @@
   [8] org.springframework.aop.aspectj.AspectJAfterThrowingAdvice.invoke(AspectJAfterThrowingAdvice.java:64)
   [9] org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
 ========================================================
+
+================= 2025-12-16T16:25:53.947365800 =================
+错误类型：java.lang.NullPointerException
+错误消息：Cannot invoke "com.ljf.greatplan.core.entity.Node.getNodeType()" because the return value of "com.ljf.greatplan.core.entity.NodeTree.getNodeById(String)" is null
+位置：com.ljf.greatplan.core.entity.ListeningTree.branchCut (ListeningTree.java:120)
+调用链：
+  [0] com.ljf.greatplan.core.entity.ListeningTree.branchCut(ListeningTree.java:120)
+  [1] com.ljf.greatplan.core.entity.ListeningTree.rootTraversal(ListeningTree.java:76)
+  [2] jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+  [3] java.lang.reflect.Method.invoke(Method.java:580)
+  [4] org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:360)
+  [5] org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:196)
+  [6] org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+  [7] org.springframework.aop.aspectj.AspectJAfterThrowingAdvice.invoke(AspectJAfterThrowingAdvice.java:64)
+  [8] org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+  [9] org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:97)
+========================================================
+
+================= 2025-12-16T18:07:47.784834800 =================
+错误类型：java.awt.HeadlessException
+错误消息：null
+位置：java.awt.Desktop.getDesktop (Desktop.java:302)
+调用链：
+  [0] java.awt.Desktop.getDesktop(Desktop.java:302)
+  [1] com.ljf.greatplan.core.service.FileSystemService.openFile(FileSystemService.java:65)
+  [2] jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+  [3] java.lang.reflect.Method.invoke(Method.java:580)
+  [4] org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:360)
+  [5] org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:196)
+  [6] org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+  [7] org.springframework.aop.aspectj.AspectJAfterThrowingAdvice.invoke(AspectJAfterThrowingAdvice.java:64)
+  [8] org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+  [9] org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:97)
+========================================================
+
+================= 2025-12-16T18:07:47.790604900 =================
+错误类型：java.awt.HeadlessException
+错误消息：null
+位置：java.awt.Desktop.getDesktop (Desktop.java:302)
+调用链：
+  [0] java.awt.Desktop.getDesktop(Desktop.java:302)
+  [1] com.ljf.greatplan.core.service.FileSystemService.openFile(FileSystemService.java:65)
+  [2] jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+  [3] java.lang.reflect.Method.invoke(Method.java:580)
+  [4] org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:360)
+  [5] org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:196)
+  [6] org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+  [7] org.springframework.aop.aspectj.AspectJAfterThrowingAdvice.invoke(AspectJAfterThrowingAdvice.java:64)
+  [8] org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+  [9] org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:97)
+========================================================
+
+================= 2025-12-16T18:10:51.214459700 =================
+错误类型：java.awt.HeadlessException
+错误消息：null
+位置：java.awt.Desktop.getDesktop (Desktop.java:302)
+调用链：
+  [0] java.awt.Desktop.getDesktop(Desktop.java:302)
+  [1] com.ljf.greatplan.core.service.FileSystemService.openFile(FileSystemService.java:65)
+  [2] jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+  [3] java.lang.reflect.Method.invoke(Method.java:580)
+  [4] org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:360)
+  [5] org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:196)
+  [6] org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+  [7] org.springframework.aop.aspectj.AspectJAfterThrowingAdvice.invoke(AspectJAfterThrowingAdvice.java:64)
+  [8] org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+  [9] org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:97)
+========================================================
+
+================= 2025-12-16T18:10:51.218788600 =================
+错误类型：java.awt.HeadlessException
+错误消息：null
+位置：java.awt.Desktop.getDesktop (Desktop.java:302)
+调用链：
+  [0] java.awt.Desktop.getDesktop(Desktop.java:302)
+  [1] com.ljf.greatplan.core.service.FileSystemService.openFile(FileSystemService.java:65)
+  [2] jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+  [3] java.lang.reflect.Method.invoke(Method.java:580)
+  [4] org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:360)
+  [5] org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:196)
+  [6] org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+  [7] org.springframework.aop.aspectj.AspectJAfterThrowingAdvice.invoke(AspectJAfterThrowingAdvice.java:64)
+  [8] org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+  [9] org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:97)
+========================================================

@@ -98,4 +98,15 @@ public class FileController extends BaseController{
         log.info("__________获取最新节点树的请求");
         return success(fileSystemService.getTree());
     }
+
+    /**
+     * 打开文件
+     * @param path 文件路径
+     * @return 是否打开
+     */
+    @PostMapping("/openFile")
+    public StandardViewResponseObject<String> openFile(@RequestParam String path) {
+        log.info("__________打开指定文件的请求");
+        return success(fileSystemService.openFile(path));
+    }
 }

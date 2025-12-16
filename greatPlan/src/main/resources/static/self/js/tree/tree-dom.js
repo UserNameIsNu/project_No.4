@@ -91,7 +91,7 @@ export function buildTreeHtml(node) {
     // 设置标签文本内容：
     // 目录使用文件夹图标📁，文件使用文档图标📄
     // 后面跟上显示名称和热度信息
-    label.textContent = (node.nodeType === "DIRECTORY" ? "📁 " : "📄 ") + displayName + heatInfo;
+    label.textContent = (node.nodeType === "DIRECTORY" ? "📁 " + displayName + heatInfo : "📄 " + displayName + "." + node.fileType + heatInfo) ;
 
     // 将标签添加到列表项中
     li.appendChild(label);
@@ -151,9 +151,34 @@ export function buildTreeHtml(node) {
         // 将子节点容器添加到当前目录节点
         li.appendChild(ul);
     } else {
-        // 文件节点处理逻辑（相对简单）
-        // 只需添加文件类名用于样式区分
+        // 文件节点处理逻辑
+        // 添加文件类名用于样式区分
         li.classList.add("file");
+
+        // 为目录标签添加点击事件监听器
+        label.addEventListener("click", (e) => {
+            // 阻止事件冒泡，避免触发父元素的点击事件
+            e.stopPropagation();
+
+            // 无条件发送热度增长请求
+            // 每次点击目录都会增加该节点的热度值
+            if (node.id) {
+                fetch("/api/file/click", {
+                    method: "POST",
+                    headers: { "Content-Type": "application/x-www-form-urlencoded" },
+                    body: new URLSearchParams({ nodeId: node.id })
+                }).catch(err => console.error("热度增长失败:", err.message));
+            }
+
+            // 打开文件的请求
+            if (node.id) {
+                fetch("/api/file/openFile", {
+                    method: "POST",
+                    headers: { "Content-Type": "application/x-www-form-urlencoded" },
+                    body: new URLSearchParams({ path: node.path })
+                }).catch(err => console.error("打不开:", err.message));
+            }
+        });
     }
     // 返回构建完成的列表项元素
     return li;

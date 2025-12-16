@@ -11,6 +11,9 @@ import com.ljf.greatplan.core.entity.Node;
 import com.ljf.greatplan.core.entity.NodeTree;
 import org.springframework.stereotype.Service;
 
+import java.awt.*;
+import java.io.File;
+import java.io.IOException;
 import java.util.Map;
 
 /**
@@ -47,5 +50,29 @@ public class FileSystemService {
      */
     public Map<String, Node> getTree() {
         return nodeTree.getTree();
+    }
+
+    /**
+     * 打开文件</br>
+     * 用cmd命令打开文件。
+     * @param path 文件路径
+     * @return 是否成功打开
+     */
+    public String openFile(String path) {
+        File file = new File(path);
+        if(!file.exists()) {
+            return "文件不存在：" + path;
+        }
+
+        String[] command = {
+                "cmd", "/c", "start", "\"\"", "\"" + file.getAbsolutePath() + "\""
+        };
+        try {
+            Runtime.getRuntime().exec(command);
+        } catch (IOException e) {
+            return "打不开:" +  e.getMessage();
+        }
+
+        return null;
     }
 }

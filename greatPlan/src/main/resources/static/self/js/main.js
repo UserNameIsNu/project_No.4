@@ -9,18 +9,6 @@ import { fetchRootDirectory, mergeAndRepairTree, pollAndSyncTree } from './tree/
 import { refreshPlugins } from './plugins/plugin-manager.js';
 import { fetchStandard } from './core/api.js';
 
-// 禁止页面刷新功能
-// 监听键盘按下事件，阻止F5和Ctrl+R触发的页面刷新
-window.addEventListener("keydown", (e) => {
-    // 检查是否按下F5键 或者 Ctrl+R组合键
-    if (e.key === "F5" || (e.ctrlKey && e.key === "r"))
-        // 阻止默认刷新行为
-        e.preventDefault();
-});
-
-// 监听页面卸载前事件，阻止页面关闭或刷新
-window.addEventListener("beforeunload", (e) => e.preventDefault());
-
 // 初始化全局API和状态
 // 创建CoreAPI全局对象，提供日志功能
 window.CoreAPI = { log: (msg) => console.log("[CoreAPI]", msg) };
