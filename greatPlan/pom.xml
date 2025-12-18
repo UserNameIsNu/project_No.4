@@ -104,6 +104,25 @@
             <artifactId>javaparser-core</artifactId>
             <version>3.27.1</version>
         </dependency>
+        <!-- 操作office全家桶的文件类型 -->
+        <!--  核心  -->
+        <dependency>
+            <groupId>org.apache.poi</groupId>
+            <artifactId>poi</artifactId>
+            <version>5.2.3</version>
+        </dependency>
+        <!--  处理图表  -->
+        <dependency>
+            <groupId>org.apache.poi</groupId>
+            <artifactId>poi-ooxml-full</artifactId>
+            <version>5.2.3</version>
+        </dependency>
+        <!--  OOXML支持（.xlsx和.docx）  -->
+        <dependency>
+            <groupId>org.apache.poi</groupId>
+            <artifactId>poi-ooxml</artifactId>
+            <version>5.2.3</version>
+        </dependency>
     </dependencies>
 
     <dependencyManagement>

@@ -52,6 +52,12 @@ public class PluginCompiler {
             throw new RuntimeException();
         }
 
+        // 延迟半秒，但凡电脑太快，文件还没复制完监听就抓到目录出现了，扫目录就啥都找不到了
+        try {
+            Thread.sleep(500);
+        } catch (InterruptedException e) {
+            throw new RuntimeException(e);
+        }
         // 所有.java文件集合
         List<File> javaFiles = fileIO.fileCollector(pluginDir, ".java");
 
@@ -91,11 +97,22 @@ public class PluginCompiler {
         List<Class<?>> loadedClasses = new ArrayList<>();
         // 循环所有编译后文件
         for (File classFile : classFiles) {
-            // 获取文件的绝对路径，转为相对路径
-            String className = outputDir.toPath().relativize(classFile.toPath())
-                    .toString()
-                    .replace(File.separatorChar, '.')
+            // 获取源文件绝对路径与编译输出路径
+            String absolutePath = classFile.getAbsolutePath();
+            String outputPath = outputDir.getAbsolutePath();
+
+            // 统一分隔符
+            absolutePath = absolutePath.replace("\\", "/");
+            outputPath = outputPath.replace("\\", "/");
+
+            // 去掉前缀路径得到相对路径
+            String relativePath = absolutePath.substring(outputPath.length() + 1);
+
+            // 转成类名
+            String className = relativePath
+                    .replace("/", ".")
                     .replaceAll("\\.class$", "");
+
             try {
                 // 根据相对路径获取这个文件，并获取它的class对象
                 Class<?> clazz = loader.loadClass(className);

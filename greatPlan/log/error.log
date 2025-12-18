@@ -389,3 +389,2052 @@
   [8] org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
   [9] org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:97)
 ========================================================
+
+================= 2025-12-16T19:10:50.088305600 =================
+错误类型：java.lang.ArrayIndexOutOfBoundsException
+错误消息：Index -1 out of bounds for length 0
+位置：com.ljf.greatplan.general.tools.generalTools.FileIO.getFileContent (FileIO.java:258)
+调用链：
+  [0] com.ljf.greatplan.general.tools.generalTools.FileIO.getFileContent(FileIO.java:258)
+  [1] jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+  [2] java.lang.reflect.Method.invoke(Method.java:580)
+  [3] org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:360)
+  [4] org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:196)
+  [5] org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+  [6] org.springframework.aop.aspectj.AspectJAfterThrowingAdvice.invoke(AspectJAfterThrowingAdvice.java:64)
+  [7] org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+  [8] org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:97)
+  [9] org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+========================================================
+
+================= 2025-12-16T19:10:50.094141100 =================
+错误类型：java.lang.ArrayIndexOutOfBoundsException
+错误消息：Index -1 out of bounds for length 0
+位置：com.ljf.greatplan.general.tools.generalTools.FileIO.getFileContent (FileIO.java:258)
+调用链：
+  [0] com.ljf.greatplan.general.tools.generalTools.FileIO.getFileContent(FileIO.java:258)
+  [1] jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+  [2] java.lang.reflect.Method.invoke(Method.java:580)
+  [3] org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:360)
+  [4] org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:196)
+  [5] org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+  [6] org.springframework.aop.aspectj.AspectJAfterThrowingAdvice.invoke(AspectJAfterThrowingAdvice.java:64)
+  [7] org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+  [8] org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:97)
+  [9] org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+========================================================
+
+================= 2025-12-16T19:10:50.095140300 =================
+错误类型：java.lang.ArrayIndexOutOfBoundsException
+错误消息：Index -1 out of bounds for length 0
+位置：com.ljf.greatplan.general.tools.generalTools.FileIO.getFileContent (FileIO.java:258)
+调用链：
+  [0] com.ljf.greatplan.general.tools.generalTools.FileIO.getFileContent(FileIO.java:258)
+  [1] jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+  [2] java.lang.reflect.Method.invoke(Method.java:580)
+  [3] org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:360)
+  [4] org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:196)
+  [5] org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+  [6] org.springframework.aop.aspectj.AspectJAfterThrowingAdvice.invoke(AspectJAfterThrowingAdvice.java:64)
+  [7] org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+  [8] org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:97)
+  [9] org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+========================================================
+
+================= 2025-12-16T19:12:03.433658900 =================
+错误类型：java.lang.ArrayIndexOutOfBoundsException
+错误消息：Index -1 out of bounds for length 0
+位置：com.ljf.greatplan.general.tools.generalTools.FileIO.getFileContent (FileIO.java:262)
+调用链：
+  [0] com.ljf.greatplan.general.tools.generalTools.FileIO.getFileContent(FileIO.java:262)
+  [1] jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+  [2] java.lang.reflect.Method.invoke(Method.java:580)
+  [3] org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:360)
+  [4] org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:196)
+  [5] org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+  [6] org.springframework.aop.aspectj.AspectJAfterThrowingAdvice.invoke(AspectJAfterThrowingAdvice.java:64)
+  [7] org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+  [8] org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:97)
+  [9] org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+========================================================
+
+================= 2025-12-16T19:12:03.437197700 =================
+错误类型：java.lang.ArrayIndexOutOfBoundsException
+错误消息：Index -1 out of bounds for length 0
+位置：com.ljf.greatplan.general.tools.generalTools.FileIO.getFileContent (FileIO.java:262)
+调用链：
+  [0] com.ljf.greatplan.general.tools.generalTools.FileIO.getFileContent(FileIO.java:262)
+  [1] jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+  [2] java.lang.reflect.Method.invoke(Method.java:580)
+  [3] org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:360)
+  [4] org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:196)
+  [5] org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+  [6] org.springframework.aop.aspectj.AspectJAfterThrowingAdvice.invoke(AspectJAfterThrowingAdvice.java:64)
+  [7] org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+  [8] org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:97)
+  [9] org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+========================================================
+
+================= 2025-12-16T19:12:03.437197700 =================
+错误类型：java.lang.ArrayIndexOutOfBoundsException
+错误消息：Index -1 out of bounds for length 0
+位置：com.ljf.greatplan.general.tools.generalTools.FileIO.getFileContent (FileIO.java:262)
+调用链：
+  [0] com.ljf.greatplan.general.tools.generalTools.FileIO.getFileContent(FileIO.java:262)
+  [1] jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+  [2] java.lang.reflect.Method.invoke(Method.java:580)
+  [3] org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:360)
+  [4] org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:196)
+  [5] org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+  [6] org.springframework.aop.aspectj.AspectJAfterThrowingAdvice.invoke(AspectJAfterThrowingAdvice.java:64)
+  [7] org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+  [8] org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:97)
+  [9] org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+========================================================
+
+================= 2025-12-16T19:12:46.383753200 =================
+错误类型：java.lang.ArrayIndexOutOfBoundsException
+错误消息：Index -1 out of bounds for length 0
+位置：com.ljf.greatplan.general.tools.generalTools.FileIO.getFileContent (FileIO.java:264)
+调用链：
+  [0] com.ljf.greatplan.general.tools.generalTools.FileIO.getFileContent(FileIO.java:264)
+  [1] jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+  [2] java.lang.reflect.Method.invoke(Method.java:580)
+  [3] org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:360)
+  [4] org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:196)
+  [5] org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+  [6] org.springframework.aop.aspectj.AspectJAfterThrowingAdvice.invoke(AspectJAfterThrowingAdvice.java:64)
+  [7] org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+  [8] org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:97)
+  [9] org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+========================================================
+
+================= 2025-12-16T19:12:46.391296800 =================
+错误类型：java.lang.ArrayIndexOutOfBoundsException
+错误消息：Index -1 out of bounds for length 0
+位置：com.ljf.greatplan.general.tools.generalTools.FileIO.getFileContent (FileIO.java:264)
+调用链：
+  [0] com.ljf.greatplan.general.tools.generalTools.FileIO.getFileContent(FileIO.java:264)
+  [1] jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+  [2] java.lang.reflect.Method.invoke(Method.java:580)
+  [3] org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:360)
+  [4] org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:196)
+  [5] org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+  [6] org.springframework.aop.aspectj.AspectJAfterThrowingAdvice.invoke(AspectJAfterThrowingAdvice.java:64)
+  [7] org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+  [8] org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:97)
+  [9] org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+========================================================
+
+================= 2025-12-16T19:12:46.393296900 =================
+错误类型：java.lang.ArrayIndexOutOfBoundsException
+错误消息：Index -1 out of bounds for length 0
+位置：com.ljf.greatplan.general.tools.generalTools.FileIO.getFileContent (FileIO.java:264)
+调用链：
+  [0] com.ljf.greatplan.general.tools.generalTools.FileIO.getFileContent(FileIO.java:264)
+  [1] jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+  [2] java.lang.reflect.Method.invoke(Method.java:580)
+  [3] org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:360)
+  [4] org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:196)
+  [5] org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+  [6] org.springframework.aop.aspectj.AspectJAfterThrowingAdvice.invoke(AspectJAfterThrowingAdvice.java:64)
+  [7] org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+  [8] org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:97)
+  [9] org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+========================================================
+
+================= 2025-12-16T19:31:42.007367400 =================
+错误类型：java.lang.IllegalArgumentException
+错误消息：text cannot be null or empty
+位置：org.springframework.util.Assert.hasText (Assert.java:253)
+调用链：
+  [0] org.springframework.util.Assert.hasText(Assert.java:253)
+  [1] org.springframework.ai.chat.client.DefaultChatClient$DefaultChatClientRequestSpec.user(DefaultChatClient.java:985)
+  [2] com.ljf.greatplan.docking.plugins.aiSecretary.Chat.startChat(Chat.java:122)
+  [3] jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+  [4] java.lang.reflect.Method.invoke(Method.java:580)
+  [5] org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:360)
+  [6] org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:196)
+  [7] org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+  [8] org.springframework.aop.aspectj.AspectJAfterThrowingAdvice.invoke(AspectJAfterThrowingAdvice.java:64)
+  [9] org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+========================================================
+
+================= 2025-12-16T19:31:42.009785700 =================
+错误类型：java.lang.IllegalArgumentException
+错误消息：text cannot be null or empty
+位置：org.springframework.util.Assert.hasText (Assert.java:253)
+调用链：
+  [0] org.springframework.util.Assert.hasText(Assert.java:253)
+  [1] org.springframework.ai.chat.client.DefaultChatClient$DefaultChatClientRequestSpec.user(DefaultChatClient.java:985)
+  [2] com.ljf.greatplan.docking.plugins.aiSecretary.Chat.startChat(Chat.java:122)
+  [3] jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+  [4] java.lang.reflect.Method.invoke(Method.java:580)
+  [5] org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:360)
+  [6] org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:196)
+  [7] org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+  [8] org.springframework.aop.aspectj.AspectJAfterThrowingAdvice.invoke(AspectJAfterThrowingAdvice.java:64)
+  [9] org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+========================================================
+
+================= 2025-12-16T19:34:04.127011400 =================
+错误类型：org.springframework.ai.tool.execution.ToolExecutionException
+错误消息：null
+位置：org.springframework.ai.tool.method.MethodToolCallback.callMethod (MethodToolCallback.java:191)
+调用链：
+  [0] org.springframework.ai.tool.method.MethodToolCallback.callMethod(MethodToolCallback.java:191)
+  [1] org.springframework.ai.tool.method.MethodToolCallback.call(MethodToolCallback.java:112)
+  [2] org.springframework.ai.model.tool.DefaultToolCallingManager.lambda$executeToolCall$5(DefaultToolCallingManager.java:241)
+  [3] io.micrometer.observation.Observation.observe(Observation.java:564)
+  [4] org.springframework.ai.model.tool.DefaultToolCallingManager.executeToolCall(DefaultToolCallingManager.java:238)
+  [5] org.springframework.ai.model.tool.DefaultToolCallingManager.executeToolCalls(DefaultToolCallingManager.java:143)
+  [6] org.springframework.ai.openai.OpenAiChatModel.internalCall(OpenAiChatModel.java:245)
+  [7] org.springframework.ai.openai.OpenAiChatModel.internalCall(OpenAiChatModel.java:255)
+  [8] org.springframework.ai.openai.OpenAiChatModel.call(OpenAiChatModel.java:182)
+  [9] org.springframework.ai.chat.client.advisor.ChatModelCallAdvisor.adviseCall(ChatModelCallAdvisor.java:56)
+========================================================
+
+================= 2025-12-16T19:34:04.134545200 =================
+错误类型：org.springframework.ai.tool.execution.ToolExecutionException
+错误消息：null
+位置：org.springframework.ai.tool.method.MethodToolCallback.callMethod (MethodToolCallback.java:191)
+调用链：
+  [0] org.springframework.ai.tool.method.MethodToolCallback.callMethod(MethodToolCallback.java:191)
+  [1] org.springframework.ai.tool.method.MethodToolCallback.call(MethodToolCallback.java:112)
+  [2] org.springframework.ai.model.tool.DefaultToolCallingManager.lambda$executeToolCall$5(DefaultToolCallingManager.java:241)
+  [3] io.micrometer.observation.Observation.observe(Observation.java:564)
+  [4] org.springframework.ai.model.tool.DefaultToolCallingManager.executeToolCall(DefaultToolCallingManager.java:238)
+  [5] org.springframework.ai.model.tool.DefaultToolCallingManager.executeToolCalls(DefaultToolCallingManager.java:143)
+  [6] org.springframework.ai.openai.OpenAiChatModel.internalCall(OpenAiChatModel.java:245)
+  [7] org.springframework.ai.openai.OpenAiChatModel.internalCall(OpenAiChatModel.java:255)
+  [8] org.springframework.ai.openai.OpenAiChatModel.call(OpenAiChatModel.java:182)
+  [9] org.springframework.ai.chat.client.advisor.ChatModelCallAdvisor.adviseCall(ChatModelCallAdvisor.java:56)
+========================================================
+
+================= 2025-12-16T19:36:16.763620700 =================
+错误类型：org.springframework.ai.tool.execution.ToolExecutionException
+错误消息：null
+位置：org.springframework.ai.tool.method.MethodToolCallback.callMethod (MethodToolCallback.java:191)
+调用链：
+  [0] org.springframework.ai.tool.method.MethodToolCallback.callMethod(MethodToolCallback.java:191)
+  [1] org.springframework.ai.tool.method.MethodToolCallback.call(MethodToolCallback.java:112)
+  [2] org.springframework.ai.model.tool.DefaultToolCallingManager.lambda$executeToolCall$5(DefaultToolCallingManager.java:241)
+  [3] io.micrometer.observation.Observation.observe(Observation.java:564)
+  [4] org.springframework.ai.model.tool.DefaultToolCallingManager.executeToolCall(DefaultToolCallingManager.java:238)
+  [5] org.springframework.ai.model.tool.DefaultToolCallingManager.executeToolCalls(DefaultToolCallingManager.java:143)
+  [6] org.springframework.ai.openai.OpenAiChatModel.internalCall(OpenAiChatModel.java:245)
+  [7] org.springframework.ai.openai.OpenAiChatModel.call(OpenAiChatModel.java:182)
+  [8] org.springframework.ai.chat.client.advisor.ChatModelCallAdvisor.adviseCall(ChatModelCallAdvisor.java:56)
+  [9] org.springframework.ai.chat.client.advisor.DefaultAroundAdvisorChain.lambda$nextCall$1(DefaultAroundAdvisorChain.java:114)
+========================================================
+
+================= 2025-12-16T19:36:16.766952800 =================
+错误类型：org.springframework.ai.tool.execution.ToolExecutionException
+错误消息：null
+位置：org.springframework.ai.tool.method.MethodToolCallback.callMethod (MethodToolCallback.java:191)
+调用链：
+  [0] org.springframework.ai.tool.method.MethodToolCallback.callMethod(MethodToolCallback.java:191)
+  [1] org.springframework.ai.tool.method.MethodToolCallback.call(MethodToolCallback.java:112)
+  [2] org.springframework.ai.model.tool.DefaultToolCallingManager.lambda$executeToolCall$5(DefaultToolCallingManager.java:241)
+  [3] io.micrometer.observation.Observation.observe(Observation.java:564)
+  [4] org.springframework.ai.model.tool.DefaultToolCallingManager.executeToolCall(DefaultToolCallingManager.java:238)
+  [5] org.springframework.ai.model.tool.DefaultToolCallingManager.executeToolCalls(DefaultToolCallingManager.java:143)
+  [6] org.springframework.ai.openai.OpenAiChatModel.internalCall(OpenAiChatModel.java:245)
+  [7] org.springframework.ai.openai.OpenAiChatModel.call(OpenAiChatModel.java:182)
+  [8] org.springframework.ai.chat.client.advisor.ChatModelCallAdvisor.adviseCall(ChatModelCallAdvisor.java:56)
+  [9] org.springframework.ai.chat.client.advisor.DefaultAroundAdvisorChain.lambda$nextCall$1(DefaultAroundAdvisorChain.java:114)
+========================================================
+
+================= 2025-12-16T19:41:38.940885100 =================
+错误类型：org.springframework.ai.tool.execution.ToolExecutionException
+错误消息：null
+位置：org.springframework.ai.tool.method.MethodToolCallback.callMethod (MethodToolCallback.java:191)
+调用链：
+  [0] org.springframework.ai.tool.method.MethodToolCallback.callMethod(MethodToolCallback.java:191)
+  [1] org.springframework.ai.tool.method.MethodToolCallback.call(MethodToolCallback.java:112)
+  [2] org.springframework.ai.model.tool.DefaultToolCallingManager.lambda$executeToolCall$5(DefaultToolCallingManager.java:241)
+  [3] io.micrometer.observation.Observation.observe(Observation.java:564)
+  [4] org.springframework.ai.model.tool.DefaultToolCallingManager.executeToolCall(DefaultToolCallingManager.java:238)
+  [5] org.springframework.ai.model.tool.DefaultToolCallingManager.executeToolCalls(DefaultToolCallingManager.java:143)
+  [6] org.springframework.ai.openai.OpenAiChatModel.internalCall(OpenAiChatModel.java:245)
+  [7] org.springframework.ai.openai.OpenAiChatModel.call(OpenAiChatModel.java:182)
+  [8] org.springframework.ai.chat.client.advisor.ChatModelCallAdvisor.adviseCall(ChatModelCallAdvisor.java:56)
+  [9] org.springframework.ai.chat.client.advisor.DefaultAroundAdvisorChain.lambda$nextCall$1(DefaultAroundAdvisorChain.java:114)
+========================================================
+
+================= 2025-12-16T19:41:38.944391300 =================
+错误类型：org.springframework.ai.tool.execution.ToolExecutionException
+错误消息：null
+位置：org.springframework.ai.tool.method.MethodToolCallback.callMethod (MethodToolCallback.java:191)
+调用链：
+  [0] org.springframework.ai.tool.method.MethodToolCallback.callMethod(MethodToolCallback.java:191)
+  [1] org.springframework.ai.tool.method.MethodToolCallback.call(MethodToolCallback.java:112)
+  [2] org.springframework.ai.model.tool.DefaultToolCallingManager.lambda$executeToolCall$5(DefaultToolCallingManager.java:241)
+  [3] io.micrometer.observation.Observation.observe(Observation.java:564)
+  [4] org.springframework.ai.model.tool.DefaultToolCallingManager.executeToolCall(DefaultToolCallingManager.java:238)
+  [5] org.springframework.ai.model.tool.DefaultToolCallingManager.executeToolCalls(DefaultToolCallingManager.java:143)
+  [6] org.springframework.ai.openai.OpenAiChatModel.internalCall(OpenAiChatModel.java:245)
+  [7] org.springframework.ai.openai.OpenAiChatModel.call(OpenAiChatModel.java:182)
+  [8] org.springframework.ai.chat.client.advisor.ChatModelCallAdvisor.adviseCall(ChatModelCallAdvisor.java:56)
+  [9] org.springframework.ai.chat.client.advisor.DefaultAroundAdvisorChain.lambda$nextCall$1(DefaultAroundAdvisorChain.java:114)
+========================================================
+
+================= 2025-12-17T10:38:09.681542500 =================
+错误类型：org.springframework.ai.tool.execution.ToolExecutionException
+错误消息：null
+位置：org.springframework.ai.tool.method.MethodToolCallback.callMethod (MethodToolCallback.java:191)
+调用链：
+  [0] org.springframework.ai.tool.method.MethodToolCallback.callMethod(MethodToolCallback.java:191)
+  [1] org.springframework.ai.tool.method.MethodToolCallback.call(MethodToolCallback.java:112)
+  [2] org.springframework.ai.model.tool.DefaultToolCallingManager.lambda$executeToolCall$5(DefaultToolCallingManager.java:241)
+  [3] io.micrometer.observation.Observation.observe(Observation.java:564)
+  [4] org.springframework.ai.model.tool.DefaultToolCallingManager.executeToolCall(DefaultToolCallingManager.java:238)
+  [5] org.springframework.ai.model.tool.DefaultToolCallingManager.executeToolCalls(DefaultToolCallingManager.java:143)
+  [6] org.springframework.ai.openai.OpenAiChatModel.internalCall(OpenAiChatModel.java:245)
+  [7] org.springframework.ai.openai.OpenAiChatModel.internalCall(OpenAiChatModel.java:255)
+  [8] org.springframework.ai.openai.OpenAiChatModel.internalCall(OpenAiChatModel.java:255)
+  [9] org.springframework.ai.openai.OpenAiChatModel.call(OpenAiChatModel.java:182)
+========================================================
+
+================= 2025-12-17T10:41:57.153742100 =================
+错误类型：org.springframework.ai.tool.execution.ToolExecutionException
+错误消息：null
+位置：org.springframework.ai.tool.method.MethodToolCallback.callMethod (MethodToolCallback.java:191)
+调用链：
+  [0] org.springframework.ai.tool.method.MethodToolCallback.callMethod(MethodToolCallback.java:191)
+  [1] org.springframework.ai.tool.method.MethodToolCallback.call(MethodToolCallback.java:112)
+  [2] org.springframework.ai.model.tool.DefaultToolCallingManager.lambda$executeToolCall$5(DefaultToolCallingManager.java:241)
+  [3] io.micrometer.observation.Observation.observe(Observation.java:564)
+  [4] org.springframework.ai.model.tool.DefaultToolCallingManager.executeToolCall(DefaultToolCallingManager.java:238)
+  [5] org.springframework.ai.model.tool.DefaultToolCallingManager.executeToolCalls(DefaultToolCallingManager.java:143)
+  [6] org.springframework.ai.openai.OpenAiChatModel.internalCall(OpenAiChatModel.java:245)
+  [7] org.springframework.ai.openai.OpenAiChatModel.internalCall(OpenAiChatModel.java:255)
+  [8] org.springframework.ai.openai.OpenAiChatModel.internalCall(OpenAiChatModel.java:255)
+  [9] org.springframework.ai.openai.OpenAiChatModel.call(OpenAiChatModel.java:182)
+========================================================
+
+================= 2025-12-17T14:29:57.558713 =================
+错误类型：org.springframework.ai.tool.execution.ToolExecutionException
+错误消息：null
+位置：org.springframework.ai.tool.method.MethodToolCallback.callMethod (MethodToolCallback.java:191)
+调用链：
+  [0] org.springframework.ai.tool.method.MethodToolCallback.callMethod(MethodToolCallback.java:191)
+  [1] org.springframework.ai.tool.method.MethodToolCallback.call(MethodToolCallback.java:112)
+  [2] org.springframework.ai.model.tool.DefaultToolCallingManager.lambda$executeToolCall$5(DefaultToolCallingManager.java:241)
+  [3] io.micrometer.observation.Observation.observe(Observation.java:564)
+  [4] org.springframework.ai.model.tool.DefaultToolCallingManager.executeToolCall(DefaultToolCallingManager.java:238)
+  [5] org.springframework.ai.model.tool.DefaultToolCallingManager.executeToolCalls(DefaultToolCallingManager.java:143)
+  [6] org.springframework.ai.openai.OpenAiChatModel.internalCall(OpenAiChatModel.java:245)
+  [7] org.springframework.ai.openai.OpenAiChatModel.call(OpenAiChatModel.java:182)
+  [8] org.springframework.ai.chat.client.advisor.ChatModelCallAdvisor.adviseCall(ChatModelCallAdvisor.java:56)
+  [9] org.springframework.ai.chat.client.advisor.DefaultAroundAdvisorChain.lambda$nextCall$1(DefaultAroundAdvisorChain.java:114)
+========================================================
+
+================= 2025-12-17T14:29:57.564730200 =================
+错误类型：org.springframework.ai.tool.execution.ToolExecutionException
+错误消息：null
+位置：org.springframework.ai.tool.method.MethodToolCallback.callMethod (MethodToolCallback.java:191)
+调用链：
+  [0] org.springframework.ai.tool.method.MethodToolCallback.callMethod(MethodToolCallback.java:191)
+  [1] org.springframework.ai.tool.method.MethodToolCallback.call(MethodToolCallback.java:112)
+  [2] org.springframework.ai.model.tool.DefaultToolCallingManager.lambda$executeToolCall$5(DefaultToolCallingManager.java:241)
+  [3] io.micrometer.observation.Observation.observe(Observation.java:564)
+  [4] org.springframework.ai.model.tool.DefaultToolCallingManager.executeToolCall(DefaultToolCallingManager.java:238)
+  [5] org.springframework.ai.model.tool.DefaultToolCallingManager.executeToolCalls(DefaultToolCallingManager.java:143)
+  [6] org.springframework.ai.openai.OpenAiChatModel.internalCall(OpenAiChatModel.java:245)
+  [7] org.springframework.ai.openai.OpenAiChatModel.call(OpenAiChatModel.java:182)
+  [8] org.springframework.ai.chat.client.advisor.ChatModelCallAdvisor.adviseCall(ChatModelCallAdvisor.java:56)
+  [9] org.springframework.ai.chat.client.advisor.DefaultAroundAdvisorChain.lambda$nextCall$1(DefaultAroundAdvisorChain.java:114)
+========================================================
+
+================= 2025-12-17T14:57:18.026658600 =================
+错误类型：org.springframework.ai.tool.execution.ToolExecutionException
+错误消息：null
+位置：org.springframework.ai.tool.method.MethodToolCallback.callMethod (MethodToolCallback.java:191)
+调用链：
+  [0] org.springframework.ai.tool.method.MethodToolCallback.callMethod(MethodToolCallback.java:191)
+  [1] org.springframework.ai.tool.method.MethodToolCallback.call(MethodToolCallback.java:112)
+  [2] org.springframework.ai.model.tool.DefaultToolCallingManager.lambda$executeToolCall$5(DefaultToolCallingManager.java:241)
+  [3] io.micrometer.observation.Observation.observe(Observation.java:564)
+  [4] org.springframework.ai.model.tool.DefaultToolCallingManager.executeToolCall(DefaultToolCallingManager.java:238)
+  [5] org.springframework.ai.model.tool.DefaultToolCallingManager.executeToolCalls(DefaultToolCallingManager.java:143)
+  [6] org.springframework.ai.openai.OpenAiChatModel.internalCall(OpenAiChatModel.java:245)
+  [7] org.springframework.ai.openai.OpenAiChatModel.call(OpenAiChatModel.java:182)
+  [8] org.springframework.ai.chat.client.advisor.ChatModelCallAdvisor.adviseCall(ChatModelCallAdvisor.java:56)
+  [9] org.springframework.ai.chat.client.advisor.DefaultAroundAdvisorChain.lambda$nextCall$1(DefaultAroundAdvisorChain.java:114)
+========================================================
+
+================= 2025-12-17T14:57:18.029701600 =================
+错误类型：org.springframework.ai.tool.execution.ToolExecutionException
+错误消息：null
+位置：org.springframework.ai.tool.method.MethodToolCallback.callMethod (MethodToolCallback.java:191)
+调用链：
+  [0] org.springframework.ai.tool.method.MethodToolCallback.callMethod(MethodToolCallback.java:191)
+  [1] org.springframework.ai.tool.method.MethodToolCallback.call(MethodToolCallback.java:112)
+  [2] org.springframework.ai.model.tool.DefaultToolCallingManager.lambda$executeToolCall$5(DefaultToolCallingManager.java:241)
+  [3] io.micrometer.observation.Observation.observe(Observation.java:564)
+  [4] org.springframework.ai.model.tool.DefaultToolCallingManager.executeToolCall(DefaultToolCallingManager.java:238)
+  [5] org.springframework.ai.model.tool.DefaultToolCallingManager.executeToolCalls(DefaultToolCallingManager.java:143)
+  [6] org.springframework.ai.openai.OpenAiChatModel.internalCall(OpenAiChatModel.java:245)
+  [7] org.springframework.ai.openai.OpenAiChatModel.call(OpenAiChatModel.java:182)
+  [8] org.springframework.ai.chat.client.advisor.ChatModelCallAdvisor.adviseCall(ChatModelCallAdvisor.java:56)
+  [9] org.springframework.ai.chat.client.advisor.DefaultAroundAdvisorChain.lambda$nextCall$1(DefaultAroundAdvisorChain.java:114)
+========================================================
+
+================= 2025-12-17T14:59:17.954272700 =================
+错误类型：org.springframework.ai.tool.execution.ToolExecutionException
+错误消息：null
+位置：org.springframework.ai.tool.method.MethodToolCallback.callMethod (MethodToolCallback.java:191)
+调用链：
+  [0] org.springframework.ai.tool.method.MethodToolCallback.callMethod(MethodToolCallback.java:191)
+  [1] org.springframework.ai.tool.method.MethodToolCallback.call(MethodToolCallback.java:112)
+  [2] org.springframework.ai.model.tool.DefaultToolCallingManager.lambda$executeToolCall$5(DefaultToolCallingManager.java:241)
+  [3] io.micrometer.observation.Observation.observe(Observation.java:564)
+  [4] org.springframework.ai.model.tool.DefaultToolCallingManager.executeToolCall(DefaultToolCallingManager.java:238)
+  [5] org.springframework.ai.model.tool.DefaultToolCallingManager.executeToolCalls(DefaultToolCallingManager.java:143)
+  [6] org.springframework.ai.openai.OpenAiChatModel.internalCall(OpenAiChatModel.java:245)
+  [7] org.springframework.ai.openai.OpenAiChatModel.call(OpenAiChatModel.java:182)
+  [8] org.springframework.ai.chat.client.advisor.ChatModelCallAdvisor.adviseCall(ChatModelCallAdvisor.java:56)
+  [9] org.springframework.ai.chat.client.advisor.DefaultAroundAdvisorChain.lambda$nextCall$1(DefaultAroundAdvisorChain.java:114)
+========================================================
+
+================= 2025-12-17T14:59:17.957786300 =================
+错误类型：org.springframework.ai.tool.execution.ToolExecutionException
+错误消息：null
+位置：org.springframework.ai.tool.method.MethodToolCallback.callMethod (MethodToolCallback.java:191)
+调用链：
+  [0] org.springframework.ai.tool.method.MethodToolCallback.callMethod(MethodToolCallback.java:191)
+  [1] org.springframework.ai.tool.method.MethodToolCallback.call(MethodToolCallback.java:112)
+  [2] org.springframework.ai.model.tool.DefaultToolCallingManager.lambda$executeToolCall$5(DefaultToolCallingManager.java:241)
+  [3] io.micrometer.observation.Observation.observe(Observation.java:564)
+  [4] org.springframework.ai.model.tool.DefaultToolCallingManager.executeToolCall(DefaultToolCallingManager.java:238)
+  [5] org.springframework.ai.model.tool.DefaultToolCallingManager.executeToolCalls(DefaultToolCallingManager.java:143)
+  [6] org.springframework.ai.openai.OpenAiChatModel.internalCall(OpenAiChatModel.java:245)
+  [7] org.springframework.ai.openai.OpenAiChatModel.call(OpenAiChatModel.java:182)
+  [8] org.springframework.ai.chat.client.advisor.ChatModelCallAdvisor.adviseCall(ChatModelCallAdvisor.java:56)
+  [9] org.springframework.ai.chat.client.advisor.DefaultAroundAdvisorChain.lambda$nextCall$1(DefaultAroundAdvisorChain.java:114)
+========================================================
+
+================= 2025-12-17T15:15:38.862125100 =================
+错误类型：org.springframework.ai.tool.execution.ToolExecutionException
+错误消息：Cannot deserialize value of type `java.io.File` from Object value (token `JsonToken.START_OBJECT`)
+ at [Source: REDACTED (`StreamReadFeature.INCLUDE_SOURCE_IN_LOCATION` disabled); line: 1, column: 1]
+位置：org.springframework.ai.tool.method.MethodToolCallback.buildTypedArgument (MethodToolCallback.java:172)
+调用链：
+  [0] org.springframework.ai.tool.method.MethodToolCallback.buildTypedArgument(MethodToolCallback.java:172)
+  [1] org.springframework.ai.tool.method.MethodToolCallback.lambda$buildMethodArguments$1(MethodToolCallback.java:150)
+  [2] java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)
+  [3] java.util.Spliterators$ArraySpliterator.forEachRemaining(Spliterators.java:1024)
+  [4] java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:509)
+  [5] java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499)
+  [6] java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:575)
+  [7] java.util.stream.AbstractPipeline.evaluateToArrayNode(AbstractPipeline.java:260)
+  [8] java.util.stream.ReferencePipeline.toArray(ReferencePipeline.java:616)
+  [9] java.util.stream.ReferencePipeline.toArray(ReferencePipeline.java:622)
+========================================================
+
+================= 2025-12-17T15:15:38.864140800 =================
+错误类型：org.springframework.ai.tool.execution.ToolExecutionException
+错误消息：Cannot deserialize value of type `java.io.File` from Object value (token `JsonToken.START_OBJECT`)
+ at [Source: REDACTED (`StreamReadFeature.INCLUDE_SOURCE_IN_LOCATION` disabled); line: 1, column: 1]
+位置：org.springframework.ai.tool.method.MethodToolCallback.buildTypedArgument (MethodToolCallback.java:172)
+调用链：
+  [0] org.springframework.ai.tool.method.MethodToolCallback.buildTypedArgument(MethodToolCallback.java:172)
+  [1] org.springframework.ai.tool.method.MethodToolCallback.lambda$buildMethodArguments$1(MethodToolCallback.java:150)
+  [2] java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)
+  [3] java.util.Spliterators$ArraySpliterator.forEachRemaining(Spliterators.java:1024)
+  [4] java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:509)
+  [5] java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499)
+  [6] java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:575)
+  [7] java.util.stream.AbstractPipeline.evaluateToArrayNode(AbstractPipeline.java:260)
+  [8] java.util.stream.ReferencePipeline.toArray(ReferencePipeline.java:616)
+  [9] java.util.stream.ReferencePipeline.toArray(ReferencePipeline.java:622)
+========================================================
+
+================= 2025-12-17T15:30:48.818039700 =================
+错误类型：java.lang.IllegalArgumentException
+错误消息：java.lang.NullPointerException: Cannot invoke "java.lang.Number.intValue()" because the return value of "sun.invoke.util.ValueConversions.primitiveConversion(sun.invoke.util.Wrapper, Object, boolean)" is null
+位置：jdk.internal.reflect.DirectMethodHandleAccessor.invoke (DirectMethodHandleAccessor.java:113)
+调用链：
+  [0] jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:113)
+  [1] java.lang.reflect.Method.invoke(Method.java:580)
+  [2] org.springframework.ai.tool.method.MethodToolCallback.callMethod(MethodToolCallback.java:185)
+  [3] org.springframework.ai.tool.method.MethodToolCallback.call(MethodToolCallback.java:112)
+  [4] org.springframework.ai.model.tool.DefaultToolCallingManager.lambda$executeToolCall$5(DefaultToolCallingManager.java:241)
+  [5] io.micrometer.observation.Observation.observe(Observation.java:564)
+  [6] org.springframework.ai.model.tool.DefaultToolCallingManager.executeToolCall(DefaultToolCallingManager.java:238)
+  [7] org.springframework.ai.model.tool.DefaultToolCallingManager.executeToolCalls(DefaultToolCallingManager.java:143)
+  [8] org.springframework.ai.openai.OpenAiChatModel.internalCall(OpenAiChatModel.java:245)
+  [9] org.springframework.ai.openai.OpenAiChatModel.internalCall(OpenAiChatModel.java:255)
+========================================================
+
+================= 2025-12-17T15:30:48.821212800 =================
+错误类型：java.lang.IllegalArgumentException
+错误消息：java.lang.NullPointerException: Cannot invoke "java.lang.Number.intValue()" because the return value of "sun.invoke.util.ValueConversions.primitiveConversion(sun.invoke.util.Wrapper, Object, boolean)" is null
+位置：jdk.internal.reflect.DirectMethodHandleAccessor.invoke (DirectMethodHandleAccessor.java:113)
+调用链：
+  [0] jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:113)
+  [1] java.lang.reflect.Method.invoke(Method.java:580)
+  [2] org.springframework.ai.tool.method.MethodToolCallback.callMethod(MethodToolCallback.java:185)
+  [3] org.springframework.ai.tool.method.MethodToolCallback.call(MethodToolCallback.java:112)
+  [4] org.springframework.ai.model.tool.DefaultToolCallingManager.lambda$executeToolCall$5(DefaultToolCallingManager.java:241)
+  [5] io.micrometer.observation.Observation.observe(Observation.java:564)
+  [6] org.springframework.ai.model.tool.DefaultToolCallingManager.executeToolCall(DefaultToolCallingManager.java:238)
+  [7] org.springframework.ai.model.tool.DefaultToolCallingManager.executeToolCalls(DefaultToolCallingManager.java:143)
+  [8] org.springframework.ai.openai.OpenAiChatModel.internalCall(OpenAiChatModel.java:245)
+  [9] org.springframework.ai.openai.OpenAiChatModel.internalCall(OpenAiChatModel.java:255)
+========================================================
+
+================= 2025-12-17T15:33:35.958010100 =================
+错误类型：java.lang.IllegalArgumentException
+错误消息：java.lang.NullPointerException: Cannot invoke "java.lang.Number.intValue()" because the return value of "sun.invoke.util.ValueConversions.primitiveConversion(sun.invoke.util.Wrapper, Object, boolean)" is null
+位置：jdk.internal.reflect.DirectMethodHandleAccessor.invoke (DirectMethodHandleAccessor.java:113)
+调用链：
+  [0] jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:113)
+  [1] java.lang.reflect.Method.invoke(Method.java:580)
+  [2] org.springframework.ai.tool.method.MethodToolCallback.callMethod(MethodToolCallback.java:185)
+  [3] org.springframework.ai.tool.method.MethodToolCallback.call(MethodToolCallback.java:112)
+  [4] org.springframework.ai.model.tool.DefaultToolCallingManager.lambda$executeToolCall$5(DefaultToolCallingManager.java:241)
+  [5] io.micrometer.observation.Observation.observe(Observation.java:564)
+  [6] org.springframework.ai.model.tool.DefaultToolCallingManager.executeToolCall(DefaultToolCallingManager.java:238)
+  [7] org.springframework.ai.model.tool.DefaultToolCallingManager.executeToolCalls(DefaultToolCallingManager.java:143)
+  [8] org.springframework.ai.openai.OpenAiChatModel.internalCall(OpenAiChatModel.java:245)
+  [9] org.springframework.ai.openai.OpenAiChatModel.internalCall(OpenAiChatModel.java:255)
+========================================================
+
+================= 2025-12-17T15:33:35.961997600 =================
+错误类型：java.lang.IllegalArgumentException
+错误消息：java.lang.NullPointerException: Cannot invoke "java.lang.Number.intValue()" because the return value of "sun.invoke.util.ValueConversions.primitiveConversion(sun.invoke.util.Wrapper, Object, boolean)" is null
+位置：jdk.internal.reflect.DirectMethodHandleAccessor.invoke (DirectMethodHandleAccessor.java:113)
+调用链：
+  [0] jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:113)
+  [1] java.lang.reflect.Method.invoke(Method.java:580)
+  [2] org.springframework.ai.tool.method.MethodToolCallback.callMethod(MethodToolCallback.java:185)
+  [3] org.springframework.ai.tool.method.MethodToolCallback.call(MethodToolCallback.java:112)
+  [4] org.springframework.ai.model.tool.DefaultToolCallingManager.lambda$executeToolCall$5(DefaultToolCallingManager.java:241)
+  [5] io.micrometer.observation.Observation.observe(Observation.java:564)
+  [6] org.springframework.ai.model.tool.DefaultToolCallingManager.executeToolCall(DefaultToolCallingManager.java:238)
+  [7] org.springframework.ai.model.tool.DefaultToolCallingManager.executeToolCalls(DefaultToolCallingManager.java:143)
+  [8] org.springframework.ai.openai.OpenAiChatModel.internalCall(OpenAiChatModel.java:245)
+  [9] org.springframework.ai.openai.OpenAiChatModel.internalCall(OpenAiChatModel.java:255)
+========================================================
+
+================= 2025-12-17T15:40:56.496293800 =================
+错误类型：org.springframework.ai.tool.execution.ToolExecutionException
+错误消息：null
+位置：org.springframework.ai.tool.method.MethodToolCallback.callMethod (MethodToolCallback.java:191)
+调用链：
+  [0] org.springframework.ai.tool.method.MethodToolCallback.callMethod(MethodToolCallback.java:191)
+  [1] org.springframework.ai.tool.method.MethodToolCallback.call(MethodToolCallback.java:112)
+  [2] org.springframework.ai.model.tool.DefaultToolCallingManager.lambda$executeToolCall$5(DefaultToolCallingManager.java:241)
+  [3] io.micrometer.observation.Observation.observe(Observation.java:564)
+  [4] org.springframework.ai.model.tool.DefaultToolCallingManager.executeToolCall(DefaultToolCallingManager.java:238)
+  [5] org.springframework.ai.model.tool.DefaultToolCallingManager.executeToolCalls(DefaultToolCallingManager.java:143)
+  [6] org.springframework.ai.openai.OpenAiChatModel.internalCall(OpenAiChatModel.java:245)
+  [7] org.springframework.ai.openai.OpenAiChatModel.internalCall(OpenAiChatModel.java:255)
+  [8] org.springframework.ai.openai.OpenAiChatModel.call(OpenAiChatModel.java:182)
+  [9] org.springframework.ai.chat.client.advisor.ChatModelCallAdvisor.adviseCall(ChatModelCallAdvisor.java:56)
+========================================================
+
+================= 2025-12-17T15:40:56.500329 =================
+错误类型：org.springframework.ai.tool.execution.ToolExecutionException
+错误消息：null
+位置：org.springframework.ai.tool.method.MethodToolCallback.callMethod (MethodToolCallback.java:191)
+调用链：
+  [0] org.springframework.ai.tool.method.MethodToolCallback.callMethod(MethodToolCallback.java:191)
+  [1] org.springframework.ai.tool.method.MethodToolCallback.call(MethodToolCallback.java:112)
+  [2] org.springframework.ai.model.tool.DefaultToolCallingManager.lambda$executeToolCall$5(DefaultToolCallingManager.java:241)
+  [3] io.micrometer.observation.Observation.observe(Observation.java:564)
+  [4] org.springframework.ai.model.tool.DefaultToolCallingManager.executeToolCall(DefaultToolCallingManager.java:238)
+  [5] org.springframework.ai.model.tool.DefaultToolCallingManager.executeToolCalls(DefaultToolCallingManager.java:143)
+  [6] org.springframework.ai.openai.OpenAiChatModel.internalCall(OpenAiChatModel.java:245)
+  [7] org.springframework.ai.openai.OpenAiChatModel.internalCall(OpenAiChatModel.java:255)
+  [8] org.springframework.ai.openai.OpenAiChatModel.call(OpenAiChatModel.java:182)
+  [9] org.springframework.ai.chat.client.advisor.ChatModelCallAdvisor.adviseCall(ChatModelCallAdvisor.java:56)
+========================================================
+
+================= 2025-12-17T15:43:01.489585400 =================
+错误类型：org.springframework.ai.tool.execution.ToolExecutionException
+错误消息：null
+位置：org.springframework.ai.tool.method.MethodToolCallback.callMethod (MethodToolCallback.java:191)
+调用链：
+  [0] org.springframework.ai.tool.method.MethodToolCallback.callMethod(MethodToolCallback.java:191)
+  [1] org.springframework.ai.tool.method.MethodToolCallback.call(MethodToolCallback.java:112)
+  [2] org.springframework.ai.model.tool.DefaultToolCallingManager.lambda$executeToolCall$5(DefaultToolCallingManager.java:241)
+  [3] io.micrometer.observation.Observation.observe(Observation.java:564)
+  [4] org.springframework.ai.model.tool.DefaultToolCallingManager.executeToolCall(DefaultToolCallingManager.java:238)
+  [5] org.springframework.ai.model.tool.DefaultToolCallingManager.executeToolCalls(DefaultToolCallingManager.java:143)
+  [6] org.springframework.ai.openai.OpenAiChatModel.internalCall(OpenAiChatModel.java:245)
+  [7] org.springframework.ai.openai.OpenAiChatModel.call(OpenAiChatModel.java:182)
+  [8] org.springframework.ai.chat.client.advisor.ChatModelCallAdvisor.adviseCall(ChatModelCallAdvisor.java:56)
+  [9] org.springframework.ai.chat.client.advisor.DefaultAroundAdvisorChain.lambda$nextCall$1(DefaultAroundAdvisorChain.java:114)
+========================================================
+
+================= 2025-12-17T15:43:01.491587400 =================
+错误类型：org.springframework.ai.tool.execution.ToolExecutionException
+错误消息：null
+位置：org.springframework.ai.tool.method.MethodToolCallback.callMethod (MethodToolCallback.java:191)
+调用链：
+  [0] org.springframework.ai.tool.method.MethodToolCallback.callMethod(MethodToolCallback.java:191)
+  [1] org.springframework.ai.tool.method.MethodToolCallback.call(MethodToolCallback.java:112)
+  [2] org.springframework.ai.model.tool.DefaultToolCallingManager.lambda$executeToolCall$5(DefaultToolCallingManager.java:241)
+  [3] io.micrometer.observation.Observation.observe(Observation.java:564)
+  [4] org.springframework.ai.model.tool.DefaultToolCallingManager.executeToolCall(DefaultToolCallingManager.java:238)
+  [5] org.springframework.ai.model.tool.DefaultToolCallingManager.executeToolCalls(DefaultToolCallingManager.java:143)
+  [6] org.springframework.ai.openai.OpenAiChatModel.internalCall(OpenAiChatModel.java:245)
+  [7] org.springframework.ai.openai.OpenAiChatModel.call(OpenAiChatModel.java:182)
+  [8] org.springframework.ai.chat.client.advisor.ChatModelCallAdvisor.adviseCall(ChatModelCallAdvisor.java:56)
+  [9] org.springframework.ai.chat.client.advisor.DefaultAroundAdvisorChain.lambda$nextCall$1(DefaultAroundAdvisorChain.java:114)
+========================================================
+
+================= 2025-12-17T15:43:50.344723 =================
+错误类型：org.springframework.ai.tool.execution.ToolExecutionException
+错误消息：null
+位置：org.springframework.ai.tool.method.MethodToolCallback.callMethod (MethodToolCallback.java:191)
+调用链：
+  [0] org.springframework.ai.tool.method.MethodToolCallback.callMethod(MethodToolCallback.java:191)
+  [1] org.springframework.ai.tool.method.MethodToolCallback.call(MethodToolCallback.java:112)
+  [2] org.springframework.ai.model.tool.DefaultToolCallingManager.lambda$executeToolCall$5(DefaultToolCallingManager.java:241)
+  [3] io.micrometer.observation.Observation.observe(Observation.java:564)
+  [4] org.springframework.ai.model.tool.DefaultToolCallingManager.executeToolCall(DefaultToolCallingManager.java:238)
+  [5] org.springframework.ai.model.tool.DefaultToolCallingManager.executeToolCalls(DefaultToolCallingManager.java:143)
+  [6] org.springframework.ai.openai.OpenAiChatModel.internalCall(OpenAiChatModel.java:245)
+  [7] org.springframework.ai.openai.OpenAiChatModel.internalCall(OpenAiChatModel.java:255)
+  [8] org.springframework.ai.openai.OpenAiChatModel.call(OpenAiChatModel.java:182)
+  [9] org.springframework.ai.chat.client.advisor.ChatModelCallAdvisor.adviseCall(ChatModelCallAdvisor.java:56)
+========================================================
+
+================= 2025-12-17T15:43:50.346229900 =================
+错误类型：org.springframework.ai.tool.execution.ToolExecutionException
+错误消息：null
+位置：org.springframework.ai.tool.method.MethodToolCallback.callMethod (MethodToolCallback.java:191)
+调用链：
+  [0] org.springframework.ai.tool.method.MethodToolCallback.callMethod(MethodToolCallback.java:191)
+  [1] org.springframework.ai.tool.method.MethodToolCallback.call(MethodToolCallback.java:112)
+  [2] org.springframework.ai.model.tool.DefaultToolCallingManager.lambda$executeToolCall$5(DefaultToolCallingManager.java:241)
+  [3] io.micrometer.observation.Observation.observe(Observation.java:564)
+  [4] org.springframework.ai.model.tool.DefaultToolCallingManager.executeToolCall(DefaultToolCallingManager.java:238)
+  [5] org.springframework.ai.model.tool.DefaultToolCallingManager.executeToolCalls(DefaultToolCallingManager.java:143)
+  [6] org.springframework.ai.openai.OpenAiChatModel.internalCall(OpenAiChatModel.java:245)
+  [7] org.springframework.ai.openai.OpenAiChatModel.internalCall(OpenAiChatModel.java:255)
+  [8] org.springframework.ai.openai.OpenAiChatModel.call(OpenAiChatModel.java:182)
+  [9] org.springframework.ai.chat.client.advisor.ChatModelCallAdvisor.adviseCall(ChatModelCallAdvisor.java:56)
+========================================================
+
+================= 2025-12-17T15:46:33.306795200 =================
+错误类型：org.springframework.ai.tool.execution.ToolExecutionException
+错误消息：Cannot deserialize value of type `java.io.File` from Object value (token `JsonToken.START_OBJECT`)
+ at [Source: REDACTED (`StreamReadFeature.INCLUDE_SOURCE_IN_LOCATION` disabled); line: 1, column: 1]
+位置：org.springframework.ai.tool.method.MethodToolCallback.buildTypedArgument (MethodToolCallback.java:172)
+调用链：
+  [0] org.springframework.ai.tool.method.MethodToolCallback.buildTypedArgument(MethodToolCallback.java:172)
+  [1] org.springframework.ai.tool.method.MethodToolCallback.lambda$buildMethodArguments$1(MethodToolCallback.java:150)
+  [2] java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)
+  [3] java.util.Spliterators$ArraySpliterator.forEachRemaining(Spliterators.java:1024)
+  [4] java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:509)
+  [5] java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499)
+  [6] java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:575)
+  [7] java.util.stream.AbstractPipeline.evaluateToArrayNode(AbstractPipeline.java:260)
+  [8] java.util.stream.ReferencePipeline.toArray(ReferencePipeline.java:616)
+  [9] java.util.stream.ReferencePipeline.toArray(ReferencePipeline.java:622)
+========================================================
+
+================= 2025-12-17T15:46:33.309325600 =================
+错误类型：org.springframework.ai.tool.execution.ToolExecutionException
+错误消息：Cannot deserialize value of type `java.io.File` from Object value (token `JsonToken.START_OBJECT`)
+ at [Source: REDACTED (`StreamReadFeature.INCLUDE_SOURCE_IN_LOCATION` disabled); line: 1, column: 1]
+位置：org.springframework.ai.tool.method.MethodToolCallback.buildTypedArgument (MethodToolCallback.java:172)
+调用链：
+  [0] org.springframework.ai.tool.method.MethodToolCallback.buildTypedArgument(MethodToolCallback.java:172)
+  [1] org.springframework.ai.tool.method.MethodToolCallback.lambda$buildMethodArguments$1(MethodToolCallback.java:150)
+  [2] java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)
+  [3] java.util.Spliterators$ArraySpliterator.forEachRemaining(Spliterators.java:1024)
+  [4] java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:509)
+  [5] java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499)
+  [6] java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:575)
+  [7] java.util.stream.AbstractPipeline.evaluateToArrayNode(AbstractPipeline.java:260)
+  [8] java.util.stream.ReferencePipeline.toArray(ReferencePipeline.java:616)
+  [9] java.util.stream.ReferencePipeline.toArray(ReferencePipeline.java:622)
+========================================================
+
+================= 2025-12-17T15:48:09.641449800 =================
+错误类型：org.springframework.ai.tool.execution.ToolExecutionException
+错误消息：Cannot deserialize value of type `java.io.File` from Object value (token `JsonToken.START_OBJECT`)
+ at [Source: REDACTED (`StreamReadFeature.INCLUDE_SOURCE_IN_LOCATION` disabled); line: 1, column: 1]
+位置：org.springframework.ai.tool.method.MethodToolCallback.buildTypedArgument (MethodToolCallback.java:172)
+调用链：
+  [0] org.springframework.ai.tool.method.MethodToolCallback.buildTypedArgument(MethodToolCallback.java:172)
+  [1] org.springframework.ai.tool.method.MethodToolCallback.lambda$buildMethodArguments$1(MethodToolCallback.java:150)
+  [2] java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)
+  [3] java.util.Spliterators$ArraySpliterator.forEachRemaining(Spliterators.java:1024)
+  [4] java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:509)
+  [5] java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499)
+  [6] java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:575)
+  [7] java.util.stream.AbstractPipeline.evaluateToArrayNode(AbstractPipeline.java:260)
+  [8] java.util.stream.ReferencePipeline.toArray(ReferencePipeline.java:616)
+  [9] java.util.stream.ReferencePipeline.toArray(ReferencePipeline.java:622)
+========================================================
+
+================= 2025-12-17T15:48:09.642450 =================
+错误类型：org.springframework.ai.tool.execution.ToolExecutionException
+错误消息：Cannot deserialize value of type `java.io.File` from Object value (token `JsonToken.START_OBJECT`)
+ at [Source: REDACTED (`StreamReadFeature.INCLUDE_SOURCE_IN_LOCATION` disabled); line: 1, column: 1]
+位置：org.springframework.ai.tool.method.MethodToolCallback.buildTypedArgument (MethodToolCallback.java:172)
+调用链：
+  [0] org.springframework.ai.tool.method.MethodToolCallback.buildTypedArgument(MethodToolCallback.java:172)
+  [1] org.springframework.ai.tool.method.MethodToolCallback.lambda$buildMethodArguments$1(MethodToolCallback.java:150)
+  [2] java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)
+  [3] java.util.Spliterators$ArraySpliterator.forEachRemaining(Spliterators.java:1024)
+  [4] java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:509)
+  [5] java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499)
+  [6] java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:575)
+  [7] java.util.stream.AbstractPipeline.evaluateToArrayNode(AbstractPipeline.java:260)
+  [8] java.util.stream.ReferencePipeline.toArray(ReferencePipeline.java:616)
+  [9] java.util.stream.ReferencePipeline.toArray(ReferencePipeline.java:622)
+========================================================
+
+================= 2025-12-17T15:49:01.997657100 =================
+错误类型：org.springframework.ai.tool.execution.ToolExecutionException
+错误消息：Cannot deserialize value of type `java.io.File` from Object value (token `JsonToken.START_OBJECT`)
+ at [Source: REDACTED (`StreamReadFeature.INCLUDE_SOURCE_IN_LOCATION` disabled); line: 1, column: 1]
+位置：org.springframework.ai.tool.method.MethodToolCallback.buildTypedArgument (MethodToolCallback.java:172)
+调用链：
+  [0] org.springframework.ai.tool.method.MethodToolCallback.buildTypedArgument(MethodToolCallback.java:172)
+  [1] org.springframework.ai.tool.method.MethodToolCallback.lambda$buildMethodArguments$1(MethodToolCallback.java:150)
+  [2] java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)
+  [3] java.util.Spliterators$ArraySpliterator.forEachRemaining(Spliterators.java:1024)
+  [4] java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:509)
+  [5] java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499)
+  [6] java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:575)
+  [7] java.util.stream.AbstractPipeline.evaluateToArrayNode(AbstractPipeline.java:260)
+  [8] java.util.stream.ReferencePipeline.toArray(ReferencePipeline.java:616)
+  [9] java.util.stream.ReferencePipeline.toArray(ReferencePipeline.java:622)
+========================================================
+
+================= 2025-12-17T15:49:01.999381700 =================
+错误类型：org.springframework.ai.tool.execution.ToolExecutionException
+错误消息：Cannot deserialize value of type `java.io.File` from Object value (token `JsonToken.START_OBJECT`)
+ at [Source: REDACTED (`StreamReadFeature.INCLUDE_SOURCE_IN_LOCATION` disabled); line: 1, column: 1]
+位置：org.springframework.ai.tool.method.MethodToolCallback.buildTypedArgument (MethodToolCallback.java:172)
+调用链：
+  [0] org.springframework.ai.tool.method.MethodToolCallback.buildTypedArgument(MethodToolCallback.java:172)
+  [1] org.springframework.ai.tool.method.MethodToolCallback.lambda$buildMethodArguments$1(MethodToolCallback.java:150)
+  [2] java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)
+  [3] java.util.Spliterators$ArraySpliterator.forEachRemaining(Spliterators.java:1024)
+  [4] java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:509)
+  [5] java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499)
+  [6] java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:575)
+  [7] java.util.stream.AbstractPipeline.evaluateToArrayNode(AbstractPipeline.java:260)
+  [8] java.util.stream.ReferencePipeline.toArray(ReferencePipeline.java:616)
+  [9] java.util.stream.ReferencePipeline.toArray(ReferencePipeline.java:622)
+========================================================
+
+================= 2025-12-17T15:57:12.924852200 =================
+错误类型：org.springframework.ai.tool.execution.ToolExecutionException
+错误消息：Cannot deserialize value of type `java.io.File` from Object value (token `JsonToken.START_OBJECT`)
+ at [Source: REDACTED (`StreamReadFeature.INCLUDE_SOURCE_IN_LOCATION` disabled); line: 1, column: 1]
+位置：org.springframework.ai.tool.method.MethodToolCallback.buildTypedArgument (MethodToolCallback.java:172)
+调用链：
+  [0] org.springframework.ai.tool.method.MethodToolCallback.buildTypedArgument(MethodToolCallback.java:172)
+  [1] org.springframework.ai.tool.method.MethodToolCallback.lambda$buildMethodArguments$1(MethodToolCallback.java:150)
+  [2] java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)
+  [3] java.util.Spliterators$ArraySpliterator.forEachRemaining(Spliterators.java:1024)
+  [4] java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:509)
+  [5] java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499)
+  [6] java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:575)
+  [7] java.util.stream.AbstractPipeline.evaluateToArrayNode(AbstractPipeline.java:260)
+  [8] java.util.stream.ReferencePipeline.toArray(ReferencePipeline.java:616)
+  [9] java.util.stream.ReferencePipeline.toArray(ReferencePipeline.java:622)
+========================================================
+
+================= 2025-12-17T15:57:12.926866800 =================
+错误类型：org.springframework.ai.tool.execution.ToolExecutionException
+错误消息：Cannot deserialize value of type `java.io.File` from Object value (token `JsonToken.START_OBJECT`)
+ at [Source: REDACTED (`StreamReadFeature.INCLUDE_SOURCE_IN_LOCATION` disabled); line: 1, column: 1]
+位置：org.springframework.ai.tool.method.MethodToolCallback.buildTypedArgument (MethodToolCallback.java:172)
+调用链：
+  [0] org.springframework.ai.tool.method.MethodToolCallback.buildTypedArgument(MethodToolCallback.java:172)
+  [1] org.springframework.ai.tool.method.MethodToolCallback.lambda$buildMethodArguments$1(MethodToolCallback.java:150)
+  [2] java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)
+  [3] java.util.Spliterators$ArraySpliterator.forEachRemaining(Spliterators.java:1024)
+  [4] java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:509)
+  [5] java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499)
+  [6] java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:575)
+  [7] java.util.stream.AbstractPipeline.evaluateToArrayNode(AbstractPipeline.java:260)
+  [8] java.util.stream.ReferencePipeline.toArray(ReferencePipeline.java:616)
+  [9] java.util.stream.ReferencePipeline.toArray(ReferencePipeline.java:622)
+========================================================
+
+================= 2025-12-17T15:57:26.046722900 =================
+错误类型：org.springframework.ai.tool.execution.ToolExecutionException
+错误消息：Cannot deserialize value of type `java.io.File` from Object value (token `JsonToken.START_OBJECT`)
+ at [Source: REDACTED (`StreamReadFeature.INCLUDE_SOURCE_IN_LOCATION` disabled); line: 1, column: 1]
+位置：org.springframework.ai.tool.method.MethodToolCallback.buildTypedArgument (MethodToolCallback.java:172)
+调用链：
+  [0] org.springframework.ai.tool.method.MethodToolCallback.buildTypedArgument(MethodToolCallback.java:172)
+  [1] org.springframework.ai.tool.method.MethodToolCallback.lambda$buildMethodArguments$1(MethodToolCallback.java:150)
+  [2] java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)
+  [3] java.util.Spliterators$ArraySpliterator.forEachRemaining(Spliterators.java:1024)
+  [4] java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:509)
+  [5] java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499)
+  [6] java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:575)
+  [7] java.util.stream.AbstractPipeline.evaluateToArrayNode(AbstractPipeline.java:260)
+  [8] java.util.stream.ReferencePipeline.toArray(ReferencePipeline.java:616)
+  [9] java.util.stream.ReferencePipeline.toArray(ReferencePipeline.java:622)
+========================================================
+
+================= 2025-12-17T15:57:26.050332300 =================
+错误类型：org.springframework.ai.tool.execution.ToolExecutionException
+错误消息：Cannot deserialize value of type `java.io.File` from Object value (token `JsonToken.START_OBJECT`)
+ at [Source: REDACTED (`StreamReadFeature.INCLUDE_SOURCE_IN_LOCATION` disabled); line: 1, column: 1]
+位置：org.springframework.ai.tool.method.MethodToolCallback.buildTypedArgument (MethodToolCallback.java:172)
+调用链：
+  [0] org.springframework.ai.tool.method.MethodToolCallback.buildTypedArgument(MethodToolCallback.java:172)
+  [1] org.springframework.ai.tool.method.MethodToolCallback.lambda$buildMethodArguments$1(MethodToolCallback.java:150)
+  [2] java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)
+  [3] java.util.Spliterators$ArraySpliterator.forEachRemaining(Spliterators.java:1024)
+  [4] java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:509)
+  [5] java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499)
+  [6] java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:575)
+  [7] java.util.stream.AbstractPipeline.evaluateToArrayNode(AbstractPipeline.java:260)
+  [8] java.util.stream.ReferencePipeline.toArray(ReferencePipeline.java:616)
+  [9] java.util.stream.ReferencePipeline.toArray(ReferencePipeline.java:622)
+========================================================
+
+================= 2025-12-17T15:57:33.607755400 =================
+错误类型：org.springframework.ai.tool.execution.ToolExecutionException
+错误消息：Cannot deserialize value of type `java.io.File` from Object value (token `JsonToken.START_OBJECT`)
+ at [Source: REDACTED (`StreamReadFeature.INCLUDE_SOURCE_IN_LOCATION` disabled); line: 1, column: 1]
+位置：org.springframework.ai.tool.method.MethodToolCallback.buildTypedArgument (MethodToolCallback.java:172)
+调用链：
+  [0] org.springframework.ai.tool.method.MethodToolCallback.buildTypedArgument(MethodToolCallback.java:172)
+  [1] org.springframework.ai.tool.method.MethodToolCallback.lambda$buildMethodArguments$1(MethodToolCallback.java:150)
+  [2] java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)
+  [3] java.util.Spliterators$ArraySpliterator.forEachRemaining(Spliterators.java:1024)
+  [4] java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:509)
+  [5] java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499)
+  [6] java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:575)
+  [7] java.util.stream.AbstractPipeline.evaluateToArrayNode(AbstractPipeline.java:260)
+  [8] java.util.stream.ReferencePipeline.toArray(ReferencePipeline.java:616)
+  [9] java.util.stream.ReferencePipeline.toArray(ReferencePipeline.java:622)
+========================================================
+
+================= 2025-12-17T15:57:33.609863500 =================
+错误类型：org.springframework.ai.tool.execution.ToolExecutionException
+错误消息：Cannot deserialize value of type `java.io.File` from Object value (token `JsonToken.START_OBJECT`)
+ at [Source: REDACTED (`StreamReadFeature.INCLUDE_SOURCE_IN_LOCATION` disabled); line: 1, column: 1]
+位置：org.springframework.ai.tool.method.MethodToolCallback.buildTypedArgument (MethodToolCallback.java:172)
+调用链：
+  [0] org.springframework.ai.tool.method.MethodToolCallback.buildTypedArgument(MethodToolCallback.java:172)
+  [1] org.springframework.ai.tool.method.MethodToolCallback.lambda$buildMethodArguments$1(MethodToolCallback.java:150)
+  [2] java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)
+  [3] java.util.Spliterators$ArraySpliterator.forEachRemaining(Spliterators.java:1024)
+  [4] java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:509)
+  [5] java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499)
+  [6] java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:575)
+  [7] java.util.stream.AbstractPipeline.evaluateToArrayNode(AbstractPipeline.java:260)
+  [8] java.util.stream.ReferencePipeline.toArray(ReferencePipeline.java:616)
+  [9] java.util.stream.ReferencePipeline.toArray(ReferencePipeline.java:622)
+========================================================
+
+================= 2025-12-17T15:57:48.229039600 =================
+错误类型：org.springframework.ai.tool.execution.ToolExecutionException
+错误消息：Cannot deserialize value of type `java.io.File` from Object value (token `JsonToken.START_OBJECT`)
+ at [Source: REDACTED (`StreamReadFeature.INCLUDE_SOURCE_IN_LOCATION` disabled); line: 1, column: 1]
+位置：org.springframework.ai.tool.method.MethodToolCallback.buildTypedArgument (MethodToolCallback.java:172)
+调用链：
+  [0] org.springframework.ai.tool.method.MethodToolCallback.buildTypedArgument(MethodToolCallback.java:172)
+  [1] org.springframework.ai.tool.method.MethodToolCallback.lambda$buildMethodArguments$1(MethodToolCallback.java:150)
+  [2] java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)
+  [3] java.util.Spliterators$ArraySpliterator.forEachRemaining(Spliterators.java:1024)
+  [4] java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:509)
+  [5] java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499)
+  [6] java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:575)
+  [7] java.util.stream.AbstractPipeline.evaluateToArrayNode(AbstractPipeline.java:260)
+  [8] java.util.stream.ReferencePipeline.toArray(ReferencePipeline.java:616)
+  [9] java.util.stream.ReferencePipeline.toArray(ReferencePipeline.java:622)
+========================================================
+
+================= 2025-12-17T15:57:48.231047600 =================
+错误类型：org.springframework.ai.tool.execution.ToolExecutionException
+错误消息：Cannot deserialize value of type `java.io.File` from Object value (token `JsonToken.START_OBJECT`)
+ at [Source: REDACTED (`StreamReadFeature.INCLUDE_SOURCE_IN_LOCATION` disabled); line: 1, column: 1]
+位置：org.springframework.ai.tool.method.MethodToolCallback.buildTypedArgument (MethodToolCallback.java:172)
+调用链：
+  [0] org.springframework.ai.tool.method.MethodToolCallback.buildTypedArgument(MethodToolCallback.java:172)
+  [1] org.springframework.ai.tool.method.MethodToolCallback.lambda$buildMethodArguments$1(MethodToolCallback.java:150)
+  [2] java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)
+  [3] java.util.Spliterators$ArraySpliterator.forEachRemaining(Spliterators.java:1024)
+  [4] java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:509)
+  [5] java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499)
+  [6] java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:575)
+  [7] java.util.stream.AbstractPipeline.evaluateToArrayNode(AbstractPipeline.java:260)
+  [8] java.util.stream.ReferencePipeline.toArray(ReferencePipeline.java:616)
+  [9] java.util.stream.ReferencePipeline.toArray(ReferencePipeline.java:622)
+========================================================
+
+================= 2025-12-17T16:06:31.350750400 =================
+错误类型：org.springframework.ai.tool.execution.ToolExecutionException
+错误消息：Cannot deserialize value of type `java.io.File` from Object value (token `JsonToken.START_OBJECT`)
+ at [Source: REDACTED (`StreamReadFeature.INCLUDE_SOURCE_IN_LOCATION` disabled); line: 1, column: 1]
+位置：org.springframework.ai.tool.method.MethodToolCallback.buildTypedArgument (MethodToolCallback.java:172)
+调用链：
+  [0] org.springframework.ai.tool.method.MethodToolCallback.buildTypedArgument(MethodToolCallback.java:172)
+  [1] org.springframework.ai.tool.method.MethodToolCallback.lambda$buildMethodArguments$1(MethodToolCallback.java:150)
+  [2] java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)
+  [3] java.util.Spliterators$ArraySpliterator.forEachRemaining(Spliterators.java:1024)
+  [4] java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:509)
+  [5] java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499)
+  [6] java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:575)
+  [7] java.util.stream.AbstractPipeline.evaluateToArrayNode(AbstractPipeline.java:260)
+  [8] java.util.stream.ReferencePipeline.toArray(ReferencePipeline.java:616)
+  [9] java.util.stream.ReferencePipeline.toArray(ReferencePipeline.java:622)
+========================================================
+
+================= 2025-12-17T16:07:17.954400300 =================
+错误类型：org.springframework.ai.tool.execution.ToolExecutionException
+错误消息：Cannot deserialize value of type `java.io.File` from Object value (token `JsonToken.START_OBJECT`)
+ at [Source: REDACTED (`StreamReadFeature.INCLUDE_SOURCE_IN_LOCATION` disabled); line: 1, column: 1]
+位置：org.springframework.ai.tool.method.MethodToolCallback.buildTypedArgument (MethodToolCallback.java:172)
+调用链：
+  [0] org.springframework.ai.tool.method.MethodToolCallback.buildTypedArgument(MethodToolCallback.java:172)
+  [1] org.springframework.ai.tool.method.MethodToolCallback.lambda$buildMethodArguments$1(MethodToolCallback.java:150)
+  [2] java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)
+  [3] java.util.Spliterators$ArraySpliterator.forEachRemaining(Spliterators.java:1024)
+  [4] java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:509)
+  [5] java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499)
+  [6] java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:575)
+  [7] java.util.stream.AbstractPipeline.evaluateToArrayNode(AbstractPipeline.java:260)
+  [8] java.util.stream.ReferencePipeline.toArray(ReferencePipeline.java:616)
+  [9] java.util.stream.ReferencePipeline.toArray(ReferencePipeline.java:622)
+========================================================
+
+================= 2025-12-17T16:08:15.829436500 =================
+错误类型：org.springframework.ai.tool.execution.ToolExecutionException
+错误消息：Cannot deserialize value of type `java.io.File` from Object value (token `JsonToken.START_OBJECT`)
+ at [Source: REDACTED (`StreamReadFeature.INCLUDE_SOURCE_IN_LOCATION` disabled); line: 1, column: 1]
+位置：org.springframework.ai.tool.method.MethodToolCallback.buildTypedArgument (MethodToolCallback.java:172)
+调用链：
+  [0] org.springframework.ai.tool.method.MethodToolCallback.buildTypedArgument(MethodToolCallback.java:172)
+  [1] org.springframework.ai.tool.method.MethodToolCallback.lambda$buildMethodArguments$1(MethodToolCallback.java:150)
+  [2] java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)
+  [3] java.util.Spliterators$ArraySpliterator.forEachRemaining(Spliterators.java:1024)
+  [4] java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:509)
+  [5] java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499)
+  [6] java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:575)
+  [7] java.util.stream.AbstractPipeline.evaluateToArrayNode(AbstractPipeline.java:260)
+  [8] java.util.stream.ReferencePipeline.toArray(ReferencePipeline.java:616)
+  [9] java.util.stream.ReferencePipeline.toArray(ReferencePipeline.java:622)
+========================================================
+
+================= 2025-12-17T16:08:15.831960 =================
+错误类型：org.springframework.ai.tool.execution.ToolExecutionException
+错误消息：Cannot deserialize value of type `java.io.File` from Object value (token `JsonToken.START_OBJECT`)
+ at [Source: REDACTED (`StreamReadFeature.INCLUDE_SOURCE_IN_LOCATION` disabled); line: 1, column: 1]
+位置：org.springframework.ai.tool.method.MethodToolCallback.buildTypedArgument (MethodToolCallback.java:172)
+调用链：
+  [0] org.springframework.ai.tool.method.MethodToolCallback.buildTypedArgument(MethodToolCallback.java:172)
+  [1] org.springframework.ai.tool.method.MethodToolCallback.lambda$buildMethodArguments$1(MethodToolCallback.java:150)
+  [2] java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)
+  [3] java.util.Spliterators$ArraySpliterator.forEachRemaining(Spliterators.java:1024)
+  [4] java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:509)
+  [5] java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499)
+  [6] java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:575)
+  [7] java.util.stream.AbstractPipeline.evaluateToArrayNode(AbstractPipeline.java:260)
+  [8] java.util.stream.ReferencePipeline.toArray(ReferencePipeline.java:616)
+  [9] java.util.stream.ReferencePipeline.toArray(ReferencePipeline.java:622)
+========================================================
+
+================= 2025-12-17T16:08:27.222882800 =================
+错误类型：org.springframework.ai.tool.execution.ToolExecutionException
+错误消息：Cannot deserialize value of type `java.io.File` from Object value (token `JsonToken.START_OBJECT`)
+ at [Source: REDACTED (`StreamReadFeature.INCLUDE_SOURCE_IN_LOCATION` disabled); line: 1, column: 1]
+位置：org.springframework.ai.tool.method.MethodToolCallback.buildTypedArgument (MethodToolCallback.java:172)
+调用链：
+  [0] org.springframework.ai.tool.method.MethodToolCallback.buildTypedArgument(MethodToolCallback.java:172)
+  [1] org.springframework.ai.tool.method.MethodToolCallback.lambda$buildMethodArguments$1(MethodToolCallback.java:150)
+  [2] java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)
+  [3] java.util.Spliterators$ArraySpliterator.forEachRemaining(Spliterators.java:1024)
+  [4] java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:509)
+  [5] java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499)
+  [6] java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:575)
+  [7] java.util.stream.AbstractPipeline.evaluateToArrayNode(AbstractPipeline.java:260)
+  [8] java.util.stream.ReferencePipeline.toArray(ReferencePipeline.java:616)
+  [9] java.util.stream.ReferencePipeline.toArray(ReferencePipeline.java:622)
+========================================================
+
+================= 2025-12-17T16:08:27.224963400 =================
+错误类型：org.springframework.ai.tool.execution.ToolExecutionException
+错误消息：Cannot deserialize value of type `java.io.File` from Object value (token `JsonToken.START_OBJECT`)
+ at [Source: REDACTED (`StreamReadFeature.INCLUDE_SOURCE_IN_LOCATION` disabled); line: 1, column: 1]
+位置：org.springframework.ai.tool.method.MethodToolCallback.buildTypedArgument (MethodToolCallback.java:172)
+调用链：
+  [0] org.springframework.ai.tool.method.MethodToolCallback.buildTypedArgument(MethodToolCallback.java:172)
+  [1] org.springframework.ai.tool.method.MethodToolCallback.lambda$buildMethodArguments$1(MethodToolCallback.java:150)
+  [2] java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)
+  [3] java.util.Spliterators$ArraySpliterator.forEachRemaining(Spliterators.java:1024)
+  [4] java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:509)
+  [5] java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499)
+  [6] java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:575)
+  [7] java.util.stream.AbstractPipeline.evaluateToArrayNode(AbstractPipeline.java:260)
+  [8] java.util.stream.ReferencePipeline.toArray(ReferencePipeline.java:616)
+  [9] java.util.stream.ReferencePipeline.toArray(ReferencePipeline.java:622)
+========================================================
+
+================= 2025-12-17T16:10:11.991616700 =================
+错误类型：org.springframework.ai.tool.execution.ToolExecutionException
+错误消息：Cannot deserialize value of type `java.io.File` from Object value (token `JsonToken.START_OBJECT`)
+ at [Source: REDACTED (`StreamReadFeature.INCLUDE_SOURCE_IN_LOCATION` disabled); line: 1, column: 1]
+位置：org.springframework.ai.tool.method.MethodToolCallback.buildTypedArgument (MethodToolCallback.java:172)
+调用链：
+  [0] org.springframework.ai.tool.method.MethodToolCallback.buildTypedArgument(MethodToolCallback.java:172)
+  [1] org.springframework.ai.tool.method.MethodToolCallback.lambda$buildMethodArguments$1(MethodToolCallback.java:150)
+  [2] java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)
+  [3] java.util.Spliterators$ArraySpliterator.forEachRemaining(Spliterators.java:1024)
+  [4] java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:509)
+  [5] java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499)
+  [6] java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:575)
+  [7] java.util.stream.AbstractPipeline.evaluateToArrayNode(AbstractPipeline.java:260)
+  [8] java.util.stream.ReferencePipeline.toArray(ReferencePipeline.java:616)
+  [9] java.util.stream.ReferencePipeline.toArray(ReferencePipeline.java:622)
+========================================================
+
+================= 2025-12-17T16:10:11.993616200 =================
+错误类型：org.springframework.ai.tool.execution.ToolExecutionException
+错误消息：Cannot deserialize value of type `java.io.File` from Object value (token `JsonToken.START_OBJECT`)
+ at [Source: REDACTED (`StreamReadFeature.INCLUDE_SOURCE_IN_LOCATION` disabled); line: 1, column: 1]
+位置：org.springframework.ai.tool.method.MethodToolCallback.buildTypedArgument (MethodToolCallback.java:172)
+调用链：
+  [0] org.springframework.ai.tool.method.MethodToolCallback.buildTypedArgument(MethodToolCallback.java:172)
+  [1] org.springframework.ai.tool.method.MethodToolCallback.lambda$buildMethodArguments$1(MethodToolCallback.java:150)
+  [2] java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)
+  [3] java.util.Spliterators$ArraySpliterator.forEachRemaining(Spliterators.java:1024)
+  [4] java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:509)
+  [5] java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499)
+  [6] java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:575)
+  [7] java.util.stream.AbstractPipeline.evaluateToArrayNode(AbstractPipeline.java:260)
+  [8] java.util.stream.ReferencePipeline.toArray(ReferencePipeline.java:616)
+  [9] java.util.stream.ReferencePipeline.toArray(ReferencePipeline.java:622)
+========================================================
+
+================= 2025-12-17T16:10:55.903757600 =================
+错误类型：org.springframework.ai.tool.execution.ToolExecutionException
+错误消息：Cannot deserialize value of type `java.io.File` from Object value (token `JsonToken.START_OBJECT`)
+ at [Source: REDACTED (`StreamReadFeature.INCLUDE_SOURCE_IN_LOCATION` disabled); line: 1, column: 1]
+位置：org.springframework.ai.tool.method.MethodToolCallback.buildTypedArgument (MethodToolCallback.java:172)
+调用链：
+  [0] org.springframework.ai.tool.method.MethodToolCallback.buildTypedArgument(MethodToolCallback.java:172)
+  [1] org.springframework.ai.tool.method.MethodToolCallback.lambda$buildMethodArguments$1(MethodToolCallback.java:150)
+  [2] java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)
+  [3] java.util.Spliterators$ArraySpliterator.forEachRemaining(Spliterators.java:1024)
+  [4] java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:509)
+  [5] java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499)
+  [6] java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:575)
+  [7] java.util.stream.AbstractPipeline.evaluateToArrayNode(AbstractPipeline.java:260)
+  [8] java.util.stream.ReferencePipeline.toArray(ReferencePipeline.java:616)
+  [9] java.util.stream.ReferencePipeline.toArray(ReferencePipeline.java:622)
+========================================================
+
+================= 2025-12-17T16:11:01.451010900 =================
+错误类型：org.springframework.ai.tool.execution.ToolExecutionException
+错误消息：Cannot deserialize value of type `java.io.File` from Object value (token `JsonToken.START_OBJECT`)
+ at [Source: REDACTED (`StreamReadFeature.INCLUDE_SOURCE_IN_LOCATION` disabled); line: 1, column: 1]
+位置：org.springframework.ai.tool.method.MethodToolCallback.buildTypedArgument (MethodToolCallback.java:172)
+调用链：
+  [0] org.springframework.ai.tool.method.MethodToolCallback.buildTypedArgument(MethodToolCallback.java:172)
+  [1] org.springframework.ai.tool.method.MethodToolCallback.lambda$buildMethodArguments$1(MethodToolCallback.java:150)
+  [2] java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)
+  [3] java.util.Spliterators$ArraySpliterator.forEachRemaining(Spliterators.java:1024)
+  [4] java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:509)
+  [5] java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499)
+  [6] java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:575)
+  [7] java.util.stream.AbstractPipeline.evaluateToArrayNode(AbstractPipeline.java:260)
+  [8] java.util.stream.ReferencePipeline.toArray(ReferencePipeline.java:616)
+  [9] java.util.stream.ReferencePipeline.toArray(ReferencePipeline.java:622)
+========================================================
+
+================= 2025-12-17T16:16:53.990354400 =================
+错误类型：org.springframework.ai.tool.execution.ToolExecutionException
+错误消息：null
+位置：org.springframework.ai.tool.method.MethodToolCallback.callMethod (MethodToolCallback.java:191)
+调用链：
+  [0] org.springframework.ai.tool.method.MethodToolCallback.callMethod(MethodToolCallback.java:191)
+  [1] org.springframework.ai.tool.method.MethodToolCallback.call(MethodToolCallback.java:112)
+  [2] org.springframework.ai.model.tool.DefaultToolCallingManager.lambda$executeToolCall$5(DefaultToolCallingManager.java:241)
+  [3] io.micrometer.observation.Observation.observe(Observation.java:564)
+  [4] org.springframework.ai.model.tool.DefaultToolCallingManager.executeToolCall(DefaultToolCallingManager.java:238)
+  [5] org.springframework.ai.model.tool.DefaultToolCallingManager.executeToolCalls(DefaultToolCallingManager.java:143)
+  [6] org.springframework.ai.openai.OpenAiChatModel.internalCall(OpenAiChatModel.java:245)
+  [7] org.springframework.ai.openai.OpenAiChatModel.internalCall(OpenAiChatModel.java:255)
+  [8] org.springframework.ai.openai.OpenAiChatModel.call(OpenAiChatModel.java:182)
+  [9] org.springframework.ai.chat.client.advisor.ChatModelCallAdvisor.adviseCall(ChatModelCallAdvisor.java:56)
+========================================================
+
+================= 2025-12-17T16:16:53.993351800 =================
+错误类型：org.springframework.ai.tool.execution.ToolExecutionException
+错误消息：null
+位置：org.springframework.ai.tool.method.MethodToolCallback.callMethod (MethodToolCallback.java:191)
+调用链：
+  [0] org.springframework.ai.tool.method.MethodToolCallback.callMethod(MethodToolCallback.java:191)
+  [1] org.springframework.ai.tool.method.MethodToolCallback.call(MethodToolCallback.java:112)
+  [2] org.springframework.ai.model.tool.DefaultToolCallingManager.lambda$executeToolCall$5(DefaultToolCallingManager.java:241)
+  [3] io.micrometer.observation.Observation.observe(Observation.java:564)
+  [4] org.springframework.ai.model.tool.DefaultToolCallingManager.executeToolCall(DefaultToolCallingManager.java:238)
+  [5] org.springframework.ai.model.tool.DefaultToolCallingManager.executeToolCalls(DefaultToolCallingManager.java:143)
+  [6] org.springframework.ai.openai.OpenAiChatModel.internalCall(OpenAiChatModel.java:245)
+  [7] org.springframework.ai.openai.OpenAiChatModel.internalCall(OpenAiChatModel.java:255)
+  [8] org.springframework.ai.openai.OpenAiChatModel.call(OpenAiChatModel.java:182)
+  [9] org.springframework.ai.chat.client.advisor.ChatModelCallAdvisor.adviseCall(ChatModelCallAdvisor.java:56)
+========================================================
+
+================= 2025-12-17T16:30:36.134654 =================
+错误类型：org.springframework.ai.tool.execution.ToolExecutionException
+错误消息：null
+位置：org.springframework.ai.tool.method.MethodToolCallback.callMethod (MethodToolCallback.java:191)
+调用链：
+  [0] org.springframework.ai.tool.method.MethodToolCallback.callMethod(MethodToolCallback.java:191)
+  [1] org.springframework.ai.tool.method.MethodToolCallback.call(MethodToolCallback.java:112)
+  [2] org.springframework.ai.model.tool.DefaultToolCallingManager.lambda$executeToolCall$5(DefaultToolCallingManager.java:241)
+  [3] io.micrometer.observation.Observation.observe(Observation.java:564)
+  [4] org.springframework.ai.model.tool.DefaultToolCallingManager.executeToolCall(DefaultToolCallingManager.java:238)
+  [5] org.springframework.ai.model.tool.DefaultToolCallingManager.executeToolCalls(DefaultToolCallingManager.java:143)
+  [6] org.springframework.ai.openai.OpenAiChatModel.internalCall(OpenAiChatModel.java:245)
+  [7] org.springframework.ai.openai.OpenAiChatModel.call(OpenAiChatModel.java:182)
+  [8] org.springframework.ai.chat.client.advisor.ChatModelCallAdvisor.adviseCall(ChatModelCallAdvisor.java:56)
+  [9] org.springframework.ai.chat.client.advisor.DefaultAroundAdvisorChain.lambda$nextCall$1(DefaultAroundAdvisorChain.java:114)
+========================================================
+
+================= 2025-12-17T16:30:36.139685500 =================
+错误类型：org.springframework.ai.tool.execution.ToolExecutionException
+错误消息：null
+位置：org.springframework.ai.tool.method.MethodToolCallback.callMethod (MethodToolCallback.java:191)
+调用链：
+  [0] org.springframework.ai.tool.method.MethodToolCallback.callMethod(MethodToolCallback.java:191)
+  [1] org.springframework.ai.tool.method.MethodToolCallback.call(MethodToolCallback.java:112)
+  [2] org.springframework.ai.model.tool.DefaultToolCallingManager.lambda$executeToolCall$5(DefaultToolCallingManager.java:241)
+  [3] io.micrometer.observation.Observation.observe(Observation.java:564)
+  [4] org.springframework.ai.model.tool.DefaultToolCallingManager.executeToolCall(DefaultToolCallingManager.java:238)
+  [5] org.springframework.ai.model.tool.DefaultToolCallingManager.executeToolCalls(DefaultToolCallingManager.java:143)
+  [6] org.springframework.ai.openai.OpenAiChatModel.internalCall(OpenAiChatModel.java:245)
+  [7] org.springframework.ai.openai.OpenAiChatModel.call(OpenAiChatModel.java:182)
+  [8] org.springframework.ai.chat.client.advisor.ChatModelCallAdvisor.adviseCall(ChatModelCallAdvisor.java:56)
+  [9] org.springframework.ai.chat.client.advisor.DefaultAroundAdvisorChain.lambda$nextCall$1(DefaultAroundAdvisorChain.java:114)
+========================================================
+
+================= 2025-12-17T16:33:02.256752600 =================
+错误类型：org.springframework.ai.tool.execution.ToolExecutionException
+错误消息：null
+位置：org.springframework.ai.tool.method.MethodToolCallback.callMethod (MethodToolCallback.java:191)
+调用链：
+  [0] org.springframework.ai.tool.method.MethodToolCallback.callMethod(MethodToolCallback.java:191)
+  [1] org.springframework.ai.tool.method.MethodToolCallback.call(MethodToolCallback.java:112)
+  [2] org.springframework.ai.model.tool.DefaultToolCallingManager.lambda$executeToolCall$5(DefaultToolCallingManager.java:241)
+  [3] io.micrometer.observation.Observation.observe(Observation.java:564)
+  [4] org.springframework.ai.model.tool.DefaultToolCallingManager.executeToolCall(DefaultToolCallingManager.java:238)
+  [5] org.springframework.ai.model.tool.DefaultToolCallingManager.executeToolCalls(DefaultToolCallingManager.java:143)
+  [6] org.springframework.ai.openai.OpenAiChatModel.internalCall(OpenAiChatModel.java:245)
+  [7] org.springframework.ai.openai.OpenAiChatModel.internalCall(OpenAiChatModel.java:255)
+  [8] org.springframework.ai.openai.OpenAiChatModel.call(OpenAiChatModel.java:182)
+  [9] org.springframework.ai.chat.client.advisor.ChatModelCallAdvisor.adviseCall(ChatModelCallAdvisor.java:56)
+========================================================
+
+================= 2025-12-17T16:33:02.261756100 =================
+错误类型：org.springframework.ai.tool.execution.ToolExecutionException
+错误消息：null
+位置：org.springframework.ai.tool.method.MethodToolCallback.callMethod (MethodToolCallback.java:191)
+调用链：
+  [0] org.springframework.ai.tool.method.MethodToolCallback.callMethod(MethodToolCallback.java:191)
+  [1] org.springframework.ai.tool.method.MethodToolCallback.call(MethodToolCallback.java:112)
+  [2] org.springframework.ai.model.tool.DefaultToolCallingManager.lambda$executeToolCall$5(DefaultToolCallingManager.java:241)
+  [3] io.micrometer.observation.Observation.observe(Observation.java:564)
+  [4] org.springframework.ai.model.tool.DefaultToolCallingManager.executeToolCall(DefaultToolCallingManager.java:238)
+  [5] org.springframework.ai.model.tool.DefaultToolCallingManager.executeToolCalls(DefaultToolCallingManager.java:143)
+  [6] org.springframework.ai.openai.OpenAiChatModel.internalCall(OpenAiChatModel.java:245)
+  [7] org.springframework.ai.openai.OpenAiChatModel.internalCall(OpenAiChatModel.java:255)
+  [8] org.springframework.ai.openai.OpenAiChatModel.call(OpenAiChatModel.java:182)
+  [9] org.springframework.ai.chat.client.advisor.ChatModelCallAdvisor.adviseCall(ChatModelCallAdvisor.java:56)
+========================================================
+
+================= 2025-12-17T17:23:10.703046800 =================
+错误类型：org.springframework.beans.factory.UnsatisfiedDependencyException
+错误消息：Error creating bean with name 'chatController.Think': Unsatisfied dependency expressed through constructor parameter 0: No qualifying bean of type 'com.ljf.greatplan.docking.plugins.aiSecretary.ChatController' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {}
+位置：org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray (ConstructorResolver.java:804)
+调用链：
+  [0] org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:804)
+  [1] org.springframework.beans.factory.support.ConstructorResolver.autowireConstructor(ConstructorResolver.java:240)
+  [2] org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireConstructor(AbstractAutowireCapableBeanFactory.java:1395)
+  [3] org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1232)
+  [4] org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:569)
+  [5] org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:529)
+  [6] org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:339)
+  [7] org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:373)
+  [8] org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:337)
+  [9] org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
+========================================================
+
+================= 2025-12-17T17:26:54.405677700 =================
+错误类型：org.springframework.beans.factory.UnsatisfiedDependencyException
+错误消息：Error creating bean with name 'chatController.Think': Unsatisfied dependency expressed through constructor parameter 0: No qualifying bean of type 'com.ljf.greatplan.docking.plugins.aiSecretary.ChatController' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {}
+位置：org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray (ConstructorResolver.java:804)
+调用链：
+  [0] org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:804)
+  [1] org.springframework.beans.factory.support.ConstructorResolver.autowireConstructor(ConstructorResolver.java:240)
+  [2] org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireConstructor(AbstractAutowireCapableBeanFactory.java:1395)
+  [3] org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1232)
+  [4] org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:569)
+  [5] org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:529)
+  [6] org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:339)
+  [7] org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:373)
+  [8] org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:337)
+  [9] org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
+========================================================
+
+================= 2025-12-17T17:29:39.496944100 =================
+错误类型：org.springframework.beans.factory.BeanCreationException
+错误消息：Error creating bean with name 'chatController.Think': Unexpected exception during bean creation
+位置：org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean (AbstractAutowireCapableBeanFactory.java:542)
+调用链：
+  [0] org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542)
+  [1] org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:339)
+  [2] org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:373)
+  [3] org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:337)
+  [4] org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
+  [5] org.springframework.beans.factory.support.DefaultListableBeanFactory.instantiateSingleton(DefaultListableBeanFactory.java:1228)
+  [6] org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingleton(DefaultListableBeanFactory.java:1194)
+  [7] org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:1130)
+  [8] org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:990)
+  [9] org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:627)
+========================================================
+
+================= 2025-12-17T19:07:14.977030500 =================
+错误类型：org.springframework.beans.factory.BeanCreationException
+错误消息：Error creating bean with name 'chat': Failed to instantiate [com.ljf.greatplan.docking.plugins.aiSecretary.Chat]: Constructor threw exception
+位置：org.springframework.beans.factory.support.ConstructorResolver.instantiate (ConstructorResolver.java:321)
+调用链：
+  [0] org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:321)
+  [1] org.springframework.beans.factory.support.ConstructorResolver.autowireConstructor(ConstructorResolver.java:309)
+  [2] org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireConstructor(AbstractAutowireCapableBeanFactory.java:1395)
+  [3] org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1232)
+  [4] org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:569)
+  [5] org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:529)
+  [6] org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:339)
+  [7] org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:373)
+  [8] org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:337)
+  [9] org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
+========================================================
+
+================= 2025-12-17T19:20:27.079321500 =================
+错误类型：org.springframework.beans.factory.BeanCreationException
+错误消息：Error creating bean with name 'chat': Failed to instantiate [com.ljf.greatplan.docking.plugins.aiSecretary.Chat]: Constructor threw exception
+位置：org.springframework.beans.factory.support.ConstructorResolver.instantiate (ConstructorResolver.java:321)
+调用链：
+  [0] org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:321)
+  [1] org.springframework.beans.factory.support.ConstructorResolver.autowireConstructor(ConstructorResolver.java:309)
+  [2] org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireConstructor(AbstractAutowireCapableBeanFactory.java:1395)
+  [3] org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1232)
+  [4] org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:569)
+  [5] org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:529)
+  [6] org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:339)
+  [7] org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:373)
+  [8] org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:337)
+  [9] org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
+========================================================
+
+================= 2025-12-17T19:23:25.950149300 =================
+错误类型：org.springframework.beans.factory.BeanCreationException
+错误消息：Error creating bean with name 'chat': Failed to instantiate [com.ljf.greatplan.docking.plugins.aiSecretary.Chat]: Constructor threw exception
+位置：org.springframework.beans.factory.support.ConstructorResolver.instantiate (ConstructorResolver.java:321)
+调用链：
+  [0] org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:321)
+  [1] org.springframework.beans.factory.support.ConstructorResolver.autowireConstructor(ConstructorResolver.java:309)
+  [2] org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireConstructor(AbstractAutowireCapableBeanFactory.java:1395)
+  [3] org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1232)
+  [4] org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:569)
+  [5] org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:529)
+  [6] org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:339)
+  [7] org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:373)
+  [8] org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:337)
+  [9] org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
+========================================================
+
+================= 2025-12-17T19:37:10.281751100 =================
+错误类型：java.lang.NullPointerException
+错误消息：Cannot invoke "java.util.List.isEmpty()" because "javaFiles" is null
+位置：com.ljf.greatplan.general.tools.pluginsTools.PluginCompiler.sourceHotCompiler (PluginCompiler.java:64)
+调用链：
+  [0] com.ljf.greatplan.general.tools.pluginsTools.PluginCompiler.sourceHotCompiler(PluginCompiler.java:64)
+  [1] jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+  [2] java.lang.reflect.Method.invoke(Method.java:580)
+  [3] org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:360)
+  [4] org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:196)
+  [5] org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+  [6] org.springframework.aop.aspectj.AspectJAfterThrowingAdvice.invoke(AspectJAfterThrowingAdvice.java:64)
+  [7] org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+  [8] org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:97)
+  [9] org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+========================================================
+
+================= 2025-12-17T19:38:21.162072900 =================
+错误类型：java.lang.NullPointerException
+错误消息：Cannot invoke "java.util.List.isEmpty()" because "javaFiles" is null
+位置：com.ljf.greatplan.general.tools.pluginsTools.PluginCompiler.sourceHotCompiler (PluginCompiler.java:64)
+调用链：
+  [0] com.ljf.greatplan.general.tools.pluginsTools.PluginCompiler.sourceHotCompiler(PluginCompiler.java:64)
+  [1] jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+  [2] java.lang.reflect.Method.invoke(Method.java:580)
+  [3] org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:360)
+  [4] org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:196)
+  [5] org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+  [6] org.springframework.aop.aspectj.AspectJAfterThrowingAdvice.invoke(AspectJAfterThrowingAdvice.java:64)
+  [7] org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+  [8] org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:97)
+  [9] org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+========================================================
+
+================= 2025-12-17T19:47:58.751206200 =================
+错误类型：java.lang.IllegalArgumentException
+错误消息：'other' is different type of Path
+位置：sun.nio.fs.WindowsPath.relativize (WindowsPath.java:416)
+调用链：
+  [0] sun.nio.fs.WindowsPath.relativize(WindowsPath.java:416)
+  [1] sun.nio.fs.WindowsPath.relativize(WindowsPath.java:42)
+  [2] com.ljf.greatplan.general.tools.pluginsTools.PluginCompiler.sourceHotCompiler(PluginCompiler.java:104)
+  [3] jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+  [4] java.lang.reflect.Method.invoke(Method.java:580)
+  [5] org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:360)
+  [6] org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:196)
+  [7] org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+  [8] org.springframework.aop.aspectj.AspectJAfterThrowingAdvice.invoke(AspectJAfterThrowingAdvice.java:64)
+  [9] org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+========================================================
+
+================= 2025-12-17T19:48:31.517182200 =================
+错误类型：java.lang.IllegalArgumentException
+错误消息：'other' is different type of Path
+位置：sun.nio.fs.WindowsPath.relativize (WindowsPath.java:416)
+调用链：
+  [0] sun.nio.fs.WindowsPath.relativize(WindowsPath.java:416)
+  [1] sun.nio.fs.WindowsPath.relativize(WindowsPath.java:42)
+  [2] com.ljf.greatplan.general.tools.pluginsTools.PluginCompiler.sourceHotCompiler(PluginCompiler.java:101)
+  [3] jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+  [4] java.lang.reflect.Method.invoke(Method.java:580)
+  [5] org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:360)
+  [6] org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:196)
+  [7] org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+  [8] org.springframework.aop.aspectj.AspectJAfterThrowingAdvice.invoke(AspectJAfterThrowingAdvice.java:64)
+  [9] org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+========================================================
+
+================= 2025-12-17T19:51:31.385510800 =================
+错误类型：java.lang.IllegalArgumentException
+错误消息：'other' is different type of Path
+位置：sun.nio.fs.WindowsPath.relativize (WindowsPath.java:416)
+调用链：
+  [0] sun.nio.fs.WindowsPath.relativize(WindowsPath.java:416)
+  [1] sun.nio.fs.WindowsPath.relativize(WindowsPath.java:42)
+  [2] com.ljf.greatplan.general.tools.pluginsTools.PluginCompiler.sourceHotCompiler(PluginCompiler.java:101)
+  [3] jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+  [4] java.lang.reflect.Method.invoke(Method.java:580)
+  [5] org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:360)
+  [6] org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:196)
+  [7] org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+  [8] org.springframework.aop.aspectj.AspectJAfterThrowingAdvice.invoke(AspectJAfterThrowingAdvice.java:64)
+  [9] org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+========================================================
+
+================= 2025-12-17T19:54:19.766652600 =================
+错误类型：org.springframework.beans.factory.BeanCreationException
+错误消息：Error creating bean with name 'chat': Failed to instantiate [com.ljf.greatplan.docking.plugins.aiSecretary.Chat]: Constructor threw exception
+位置：org.springframework.beans.factory.support.ConstructorResolver.instantiate (ConstructorResolver.java:321)
+调用链：
+  [0] org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:321)
+  [1] org.springframework.beans.factory.support.ConstructorResolver.autowireConstructor(ConstructorResolver.java:309)
+  [2] org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireConstructor(AbstractAutowireCapableBeanFactory.java:1395)
+  [3] org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1232)
+  [4] org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:569)
+  [5] org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:529)
+  [6] org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:339)
+  [7] org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:373)
+  [8] org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:337)
+  [9] org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
+========================================================
+
+================= 2025-12-17T19:57:48.872849600 =================
+错误类型：org.springframework.beans.factory.BeanCreationException
+错误消息：Error creating bean with name 'chat': Failed to instantiate [com.ljf.greatplan.docking.plugins.aiSecretary.Chat]: Constructor threw exception
+位置：org.springframework.beans.factory.support.ConstructorResolver.instantiate (ConstructorResolver.java:321)
+调用链：
+  [0] org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:321)
+  [1] org.springframework.beans.factory.support.ConstructorResolver.autowireConstructor(ConstructorResolver.java:309)
+  [2] org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireConstructor(AbstractAutowireCapableBeanFactory.java:1395)
+  [3] org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1232)
+  [4] org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:569)
+  [5] org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:529)
+  [6] org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:339)
+  [7] org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:373)
+  [8] org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:337)
+  [9] org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
+========================================================
+
+================= 2025-12-17T19:59:14.594271800 =================
+错误类型：org.springframework.beans.factory.BeanCreationException
+错误消息：Error creating bean with name 'chat': Failed to instantiate [com.ljf.greatplan.docking.plugins.aiSecretary.Chat]: Constructor threw exception
+位置：org.springframework.beans.factory.support.ConstructorResolver.instantiate (ConstructorResolver.java:321)
+调用链：
+  [0] org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:321)
+  [1] org.springframework.beans.factory.support.ConstructorResolver.autowireConstructor(ConstructorResolver.java:309)
+  [2] org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireConstructor(AbstractAutowireCapableBeanFactory.java:1395)
+  [3] org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1232)
+  [4] org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:569)
+  [5] org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:529)
+  [6] org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:339)
+  [7] org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:373)
+  [8] org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:337)
+  [9] org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
+========================================================
+
+================= 2025-12-17T20:13:18.821594500 =================
+错误类型：org.springframework.beans.factory.BeanCreationException
+错误消息：Error creating bean with name 'chat': Failed to instantiate [com.ljf.greatplan.docking.plugins.aiSecretary.Chat]: Constructor threw exception
+位置：org.springframework.beans.factory.support.ConstructorResolver.instantiate (ConstructorResolver.java:321)
+调用链：
+  [0] org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:321)
+  [1] org.springframework.beans.factory.support.ConstructorResolver.autowireConstructor(ConstructorResolver.java:309)
+  [2] org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireConstructor(AbstractAutowireCapableBeanFactory.java:1395)
+  [3] org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1232)
+  [4] org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:569)
+  [5] org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:529)
+  [6] org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:339)
+  [7] org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:373)
+  [8] org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:337)
+  [9] org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
+========================================================
+
+================= 2025-12-17T20:17:39.628485200 =================
+错误类型：org.springframework.beans.factory.UnsatisfiedDependencyException
+错误消息：Error creating bean with name 'proxyInterceptor': Unsatisfied dependency expressed through constructor parameter 0: No qualifying bean of type 'java.lang.reflect.Method' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {}
+位置：org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray (ConstructorResolver.java:804)
+调用链：
+  [0] org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:804)
+  [1] org.springframework.beans.factory.support.ConstructorResolver.autowireConstructor(ConstructorResolver.java:240)
+  [2] org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireConstructor(AbstractAutowireCapableBeanFactory.java:1395)
+  [3] org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1232)
+  [4] org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:569)
+  [5] org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:529)
+  [6] org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:339)
+  [7] org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:373)
+  [8] org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:337)
+  [9] org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
+========================================================
+
+================= 2025-12-17T20:24:20.958927300 =================
+错误类型：org.springframework.beans.factory.UnsatisfiedDependencyException
+错误消息：Error creating bean with name 'proxyInterceptor': Unsatisfied dependency expressed through constructor parameter 0: No qualifying bean of type 'java.lang.reflect.Method' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {}
+位置：org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray (ConstructorResolver.java:804)
+调用链：
+  [0] org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:804)
+  [1] org.springframework.beans.factory.support.ConstructorResolver.autowireConstructor(ConstructorResolver.java:240)
+  [2] org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireConstructor(AbstractAutowireCapableBeanFactory.java:1395)
+  [3] org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1232)
+  [4] org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:569)
+  [5] org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:529)
+  [6] org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:339)
+  [7] org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:373)
+  [8] org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:337)
+  [9] org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
+========================================================
+
+================= 2025-12-17T20:31:29.325737300 =================
+错误类型：org.springframework.beans.factory.UnsatisfiedDependencyException
+错误消息：Error creating bean with name 'proxyInterceptor': Unsatisfied dependency expressed through constructor parameter 0: No qualifying bean of type 'java.lang.reflect.Method' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {}
+位置：org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray (ConstructorResolver.java:804)
+调用链：
+  [0] org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:804)
+  [1] org.springframework.beans.factory.support.ConstructorResolver.autowireConstructor(ConstructorResolver.java:240)
+  [2] org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireConstructor(AbstractAutowireCapableBeanFactory.java:1395)
+  [3] org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1232)
+  [4] org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:569)
+  [5] org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:529)
+  [6] org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:339)
+  [7] org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:373)
+  [8] org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:337)
+  [9] org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
+========================================================
+
+================= 2025-12-17T20:33:12.372685800 =================
+错误类型：org.springframework.beans.factory.UnsatisfiedDependencyException
+错误消息：Error creating bean with name 'proxyInterceptor': Unsatisfied dependency expressed through constructor parameter 0: No qualifying bean of type 'java.lang.reflect.Method' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {}
+位置：org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray (ConstructorResolver.java:804)
+调用链：
+  [0] org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:804)
+  [1] org.springframework.beans.factory.support.ConstructorResolver.autowireConstructor(ConstructorResolver.java:240)
+  [2] org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireConstructor(AbstractAutowireCapableBeanFactory.java:1395)
+  [3] org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1232)
+  [4] org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:569)
+  [5] org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:529)
+  [6] org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:339)
+  [7] org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:373)
+  [8] org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:337)
+  [9] org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
+========================================================
+
+================= 2025-12-17T20:40:02.499992800 =================
+错误类型：org.springframework.beans.factory.UnsatisfiedDependencyException
+错误消息：Error creating bean with name 'proxyInterceptor': Unsatisfied dependency expressed through constructor parameter 0: No qualifying bean of type 'java.lang.reflect.Method' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {}
+位置：org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray (ConstructorResolver.java:804)
+调用链：
+  [0] org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:804)
+  [1] org.springframework.beans.factory.support.ConstructorResolver.autowireConstructor(ConstructorResolver.java:240)
+  [2] org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireConstructor(AbstractAutowireCapableBeanFactory.java:1395)
+  [3] org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1232)
+  [4] org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:569)
+  [5] org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:529)
+  [6] org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:339)
+  [7] org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:373)
+  [8] org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:337)
+  [9] org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
+========================================================
+
+================= 2025-12-17T20:40:43.062664500 =================
+错误类型：org.springframework.beans.factory.UnsatisfiedDependencyException
+错误消息：Error creating bean with name 'proxyInterceptor': Unsatisfied dependency expressed through constructor parameter 0: No qualifying bean of type 'java.lang.reflect.Method' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {}
+位置：org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray (ConstructorResolver.java:804)
+调用链：
+  [0] org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:804)
+  [1] org.springframework.beans.factory.support.ConstructorResolver.autowireConstructor(ConstructorResolver.java:240)
+  [2] org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireConstructor(AbstractAutowireCapableBeanFactory.java:1395)
+  [3] org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1232)
+  [4] org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:569)
+  [5] org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:529)
+  [6] org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:339)
+  [7] org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:373)
+  [8] org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:337)
+  [9] org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
+========================================================
+
+================= 2025-12-17T20:49:08.668912500 =================
+错误类型：org.springframework.beans.factory.UnsatisfiedDependencyException
+错误消息：Error creating bean with name 'chat': Unsatisfied dependency expressed through constructor parameter 0: No qualifying bean of type 'org.springframework.ai.chat.client.ChatClient' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {}
+位置：org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray (ConstructorResolver.java:804)
+调用链：
+  [0] org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:804)
+  [1] org.springframework.beans.factory.support.ConstructorResolver.autowireConstructor(ConstructorResolver.java:240)
+  [2] org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireConstructor(AbstractAutowireCapableBeanFactory.java:1395)
+  [3] org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1232)
+  [4] org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:569)
+  [5] org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:529)
+  [6] org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:339)
+  [7] org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:373)
+  [8] org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:337)
+  [9] org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
+========================================================
+
+================= 2025-12-17T20:49:24.409117500 =================
+错误类型：org.springframework.beans.factory.UnsatisfiedDependencyException
+错误消息：Error creating bean with name 'chat': Unsatisfied dependency expressed through constructor parameter 0: No qualifying bean of type 'org.springframework.ai.chat.client.ChatClient' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {}
+位置：org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray (ConstructorResolver.java:804)
+调用链：
+  [0] org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:804)
+  [1] org.springframework.beans.factory.support.ConstructorResolver.autowireConstructor(ConstructorResolver.java:240)
+  [2] org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireConstructor(AbstractAutowireCapableBeanFactory.java:1395)
+  [3] org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1232)
+  [4] org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:569)
+  [5] org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:529)
+  [6] org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:339)
+  [7] org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:373)
+  [8] org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:337)
+  [9] org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
+========================================================
+
+================= 2025-12-17T20:49:57.956541100 =================
+错误类型：org.springframework.beans.factory.UnsatisfiedDependencyException
+错误消息：Error creating bean with name 'chat': Unsatisfied dependency expressed through constructor parameter 0: No qualifying bean of type 'org.springframework.ai.chat.client.ChatClient' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {}
+位置：org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray (ConstructorResolver.java:804)
+调用链：
+  [0] org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:804)
+  [1] org.springframework.beans.factory.support.ConstructorResolver.autowireConstructor(ConstructorResolver.java:240)
+  [2] org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireConstructor(AbstractAutowireCapableBeanFactory.java:1395)
+  [3] org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1232)
+  [4] org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:569)
+  [5] org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:529)
+  [6] org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:339)
+  [7] org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:373)
+  [8] org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:337)
+  [9] org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
+========================================================
+
+================= 2025-12-17T21:05:15.460462200 =================
+错误类型：java.lang.IllegalArgumentException
+错误消息：None of [protected void java.lang.Object.finalize() throws java.lang.Throwable, public boolean java.lang.Object.equals(java.lang.Object), public java.lang.String java.lang.Object.toString(), public native int java.lang.Object.hashCode(), public final native java.lang.Class java.lang.Object.getClass(), protected native java.lang.Object java.lang.Object.clone() throws java.lang.CloneNotSupportedException, public final native void java.lang.Object.notify(), public final native void java.lang.Object.notifyAll(), public final void java.lang.Object.wait(long) throws java.lang.InterruptedException, public final void java.lang.Object.wait(long,int) throws java.lang.InterruptedException, public final void java.lang.Object.wait() throws java.lang.InterruptedException, public java.lang.Object com.ljf.greatplan.docking.plugins.aiSecretary.ProxyInterceptor.intercept(java.lang.reflect.Method,java.util.concurrent.Callable,java.lang.Object[]) throws java.lang.Exception] allows for delegation from public java.util.List com.ljf.greatplan.general.tools.generalTools.FileIO$ByteBuddyProxy.getRoot_Proxy()
+位置：net.bytebuddy.implementation.bind.MethodDelegationBinder$Processor.bind (MethodDelegationBinder.java:1099)
+调用链：
+  [0] net.bytebuddy.implementation.bind.MethodDelegationBinder$Processor.bind(MethodDelegationBinder.java:1099)
+  [1] net.bytebuddy.implementation.MethodDelegation$Appender.apply(MethodDelegation.java:1349)
+  [2] net.bytebuddy.dynamic.scaffold.TypeWriter$MethodPool$Record$ForDefinedMethod$WithBody.applyCode(TypeWriter.java:730)
+  [3] net.bytebuddy.dynamic.scaffold.TypeWriter$MethodPool$Record$ForDefinedMethod$WithBody.applyBody(TypeWriter.java:715)
+  [4] net.bytebuddy.dynamic.scaffold.TypeWriter$MethodPool$Record$ForDefinedMethod.apply(TypeWriter.java:622)
+  [5] net.bytebuddy.dynamic.scaffold.TypeWriter$Default$ForCreation.create(TypeWriter.java:6043)
+  [6] net.bytebuddy.dynamic.scaffold.TypeWriter$Default.make(TypeWriter.java:2224)
+  [7] net.bytebuddy.dynamic.DynamicType$Builder$AbstractBase$UsingTypeWriter.make(DynamicType.java:4055)
+  [8] net.bytebuddy.dynamic.DynamicType$Builder$AbstractBase.make(DynamicType.java:3739)
+  [9] net.bytebuddy.dynamic.DynamicType$Builder$AbstractBase$Delegator.make(DynamicType.java:3991)
+========================================================
+
+================= 2025-12-17T21:05:15.464462700 =================
+错误类型：java.lang.IllegalArgumentException
+错误消息：None of [protected void java.lang.Object.finalize() throws java.lang.Throwable, public boolean java.lang.Object.equals(java.lang.Object), public java.lang.String java.lang.Object.toString(), public native int java.lang.Object.hashCode(), public final native java.lang.Class java.lang.Object.getClass(), protected native java.lang.Object java.lang.Object.clone() throws java.lang.CloneNotSupportedException, public final native void java.lang.Object.notify(), public final native void java.lang.Object.notifyAll(), public final void java.lang.Object.wait(long) throws java.lang.InterruptedException, public final void java.lang.Object.wait(long,int) throws java.lang.InterruptedException, public final void java.lang.Object.wait() throws java.lang.InterruptedException, public java.lang.Object com.ljf.greatplan.docking.plugins.aiSecretary.ProxyInterceptor.intercept(java.lang.reflect.Method,java.util.concurrent.Callable,java.lang.Object[]) throws java.lang.Exception] allows for delegation from public java.util.List com.ljf.greatplan.general.tools.generalTools.FileIO$ByteBuddyProxy.getRoot_Proxy()
+位置：net.bytebuddy.implementation.bind.MethodDelegationBinder$Processor.bind (MethodDelegationBinder.java:1099)
+调用链：
+  [0] net.bytebuddy.implementation.bind.MethodDelegationBinder$Processor.bind(MethodDelegationBinder.java:1099)
+  [1] net.bytebuddy.implementation.MethodDelegation$Appender.apply(MethodDelegation.java:1349)
+  [2] net.bytebuddy.dynamic.scaffold.TypeWriter$MethodPool$Record$ForDefinedMethod$WithBody.applyCode(TypeWriter.java:730)
+  [3] net.bytebuddy.dynamic.scaffold.TypeWriter$MethodPool$Record$ForDefinedMethod$WithBody.applyBody(TypeWriter.java:715)
+  [4] net.bytebuddy.dynamic.scaffold.TypeWriter$MethodPool$Record$ForDefinedMethod.apply(TypeWriter.java:622)
+  [5] net.bytebuddy.dynamic.scaffold.TypeWriter$Default$ForCreation.create(TypeWriter.java:6043)
+  [6] net.bytebuddy.dynamic.scaffold.TypeWriter$Default.make(TypeWriter.java:2224)
+  [7] net.bytebuddy.dynamic.DynamicType$Builder$AbstractBase$UsingTypeWriter.make(DynamicType.java:4055)
+  [8] net.bytebuddy.dynamic.DynamicType$Builder$AbstractBase.make(DynamicType.java:3739)
+  [9] net.bytebuddy.dynamic.DynamicType$Builder$AbstractBase$Delegator.make(DynamicType.java:3991)
+========================================================
+
+================= 2025-12-17T21:05:15.465459400 =================
+错误类型：java.lang.IllegalArgumentException
+错误消息：None of [protected void java.lang.Object.finalize() throws java.lang.Throwable, public boolean java.lang.Object.equals(java.lang.Object), public java.lang.String java.lang.Object.toString(), public native int java.lang.Object.hashCode(), public final native java.lang.Class java.lang.Object.getClass(), protected native java.lang.Object java.lang.Object.clone() throws java.lang.CloneNotSupportedException, public final native void java.lang.Object.notify(), public final native void java.lang.Object.notifyAll(), public final void java.lang.Object.wait(long) throws java.lang.InterruptedException, public final void java.lang.Object.wait(long,int) throws java.lang.InterruptedException, public final void java.lang.Object.wait() throws java.lang.InterruptedException, public java.lang.Object com.ljf.greatplan.docking.plugins.aiSecretary.ProxyInterceptor.intercept(java.lang.reflect.Method,java.util.concurrent.Callable,java.lang.Object[]) throws java.lang.Exception] allows for delegation from public java.util.List com.ljf.greatplan.general.tools.generalTools.FileIO$ByteBuddyProxy.getRoot_Proxy()
+位置：net.bytebuddy.implementation.bind.MethodDelegationBinder$Processor.bind (MethodDelegationBinder.java:1099)
+调用链：
+  [0] net.bytebuddy.implementation.bind.MethodDelegationBinder$Processor.bind(MethodDelegationBinder.java:1099)
+  [1] net.bytebuddy.implementation.MethodDelegation$Appender.apply(MethodDelegation.java:1349)
+  [2] net.bytebuddy.dynamic.scaffold.TypeWriter$MethodPool$Record$ForDefinedMethod$WithBody.applyCode(TypeWriter.java:730)
+  [3] net.bytebuddy.dynamic.scaffold.TypeWriter$MethodPool$Record$ForDefinedMethod$WithBody.applyBody(TypeWriter.java:715)
+  [4] net.bytebuddy.dynamic.scaffold.TypeWriter$MethodPool$Record$ForDefinedMethod.apply(TypeWriter.java:622)
+  [5] net.bytebuddy.dynamic.scaffold.TypeWriter$Default$ForCreation.create(TypeWriter.java:6043)
+  [6] net.bytebuddy.dynamic.scaffold.TypeWriter$Default.make(TypeWriter.java:2224)
+  [7] net.bytebuddy.dynamic.DynamicType$Builder$AbstractBase$UsingTypeWriter.make(DynamicType.java:4055)
+  [8] net.bytebuddy.dynamic.DynamicType$Builder$AbstractBase.make(DynamicType.java:3739)
+  [9] net.bytebuddy.dynamic.DynamicType$Builder$AbstractBase$Delegator.make(DynamicType.java:3991)
+========================================================
+
+================= 2025-12-17T21:06:25.719353600 =================
+错误类型：java.lang.IllegalArgumentException
+错误消息：None of [protected void java.lang.Object.finalize() throws java.lang.Throwable, public boolean java.lang.Object.equals(java.lang.Object), public java.lang.String java.lang.Object.toString(), public native int java.lang.Object.hashCode(), public final native java.lang.Class java.lang.Object.getClass(), protected native java.lang.Object java.lang.Object.clone() throws java.lang.CloneNotSupportedException, public final native void java.lang.Object.notify(), public final native void java.lang.Object.notifyAll(), public final void java.lang.Object.wait(long) throws java.lang.InterruptedException, public final void java.lang.Object.wait(long,int) throws java.lang.InterruptedException, public final void java.lang.Object.wait() throws java.lang.InterruptedException, public java.lang.Object com.ljf.greatplan.docking.plugins.aiSecretary.ProxyInterceptor.intercept(java.lang.reflect.Method,java.util.concurrent.Callable,java.lang.Object[]) throws java.lang.Exception] allows for delegation from public java.util.List com.ljf.greatplan.general.tools.generalTools.FileIO$ByteBuddyProxy.getRoot_Proxy()
+位置：net.bytebuddy.implementation.bind.MethodDelegationBinder$Processor.bind (MethodDelegationBinder.java:1099)
+调用链：
+  [0] net.bytebuddy.implementation.bind.MethodDelegationBinder$Processor.bind(MethodDelegationBinder.java:1099)
+  [1] net.bytebuddy.implementation.MethodDelegation$Appender.apply(MethodDelegation.java:1349)
+  [2] net.bytebuddy.dynamic.scaffold.TypeWriter$MethodPool$Record$ForDefinedMethod$WithBody.applyCode(TypeWriter.java:730)
+  [3] net.bytebuddy.dynamic.scaffold.TypeWriter$MethodPool$Record$ForDefinedMethod$WithBody.applyBody(TypeWriter.java:715)
+  [4] net.bytebuddy.dynamic.scaffold.TypeWriter$MethodPool$Record$ForDefinedMethod.apply(TypeWriter.java:622)
+  [5] net.bytebuddy.dynamic.scaffold.TypeWriter$Default$ForCreation.create(TypeWriter.java:6043)
+  [6] net.bytebuddy.dynamic.scaffold.TypeWriter$Default.make(TypeWriter.java:2224)
+  [7] net.bytebuddy.dynamic.DynamicType$Builder$AbstractBase$UsingTypeWriter.make(DynamicType.java:4055)
+  [8] net.bytebuddy.dynamic.DynamicType$Builder$AbstractBase.make(DynamicType.java:3739)
+  [9] net.bytebuddy.dynamic.DynamicType$Builder$AbstractBase$Delegator.make(DynamicType.java:3991)
+========================================================
+
+================= 2025-12-17T21:06:25.723438900 =================
+错误类型：java.lang.IllegalArgumentException
+错误消息：None of [protected void java.lang.Object.finalize() throws java.lang.Throwable, public boolean java.lang.Object.equals(java.lang.Object), public java.lang.String java.lang.Object.toString(), public native int java.lang.Object.hashCode(), public final native java.lang.Class java.lang.Object.getClass(), protected native java.lang.Object java.lang.Object.clone() throws java.lang.CloneNotSupportedException, public final native void java.lang.Object.notify(), public final native void java.lang.Object.notifyAll(), public final void java.lang.Object.wait(long) throws java.lang.InterruptedException, public final void java.lang.Object.wait(long,int) throws java.lang.InterruptedException, public final void java.lang.Object.wait() throws java.lang.InterruptedException, public java.lang.Object com.ljf.greatplan.docking.plugins.aiSecretary.ProxyInterceptor.intercept(java.lang.reflect.Method,java.util.concurrent.Callable,java.lang.Object[]) throws java.lang.Exception] allows for delegation from public java.util.List com.ljf.greatplan.general.tools.generalTools.FileIO$ByteBuddyProxy.getRoot_Proxy()
+位置：net.bytebuddy.implementation.bind.MethodDelegationBinder$Processor.bind (MethodDelegationBinder.java:1099)
+调用链：
+  [0] net.bytebuddy.implementation.bind.MethodDelegationBinder$Processor.bind(MethodDelegationBinder.java:1099)
+  [1] net.bytebuddy.implementation.MethodDelegation$Appender.apply(MethodDelegation.java:1349)
+  [2] net.bytebuddy.dynamic.scaffold.TypeWriter$MethodPool$Record$ForDefinedMethod$WithBody.applyCode(TypeWriter.java:730)
+  [3] net.bytebuddy.dynamic.scaffold.TypeWriter$MethodPool$Record$ForDefinedMethod$WithBody.applyBody(TypeWriter.java:715)
+  [4] net.bytebuddy.dynamic.scaffold.TypeWriter$MethodPool$Record$ForDefinedMethod.apply(TypeWriter.java:622)
+  [5] net.bytebuddy.dynamic.scaffold.TypeWriter$Default$ForCreation.create(TypeWriter.java:6043)
+  [6] net.bytebuddy.dynamic.scaffold.TypeWriter$Default.make(TypeWriter.java:2224)
+  [7] net.bytebuddy.dynamic.DynamicType$Builder$AbstractBase$UsingTypeWriter.make(DynamicType.java:4055)
+  [8] net.bytebuddy.dynamic.DynamicType$Builder$AbstractBase.make(DynamicType.java:3739)
+  [9] net.bytebuddy.dynamic.DynamicType$Builder$AbstractBase$Delegator.make(DynamicType.java:3991)
+========================================================
+
+================= 2025-12-17T21:06:25.724439700 =================
+错误类型：java.lang.IllegalArgumentException
+错误消息：None of [protected void java.lang.Object.finalize() throws java.lang.Throwable, public boolean java.lang.Object.equals(java.lang.Object), public java.lang.String java.lang.Object.toString(), public native int java.lang.Object.hashCode(), public final native java.lang.Class java.lang.Object.getClass(), protected native java.lang.Object java.lang.Object.clone() throws java.lang.CloneNotSupportedException, public final native void java.lang.Object.notify(), public final native void java.lang.Object.notifyAll(), public final void java.lang.Object.wait(long) throws java.lang.InterruptedException, public final void java.lang.Object.wait(long,int) throws java.lang.InterruptedException, public final void java.lang.Object.wait() throws java.lang.InterruptedException, public java.lang.Object com.ljf.greatplan.docking.plugins.aiSecretary.ProxyInterceptor.intercept(java.lang.reflect.Method,java.util.concurrent.Callable,java.lang.Object[]) throws java.lang.Exception] allows for delegation from public java.util.List com.ljf.greatplan.general.tools.generalTools.FileIO$ByteBuddyProxy.getRoot_Proxy()
+位置：net.bytebuddy.implementation.bind.MethodDelegationBinder$Processor.bind (MethodDelegationBinder.java:1099)
+调用链：
+  [0] net.bytebuddy.implementation.bind.MethodDelegationBinder$Processor.bind(MethodDelegationBinder.java:1099)
+  [1] net.bytebuddy.implementation.MethodDelegation$Appender.apply(MethodDelegation.java:1349)
+  [2] net.bytebuddy.dynamic.scaffold.TypeWriter$MethodPool$Record$ForDefinedMethod$WithBody.applyCode(TypeWriter.java:730)
+  [3] net.bytebuddy.dynamic.scaffold.TypeWriter$MethodPool$Record$ForDefinedMethod$WithBody.applyBody(TypeWriter.java:715)
+  [4] net.bytebuddy.dynamic.scaffold.TypeWriter$MethodPool$Record$ForDefinedMethod.apply(TypeWriter.java:622)
+  [5] net.bytebuddy.dynamic.scaffold.TypeWriter$Default$ForCreation.create(TypeWriter.java:6043)
+  [6] net.bytebuddy.dynamic.scaffold.TypeWriter$Default.make(TypeWriter.java:2224)
+  [7] net.bytebuddy.dynamic.DynamicType$Builder$AbstractBase$UsingTypeWriter.make(DynamicType.java:4055)
+  [8] net.bytebuddy.dynamic.DynamicType$Builder$AbstractBase.make(DynamicType.java:3739)
+  [9] net.bytebuddy.dynamic.DynamicType$Builder$AbstractBase$Delegator.make(DynamicType.java:3991)
+========================================================
+
+================= 2025-12-17T21:06:51.465265500 =================
+错误类型：java.lang.IllegalArgumentException
+错误消息：None of [protected void java.lang.Object.finalize() throws java.lang.Throwable, public boolean java.lang.Object.equals(java.lang.Object), public java.lang.String java.lang.Object.toString(), public native int java.lang.Object.hashCode(), public final native java.lang.Class java.lang.Object.getClass(), protected native java.lang.Object java.lang.Object.clone() throws java.lang.CloneNotSupportedException, public final native void java.lang.Object.notify(), public final native void java.lang.Object.notifyAll(), public final void java.lang.Object.wait(long) throws java.lang.InterruptedException, public final void java.lang.Object.wait(long,int) throws java.lang.InterruptedException, public final void java.lang.Object.wait() throws java.lang.InterruptedException, public java.lang.Object com.ljf.greatplan.docking.plugins.aiSecretary.ProxyInterceptor.intercept(java.lang.reflect.Method,java.util.concurrent.Callable,java.lang.Object[]) throws java.lang.Exception] allows for delegation from public java.util.List com.ljf.greatplan.general.tools.generalTools.FileIO$ByteBuddyProxy.getRoot_Proxy()
+位置：net.bytebuddy.implementation.bind.MethodDelegationBinder$Processor.bind (MethodDelegationBinder.java:1099)
+调用链：
+  [0] net.bytebuddy.implementation.bind.MethodDelegationBinder$Processor.bind(MethodDelegationBinder.java:1099)
+  [1] net.bytebuddy.implementation.MethodDelegation$Appender.apply(MethodDelegation.java:1349)
+  [2] net.bytebuddy.dynamic.scaffold.TypeWriter$MethodPool$Record$ForDefinedMethod$WithBody.applyCode(TypeWriter.java:730)
+  [3] net.bytebuddy.dynamic.scaffold.TypeWriter$MethodPool$Record$ForDefinedMethod$WithBody.applyBody(TypeWriter.java:715)
+  [4] net.bytebuddy.dynamic.scaffold.TypeWriter$MethodPool$Record$ForDefinedMethod.apply(TypeWriter.java:622)
+  [5] net.bytebuddy.dynamic.scaffold.TypeWriter$Default$ForCreation.create(TypeWriter.java:6043)
+  [6] net.bytebuddy.dynamic.scaffold.TypeWriter$Default.make(TypeWriter.java:2224)
+  [7] net.bytebuddy.dynamic.DynamicType$Builder$AbstractBase$UsingTypeWriter.make(DynamicType.java:4055)
+  [8] net.bytebuddy.dynamic.DynamicType$Builder$AbstractBase.make(DynamicType.java:3739)
+  [9] net.bytebuddy.dynamic.DynamicType$Builder$AbstractBase$Delegator.make(DynamicType.java:3991)
+========================================================
+
+================= 2025-12-17T21:06:51.469385300 =================
+错误类型：java.lang.IllegalArgumentException
+错误消息：None of [protected void java.lang.Object.finalize() throws java.lang.Throwable, public boolean java.lang.Object.equals(java.lang.Object), public java.lang.String java.lang.Object.toString(), public native int java.lang.Object.hashCode(), public final native java.lang.Class java.lang.Object.getClass(), protected native java.lang.Object java.lang.Object.clone() throws java.lang.CloneNotSupportedException, public final native void java.lang.Object.notify(), public final native void java.lang.Object.notifyAll(), public final void java.lang.Object.wait(long) throws java.lang.InterruptedException, public final void java.lang.Object.wait(long,int) throws java.lang.InterruptedException, public final void java.lang.Object.wait() throws java.lang.InterruptedException, public java.lang.Object com.ljf.greatplan.docking.plugins.aiSecretary.ProxyInterceptor.intercept(java.lang.reflect.Method,java.util.concurrent.Callable,java.lang.Object[]) throws java.lang.Exception] allows for delegation from public java.util.List com.ljf.greatplan.general.tools.generalTools.FileIO$ByteBuddyProxy.getRoot_Proxy()
+位置：net.bytebuddy.implementation.bind.MethodDelegationBinder$Processor.bind (MethodDelegationBinder.java:1099)
+调用链：
+  [0] net.bytebuddy.implementation.bind.MethodDelegationBinder$Processor.bind(MethodDelegationBinder.java:1099)
+  [1] net.bytebuddy.implementation.MethodDelegation$Appender.apply(MethodDelegation.java:1349)
+  [2] net.bytebuddy.dynamic.scaffold.TypeWriter$MethodPool$Record$ForDefinedMethod$WithBody.applyCode(TypeWriter.java:730)
+  [3] net.bytebuddy.dynamic.scaffold.TypeWriter$MethodPool$Record$ForDefinedMethod$WithBody.applyBody(TypeWriter.java:715)
+  [4] net.bytebuddy.dynamic.scaffold.TypeWriter$MethodPool$Record$ForDefinedMethod.apply(TypeWriter.java:622)
+  [5] net.bytebuddy.dynamic.scaffold.TypeWriter$Default$ForCreation.create(TypeWriter.java:6043)
+  [6] net.bytebuddy.dynamic.scaffold.TypeWriter$Default.make(TypeWriter.java:2224)
+  [7] net.bytebuddy.dynamic.DynamicType$Builder$AbstractBase$UsingTypeWriter.make(DynamicType.java:4055)
+  [8] net.bytebuddy.dynamic.DynamicType$Builder$AbstractBase.make(DynamicType.java:3739)
+  [9] net.bytebuddy.dynamic.DynamicType$Builder$AbstractBase$Delegator.make(DynamicType.java:3991)
+========================================================
+
+================= 2025-12-17T21:06:51.470367 =================
+错误类型：java.lang.IllegalArgumentException
+错误消息：None of [protected void java.lang.Object.finalize() throws java.lang.Throwable, public boolean java.lang.Object.equals(java.lang.Object), public java.lang.String java.lang.Object.toString(), public native int java.lang.Object.hashCode(), public final native java.lang.Class java.lang.Object.getClass(), protected native java.lang.Object java.lang.Object.clone() throws java.lang.CloneNotSupportedException, public final native void java.lang.Object.notify(), public final native void java.lang.Object.notifyAll(), public final void java.lang.Object.wait(long) throws java.lang.InterruptedException, public final void java.lang.Object.wait(long,int) throws java.lang.InterruptedException, public final void java.lang.Object.wait() throws java.lang.InterruptedException, public java.lang.Object com.ljf.greatplan.docking.plugins.aiSecretary.ProxyInterceptor.intercept(java.lang.reflect.Method,java.util.concurrent.Callable,java.lang.Object[]) throws java.lang.Exception] allows for delegation from public java.util.List com.ljf.greatplan.general.tools.generalTools.FileIO$ByteBuddyProxy.getRoot_Proxy()
+位置：net.bytebuddy.implementation.bind.MethodDelegationBinder$Processor.bind (MethodDelegationBinder.java:1099)
+调用链：
+  [0] net.bytebuddy.implementation.bind.MethodDelegationBinder$Processor.bind(MethodDelegationBinder.java:1099)
+  [1] net.bytebuddy.implementation.MethodDelegation$Appender.apply(MethodDelegation.java:1349)
+  [2] net.bytebuddy.dynamic.scaffold.TypeWriter$MethodPool$Record$ForDefinedMethod$WithBody.applyCode(TypeWriter.java:730)
+  [3] net.bytebuddy.dynamic.scaffold.TypeWriter$MethodPool$Record$ForDefinedMethod$WithBody.applyBody(TypeWriter.java:715)
+  [4] net.bytebuddy.dynamic.scaffold.TypeWriter$MethodPool$Record$ForDefinedMethod.apply(TypeWriter.java:622)
+  [5] net.bytebuddy.dynamic.scaffold.TypeWriter$Default$ForCreation.create(TypeWriter.java:6043)
+  [6] net.bytebuddy.dynamic.scaffold.TypeWriter$Default.make(TypeWriter.java:2224)
+  [7] net.bytebuddy.dynamic.DynamicType$Builder$AbstractBase$UsingTypeWriter.make(DynamicType.java:4055)
+  [8] net.bytebuddy.dynamic.DynamicType$Builder$AbstractBase.make(DynamicType.java:3739)
+  [9] net.bytebuddy.dynamic.DynamicType$Builder$AbstractBase$Delegator.make(DynamicType.java:3991)
+========================================================
+
+================= 2025-12-17T21:07:04.146845200 =================
+错误类型：java.lang.IllegalArgumentException
+错误消息：None of [protected void java.lang.Object.finalize() throws java.lang.Throwable, public boolean java.lang.Object.equals(java.lang.Object), public java.lang.String java.lang.Object.toString(), public native int java.lang.Object.hashCode(), public final native java.lang.Class java.lang.Object.getClass(), protected native java.lang.Object java.lang.Object.clone() throws java.lang.CloneNotSupportedException, public final native void java.lang.Object.notify(), public final native void java.lang.Object.notifyAll(), public final void java.lang.Object.wait(long) throws java.lang.InterruptedException, public final void java.lang.Object.wait(long,int) throws java.lang.InterruptedException, public final void java.lang.Object.wait() throws java.lang.InterruptedException, public java.lang.Object com.ljf.greatplan.docking.plugins.aiSecretary.ProxyInterceptor.intercept(java.lang.reflect.Method,java.util.concurrent.Callable,java.lang.Object[]) throws java.lang.Exception] allows for delegation from public java.util.List com.ljf.greatplan.general.tools.generalTools.FileIO$ByteBuddyProxy.getRoot_Proxy()
+位置：net.bytebuddy.implementation.bind.MethodDelegationBinder$Processor.bind (MethodDelegationBinder.java:1099)
+调用链：
+  [0] net.bytebuddy.implementation.bind.MethodDelegationBinder$Processor.bind(MethodDelegationBinder.java:1099)
+  [1] net.bytebuddy.implementation.MethodDelegation$Appender.apply(MethodDelegation.java:1349)
+  [2] net.bytebuddy.dynamic.scaffold.TypeWriter$MethodPool$Record$ForDefinedMethod$WithBody.applyCode(TypeWriter.java:730)
+  [3] net.bytebuddy.dynamic.scaffold.TypeWriter$MethodPool$Record$ForDefinedMethod$WithBody.applyBody(TypeWriter.java:715)
+  [4] net.bytebuddy.dynamic.scaffold.TypeWriter$MethodPool$Record$ForDefinedMethod.apply(TypeWriter.java:622)
+  [5] net.bytebuddy.dynamic.scaffold.TypeWriter$Default$ForCreation.create(TypeWriter.java:6043)
+  [6] net.bytebuddy.dynamic.scaffold.TypeWriter$Default.make(TypeWriter.java:2224)
+  [7] net.bytebuddy.dynamic.DynamicType$Builder$AbstractBase$UsingTypeWriter.make(DynamicType.java:4055)
+  [8] net.bytebuddy.dynamic.DynamicType$Builder$AbstractBase.make(DynamicType.java:3739)
+  [9] net.bytebuddy.dynamic.DynamicType$Builder$AbstractBase$Delegator.make(DynamicType.java:3991)
+========================================================
+
+================= 2025-12-17T21:07:04.152959300 =================
+错误类型：java.lang.IllegalArgumentException
+错误消息：None of [protected void java.lang.Object.finalize() throws java.lang.Throwable, public boolean java.lang.Object.equals(java.lang.Object), public java.lang.String java.lang.Object.toString(), public native int java.lang.Object.hashCode(), public final native java.lang.Class java.lang.Object.getClass(), protected native java.lang.Object java.lang.Object.clone() throws java.lang.CloneNotSupportedException, public final native void java.lang.Object.notify(), public final native void java.lang.Object.notifyAll(), public final void java.lang.Object.wait(long) throws java.lang.InterruptedException, public final void java.lang.Object.wait(long,int) throws java.lang.InterruptedException, public final void java.lang.Object.wait() throws java.lang.InterruptedException, public java.lang.Object com.ljf.greatplan.docking.plugins.aiSecretary.ProxyInterceptor.intercept(java.lang.reflect.Method,java.util.concurrent.Callable,java.lang.Object[]) throws java.lang.Exception] allows for delegation from public java.util.List com.ljf.greatplan.general.tools.generalTools.FileIO$ByteBuddyProxy.getRoot_Proxy()
+位置：net.bytebuddy.implementation.bind.MethodDelegationBinder$Processor.bind (MethodDelegationBinder.java:1099)
+调用链：
+  [0] net.bytebuddy.implementation.bind.MethodDelegationBinder$Processor.bind(MethodDelegationBinder.java:1099)
+  [1] net.bytebuddy.implementation.MethodDelegation$Appender.apply(MethodDelegation.java:1349)
+  [2] net.bytebuddy.dynamic.scaffold.TypeWriter$MethodPool$Record$ForDefinedMethod$WithBody.applyCode(TypeWriter.java:730)
+  [3] net.bytebuddy.dynamic.scaffold.TypeWriter$MethodPool$Record$ForDefinedMethod$WithBody.applyBody(TypeWriter.java:715)
+  [4] net.bytebuddy.dynamic.scaffold.TypeWriter$MethodPool$Record$ForDefinedMethod.apply(TypeWriter.java:622)
+  [5] net.bytebuddy.dynamic.scaffold.TypeWriter$Default$ForCreation.create(TypeWriter.java:6043)
+  [6] net.bytebuddy.dynamic.scaffold.TypeWriter$Default.make(TypeWriter.java:2224)
+  [7] net.bytebuddy.dynamic.DynamicType$Builder$AbstractBase$UsingTypeWriter.make(DynamicType.java:4055)
+  [8] net.bytebuddy.dynamic.DynamicType$Builder$AbstractBase.make(DynamicType.java:3739)
+  [9] net.bytebuddy.dynamic.DynamicType$Builder$AbstractBase$Delegator.make(DynamicType.java:3991)
+========================================================
+
+================= 2025-12-17T21:07:04.152959300 =================
+错误类型：java.lang.IllegalArgumentException
+错误消息：None of [protected void java.lang.Object.finalize() throws java.lang.Throwable, public boolean java.lang.Object.equals(java.lang.Object), public java.lang.String java.lang.Object.toString(), public native int java.lang.Object.hashCode(), public final native java.lang.Class java.lang.Object.getClass(), protected native java.lang.Object java.lang.Object.clone() throws java.lang.CloneNotSupportedException, public final native void java.lang.Object.notify(), public final native void java.lang.Object.notifyAll(), public final void java.lang.Object.wait(long) throws java.lang.InterruptedException, public final void java.lang.Object.wait(long,int) throws java.lang.InterruptedException, public final void java.lang.Object.wait() throws java.lang.InterruptedException, public java.lang.Object com.ljf.greatplan.docking.plugins.aiSecretary.ProxyInterceptor.intercept(java.lang.reflect.Method,java.util.concurrent.Callable,java.lang.Object[]) throws java.lang.Exception] allows for delegation from public java.util.List com.ljf.greatplan.general.tools.generalTools.FileIO$ByteBuddyProxy.getRoot_Proxy()
+位置：net.bytebuddy.implementation.bind.MethodDelegationBinder$Processor.bind (MethodDelegationBinder.java:1099)
+调用链：
+  [0] net.bytebuddy.implementation.bind.MethodDelegationBinder$Processor.bind(MethodDelegationBinder.java:1099)
+  [1] net.bytebuddy.implementation.MethodDelegation$Appender.apply(MethodDelegation.java:1349)
+  [2] net.bytebuddy.dynamic.scaffold.TypeWriter$MethodPool$Record$ForDefinedMethod$WithBody.applyCode(TypeWriter.java:730)
+  [3] net.bytebuddy.dynamic.scaffold.TypeWriter$MethodPool$Record$ForDefinedMethod$WithBody.applyBody(TypeWriter.java:715)
+  [4] net.bytebuddy.dynamic.scaffold.TypeWriter$MethodPool$Record$ForDefinedMethod.apply(TypeWriter.java:622)
+  [5] net.bytebuddy.dynamic.scaffold.TypeWriter$Default$ForCreation.create(TypeWriter.java:6043)
+  [6] net.bytebuddy.dynamic.scaffold.TypeWriter$Default.make(TypeWriter.java:2224)
+  [7] net.bytebuddy.dynamic.DynamicType$Builder$AbstractBase$UsingTypeWriter.make(DynamicType.java:4055)
+  [8] net.bytebuddy.dynamic.DynamicType$Builder$AbstractBase.make(DynamicType.java:3739)
+  [9] net.bytebuddy.dynamic.DynamicType$Builder$AbstractBase$Delegator.make(DynamicType.java:3991)
+========================================================
+
+================= 2025-12-17T21:07:37.166658 =================
+错误类型：java.lang.IllegalArgumentException
+错误消息：None of [protected void java.lang.Object.finalize() throws java.lang.Throwable, public boolean java.lang.Object.equals(java.lang.Object), public java.lang.String java.lang.Object.toString(), public native int java.lang.Object.hashCode(), public final native java.lang.Class java.lang.Object.getClass(), protected native java.lang.Object java.lang.Object.clone() throws java.lang.CloneNotSupportedException, public final native void java.lang.Object.notify(), public final native void java.lang.Object.notifyAll(), public final void java.lang.Object.wait(long) throws java.lang.InterruptedException, public final void java.lang.Object.wait(long,int) throws java.lang.InterruptedException, public final void java.lang.Object.wait() throws java.lang.InterruptedException, public java.lang.Object com.ljf.greatplan.docking.plugins.aiSecretary.ProxyInterceptor.intercept(java.lang.reflect.Method,java.util.concurrent.Callable,java.lang.Object[]) throws java.lang.Exception] allows for delegation from public java.util.List com.ljf.greatplan.general.tools.generalTools.FileIO$ByteBuddyProxy.getRoot_Proxy()
+位置：net.bytebuddy.implementation.bind.MethodDelegationBinder$Processor.bind (MethodDelegationBinder.java:1099)
+调用链：
+  [0] net.bytebuddy.implementation.bind.MethodDelegationBinder$Processor.bind(MethodDelegationBinder.java:1099)
+  [1] net.bytebuddy.implementation.MethodDelegation$Appender.apply(MethodDelegation.java:1349)
+  [2] net.bytebuddy.dynamic.scaffold.TypeWriter$MethodPool$Record$ForDefinedMethod$WithBody.applyCode(TypeWriter.java:730)
+  [3] net.bytebuddy.dynamic.scaffold.TypeWriter$MethodPool$Record$ForDefinedMethod$WithBody.applyBody(TypeWriter.java:715)
+  [4] net.bytebuddy.dynamic.scaffold.TypeWriter$MethodPool$Record$ForDefinedMethod.apply(TypeWriter.java:622)
+  [5] net.bytebuddy.dynamic.scaffold.TypeWriter$Default$ForCreation.create(TypeWriter.java:6043)
+  [6] net.bytebuddy.dynamic.scaffold.TypeWriter$Default.make(TypeWriter.java:2224)
+  [7] net.bytebuddy.dynamic.DynamicType$Builder$AbstractBase$UsingTypeWriter.make(DynamicType.java:4055)
+  [8] net.bytebuddy.dynamic.DynamicType$Builder$AbstractBase.make(DynamicType.java:3739)
+  [9] net.bytebuddy.dynamic.DynamicType$Builder$AbstractBase$Delegator.make(DynamicType.java:3991)
+========================================================
+
+================= 2025-12-17T21:07:37.170676100 =================
+错误类型：java.lang.IllegalArgumentException
+错误消息：None of [protected void java.lang.Object.finalize() throws java.lang.Throwable, public boolean java.lang.Object.equals(java.lang.Object), public java.lang.String java.lang.Object.toString(), public native int java.lang.Object.hashCode(), public final native java.lang.Class java.lang.Object.getClass(), protected native java.lang.Object java.lang.Object.clone() throws java.lang.CloneNotSupportedException, public final native void java.lang.Object.notify(), public final native void java.lang.Object.notifyAll(), public final void java.lang.Object.wait(long) throws java.lang.InterruptedException, public final void java.lang.Object.wait(long,int) throws java.lang.InterruptedException, public final void java.lang.Object.wait() throws java.lang.InterruptedException, public java.lang.Object com.ljf.greatplan.docking.plugins.aiSecretary.ProxyInterceptor.intercept(java.lang.reflect.Method,java.util.concurrent.Callable,java.lang.Object[]) throws java.lang.Exception] allows for delegation from public java.util.List com.ljf.greatplan.general.tools.generalTools.FileIO$ByteBuddyProxy.getRoot_Proxy()
+位置：net.bytebuddy.implementation.bind.MethodDelegationBinder$Processor.bind (MethodDelegationBinder.java:1099)
+调用链：
+  [0] net.bytebuddy.implementation.bind.MethodDelegationBinder$Processor.bind(MethodDelegationBinder.java:1099)
+  [1] net.bytebuddy.implementation.MethodDelegation$Appender.apply(MethodDelegation.java:1349)
+  [2] net.bytebuddy.dynamic.scaffold.TypeWriter$MethodPool$Record$ForDefinedMethod$WithBody.applyCode(TypeWriter.java:730)
+  [3] net.bytebuddy.dynamic.scaffold.TypeWriter$MethodPool$Record$ForDefinedMethod$WithBody.applyBody(TypeWriter.java:715)
+  [4] net.bytebuddy.dynamic.scaffold.TypeWriter$MethodPool$Record$ForDefinedMethod.apply(TypeWriter.java:622)
+  [5] net.bytebuddy.dynamic.scaffold.TypeWriter$Default$ForCreation.create(TypeWriter.java:6043)
+  [6] net.bytebuddy.dynamic.scaffold.TypeWriter$Default.make(TypeWriter.java:2224)
+  [7] net.bytebuddy.dynamic.DynamicType$Builder$AbstractBase$UsingTypeWriter.make(DynamicType.java:4055)
+  [8] net.bytebuddy.dynamic.DynamicType$Builder$AbstractBase.make(DynamicType.java:3739)
+  [9] net.bytebuddy.dynamic.DynamicType$Builder$AbstractBase$Delegator.make(DynamicType.java:3991)
+========================================================
+
+================= 2025-12-17T21:07:37.172680700 =================
+错误类型：java.lang.IllegalArgumentException
+错误消息：None of [protected void java.lang.Object.finalize() throws java.lang.Throwable, public boolean java.lang.Object.equals(java.lang.Object), public java.lang.String java.lang.Object.toString(), public native int java.lang.Object.hashCode(), public final native java.lang.Class java.lang.Object.getClass(), protected native java.lang.Object java.lang.Object.clone() throws java.lang.CloneNotSupportedException, public final native void java.lang.Object.notify(), public final native void java.lang.Object.notifyAll(), public final void java.lang.Object.wait(long) throws java.lang.InterruptedException, public final void java.lang.Object.wait(long,int) throws java.lang.InterruptedException, public final void java.lang.Object.wait() throws java.lang.InterruptedException, public java.lang.Object com.ljf.greatplan.docking.plugins.aiSecretary.ProxyInterceptor.intercept(java.lang.reflect.Method,java.util.concurrent.Callable,java.lang.Object[]) throws java.lang.Exception] allows for delegation from public java.util.List com.ljf.greatplan.general.tools.generalTools.FileIO$ByteBuddyProxy.getRoot_Proxy()
+位置：net.bytebuddy.implementation.bind.MethodDelegationBinder$Processor.bind (MethodDelegationBinder.java:1099)
+调用链：
+  [0] net.bytebuddy.implementation.bind.MethodDelegationBinder$Processor.bind(MethodDelegationBinder.java:1099)
+  [1] net.bytebuddy.implementation.MethodDelegation$Appender.apply(MethodDelegation.java:1349)
+  [2] net.bytebuddy.dynamic.scaffold.TypeWriter$MethodPool$Record$ForDefinedMethod$WithBody.applyCode(TypeWriter.java:730)
+  [3] net.bytebuddy.dynamic.scaffold.TypeWriter$MethodPool$Record$ForDefinedMethod$WithBody.applyBody(TypeWriter.java:715)
+  [4] net.bytebuddy.dynamic.scaffold.TypeWriter$MethodPool$Record$ForDefinedMethod.apply(TypeWriter.java:622)
+  [5] net.bytebuddy.dynamic.scaffold.TypeWriter$Default$ForCreation.create(TypeWriter.java:6043)
+  [6] net.bytebuddy.dynamic.scaffold.TypeWriter$Default.make(TypeWriter.java:2224)
+  [7] net.bytebuddy.dynamic.DynamicType$Builder$AbstractBase$UsingTypeWriter.make(DynamicType.java:4055)
+  [8] net.bytebuddy.dynamic.DynamicType$Builder$AbstractBase.make(DynamicType.java:3739)
+  [9] net.bytebuddy.dynamic.DynamicType$Builder$AbstractBase$Delegator.make(DynamicType.java:3991)
+========================================================
+
+================= 2025-12-17T21:08:38.607330600 =================
+错误类型：java.lang.IllegalArgumentException
+错误消息：None of [protected void java.lang.Object.finalize() throws java.lang.Throwable, public boolean java.lang.Object.equals(java.lang.Object), public java.lang.String java.lang.Object.toString(), public native int java.lang.Object.hashCode(), public final native java.lang.Class java.lang.Object.getClass(), protected native java.lang.Object java.lang.Object.clone() throws java.lang.CloneNotSupportedException, public final native void java.lang.Object.notify(), public final native void java.lang.Object.notifyAll(), public final void java.lang.Object.wait(long) throws java.lang.InterruptedException, public final void java.lang.Object.wait(long,int) throws java.lang.InterruptedException, public final void java.lang.Object.wait() throws java.lang.InterruptedException, public java.lang.Object com.ljf.greatplan.docking.plugins.aiSecretary.ProxyInterceptor.intercept(java.lang.reflect.Method,java.util.concurrent.Callable,java.lang.Object[]) throws java.lang.Exception] allows for delegation from public java.util.List com.ljf.greatplan.general.tools.generalTools.FileIO$ByteBuddyProxy.getRoot_Proxy()
+位置：net.bytebuddy.implementation.bind.MethodDelegationBinder$Processor.bind (MethodDelegationBinder.java:1099)
+调用链：
+  [0] net.bytebuddy.implementation.bind.MethodDelegationBinder$Processor.bind(MethodDelegationBinder.java:1099)
+  [1] net.bytebuddy.implementation.MethodDelegation$Appender.apply(MethodDelegation.java:1349)
+  [2] net.bytebuddy.dynamic.scaffold.TypeWriter$MethodPool$Record$ForDefinedMethod$WithBody.applyCode(TypeWriter.java:730)
+  [3] net.bytebuddy.dynamic.scaffold.TypeWriter$MethodPool$Record$ForDefinedMethod$WithBody.applyBody(TypeWriter.java:715)
+  [4] net.bytebuddy.dynamic.scaffold.TypeWriter$MethodPool$Record$ForDefinedMethod.apply(TypeWriter.java:622)
+  [5] net.bytebuddy.dynamic.scaffold.TypeWriter$Default$ForCreation.create(TypeWriter.java:6043)
+  [6] net.bytebuddy.dynamic.scaffold.TypeWriter$Default.make(TypeWriter.java:2224)
+  [7] net.bytebuddy.dynamic.DynamicType$Builder$AbstractBase$UsingTypeWriter.make(DynamicType.java:4055)
+  [8] net.bytebuddy.dynamic.DynamicType$Builder$AbstractBase.make(DynamicType.java:3739)
+  [9] net.bytebuddy.dynamic.DynamicType$Builder$AbstractBase$Delegator.make(DynamicType.java:3991)
+========================================================
+
+================= 2025-12-17T21:08:38.611328700 =================
+错误类型：java.lang.IllegalArgumentException
+错误消息：None of [protected void java.lang.Object.finalize() throws java.lang.Throwable, public boolean java.lang.Object.equals(java.lang.Object), public java.lang.String java.lang.Object.toString(), public native int java.lang.Object.hashCode(), public final native java.lang.Class java.lang.Object.getClass(), protected native java.lang.Object java.lang.Object.clone() throws java.lang.CloneNotSupportedException, public final native void java.lang.Object.notify(), public final native void java.lang.Object.notifyAll(), public final void java.lang.Object.wait(long) throws java.lang.InterruptedException, public final void java.lang.Object.wait(long,int) throws java.lang.InterruptedException, public final void java.lang.Object.wait() throws java.lang.InterruptedException, public java.lang.Object com.ljf.greatplan.docking.plugins.aiSecretary.ProxyInterceptor.intercept(java.lang.reflect.Method,java.util.concurrent.Callable,java.lang.Object[]) throws java.lang.Exception] allows for delegation from public java.util.List com.ljf.greatplan.general.tools.generalTools.FileIO$ByteBuddyProxy.getRoot_Proxy()
+位置：net.bytebuddy.implementation.bind.MethodDelegationBinder$Processor.bind (MethodDelegationBinder.java:1099)
+调用链：
+  [0] net.bytebuddy.implementation.bind.MethodDelegationBinder$Processor.bind(MethodDelegationBinder.java:1099)
+  [1] net.bytebuddy.implementation.MethodDelegation$Appender.apply(MethodDelegation.java:1349)
+  [2] net.bytebuddy.dynamic.scaffold.TypeWriter$MethodPool$Record$ForDefinedMethod$WithBody.applyCode(TypeWriter.java:730)
+  [3] net.bytebuddy.dynamic.scaffold.TypeWriter$MethodPool$Record$ForDefinedMethod$WithBody.applyBody(TypeWriter.java:715)
+  [4] net.bytebuddy.dynamic.scaffold.TypeWriter$MethodPool$Record$ForDefinedMethod.apply(TypeWriter.java:622)
+  [5] net.bytebuddy.dynamic.scaffold.TypeWriter$Default$ForCreation.create(TypeWriter.java:6043)
+  [6] net.bytebuddy.dynamic.scaffold.TypeWriter$Default.make(TypeWriter.java:2224)
+  [7] net.bytebuddy.dynamic.DynamicType$Builder$AbstractBase$UsingTypeWriter.make(DynamicType.java:4055)
+  [8] net.bytebuddy.dynamic.DynamicType$Builder$AbstractBase.make(DynamicType.java:3739)
+  [9] net.bytebuddy.dynamic.DynamicType$Builder$AbstractBase$Delegator.make(DynamicType.java:3991)
+========================================================
+
+================= 2025-12-17T21:08:38.613331600 =================
+错误类型：java.lang.IllegalArgumentException
+错误消息：None of [protected void java.lang.Object.finalize() throws java.lang.Throwable, public boolean java.lang.Object.equals(java.lang.Object), public java.lang.String java.lang.Object.toString(), public native int java.lang.Object.hashCode(), public final native java.lang.Class java.lang.Object.getClass(), protected native java.lang.Object java.lang.Object.clone() throws java.lang.CloneNotSupportedException, public final native void java.lang.Object.notify(), public final native void java.lang.Object.notifyAll(), public final void java.lang.Object.wait(long) throws java.lang.InterruptedException, public final void java.lang.Object.wait(long,int) throws java.lang.InterruptedException, public final void java.lang.Object.wait() throws java.lang.InterruptedException, public java.lang.Object com.ljf.greatplan.docking.plugins.aiSecretary.ProxyInterceptor.intercept(java.lang.reflect.Method,java.util.concurrent.Callable,java.lang.Object[]) throws java.lang.Exception] allows for delegation from public java.util.List com.ljf.greatplan.general.tools.generalTools.FileIO$ByteBuddyProxy.getRoot_Proxy()
+位置：net.bytebuddy.implementation.bind.MethodDelegationBinder$Processor.bind (MethodDelegationBinder.java:1099)
+调用链：
+  [0] net.bytebuddy.implementation.bind.MethodDelegationBinder$Processor.bind(MethodDelegationBinder.java:1099)
+  [1] net.bytebuddy.implementation.MethodDelegation$Appender.apply(MethodDelegation.java:1349)
+  [2] net.bytebuddy.dynamic.scaffold.TypeWriter$MethodPool$Record$ForDefinedMethod$WithBody.applyCode(TypeWriter.java:730)
+  [3] net.bytebuddy.dynamic.scaffold.TypeWriter$MethodPool$Record$ForDefinedMethod$WithBody.applyBody(TypeWriter.java:715)
+  [4] net.bytebuddy.dynamic.scaffold.TypeWriter$MethodPool$Record$ForDefinedMethod.apply(TypeWriter.java:622)
+  [5] net.bytebuddy.dynamic.scaffold.TypeWriter$Default$ForCreation.create(TypeWriter.java:6043)
+  [6] net.bytebuddy.dynamic.scaffold.TypeWriter$Default.make(TypeWriter.java:2224)
+  [7] net.bytebuddy.dynamic.DynamicType$Builder$AbstractBase$UsingTypeWriter.make(DynamicType.java:4055)
+  [8] net.bytebuddy.dynamic.DynamicType$Builder$AbstractBase.make(DynamicType.java:3739)
+  [9] net.bytebuddy.dynamic.DynamicType$Builder$AbstractBase$Delegator.make(DynamicType.java:3991)
+========================================================
+
+================= 2025-12-17T21:11:13.305249800 =================
+错误类型：org.springframework.beans.factory.UnsatisfiedDependencyException
+错误消息：Error creating bean with name 'proxyInterceptor': Unsatisfied dependency expressed through constructor parameter 0: No qualifying bean of type 'java.lang.reflect.Method' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {}
+位置：org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray (ConstructorResolver.java:804)
+调用链：
+  [0] org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:804)
+  [1] org.springframework.beans.factory.support.ConstructorResolver.autowireConstructor(ConstructorResolver.java:240)
+  [2] org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireConstructor(AbstractAutowireCapableBeanFactory.java:1395)
+  [3] org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1232)
+  [4] org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:569)
+  [5] org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:529)
+  [6] org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:339)
+  [7] org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:373)
+  [8] org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:337)
+  [9] org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
+========================================================
+
+================= 2025-12-17T21:12:55.372475800 =================
+错误类型：java.lang.RuntimeException
+错误消息：java.nio.file.NoSuchFileException: src\main\java\com\ljf\greatplan\docking\plugins\aiSecretary\memory.txt
+位置：com.ljf.greatplan.general.tools.generalTools.FileIO.getFileContent (FileIO.java:329)
+调用链：
+  [0] com.ljf.greatplan.general.tools.generalTools.FileIO.getFileContent(FileIO.java:329)
+  [1] jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+  [2] java.lang.reflect.Method.invoke(Method.java:580)
+  [3] org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:360)
+  [4] org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:196)
+  [5] org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+  [6] org.springframework.aop.aspectj.AspectJAfterThrowingAdvice.invoke(AspectJAfterThrowingAdvice.java:64)
+  [7] org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+  [8] org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:97)
+  [9] org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+========================================================
+
+================= 2025-12-17T21:12:55.376455400 =================
+错误类型：java.lang.RuntimeException
+错误消息：java.nio.file.NoSuchFileException: src\main\java\com\ljf\greatplan\docking\plugins\aiSecretary\memory.txt
+位置：com.ljf.greatplan.general.tools.generalTools.FileIO.getFileContent (FileIO.java:329)
+调用链：
+  [0] com.ljf.greatplan.general.tools.generalTools.FileIO.getFileContent(FileIO.java:329)
+  [1] jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+  [2] java.lang.reflect.Method.invoke(Method.java:580)
+  [3] org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:360)
+  [4] org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:196)
+  [5] org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+  [6] org.springframework.aop.aspectj.AspectJAfterThrowingAdvice.invoke(AspectJAfterThrowingAdvice.java:64)
+  [7] org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+  [8] org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:97)
+  [9] org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+========================================================
+
+================= 2025-12-17T21:12:55.378181100 =================
+错误类型：java.lang.RuntimeException
+错误消息：java.nio.file.NoSuchFileException: src\main\java\com\ljf\greatplan\docking\plugins\aiSecretary\memory.txt
+位置：com.ljf.greatplan.general.tools.generalTools.FileIO.getFileContent (FileIO.java:329)
+调用链：
+  [0] com.ljf.greatplan.general.tools.generalTools.FileIO.getFileContent(FileIO.java:329)
+  [1] jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+  [2] java.lang.reflect.Method.invoke(Method.java:580)
+  [3] org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:360)
+  [4] org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:196)
+  [5] org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+  [6] org.springframework.aop.aspectj.AspectJAfterThrowingAdvice.invoke(AspectJAfterThrowingAdvice.java:64)
+  [7] org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+  [8] org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:97)
+  [9] org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+========================================================
+
+================= 2025-12-17T21:14:36.090353400 =================
+错误类型：org.springframework.beans.factory.UnsatisfiedDependencyException
+错误消息：Error creating bean with name 'chat': Unsatisfied dependency expressed through constructor parameter 0: No qualifying bean of type 'org.springframework.ai.chat.client.ChatClient' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {}
+位置：org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray (ConstructorResolver.java:804)
+调用链：
+  [0] org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:804)
+  [1] org.springframework.beans.factory.support.ConstructorResolver.autowireConstructor(ConstructorResolver.java:240)
+  [2] org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireConstructor(AbstractAutowireCapableBeanFactory.java:1395)
+  [3] org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1232)
+  [4] org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:569)
+  [5] org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:529)
+  [6] org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:339)
+  [7] org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:373)
+  [8] org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:337)
+  [9] org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
+========================================================
+
+================= 2025-12-18T15:24:52.880082500 =================
+错误类型：java.lang.RuntimeException
+错误消息：java.nio.file.NoSuchFileException: src\main\java\com\ljf\greatplan\docking\plugins\aiSecretary\memory.txt
+位置：com.ljf.greatplan.general.tools.generalTools.FileIO.getFileContent (FileIO.java:331)
+调用链：
+  [0] com.ljf.greatplan.general.tools.generalTools.FileIO.getFileContent(FileIO.java:331)
+  [1] jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+  [2] java.lang.reflect.Method.invoke(Method.java:580)
+  [3] org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:360)
+  [4] org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:196)
+  [5] org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+  [6] org.springframework.aop.aspectj.AspectJAfterThrowingAdvice.invoke(AspectJAfterThrowingAdvice.java:64)
+  [7] org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+  [8] org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:97)
+  [9] org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+========================================================
+
+================= 2025-12-18T15:24:52.888141600 =================
+错误类型：java.lang.RuntimeException
+错误消息：java.nio.file.NoSuchFileException: src\main\java\com\ljf\greatplan\docking\plugins\aiSecretary\memory.txt
+位置：com.ljf.greatplan.general.tools.generalTools.FileIO.getFileContent (FileIO.java:331)
+调用链：
+  [0] com.ljf.greatplan.general.tools.generalTools.FileIO.getFileContent(FileIO.java:331)
+  [1] jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+  [2] java.lang.reflect.Method.invoke(Method.java:580)
+  [3] org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:360)
+  [4] org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:196)
+  [5] org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+  [6] org.springframework.aop.aspectj.AspectJAfterThrowingAdvice.invoke(AspectJAfterThrowingAdvice.java:64)
+  [7] org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+  [8] org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:97)
+  [9] org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+========================================================
+
+================= 2025-12-18T15:24:52.890145200 =================
+错误类型：java.lang.RuntimeException
+错误消息：java.nio.file.NoSuchFileException: src\main\java\com\ljf\greatplan\docking\plugins\aiSecretary\memory.txt
+位置：com.ljf.greatplan.general.tools.generalTools.FileIO.getFileContent (FileIO.java:331)
+调用链：
+  [0] com.ljf.greatplan.general.tools.generalTools.FileIO.getFileContent(FileIO.java:331)
+  [1] jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+  [2] java.lang.reflect.Method.invoke(Method.java:580)
+  [3] org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:360)
+  [4] org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:196)
+  [5] org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+  [6] org.springframework.aop.aspectj.AspectJAfterThrowingAdvice.invoke(AspectJAfterThrowingAdvice.java:64)
+  [7] org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+  [8] org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:97)
+  [9] org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+========================================================
+
+================= 2025-12-18T15:52:00.239697900 =================
+错误类型：org.springframework.ai.tool.execution.ToolExecutionException
+错误消息：null
+位置：org.springframework.ai.tool.method.MethodToolCallback.callMethod (MethodToolCallback.java:191)
+调用链：
+  [0] org.springframework.ai.tool.method.MethodToolCallback.callMethod(MethodToolCallback.java:191)
+  [1] org.springframework.ai.tool.method.MethodToolCallback.call(MethodToolCallback.java:112)
+  [2] org.springframework.ai.model.tool.DefaultToolCallingManager.lambda$executeToolCall$5(DefaultToolCallingManager.java:241)
+  [3] io.micrometer.observation.Observation.observe(Observation.java:564)
+  [4] org.springframework.ai.model.tool.DefaultToolCallingManager.executeToolCall(DefaultToolCallingManager.java:238)
+  [5] org.springframework.ai.model.tool.DefaultToolCallingManager.executeToolCalls(DefaultToolCallingManager.java:143)
+  [6] org.springframework.ai.openai.OpenAiChatModel.internalCall(OpenAiChatModel.java:245)
+  [7] org.springframework.ai.openai.OpenAiChatModel.call(OpenAiChatModel.java:182)
+  [8] org.springframework.ai.chat.client.advisor.ChatModelCallAdvisor.adviseCall(ChatModelCallAdvisor.java:56)
+  [9] org.springframework.ai.chat.client.advisor.DefaultAroundAdvisorChain.lambda$nextCall$1(DefaultAroundAdvisorChain.java:114)
+========================================================
+
+================= 2025-12-18T15:52:00.242869700 =================
+错误类型：org.springframework.ai.tool.execution.ToolExecutionException
+错误消息：null
+位置：org.springframework.ai.tool.method.MethodToolCallback.callMethod (MethodToolCallback.java:191)
+调用链：
+  [0] org.springframework.ai.tool.method.MethodToolCallback.callMethod(MethodToolCallback.java:191)
+  [1] org.springframework.ai.tool.method.MethodToolCallback.call(MethodToolCallback.java:112)
+  [2] org.springframework.ai.model.tool.DefaultToolCallingManager.lambda$executeToolCall$5(DefaultToolCallingManager.java:241)
+  [3] io.micrometer.observation.Observation.observe(Observation.java:564)
+  [4] org.springframework.ai.model.tool.DefaultToolCallingManager.executeToolCall(DefaultToolCallingManager.java:238)
+  [5] org.springframework.ai.model.tool.DefaultToolCallingManager.executeToolCalls(DefaultToolCallingManager.java:143)
+  [6] org.springframework.ai.openai.OpenAiChatModel.internalCall(OpenAiChatModel.java:245)
+  [7] org.springframework.ai.openai.OpenAiChatModel.call(OpenAiChatModel.java:182)
+  [8] org.springframework.ai.chat.client.advisor.ChatModelCallAdvisor.adviseCall(ChatModelCallAdvisor.java:56)
+  [9] org.springframework.ai.chat.client.advisor.DefaultAroundAdvisorChain.lambda$nextCall$1(DefaultAroundAdvisorChain.java:114)
+========================================================

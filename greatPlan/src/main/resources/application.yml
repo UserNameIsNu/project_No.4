@@ -8,7 +8,7 @@ spring:
             api-key: sk-ljwEo4Ns0fTg11h4MjJICmVOisE4i1A1kbmATWkG8zWYLJD7
             chat:
                 options:
-                    model: gpt-4o-mini
+                    model: gpt-4.1
             base-url: https://api.qingyuntop.top
 server:
     port: 8080
