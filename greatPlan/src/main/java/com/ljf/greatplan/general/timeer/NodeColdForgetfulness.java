@@ -100,10 +100,10 @@ public class NodeColdForgetfulness {
     private void attenuation() {
         // 遍历树
         for (Node node : nodeTree.getTree().values()) {
-            // 计算衰减后热度（不要变成负数）
+            // 计算衰减后热度（不要小于1）
             int newHeat = node.getClickHeat() - num;
             // 重赋值
-            node.setClickHeat(Math.max(0, newHeat));
+            node.setClickHeat(Math.max(1, newHeat));
         }
     }
 

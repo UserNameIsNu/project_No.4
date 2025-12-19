@@ -7,6 +7,7 @@
 
 package com.ljf.greatplan.docking.plugins.aiSecretary;
 
+import com.ljf.greatplan.general.scanner.SpecifyDirectoryScanner;
 import com.ljf.greatplan.general.tools.generalTools.DateAndTime;
 import com.ljf.greatplan.general.tools.generalTools.FileIO;
 import lombok.extern.slf4j.Slf4j;
@@ -14,6 +15,7 @@ import org.springframework.ai.chat.client.ChatClient;
 import org.springframework.ai.openai.OpenAiChatOptions;
 import org.springframework.stereotype.Component;
 
+import java.io.File;
 import java.lang.reflect.Constructor;
 import java.util.ArrayList;
 import java.util.List;
@@ -33,17 +35,22 @@ public class Chat {
     /**
      * 工具方法代理生成器
      */
-    private final ToolMethodProxyGenerator toolMethodProxyGenerator;
+    public static ToolMethodProxyGenerator toolMethodProxyGenerator;
 
     /**
      * 工具实例
      */
-    private Object[] toolInstances;
+    public static Object[] toolInstances = new Object[0];
 
     /**
      * 文件IO工具类
      */
-    private FileIO fileIO;
+    public static FileIO fileIO;
+
+    /**
+     * 指定目录扫描器
+     */
+    private SpecifyDirectoryScanner scanner;
 
     /**
      * 首次加载标记
@@ -56,10 +63,80 @@ public class Chat {
      * @param fileIO 文件IO工具类
      * @param toolMethodProxyGenerator 工具方法代理生成器
      */
-    public Chat(ChatClient chatClient, FileIO fileIO, ToolMethodProxyGenerator toolMethodProxyGenerator) {
+    public Chat(ChatClient chatClient, FileIO fileIO, ToolMethodProxyGenerator toolMethodProxyGenerator, SpecifyDirectoryScanner scanner) {
         this.chatClient = chatClient;
         this.toolMethodProxyGenerator = toolMethodProxyGenerator;
         this.fileIO = fileIO;
+        this.scanner = scanner;
+
+        // 扫描自己的目录，把自己加进节点/监听树
+        File selfPath = new File("src/main/java/com/ljf/greatplan/docking/plugins/aiSecretary");
+        scanner.initialScanner(selfPath.getAbsolutePath());
+        // 再把AI自建工具类目录加进去
+        File toolMethodPath = new File("src/main/java/com/ljf/greatplan/docking/plugins/aiSecretary/toolMethodFromAI");
+        scanner.initialScanner(toolMethodPath.getAbsolutePath());
+    }
+
+    /**
+     * 根据绝对路径获取class对象</br>
+     * 工具方法加载只能认class对象，但添加新方法（如AI自己新加的）时只能是获取新文件的绝对路径。
+     * 因为新加入的类可以被核心包自动识别并编译加载。
+     * 所以就能根据绝对路径，通过改动后缀与目录前段，进到编译目录里面寻找这个新类的存在。
+     * 然后就能拉出新类的class对象了。
+     * @param absolutePath 目标类的绝对路径
+     * @return 目标类的class对象
+     */
+    public static Class<?> getClassFromAbsolutePath(String absolutePath) {
+        // 标准化路径
+        String normalizedPath = absolutePath.replace("\\", "/");
+
+        // 如果是 .java 文件，转换为 .class 文件路径
+        if (normalizedPath.endsWith(".java")) {
+            // 将 /src/main/java/ 替换为 /target/classes/
+            if (normalizedPath.contains("/src/main/java/")) {
+                normalizedPath = normalizedPath.replace("/src/main/java/", "/target/classes/")
+                        .replace(".java", ".class");
+            }
+            // 或者将源文件目录替换为编译输出目录
+            else if (normalizedPath.contains("/greatPlan/src/")) {
+                normalizedPath = normalizedPath.replace("/greatPlan/src/", "/greatPlan/target/classes/")
+                        .replace(".java", ".class");
+            }
+        }
+
+        // 查找 classes 目录
+        int classesIndex = normalizedPath.indexOf("/target/classes/");
+        if (classesIndex == -1) {
+            classesIndex = normalizedPath.indexOf("/classes/");
+        }
+
+        if (classesIndex == -1) {
+            // 尝试其他可能的位置
+            if (normalizedPath.contains("/bin/")) {
+                classesIndex = normalizedPath.indexOf("/bin/");
+                normalizedPath = normalizedPath.replace("/bin/", "/target/classes/");
+            } else {
+                throw new IllegalArgumentException("不是标准的类文件路径: " + absolutePath);
+            }
+        }
+
+        // 提取类路径部分
+        String classPath = normalizedPath.substring(classesIndex + "/target/classes/".length());
+
+        // 移除 .class 后缀
+        if (classPath.endsWith(".class")) {
+            classPath = classPath.substring(0, classPath.length() - 6);
+        }
+
+        // 将路径转换为类名
+        String className = classPath.replace("/", ".");
+
+        // 使用当前线程的 ClassLoader 加载类
+        try {
+            return Thread.currentThread().getContextClassLoader().loadClass(className);
+        } catch (ClassNotFoundException e) {
+            throw new RuntimeException("类未找到: " + className, e);
+        }
     }
 
     /**
@@ -70,31 +147,30 @@ public class Chat {
         // 检查标记
         if (!fristLoad) {
             // 加载工具方法
-            toolMethodLoad(toolMethodProxyGenerator, fileIO);
+            toolMethodLoad(toolMethodProxyGenerator, fileIO, new ArrayList<>(List.of(
+                    DateAndTime.class,
+                    FileIO.class,
+                    AddNewMethod.class
+            )));
             fristLoad = true;
         }
     }
 
     /**
-     * 工具方法初始化</br>
+     * 工具方法加载</br>
      * 用于在类加载时，提前准备好给AI看的可用工具方法表。
      * 就是有哪些方法，叫啥，合并方法注释。
      * 但死人AI只吃打了Tool注解的方法，所以只能是做一大串代理包装原工具方法了。
      * @param toolMethodProxyGenerator 工具方法代理生成器
      * @param fileIO 文件IO工具类
+     * @param targetClasses 要添加的工具类集合
      */
-    public void toolMethodLoad(ToolMethodProxyGenerator toolMethodProxyGenerator, FileIO fileIO) {
-        // 指定AI可用的工具类
-        List<Class<?>> classes = new ArrayList<>(List.of(
-                DateAndTime.class,
-                FileIO.class
-        ));
-
+    public static void toolMethodLoad(ToolMethodProxyGenerator toolMethodProxyGenerator, FileIO fileIO, List<Class<?>> targetClasses) {
         // 创建这些可用类的代理类，包括其中的代理方法
         List<Class<?>> newClasses = toolMethodProxyGenerator.byteBuddyProxy(
                 // 获取可用类中所有方法的对应注释
-                toolMethodProxyGenerator.parseNotes(fileIO.getTargetFileABPaths(classes)),
-                classes
+                toolMethodProxyGenerator.parseNotes(fileIO.getTargetFileABPaths(targetClasses)),
+                targetClasses
         );
 
         // 代理类实例集合
@@ -113,8 +189,12 @@ public class Chat {
             }
         }
 
+        // 合并
+        Object[] merged = new Object[toolInstances.length + instances.toArray().length];
+        System.arraycopy(toolInstances, 0, merged, 0, toolInstances.length);
+        System.arraycopy(instances.toArray(), 0, merged, toolInstances.length, instances.toArray().length);
         // 传出去
-        toolInstances = instances.toArray();
+        toolInstances = merged;
     }
 
     /**
