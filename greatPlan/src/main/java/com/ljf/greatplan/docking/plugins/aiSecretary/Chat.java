@@ -7,6 +7,7 @@
 
 package com.ljf.greatplan.docking.plugins.aiSecretary;
 
+import com.ljf.greatplan.docking.plugins.aiSecretary.toolMethodFromAI.AddNewMethod;
 import com.ljf.greatplan.general.scanner.SpecifyDirectoryScanner;
 import com.ljf.greatplan.general.tools.generalTools.DateAndTime;
 import com.ljf.greatplan.general.tools.generalTools.FileIO;
@@ -17,8 +18,15 @@ import org.springframework.stereotype.Component;
 
 import java.io.File;
 import java.lang.reflect.Constructor;
+import java.net.URL;
+import java.net.URLClassLoader;
+import java.nio.file.Files;
+import java.nio.file.Path;
+import java.nio.file.Paths;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Map;
+import java.util.concurrent.ConcurrentHashMap;
 
 /**
  * 聊天类</br>
@@ -58,6 +66,11 @@ public class Chat {
     private Boolean fristLoad = false;
 
     /**
+     * 插件专用ClassLoader
+     */
+    private static final Map<Path, URLClassLoader> PLUGIN_CLASS_LOADERS = new ConcurrentHashMap<>();
+
+    /**
      * 构造器
      * @param chatClient 聊天实例
      * @param fileIO 文件IO工具类
@@ -87,56 +100,154 @@ public class Chat {
      * @return 目标类的class对象
      */
     public static Class<?> getClassFromAbsolutePath(String absolutePath) {
-        // 标准化路径
-        String normalizedPath = absolutePath.replace("\\", "/");
-
-        // 如果是 .java 文件，转换为 .class 文件路径
-        if (normalizedPath.endsWith(".java")) {
-            // 将 /src/main/java/ 替换为 /target/classes/
-            if (normalizedPath.contains("/src/main/java/")) {
-                normalizedPath = normalizedPath.replace("/src/main/java/", "/target/classes/")
-                        .replace(".java", ".class");
-            }
-            // 或者将源文件目录替换为编译输出目录
-            else if (normalizedPath.contains("/greatPlan/src/")) {
-                normalizedPath = normalizedPath.replace("/greatPlan/src/", "/greatPlan/target/classes/")
-                        .replace(".java", ".class");
-            }
-        }
-
-        // 查找 classes 目录
-        int classesIndex = normalizedPath.indexOf("/target/classes/");
-        if (classesIndex == -1) {
-            classesIndex = normalizedPath.indexOf("/classes/");
-        }
-
-        if (classesIndex == -1) {
-            // 尝试其他可能的位置
-            if (normalizedPath.contains("/bin/")) {
-                classesIndex = normalizedPath.indexOf("/bin/");
-                normalizedPath = normalizedPath.replace("/bin/", "/target/classes/");
-            } else {
-                throw new IllegalArgumentException("不是标准的类文件路径: " + absolutePath);
-            }
-        }
-
-        // 提取类路径部分
-        String classPath = normalizedPath.substring(classesIndex + "/target/classes/".length());
-
-        // 移除 .class 后缀
-        if (classPath.endsWith(".class")) {
-            classPath = classPath.substring(0, classPath.length() - 6);
-        }
-
-        // 将路径转换为类名
-        String className = classPath.replace("/", ".");
-
-        // 使用当前线程的 ClassLoader 加载类
         try {
-            return Thread.currentThread().getContextClassLoader().loadClass(className);
-        } catch (ClassNotFoundException e) {
-            throw new RuntimeException("类未找到: " + className, e);
+            // 1. 标准化 & 校验路径
+            Path inputPath = Paths.get(absolutePath).toAbsolutePath().normalize();
+
+            if (!Files.exists(inputPath)) {
+                throw new IllegalArgumentException("路径不存在: " + inputPath);
+            }
+
+            // 2. 如果是 .java，尝试推导对应的 .class
+            Path classFile = inputPath;
+            if (inputPath.toString().endsWith(".java")) {
+                classFile = guessClassFileFromJava(inputPath);
+            }
+
+            if (!classFile.toString().endsWith(".class")) {
+                throw new IllegalArgumentException("不是 class 文件: " + classFile);
+            }
+
+            if (!Files.exists(classFile)) {
+                throw new IllegalStateException("class 文件不存在: " + classFile);
+            }
+
+            // 3. 向上回溯，定位 classes 根目录
+            Path classesRoot = findClassesRoot(classFile);
+
+            // 4. 计算类的全限定名
+            String className = classesRoot
+                    .relativize(classFile)
+                    .toString()
+                    .replace(File.separatorChar, '.')
+                    .replaceAll("\\.class$", "");
+
+            // 5. 为该 classesRoot 获取或创建 ClassLoader
+            URLClassLoader pluginLoader = PLUGIN_CLASS_LOADERS.computeIfAbsent(
+                    classesRoot,
+                    root -> {
+                        try {
+                            return new URLClassLoader(
+                                    new URL[]{ root.toUri().toURL() },
+                                    Chat.class.getClassLoader() // 父加载器：主应用
+                            );
+                        } catch (Exception e) {
+                            throw new RuntimeException("创建插件 ClassLoader 失败: " + root, e);
+                        }
+                    }
+            );
+
+            // 6. 用插件 ClassLoader 加载类
+            return pluginLoader.loadClass(className);
+
+        } catch (Exception e) {
+            throw new RuntimeException("通过路径加载类失败: " + absolutePath, e);
         }
+    }
+
+    /**
+     * 找.class</br>
+     * 根据java文件位置，依据固定的项目目录结构，找到对应的编译后的这个java的class。
+     * @param javaFile java文件位置
+     * @return class文件位置
+     */
+    private static Path guessClassFileFromJava(Path javaFile) {
+        javaFile = javaFile.toAbsolutePath().normalize();
+
+        // 1. java 文件所在目录
+        Path javaDir = javaFile.getParent();
+
+        // 2. 向上寻找 out-classes
+        Path current = javaDir;
+        Path outClassesDir = null;
+
+        while (current != null) {
+            Path candidate = current.resolve("out-classes");
+            if (Files.isDirectory(candidate)) {
+                outClassesDir = candidate;
+                break;
+            }
+            current = current.getParent();
+        }
+
+        if (outClassesDir == null) {
+            throw new IllegalStateException(
+                    "从 java 文件路径向上未找到 out-classes 目录: " + javaFile
+            );
+        }
+
+        // 3. 计算 java 文件到 src/main/java 的相对路径
+        Path srcMainJava = findSrcMainJava(javaFile);
+        Path relative = srcMainJava.relativize(javaFile);
+
+        // 4. 拼 class 路径
+        Path classFile = outClassesDir.resolve(
+                relative.toString().replace(".java", ".class")
+        );
+
+        if (!Files.exists(classFile)) {
+            throw new IllegalStateException(
+                    "未在 out-classes 中找到 class 文件: " + classFile
+            );
+        }
+
+        return classFile;
+    }
+
+    /**
+     * 找根</br>
+     * 从java开始往上找到项目根。
+     * @param javaFile java文件位置
+     * @return 项目根位置
+     */
+    private static Path findSrcMainJava(Path javaFile) {
+        Path current = javaFile.toAbsolutePath().normalize();
+        while (current != null) {
+            if (current.endsWith(
+                    Paths.get("src", "main", "java"))) {
+                return current;
+            }
+            current = current.getParent();
+        }
+        throw new IllegalStateException(
+                "无法定位 src/main/java 根目录: " + javaFile
+        );
+    }
+
+    /**
+     * 定位class目录</br>
+     * 根据class翻出它的所在目录。
+     * 这里就是找到自定义的插件编译输出目录。
+     * @param classFile class问价位置
+     * @return 编译目录位置
+     */
+    private static Path findClassesRoot(Path classFile) {
+        Path p = classFile.getParent();
+
+        while (p != null) {
+            String dir = p.getFileName().toString();
+
+            // 支持你现在和未来可能用到的命名
+            if (dir.equals("classes")
+                    || dir.equals("out-classes")
+                    || dir.equals("bin")) {
+                return p;
+            }
+
+            p = p.getParent();
+        }
+
+        throw new IllegalStateException("无法定位 classes 根目录: " + classFile);
     }
 
     /**

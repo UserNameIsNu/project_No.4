@@ -4060,3 +4060,1479 @@
   [8] org.springframework.ai.chat.client.advisor.ChatModelCallAdvisor.adviseCall(ChatModelCallAdvisor.java:56)
   [9] org.springframework.ai.chat.client.advisor.DefaultAroundAdvisorChain.lambda$nextCall$1(DefaultAroundAdvisorChain.java:114)
 ========================================================
+
+================= 2025-12-21T22:21:04.021363600 =================
+错误类型：java.lang.RuntimeException
+错误消息：java.nio.file.NoSuchFileException: D:\planOfElectronicHamster\9_GreatPlan\4_第四次尝试（进行中）\greatPlan\src\main\java\com\ljf\greatplan\docking\plugins\aiSecretary\AddNewMethod.java
+位置：com.ljf.greatplan.docking.plugins.aiSecretary.ToolMethodProxyGenerator.parseNotes (ToolMethodProxyGenerator.java:91)
+调用链：
+  [0] com.ljf.greatplan.docking.plugins.aiSecretary.ToolMethodProxyGenerator.parseNotes(ToolMethodProxyGenerator.java:91)
+  [1] jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+  [2] java.lang.reflect.Method.invoke(Method.java:580)
+  [3] org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:360)
+  [4] org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:196)
+  [5] org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+  [6] org.springframework.aop.aspectj.AspectJAfterThrowingAdvice.invoke(AspectJAfterThrowingAdvice.java:64)
+  [7] org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+  [8] org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:97)
+  [9] org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+========================================================
+
+================= 2025-12-21T22:21:04.025364200 =================
+错误类型：java.lang.RuntimeException
+错误消息：java.nio.file.NoSuchFileException: D:\planOfElectronicHamster\9_GreatPlan\4_第四次尝试（进行中）\greatPlan\src\main\java\com\ljf\greatplan\docking\plugins\aiSecretary\AddNewMethod.java
+位置：com.ljf.greatplan.docking.plugins.aiSecretary.ToolMethodProxyGenerator.parseNotes (ToolMethodProxyGenerator.java:91)
+调用链：
+  [0] com.ljf.greatplan.docking.plugins.aiSecretary.ToolMethodProxyGenerator.parseNotes(ToolMethodProxyGenerator.java:91)
+  [1] jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+  [2] java.lang.reflect.Method.invoke(Method.java:580)
+  [3] org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:360)
+  [4] org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:196)
+  [5] org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+  [6] org.springframework.aop.aspectj.AspectJAfterThrowingAdvice.invoke(AspectJAfterThrowingAdvice.java:64)
+  [7] org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+  [8] org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:97)
+  [9] org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+========================================================
+
+================= 2025-12-21T22:21:04.027363600 =================
+错误类型：java.lang.RuntimeException
+错误消息：java.nio.file.NoSuchFileException: D:\planOfElectronicHamster\9_GreatPlan\4_第四次尝试（进行中）\greatPlan\src\main\java\com\ljf\greatplan\docking\plugins\aiSecretary\AddNewMethod.java
+位置：com.ljf.greatplan.docking.plugins.aiSecretary.ToolMethodProxyGenerator.parseNotes (ToolMethodProxyGenerator.java:91)
+调用链：
+  [0] com.ljf.greatplan.docking.plugins.aiSecretary.ToolMethodProxyGenerator.parseNotes(ToolMethodProxyGenerator.java:91)
+  [1] jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+  [2] java.lang.reflect.Method.invoke(Method.java:580)
+  [3] org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:360)
+  [4] org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:196)
+  [5] org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+  [6] org.springframework.aop.aspectj.AspectJAfterThrowingAdvice.invoke(AspectJAfterThrowingAdvice.java:64)
+  [7] org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+  [8] org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:97)
+  [9] org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+========================================================
+
+================= 2025-12-21T22:21:10.463630800 =================
+错误类型：java.lang.IllegalStateException
+错误消息：Ambiguous mapping. Cannot map 'com.ljf.greatplan.docking.plugins.aiSecretary.ChatController@3b9faf76' method 
+com.ljf.greatplan.docking.plugins.aiSecretary.ChatController#chat(String)
+to {POST [/api/chat]}: There is already 'chatController' bean method
+com.ljf.greatplan.docking.plugins.aiSecretary.ChatController#chat(String) mapped.
+位置：org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry.validateMethodMapping (AbstractHandlerMethodMapping.java:676)
+调用链：
+  [0] org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry.validateMethodMapping(AbstractHandlerMethodMapping.java:676)
+  [1] org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry.register(AbstractHandlerMethodMapping.java:637)
+  [2] org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.registerMapping(AbstractHandlerMethodMapping.java:188)
+  [3] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping.registerMapping(RequestMappingHandlerMapping.java:488)
+  [4] com.ljf.greatplan.general.tools.pluginsTools.SubContainersManager.RegisterControllerMap(SubContainersManager.java:226)
+  [5] com.ljf.greatplan.general.tools.pluginsTools.SubContainersManager.mountSubContainer(SubContainersManager.java:111)
+  [6] jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+  [7] java.lang.reflect.Method.invoke(Method.java:580)
+  [8] org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:360)
+  [9] org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:196)
+========================================================
+
+================= 2025-12-21T23:24:04.873013600 =================
+错误类型：org.springframework.ai.tool.execution.ToolExecutionException
+错误消息：null
+位置：org.springframework.ai.tool.method.MethodToolCallback.callMethod (MethodToolCallback.java:191)
+调用链：
+  [0] org.springframework.ai.tool.method.MethodToolCallback.callMethod(MethodToolCallback.java:191)
+  [1] org.springframework.ai.tool.method.MethodToolCallback.call(MethodToolCallback.java:112)
+  [2] org.springframework.ai.model.tool.DefaultToolCallingManager.lambda$executeToolCall$5(DefaultToolCallingManager.java:241)
+  [3] io.micrometer.observation.Observation.observe(Observation.java:564)
+  [4] org.springframework.ai.model.tool.DefaultToolCallingManager.executeToolCall(DefaultToolCallingManager.java:238)
+  [5] org.springframework.ai.model.tool.DefaultToolCallingManager.executeToolCalls(DefaultToolCallingManager.java:143)
+  [6] org.springframework.ai.openai.OpenAiChatModel.internalCall(OpenAiChatModel.java:245)
+  [7] org.springframework.ai.openai.OpenAiChatModel.call(OpenAiChatModel.java:182)
+  [8] org.springframework.ai.chat.client.advisor.ChatModelCallAdvisor.adviseCall(ChatModelCallAdvisor.java:56)
+  [9] org.springframework.ai.chat.client.advisor.DefaultAroundAdvisorChain.lambda$nextCall$1(DefaultAroundAdvisorChain.java:114)
+========================================================
+
+================= 2025-12-21T23:24:04.877838600 =================
+错误类型：org.springframework.ai.tool.execution.ToolExecutionException
+错误消息：null
+位置：org.springframework.ai.tool.method.MethodToolCallback.callMethod (MethodToolCallback.java:191)
+调用链：
+  [0] org.springframework.ai.tool.method.MethodToolCallback.callMethod(MethodToolCallback.java:191)
+  [1] org.springframework.ai.tool.method.MethodToolCallback.call(MethodToolCallback.java:112)
+  [2] org.springframework.ai.model.tool.DefaultToolCallingManager.lambda$executeToolCall$5(DefaultToolCallingManager.java:241)
+  [3] io.micrometer.observation.Observation.observe(Observation.java:564)
+  [4] org.springframework.ai.model.tool.DefaultToolCallingManager.executeToolCall(DefaultToolCallingManager.java:238)
+  [5] org.springframework.ai.model.tool.DefaultToolCallingManager.executeToolCalls(DefaultToolCallingManager.java:143)
+  [6] org.springframework.ai.openai.OpenAiChatModel.internalCall(OpenAiChatModel.java:245)
+  [7] org.springframework.ai.openai.OpenAiChatModel.call(OpenAiChatModel.java:182)
+  [8] org.springframework.ai.chat.client.advisor.ChatModelCallAdvisor.adviseCall(ChatModelCallAdvisor.java:56)
+  [9] org.springframework.ai.chat.client.advisor.DefaultAroundAdvisorChain.lambda$nextCall$1(DefaultAroundAdvisorChain.java:114)
+========================================================
+
+================= 2025-12-21T23:40:37.785800700 =================
+错误类型：java.lang.IllegalStateException
+错误消息：Ambiguous mapping. Cannot map 'com.ljf.greatplan.docking.plugins.aiSecretary.ChatController@540e698e' method 
+com.ljf.greatplan.docking.plugins.aiSecretary.ChatController#chat(String)
+to {POST [/api/chat]}: There is already 'chatController' bean method
+com.ljf.greatplan.docking.plugins.aiSecretary.ChatController#chat(String) mapped.
+位置：org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry.validateMethodMapping (AbstractHandlerMethodMapping.java:676)
+调用链：
+  [0] org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry.validateMethodMapping(AbstractHandlerMethodMapping.java:676)
+  [1] org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry.register(AbstractHandlerMethodMapping.java:637)
+  [2] org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.registerMapping(AbstractHandlerMethodMapping.java:188)
+  [3] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping.registerMapping(RequestMappingHandlerMapping.java:488)
+  [4] com.ljf.greatplan.general.tools.pluginsTools.SubContainersManager.RegisterControllerMap(SubContainersManager.java:188)
+  [5] com.ljf.greatplan.general.tools.pluginsTools.SubContainersManager.mountSubContainer(SubContainersManager.java:109)
+  [6] jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+  [7] java.lang.reflect.Method.invoke(Method.java:580)
+  [8] org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:360)
+  [9] org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:196)
+========================================================
+
+================= 2025-12-21T23:40:37.785800700 =================
+错误类型：java.lang.IllegalStateException
+错误消息：Ambiguous mapping. Cannot map 'com.ljf.greatplan.docking.plugins.aiSecretary.ChatController@17b2c665' method 
+com.ljf.greatplan.docking.plugins.aiSecretary.ChatController#chat(String)
+to {POST [/api/chat]}: There is already 'chatController' bean method
+com.ljf.greatplan.docking.plugins.aiSecretary.ChatController#chat(String) mapped.
+位置：org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry.validateMethodMapping (AbstractHandlerMethodMapping.java:676)
+调用链：
+  [0] org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry.validateMethodMapping(AbstractHandlerMethodMapping.java:676)
+  [1] org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry.register(AbstractHandlerMethodMapping.java:637)
+  [2] org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.registerMapping(AbstractHandlerMethodMapping.java:188)
+  [3] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping.registerMapping(RequestMappingHandlerMapping.java:488)
+  [4] com.ljf.greatplan.general.tools.pluginsTools.SubContainersManager.RegisterControllerMap(SubContainersManager.java:188)
+  [5] com.ljf.greatplan.general.tools.pluginsTools.SubContainersManager.mountSubContainer(SubContainersManager.java:109)
+  [6] jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+  [7] java.lang.reflect.Method.invoke(Method.java:580)
+  [8] org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:360)
+  [9] org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:196)
+========================================================
+
+================= 2025-12-21T23:40:38.805835700 =================
+错误类型：java.lang.IllegalStateException
+错误消息：Ambiguous mapping. Cannot map 'com.ljf.greatplan.docking.plugins.aiSecretary.ChatController@68a9844c' method 
+com.ljf.greatplan.docking.plugins.aiSecretary.ChatController#chat(String)
+to {POST [/api/chat]}: There is already 'chatController' bean method
+com.ljf.greatplan.docking.plugins.aiSecretary.ChatController#chat(String) mapped.
+位置：org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry.validateMethodMapping (AbstractHandlerMethodMapping.java:676)
+调用链：
+  [0] org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry.validateMethodMapping(AbstractHandlerMethodMapping.java:676)
+  [1] org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry.register(AbstractHandlerMethodMapping.java:637)
+  [2] org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.registerMapping(AbstractHandlerMethodMapping.java:188)
+  [3] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping.registerMapping(RequestMappingHandlerMapping.java:488)
+  [4] com.ljf.greatplan.general.tools.pluginsTools.SubContainersManager.RegisterControllerMap(SubContainersManager.java:188)
+  [5] com.ljf.greatplan.general.tools.pluginsTools.SubContainersManager.mountSubContainer(SubContainersManager.java:109)
+  [6] jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+  [7] java.lang.reflect.Method.invoke(Method.java:580)
+  [8] org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:360)
+  [9] org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:196)
+========================================================
+
+================= 2025-12-21T23:40:39.682963 =================
+错误类型：java.lang.IllegalStateException
+错误消息：Ambiguous mapping. Cannot map 'com.ljf.greatplan.docking.plugins.aiSecretary.ChatController@1b6cf52e' method 
+com.ljf.greatplan.docking.plugins.aiSecretary.ChatController#chat(String)
+to {POST [/api/chat]}: There is already 'chatController' bean method
+com.ljf.greatplan.docking.plugins.aiSecretary.ChatController#chat(String) mapped.
+位置：org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry.validateMethodMapping (AbstractHandlerMethodMapping.java:676)
+调用链：
+  [0] org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry.validateMethodMapping(AbstractHandlerMethodMapping.java:676)
+  [1] org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry.register(AbstractHandlerMethodMapping.java:637)
+  [2] org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.registerMapping(AbstractHandlerMethodMapping.java:188)
+  [3] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping.registerMapping(RequestMappingHandlerMapping.java:488)
+  [4] com.ljf.greatplan.general.tools.pluginsTools.SubContainersManager.RegisterControllerMap(SubContainersManager.java:188)
+  [5] com.ljf.greatplan.general.tools.pluginsTools.SubContainersManager.mountSubContainer(SubContainersManager.java:109)
+  [6] jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+  [7] java.lang.reflect.Method.invoke(Method.java:580)
+  [8] org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:360)
+  [9] org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:196)
+========================================================
+
+================= 2025-12-21T23:40:39.682963 =================
+错误类型：java.lang.IllegalStateException
+错误消息：Ambiguous mapping. Cannot map 'com.ljf.greatplan.docking.plugins.aiSecretary.ChatController@79910e43' method 
+com.ljf.greatplan.docking.plugins.aiSecretary.ChatController#chat(String)
+to {POST [/api/chat]}: There is already 'chatController' bean method
+com.ljf.greatplan.docking.plugins.aiSecretary.ChatController#chat(String) mapped.
+位置：org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry.validateMethodMapping (AbstractHandlerMethodMapping.java:676)
+调用链：
+  [0] org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry.validateMethodMapping(AbstractHandlerMethodMapping.java:676)
+  [1] org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry.register(AbstractHandlerMethodMapping.java:637)
+  [2] org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.registerMapping(AbstractHandlerMethodMapping.java:188)
+  [3] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping.registerMapping(RequestMappingHandlerMapping.java:488)
+  [4] com.ljf.greatplan.general.tools.pluginsTools.SubContainersManager.RegisterControllerMap(SubContainersManager.java:188)
+  [5] com.ljf.greatplan.general.tools.pluginsTools.SubContainersManager.mountSubContainer(SubContainersManager.java:109)
+  [6] jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+  [7] java.lang.reflect.Method.invoke(Method.java:580)
+  [8] org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:360)
+  [9] org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:196)
+========================================================
+
+================= 2025-12-21T23:41:09.287326900 =================
+错误类型：java.lang.IllegalStateException
+错误消息：Ambiguous mapping. Cannot map 'com.ljf.greatplan.docking.plugins.aiSecretary.ChatController@37f3e9f9' method 
+com.ljf.greatplan.docking.plugins.aiSecretary.ChatController#chat(String)
+to {POST [/api/chat]}: There is already 'chatController' bean method
+com.ljf.greatplan.docking.plugins.aiSecretary.ChatController#chat(String) mapped.
+位置：org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry.validateMethodMapping (AbstractHandlerMethodMapping.java:676)
+调用链：
+  [0] org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry.validateMethodMapping(AbstractHandlerMethodMapping.java:676)
+  [1] org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry.register(AbstractHandlerMethodMapping.java:637)
+  [2] org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.registerMapping(AbstractHandlerMethodMapping.java:188)
+  [3] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping.registerMapping(RequestMappingHandlerMapping.java:488)
+  [4] com.ljf.greatplan.general.tools.pluginsTools.SubContainersManager.RegisterControllerMap(SubContainersManager.java:188)
+  [5] com.ljf.greatplan.general.tools.pluginsTools.SubContainersManager.mountSubContainer(SubContainersManager.java:109)
+  [6] jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+  [7] java.lang.reflect.Method.invoke(Method.java:580)
+  [8] org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:360)
+  [9] org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:196)
+========================================================
+
+================= 2025-12-21T23:41:09.303868600 =================
+错误类型：java.lang.IllegalStateException
+错误消息：Ambiguous mapping. Cannot map 'com.ljf.greatplan.docking.plugins.aiSecretary.ChatController@65fa0d3b' method 
+com.ljf.greatplan.docking.plugins.aiSecretary.ChatController#chat(String)
+to {POST [/api/chat]}: There is already 'chatController' bean method
+com.ljf.greatplan.docking.plugins.aiSecretary.ChatController#chat(String) mapped.
+位置：org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry.validateMethodMapping (AbstractHandlerMethodMapping.java:676)
+调用链：
+  [0] org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry.validateMethodMapping(AbstractHandlerMethodMapping.java:676)
+  [1] org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry.register(AbstractHandlerMethodMapping.java:637)
+  [2] org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.registerMapping(AbstractHandlerMethodMapping.java:188)
+  [3] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping.registerMapping(RequestMappingHandlerMapping.java:488)
+  [4] com.ljf.greatplan.general.tools.pluginsTools.SubContainersManager.RegisterControllerMap(SubContainersManager.java:188)
+  [5] com.ljf.greatplan.general.tools.pluginsTools.SubContainersManager.mountSubContainer(SubContainersManager.java:109)
+  [6] jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+  [7] java.lang.reflect.Method.invoke(Method.java:580)
+  [8] org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:360)
+  [9] org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:196)
+========================================================
+
+================= 2025-12-21T23:41:17.110281700 =================
+错误类型：java.lang.IllegalStateException
+错误消息：Ambiguous mapping. Cannot map 'com.ljf.greatplan.docking.plugins.aiSecretary.ChatController@7016b066' method 
+com.ljf.greatplan.docking.plugins.aiSecretary.ChatController#chat(String)
+to {POST [/api/chat]}: There is already 'chatController' bean method
+com.ljf.greatplan.docking.plugins.aiSecretary.ChatController#chat(String) mapped.
+位置：org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry.validateMethodMapping (AbstractHandlerMethodMapping.java:676)
+调用链：
+  [0] org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry.validateMethodMapping(AbstractHandlerMethodMapping.java:676)
+  [1] org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry.register(AbstractHandlerMethodMapping.java:637)
+  [2] org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.registerMapping(AbstractHandlerMethodMapping.java:188)
+  [3] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping.registerMapping(RequestMappingHandlerMapping.java:488)
+  [4] com.ljf.greatplan.general.tools.pluginsTools.SubContainersManager.RegisterControllerMap(SubContainersManager.java:188)
+  [5] com.ljf.greatplan.general.tools.pluginsTools.SubContainersManager.mountSubContainer(SubContainersManager.java:109)
+  [6] jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+  [7] java.lang.reflect.Method.invoke(Method.java:580)
+  [8] org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:360)
+  [9] org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:196)
+========================================================
+
+================= 2025-12-21T23:41:17.110281700 =================
+错误类型：java.lang.IllegalStateException
+错误消息：Ambiguous mapping. Cannot map 'com.ljf.greatplan.docking.plugins.aiSecretary.ChatController@4b44c7c0' method 
+com.ljf.greatplan.docking.plugins.aiSecretary.ChatController#chat(String)
+to {POST [/api/chat]}: There is already 'chatController' bean method
+com.ljf.greatplan.docking.plugins.aiSecretary.ChatController#chat(String) mapped.
+位置：org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry.validateMethodMapping (AbstractHandlerMethodMapping.java:676)
+调用链：
+  [0] org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry.validateMethodMapping(AbstractHandlerMethodMapping.java:676)
+  [1] org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry.register(AbstractHandlerMethodMapping.java:637)
+  [2] org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.registerMapping(AbstractHandlerMethodMapping.java:188)
+  [3] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping.registerMapping(RequestMappingHandlerMapping.java:488)
+  [4] com.ljf.greatplan.general.tools.pluginsTools.SubContainersManager.RegisterControllerMap(SubContainersManager.java:188)
+  [5] com.ljf.greatplan.general.tools.pluginsTools.SubContainersManager.mountSubContainer(SubContainersManager.java:109)
+  [6] jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+  [7] java.lang.reflect.Method.invoke(Method.java:580)
+  [8] org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:360)
+  [9] org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:196)
+========================================================
+
+================= 2025-12-21T23:42:24.186481300 =================
+错误类型：java.lang.IllegalStateException
+错误消息：Ambiguous mapping. Cannot map 'com.ljf.greatplan.docking.plugins.aiSecretary.ChatController@64d25a13' method 
+com.ljf.greatplan.docking.plugins.aiSecretary.ChatController#chat(String)
+to {POST [/api/chat]}: There is already 'chatController' bean method
+com.ljf.greatplan.docking.plugins.aiSecretary.ChatController#chat(String) mapped.
+位置：org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry.validateMethodMapping (AbstractHandlerMethodMapping.java:676)
+调用链：
+  [0] org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry.validateMethodMapping(AbstractHandlerMethodMapping.java:676)
+  [1] org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry.register(AbstractHandlerMethodMapping.java:637)
+  [2] org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.registerMapping(AbstractHandlerMethodMapping.java:188)
+  [3] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping.registerMapping(RequestMappingHandlerMapping.java:488)
+  [4] com.ljf.greatplan.general.tools.pluginsTools.SubContainersManager.RegisterControllerMap(SubContainersManager.java:188)
+  [5] com.ljf.greatplan.general.tools.pluginsTools.SubContainersManager.mountSubContainer(SubContainersManager.java:109)
+  [6] jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+  [7] java.lang.reflect.Method.invoke(Method.java:580)
+  [8] org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:360)
+  [9] org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:196)
+========================================================
+
+================= 2025-12-21T23:42:24.186481300 =================
+错误类型：java.lang.IllegalStateException
+错误消息：Ambiguous mapping. Cannot map 'com.ljf.greatplan.docking.plugins.aiSecretary.ChatController@2a769fa' method 
+com.ljf.greatplan.docking.plugins.aiSecretary.ChatController#chat(String)
+to {POST [/api/chat]}: There is already 'chatController' bean method
+com.ljf.greatplan.docking.plugins.aiSecretary.ChatController#chat(String) mapped.
+位置：org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry.validateMethodMapping (AbstractHandlerMethodMapping.java:676)
+调用链：
+  [0] org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry.validateMethodMapping(AbstractHandlerMethodMapping.java:676)
+  [1] org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry.register(AbstractHandlerMethodMapping.java:637)
+  [2] org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.registerMapping(AbstractHandlerMethodMapping.java:188)
+  [3] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping.registerMapping(RequestMappingHandlerMapping.java:488)
+  [4] com.ljf.greatplan.general.tools.pluginsTools.SubContainersManager.RegisterControllerMap(SubContainersManager.java:188)
+  [5] com.ljf.greatplan.general.tools.pluginsTools.SubContainersManager.mountSubContainer(SubContainersManager.java:109)
+  [6] jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+  [7] java.lang.reflect.Method.invoke(Method.java:580)
+  [8] org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:360)
+  [9] org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:196)
+========================================================
+
+================= 2025-12-21T23:42:55.145437 =================
+错误类型：java.lang.IllegalStateException
+错误消息：org.springframework.context.annotation.AnnotationConfigApplicationContext@4233dbe5 has been closed already
+位置：org.springframework.context.support.AbstractApplicationContext.assertBeanFactoryActive (AbstractApplicationContext.java:1259)
+调用链：
+  [0] org.springframework.context.support.AbstractApplicationContext.assertBeanFactoryActive(AbstractApplicationContext.java:1259)
+  [1] org.springframework.context.support.AbstractApplicationContext.getBeansWithAnnotation(AbstractApplicationContext.java:1442)
+  [2] com.ljf.greatplan.general.tools.pluginsTools.SubContainersManager.mountSubContainer(SubContainersManager.java:103)
+  [3] jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+  [4] java.lang.reflect.Method.invoke(Method.java:580)
+  [5] org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:360)
+  [6] org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:196)
+  [7] org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+  [8] org.springframework.aop.aspectj.AspectJAfterThrowingAdvice.invoke(AspectJAfterThrowingAdvice.java:64)
+  [9] org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+========================================================
+
+================= 2025-12-21T23:42:55.151038800 =================
+错误类型：java.lang.IllegalStateException
+错误消息：Ambiguous mapping. Cannot map 'com.ljf.greatplan.docking.plugins.aiSecretary.ChatController@4348f1dc' method 
+com.ljf.greatplan.docking.plugins.aiSecretary.ChatController#chat(String)
+to {POST [/api/chat]}: There is already 'chatController' bean method
+com.ljf.greatplan.docking.plugins.aiSecretary.ChatController#chat(String) mapped.
+位置：org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry.validateMethodMapping (AbstractHandlerMethodMapping.java:676)
+调用链：
+  [0] org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry.validateMethodMapping(AbstractHandlerMethodMapping.java:676)
+  [1] org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry.register(AbstractHandlerMethodMapping.java:637)
+  [2] org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.registerMapping(AbstractHandlerMethodMapping.java:188)
+  [3] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping.registerMapping(RequestMappingHandlerMapping.java:488)
+  [4] com.ljf.greatplan.general.tools.pluginsTools.SubContainersManager.RegisterControllerMap(SubContainersManager.java:188)
+  [5] com.ljf.greatplan.general.tools.pluginsTools.SubContainersManager.mountSubContainer(SubContainersManager.java:109)
+  [6] jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+  [7] java.lang.reflect.Method.invoke(Method.java:580)
+  [8] org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:360)
+  [9] org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:196)
+========================================================
+
+================= 2025-12-21T23:42:58.618140600 =================
+错误类型：java.lang.IllegalStateException
+错误消息：Ambiguous mapping. Cannot map 'com.ljf.greatplan.docking.plugins.aiSecretary.ChatController@68c43f7e' method 
+com.ljf.greatplan.docking.plugins.aiSecretary.ChatController#chat(String)
+to {POST [/api/chat]}: There is already 'chatController' bean method
+com.ljf.greatplan.docking.plugins.aiSecretary.ChatController#chat(String) mapped.
+位置：org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry.validateMethodMapping (AbstractHandlerMethodMapping.java:676)
+调用链：
+  [0] org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry.validateMethodMapping(AbstractHandlerMethodMapping.java:676)
+  [1] org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry.register(AbstractHandlerMethodMapping.java:637)
+  [2] org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.registerMapping(AbstractHandlerMethodMapping.java:188)
+  [3] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping.registerMapping(RequestMappingHandlerMapping.java:488)
+  [4] com.ljf.greatplan.general.tools.pluginsTools.SubContainersManager.RegisterControllerMap(SubContainersManager.java:188)
+  [5] com.ljf.greatplan.general.tools.pluginsTools.SubContainersManager.mountSubContainer(SubContainersManager.java:109)
+  [6] jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+  [7] java.lang.reflect.Method.invoke(Method.java:580)
+  [8] org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:360)
+  [9] org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:196)
+========================================================
+
+================= 2025-12-21T23:42:58.618140600 =================
+错误类型：java.lang.IllegalStateException
+错误消息：Ambiguous mapping. Cannot map 'com.ljf.greatplan.docking.plugins.aiSecretary.ChatController@769bf49d' method 
+com.ljf.greatplan.docking.plugins.aiSecretary.ChatController#chat(String)
+to {POST [/api/chat]}: There is already 'chatController' bean method
+com.ljf.greatplan.docking.plugins.aiSecretary.ChatController#chat(String) mapped.
+位置：org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry.validateMethodMapping (AbstractHandlerMethodMapping.java:676)
+调用链：
+  [0] org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry.validateMethodMapping(AbstractHandlerMethodMapping.java:676)
+  [1] org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry.register(AbstractHandlerMethodMapping.java:637)
+  [2] org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.registerMapping(AbstractHandlerMethodMapping.java:188)
+  [3] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping.registerMapping(RequestMappingHandlerMapping.java:488)
+  [4] com.ljf.greatplan.general.tools.pluginsTools.SubContainersManager.RegisterControllerMap(SubContainersManager.java:188)
+  [5] com.ljf.greatplan.general.tools.pluginsTools.SubContainersManager.mountSubContainer(SubContainersManager.java:109)
+  [6] jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+  [7] java.lang.reflect.Method.invoke(Method.java:580)
+  [8] org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:360)
+  [9] org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:196)
+========================================================
+
+================= 2025-12-21T23:43:20.399315500 =================
+错误类型：java.lang.IllegalStateException
+错误消息：Ambiguous mapping. Cannot map 'com.ljf.greatplan.docking.plugins.aiSecretary.ChatController@7803dc6' method 
+com.ljf.greatplan.docking.plugins.aiSecretary.ChatController#chat(String)
+to {POST [/api/chat]}: There is already 'chatController' bean method
+com.ljf.greatplan.docking.plugins.aiSecretary.ChatController#chat(String) mapped.
+位置：org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry.validateMethodMapping (AbstractHandlerMethodMapping.java:676)
+调用链：
+  [0] org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry.validateMethodMapping(AbstractHandlerMethodMapping.java:676)
+  [1] org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry.register(AbstractHandlerMethodMapping.java:637)
+  [2] org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.registerMapping(AbstractHandlerMethodMapping.java:188)
+  [3] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping.registerMapping(RequestMappingHandlerMapping.java:488)
+  [4] com.ljf.greatplan.general.tools.pluginsTools.SubContainersManager.RegisterControllerMap(SubContainersManager.java:188)
+  [5] com.ljf.greatplan.general.tools.pluginsTools.SubContainersManager.mountSubContainer(SubContainersManager.java:109)
+  [6] jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+  [7] java.lang.reflect.Method.invoke(Method.java:580)
+  [8] org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:360)
+  [9] org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:196)
+========================================================
+
+================= 2025-12-21T23:43:20.405942500 =================
+错误类型：java.lang.IllegalStateException
+错误消息：Ambiguous mapping. Cannot map 'com.ljf.greatplan.docking.plugins.aiSecretary.ChatController@7a9da1a6' method 
+com.ljf.greatplan.docking.plugins.aiSecretary.ChatController#chat(String)
+to {POST [/api/chat]}: There is already 'chatController' bean method
+com.ljf.greatplan.docking.plugins.aiSecretary.ChatController#chat(String) mapped.
+位置：org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry.validateMethodMapping (AbstractHandlerMethodMapping.java:676)
+调用链：
+  [0] org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry.validateMethodMapping(AbstractHandlerMethodMapping.java:676)
+  [1] org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry.register(AbstractHandlerMethodMapping.java:637)
+  [2] org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.registerMapping(AbstractHandlerMethodMapping.java:188)
+  [3] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping.registerMapping(RequestMappingHandlerMapping.java:488)
+  [4] com.ljf.greatplan.general.tools.pluginsTools.SubContainersManager.RegisterControllerMap(SubContainersManager.java:188)
+  [5] com.ljf.greatplan.general.tools.pluginsTools.SubContainersManager.mountSubContainer(SubContainersManager.java:109)
+  [6] jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+  [7] java.lang.reflect.Method.invoke(Method.java:580)
+  [8] org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:360)
+  [9] org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:196)
+========================================================
+
+================= 2025-12-21T23:44:02.809061500 =================
+错误类型：java.lang.IllegalStateException
+错误消息：Ambiguous mapping. Cannot map 'com.ljf.greatplan.docking.plugins.aiSecretary.ChatController@ec9eea9' method 
+com.ljf.greatplan.docking.plugins.aiSecretary.ChatController#chat(String)
+to {POST [/api/chat]}: There is already 'chatController' bean method
+com.ljf.greatplan.docking.plugins.aiSecretary.ChatController#chat(String) mapped.
+位置：org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry.validateMethodMapping (AbstractHandlerMethodMapping.java:676)
+调用链：
+  [0] org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry.validateMethodMapping(AbstractHandlerMethodMapping.java:676)
+  [1] org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry.register(AbstractHandlerMethodMapping.java:637)
+  [2] org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.registerMapping(AbstractHandlerMethodMapping.java:188)
+  [3] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping.registerMapping(RequestMappingHandlerMapping.java:488)
+  [4] com.ljf.greatplan.general.tools.pluginsTools.SubContainersManager.RegisterControllerMap(SubContainersManager.java:188)
+  [5] com.ljf.greatplan.general.tools.pluginsTools.SubContainersManager.mountSubContainer(SubContainersManager.java:109)
+  [6] jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+  [7] java.lang.reflect.Method.invoke(Method.java:580)
+  [8] org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:360)
+  [9] org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:196)
+========================================================
+
+================= 2025-12-21T23:44:02.812173900 =================
+错误类型：java.lang.IllegalStateException
+错误消息：Ambiguous mapping. Cannot map 'com.ljf.greatplan.docking.plugins.aiSecretary.ChatController@76a34e76' method 
+com.ljf.greatplan.docking.plugins.aiSecretary.ChatController#chat(String)
+to {POST [/api/chat]}: There is already 'chatController' bean method
+com.ljf.greatplan.docking.plugins.aiSecretary.ChatController#chat(String) mapped.
+位置：org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry.validateMethodMapping (AbstractHandlerMethodMapping.java:676)
+调用链：
+  [0] org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry.validateMethodMapping(AbstractHandlerMethodMapping.java:676)
+  [1] org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry.register(AbstractHandlerMethodMapping.java:637)
+  [2] org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.registerMapping(AbstractHandlerMethodMapping.java:188)
+  [3] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping.registerMapping(RequestMappingHandlerMapping.java:488)
+  [4] com.ljf.greatplan.general.tools.pluginsTools.SubContainersManager.RegisterControllerMap(SubContainersManager.java:188)
+  [5] com.ljf.greatplan.general.tools.pluginsTools.SubContainersManager.mountSubContainer(SubContainersManager.java:109)
+  [6] jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+  [7] java.lang.reflect.Method.invoke(Method.java:580)
+  [8] org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:360)
+  [9] org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:196)
+========================================================
+
+================= 2025-12-21T23:44:25.342419100 =================
+错误类型：java.lang.IllegalStateException
+错误消息：Ambiguous mapping. Cannot map 'com.ljf.greatplan.docking.plugins.aiSecretary.ChatController@bfa559e' method 
+com.ljf.greatplan.docking.plugins.aiSecretary.ChatController#chat(String)
+to {POST [/api/chat]}: There is already 'chatController' bean method
+com.ljf.greatplan.docking.plugins.aiSecretary.ChatController#chat(String) mapped.
+位置：org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry.validateMethodMapping (AbstractHandlerMethodMapping.java:676)
+调用链：
+  [0] org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry.validateMethodMapping(AbstractHandlerMethodMapping.java:676)
+  [1] org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry.register(AbstractHandlerMethodMapping.java:637)
+  [2] org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.registerMapping(AbstractHandlerMethodMapping.java:188)
+  [3] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping.registerMapping(RequestMappingHandlerMapping.java:488)
+  [4] com.ljf.greatplan.general.tools.pluginsTools.SubContainersManager.RegisterControllerMap(SubContainersManager.java:188)
+  [5] com.ljf.greatplan.general.tools.pluginsTools.SubContainersManager.mountSubContainer(SubContainersManager.java:109)
+  [6] jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+  [7] java.lang.reflect.Method.invoke(Method.java:580)
+  [8] org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:360)
+  [9] org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:196)
+========================================================
+
+================= 2025-12-21T23:44:25.342419100 =================
+错误类型：java.lang.IllegalStateException
+错误消息：Ambiguous mapping. Cannot map 'com.ljf.greatplan.docking.plugins.aiSecretary.ChatController@763e3d8c' method 
+com.ljf.greatplan.docking.plugins.aiSecretary.ChatController#chat(String)
+to {POST [/api/chat]}: There is already 'chatController' bean method
+com.ljf.greatplan.docking.plugins.aiSecretary.ChatController#chat(String) mapped.
+位置：org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry.validateMethodMapping (AbstractHandlerMethodMapping.java:676)
+调用链：
+  [0] org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry.validateMethodMapping(AbstractHandlerMethodMapping.java:676)
+  [1] org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry.register(AbstractHandlerMethodMapping.java:637)
+  [2] org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.registerMapping(AbstractHandlerMethodMapping.java:188)
+  [3] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping.registerMapping(RequestMappingHandlerMapping.java:488)
+  [4] com.ljf.greatplan.general.tools.pluginsTools.SubContainersManager.RegisterControllerMap(SubContainersManager.java:188)
+  [5] com.ljf.greatplan.general.tools.pluginsTools.SubContainersManager.mountSubContainer(SubContainersManager.java:109)
+  [6] jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+  [7] java.lang.reflect.Method.invoke(Method.java:580)
+  [8] org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:360)
+  [9] org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:196)
+========================================================
+
+================= 2025-12-22T08:46:19.560639200 =================
+错误类型：java.lang.IllegalStateException
+错误消息：Ambiguous mapping. Cannot map 'com.ljf.greatplan.docking.plugins.aiSecretary.ChatController@1a3a2867' method 
+com.ljf.greatplan.docking.plugins.aiSecretary.ChatController#chat(String)
+to {POST [/api/chat]}: There is already 'com.ljf.greatplan.docking.plugins.aiSecretary.ChatController@2d0f7372' bean method
+com.ljf.greatplan.docking.plugins.aiSecretary.ChatController#chat(String) mapped.
+位置：org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry.validateMethodMapping (AbstractHandlerMethodMapping.java:676)
+调用链：
+  [0] org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry.validateMethodMapping(AbstractHandlerMethodMapping.java:676)
+  [1] org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry.register(AbstractHandlerMethodMapping.java:637)
+  [2] org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.registerMapping(AbstractHandlerMethodMapping.java:188)
+  [3] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping.registerMapping(RequestMappingHandlerMapping.java:488)
+  [4] com.ljf.greatplan.general.tools.pluginsTools.SubContainersManager.RegisterControllerMap(SubContainersManager.java:188)
+  [5] com.ljf.greatplan.general.tools.pluginsTools.SubContainersManager.mountSubContainer(SubContainersManager.java:109)
+  [6] jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+  [7] java.lang.reflect.Method.invoke(Method.java:580)
+  [8] org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:360)
+  [9] org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:196)
+========================================================
+
+================= 2025-12-22T08:46:20.462749300 =================
+错误类型：java.lang.IllegalStateException
+错误消息：Ambiguous mapping. Cannot map 'com.ljf.greatplan.docking.plugins.aiSecretary.ChatController@5d3fe3a8' method 
+com.ljf.greatplan.docking.plugins.aiSecretary.ChatController#chat(String)
+to {POST [/api/chat]}: There is already 'com.ljf.greatplan.docking.plugins.aiSecretary.ChatController@5f22f0eb' bean method
+com.ljf.greatplan.docking.plugins.aiSecretary.ChatController#chat(String) mapped.
+位置：org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry.validateMethodMapping (AbstractHandlerMethodMapping.java:676)
+调用链：
+  [0] org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry.validateMethodMapping(AbstractHandlerMethodMapping.java:676)
+  [1] org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry.register(AbstractHandlerMethodMapping.java:637)
+  [2] org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.registerMapping(AbstractHandlerMethodMapping.java:188)
+  [3] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping.registerMapping(RequestMappingHandlerMapping.java:488)
+  [4] com.ljf.greatplan.general.tools.pluginsTools.SubContainersManager.RegisterControllerMap(SubContainersManager.java:188)
+  [5] com.ljf.greatplan.general.tools.pluginsTools.SubContainersManager.mountSubContainer(SubContainersManager.java:109)
+  [6] jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+  [7] java.lang.reflect.Method.invoke(Method.java:580)
+  [8] org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:360)
+  [9] org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:196)
+========================================================
+
+================= 2025-12-22T08:48:09.799747500 =================
+错误类型：java.lang.IllegalStateException
+错误消息：Ambiguous mapping. Cannot map 'com.ljf.greatplan.docking.plugins.aiSecretary.ChatController@45230408' method 
+com.ljf.greatplan.docking.plugins.aiSecretary.ChatController#chat(String)
+to {POST [/api/chat]}: There is already 'com.ljf.greatplan.docking.plugins.aiSecretary.ChatController@7bfbcff6' bean method
+com.ljf.greatplan.docking.plugins.aiSecretary.ChatController#chat(String) mapped.
+位置：org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry.validateMethodMapping (AbstractHandlerMethodMapping.java:676)
+调用链：
+  [0] org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry.validateMethodMapping(AbstractHandlerMethodMapping.java:676)
+  [1] org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry.register(AbstractHandlerMethodMapping.java:637)
+  [2] org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.registerMapping(AbstractHandlerMethodMapping.java:188)
+  [3] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping.registerMapping(RequestMappingHandlerMapping.java:488)
+  [4] com.ljf.greatplan.general.tools.pluginsTools.SubContainersManager.RegisterControllerMap(SubContainersManager.java:188)
+  [5] com.ljf.greatplan.general.tools.pluginsTools.SubContainersManager.mountSubContainer(SubContainersManager.java:109)
+  [6] jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+  [7] java.lang.reflect.Method.invoke(Method.java:580)
+  [8] org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:360)
+  [9] org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:196)
+========================================================
+
+================= 2025-12-22T08:48:11.818602300 =================
+错误类型：java.lang.IllegalStateException
+错误消息：Ambiguous mapping. Cannot map 'com.ljf.greatplan.docking.plugins.aiSecretary.ChatController@6552c7a6' method 
+com.ljf.greatplan.docking.plugins.aiSecretary.ChatController#chat(String)
+to {POST [/api/chat]}: There is already 'com.ljf.greatplan.docking.plugins.aiSecretary.ChatController@68d6a8ef' bean method
+com.ljf.greatplan.docking.plugins.aiSecretary.ChatController#chat(String) mapped.
+位置：org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry.validateMethodMapping (AbstractHandlerMethodMapping.java:676)
+调用链：
+  [0] org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry.validateMethodMapping(AbstractHandlerMethodMapping.java:676)
+  [1] org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry.register(AbstractHandlerMethodMapping.java:637)
+  [2] org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.registerMapping(AbstractHandlerMethodMapping.java:188)
+  [3] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping.registerMapping(RequestMappingHandlerMapping.java:488)
+  [4] com.ljf.greatplan.general.tools.pluginsTools.SubContainersManager.RegisterControllerMap(SubContainersManager.java:188)
+  [5] com.ljf.greatplan.general.tools.pluginsTools.SubContainersManager.mountSubContainer(SubContainersManager.java:109)
+  [6] jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+  [7] java.lang.reflect.Method.invoke(Method.java:580)
+  [8] org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:360)
+  [9] org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:196)
+========================================================
+
+================= 2025-12-22T08:48:31.341456400 =================
+错误类型：java.lang.IllegalStateException
+错误消息：Ambiguous mapping. Cannot map 'com.ljf.greatplan.docking.plugins.aiSecretary.ChatController@696c4728' method 
+com.ljf.greatplan.docking.plugins.aiSecretary.ChatController#chat(String)
+to {POST [/api/chat]}: There is already 'com.ljf.greatplan.docking.plugins.aiSecretary.ChatController@32357790' bean method
+com.ljf.greatplan.docking.plugins.aiSecretary.ChatController#chat(String) mapped.
+位置：org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry.validateMethodMapping (AbstractHandlerMethodMapping.java:676)
+调用链：
+  [0] org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry.validateMethodMapping(AbstractHandlerMethodMapping.java:676)
+  [1] org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry.register(AbstractHandlerMethodMapping.java:637)
+  [2] org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.registerMapping(AbstractHandlerMethodMapping.java:188)
+  [3] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping.registerMapping(RequestMappingHandlerMapping.java:488)
+  [4] com.ljf.greatplan.general.tools.pluginsTools.SubContainersManager.RegisterControllerMap(SubContainersManager.java:188)
+  [5] com.ljf.greatplan.general.tools.pluginsTools.SubContainersManager.mountSubContainer(SubContainersManager.java:109)
+  [6] jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+  [7] java.lang.reflect.Method.invoke(Method.java:580)
+  [8] org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:360)
+  [9] org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:196)
+========================================================
+
+================= 2025-12-22T08:48:41.258729600 =================
+错误类型：java.lang.IllegalStateException
+错误消息：Ambiguous mapping. Cannot map 'com.ljf.greatplan.docking.plugins.aiSecretary.ChatController@7978416e' method 
+com.ljf.greatplan.docking.plugins.aiSecretary.ChatController#chat(String)
+to {POST [/api/chat]}: There is already 'com.ljf.greatplan.docking.plugins.aiSecretary.ChatController@610dbb50' bean method
+com.ljf.greatplan.docking.plugins.aiSecretary.ChatController#chat(String) mapped.
+位置：org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry.validateMethodMapping (AbstractHandlerMethodMapping.java:676)
+调用链：
+  [0] org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry.validateMethodMapping(AbstractHandlerMethodMapping.java:676)
+  [1] org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry.register(AbstractHandlerMethodMapping.java:637)
+  [2] org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.registerMapping(AbstractHandlerMethodMapping.java:188)
+  [3] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping.registerMapping(RequestMappingHandlerMapping.java:488)
+  [4] com.ljf.greatplan.general.tools.pluginsTools.SubContainersManager.RegisterControllerMap(SubContainersManager.java:188)
+  [5] com.ljf.greatplan.general.tools.pluginsTools.SubContainersManager.mountSubContainer(SubContainersManager.java:109)
+  [6] jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+  [7] java.lang.reflect.Method.invoke(Method.java:580)
+  [8] org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:360)
+  [9] org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:196)
+========================================================
+
+================= 2025-12-22T08:49:09.909021900 =================
+错误类型：java.lang.IllegalStateException
+错误消息：Ambiguous mapping. Cannot map 'com.ljf.greatplan.docking.plugins.aiSecretary.ChatController@763e7632' method 
+com.ljf.greatplan.docking.plugins.aiSecretary.ChatController#chat(String)
+to {POST [/api/chat]}: There is already 'com.ljf.greatplan.docking.plugins.aiSecretary.ChatController@46f6a319' bean method
+com.ljf.greatplan.docking.plugins.aiSecretary.ChatController#chat(String) mapped.
+位置：org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry.validateMethodMapping (AbstractHandlerMethodMapping.java:676)
+调用链：
+  [0] org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry.validateMethodMapping(AbstractHandlerMethodMapping.java:676)
+  [1] org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry.register(AbstractHandlerMethodMapping.java:637)
+  [2] org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.registerMapping(AbstractHandlerMethodMapping.java:188)
+  [3] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping.registerMapping(RequestMappingHandlerMapping.java:488)
+  [4] com.ljf.greatplan.general.tools.pluginsTools.SubContainersManager.RegisterControllerMap(SubContainersManager.java:188)
+  [5] com.ljf.greatplan.general.tools.pluginsTools.SubContainersManager.mountSubContainer(SubContainersManager.java:109)
+  [6] jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+  [7] java.lang.reflect.Method.invoke(Method.java:580)
+  [8] org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:360)
+  [9] org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:196)
+========================================================
+
+================= 2025-12-22T08:49:17.138076700 =================
+错误类型：java.lang.IllegalStateException
+错误消息：Ambiguous mapping. Cannot map 'com.ljf.greatplan.docking.plugins.aiSecretary.ChatController@8c6b505' method 
+com.ljf.greatplan.docking.plugins.aiSecretary.ChatController#chat(String)
+to {POST [/api/chat]}: There is already 'com.ljf.greatplan.docking.plugins.aiSecretary.ChatController@5ec54be7' bean method
+com.ljf.greatplan.docking.plugins.aiSecretary.ChatController#chat(String) mapped.
+位置：org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry.validateMethodMapping (AbstractHandlerMethodMapping.java:676)
+调用链：
+  [0] org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry.validateMethodMapping(AbstractHandlerMethodMapping.java:676)
+  [1] org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry.register(AbstractHandlerMethodMapping.java:637)
+  [2] org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.registerMapping(AbstractHandlerMethodMapping.java:188)
+  [3] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping.registerMapping(RequestMappingHandlerMapping.java:488)
+  [4] com.ljf.greatplan.general.tools.pluginsTools.SubContainersManager.RegisterControllerMap(SubContainersManager.java:188)
+  [5] com.ljf.greatplan.general.tools.pluginsTools.SubContainersManager.mountSubContainer(SubContainersManager.java:109)
+  [6] jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+  [7] java.lang.reflect.Method.invoke(Method.java:580)
+  [8] org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:360)
+  [9] org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:196)
+========================================================
+
+================= 2025-12-22T08:49:33.860145100 =================
+错误类型：java.lang.IllegalStateException
+错误消息：Ambiguous mapping. Cannot map 'com.ljf.greatplan.docking.plugins.aiSecretary.ChatController@2452cf82' method 
+com.ljf.greatplan.docking.plugins.aiSecretary.ChatController#chat(String)
+to {POST [/api/chat]}: There is already 'com.ljf.greatplan.docking.plugins.aiSecretary.ChatController@48503851' bean method
+com.ljf.greatplan.docking.plugins.aiSecretary.ChatController#chat(String) mapped.
+位置：org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry.validateMethodMapping (AbstractHandlerMethodMapping.java:676)
+调用链：
+  [0] org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry.validateMethodMapping(AbstractHandlerMethodMapping.java:676)
+  [1] org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry.register(AbstractHandlerMethodMapping.java:637)
+  [2] org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.registerMapping(AbstractHandlerMethodMapping.java:188)
+  [3] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping.registerMapping(RequestMappingHandlerMapping.java:488)
+  [4] com.ljf.greatplan.general.tools.pluginsTools.SubContainersManager.RegisterControllerMap(SubContainersManager.java:188)
+  [5] com.ljf.greatplan.general.tools.pluginsTools.SubContainersManager.mountSubContainer(SubContainersManager.java:109)
+  [6] jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+  [7] java.lang.reflect.Method.invoke(Method.java:580)
+  [8] org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:360)
+  [9] org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:196)
+========================================================
+
+================= 2025-12-22T08:49:46.428931700 =================
+错误类型：java.lang.IllegalStateException
+错误消息：Ambiguous mapping. Cannot map 'com.ljf.greatplan.docking.plugins.aiSecretary.ChatController@3a4d2d0d' method 
+com.ljf.greatplan.docking.plugins.aiSecretary.ChatController#chat(String)
+to {POST [/api/chat]}: There is already 'com.ljf.greatplan.docking.plugins.aiSecretary.ChatController@26ab9e3' bean method
+com.ljf.greatplan.docking.plugins.aiSecretary.ChatController#chat(String) mapped.
+位置：org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry.validateMethodMapping (AbstractHandlerMethodMapping.java:676)
+调用链：
+  [0] org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry.validateMethodMapping(AbstractHandlerMethodMapping.java:676)
+  [1] org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry.register(AbstractHandlerMethodMapping.java:637)
+  [2] org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.registerMapping(AbstractHandlerMethodMapping.java:188)
+  [3] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping.registerMapping(RequestMappingHandlerMapping.java:488)
+  [4] com.ljf.greatplan.general.tools.pluginsTools.SubContainersManager.RegisterControllerMap(SubContainersManager.java:188)
+  [5] com.ljf.greatplan.general.tools.pluginsTools.SubContainersManager.mountSubContainer(SubContainersManager.java:109)
+  [6] jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+  [7] java.lang.reflect.Method.invoke(Method.java:580)
+  [8] org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:360)
+  [9] org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:196)
+========================================================
+
+================= 2025-12-22T08:50:15.215885100 =================
+错误类型：java.lang.IllegalStateException
+错误消息：Ambiguous mapping. Cannot map 'com.ljf.greatplan.docking.plugins.aiSecretary.ChatController@53ec7fad' method 
+com.ljf.greatplan.docking.plugins.aiSecretary.ChatController#chat(String)
+to {POST [/api/chat]}: There is already 'com.ljf.greatplan.docking.plugins.aiSecretary.ChatController@683d594c' bean method
+com.ljf.greatplan.docking.plugins.aiSecretary.ChatController#chat(String) mapped.
+位置：org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry.validateMethodMapping (AbstractHandlerMethodMapping.java:676)
+调用链：
+  [0] org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry.validateMethodMapping(AbstractHandlerMethodMapping.java:676)
+  [1] org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry.register(AbstractHandlerMethodMapping.java:637)
+  [2] org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.registerMapping(AbstractHandlerMethodMapping.java:188)
+  [3] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping.registerMapping(RequestMappingHandlerMapping.java:488)
+  [4] com.ljf.greatplan.general.tools.pluginsTools.SubContainersManager.RegisterControllerMap(SubContainersManager.java:188)
+  [5] com.ljf.greatplan.general.tools.pluginsTools.SubContainersManager.mountSubContainer(SubContainersManager.java:109)
+  [6] jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+  [7] java.lang.reflect.Method.invoke(Method.java:580)
+  [8] org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:360)
+  [9] org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:196)
+========================================================
+
+================= 2025-12-22T08:50:52.898283400 =================
+错误类型：java.lang.IllegalStateException
+错误消息：Ambiguous mapping. Cannot map 'com.ljf.greatplan.docking.plugins.aiSecretary.ChatController@295b44f2' method 
+com.ljf.greatplan.docking.plugins.aiSecretary.ChatController#chat(String)
+to {POST [/api/chat]}: There is already 'com.ljf.greatplan.docking.plugins.aiSecretary.ChatController@95318e8' bean method
+com.ljf.greatplan.docking.plugins.aiSecretary.ChatController#chat(String) mapped.
+位置：org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry.validateMethodMapping (AbstractHandlerMethodMapping.java:676)
+调用链：
+  [0] org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry.validateMethodMapping(AbstractHandlerMethodMapping.java:676)
+  [1] org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry.register(AbstractHandlerMethodMapping.java:637)
+  [2] org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.registerMapping(AbstractHandlerMethodMapping.java:188)
+  [3] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping.registerMapping(RequestMappingHandlerMapping.java:488)
+  [4] com.ljf.greatplan.general.tools.pluginsTools.SubContainersManager.RegisterControllerMap(SubContainersManager.java:188)
+  [5] com.ljf.greatplan.general.tools.pluginsTools.SubContainersManager.mountSubContainer(SubContainersManager.java:109)
+  [6] jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+  [7] java.lang.reflect.Method.invoke(Method.java:580)
+  [8] org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:360)
+  [9] org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:196)
+========================================================
+
+================= 2025-12-22T08:51:15.307093900 =================
+错误类型：java.lang.IllegalStateException
+错误消息：Ambiguous mapping. Cannot map 'com.ljf.greatplan.docking.plugins.aiSecretary.ChatController@21badcaf' method 
+com.ljf.greatplan.docking.plugins.aiSecretary.ChatController#chat(String)
+to {POST [/api/chat]}: There is already 'com.ljf.greatplan.docking.plugins.aiSecretary.ChatController@115b3e57' bean method
+com.ljf.greatplan.docking.plugins.aiSecretary.ChatController#chat(String) mapped.
+位置：org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry.validateMethodMapping (AbstractHandlerMethodMapping.java:676)
+调用链：
+  [0] org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry.validateMethodMapping(AbstractHandlerMethodMapping.java:676)
+  [1] org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry.register(AbstractHandlerMethodMapping.java:637)
+  [2] org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.registerMapping(AbstractHandlerMethodMapping.java:188)
+  [3] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping.registerMapping(RequestMappingHandlerMapping.java:488)
+  [4] com.ljf.greatplan.general.tools.pluginsTools.SubContainersManager.RegisterControllerMap(SubContainersManager.java:188)
+  [5] com.ljf.greatplan.general.tools.pluginsTools.SubContainersManager.mountSubContainer(SubContainersManager.java:109)
+  [6] jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+  [7] java.lang.reflect.Method.invoke(Method.java:580)
+  [8] org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:360)
+  [9] org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:196)
+========================================================
+
+================= 2025-12-22T08:51:22.816008 =================
+错误类型：java.lang.IllegalStateException
+错误消息：Ambiguous mapping. Cannot map 'com.ljf.greatplan.docking.plugins.aiSecretary.ChatController@713fd52d' method 
+com.ljf.greatplan.docking.plugins.aiSecretary.ChatController#chat(String)
+to {POST [/api/chat]}: There is already 'com.ljf.greatplan.docking.plugins.aiSecretary.ChatController@440f7c6a' bean method
+com.ljf.greatplan.docking.plugins.aiSecretary.ChatController#chat(String) mapped.
+位置：org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry.validateMethodMapping (AbstractHandlerMethodMapping.java:676)
+调用链：
+  [0] org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry.validateMethodMapping(AbstractHandlerMethodMapping.java:676)
+  [1] org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry.register(AbstractHandlerMethodMapping.java:637)
+  [2] org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.registerMapping(AbstractHandlerMethodMapping.java:188)
+  [3] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping.registerMapping(RequestMappingHandlerMapping.java:488)
+  [4] com.ljf.greatplan.general.tools.pluginsTools.SubContainersManager.RegisterControllerMap(SubContainersManager.java:188)
+  [5] com.ljf.greatplan.general.tools.pluginsTools.SubContainersManager.mountSubContainer(SubContainersManager.java:109)
+  [6] jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+  [7] java.lang.reflect.Method.invoke(Method.java:580)
+  [8] org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:360)
+  [9] org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:196)
+========================================================
+
+================= 2025-12-22T08:51:26.780667100 =================
+错误类型：java.lang.IllegalStateException
+错误消息：Ambiguous mapping. Cannot map 'com.ljf.greatplan.docking.plugins.aiSecretary.ChatController@3c75d50c' method 
+com.ljf.greatplan.docking.plugins.aiSecretary.ChatController#chat(String)
+to {POST [/api/chat]}: There is already 'com.ljf.greatplan.docking.plugins.aiSecretary.ChatController@ec73c00' bean method
+com.ljf.greatplan.docking.plugins.aiSecretary.ChatController#chat(String) mapped.
+位置：org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry.validateMethodMapping (AbstractHandlerMethodMapping.java:676)
+调用链：
+  [0] org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry.validateMethodMapping(AbstractHandlerMethodMapping.java:676)
+  [1] org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry.register(AbstractHandlerMethodMapping.java:637)
+  [2] org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.registerMapping(AbstractHandlerMethodMapping.java:188)
+  [3] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping.registerMapping(RequestMappingHandlerMapping.java:488)
+  [4] com.ljf.greatplan.general.tools.pluginsTools.SubContainersManager.RegisterControllerMap(SubContainersManager.java:188)
+  [5] com.ljf.greatplan.general.tools.pluginsTools.SubContainersManager.mountSubContainer(SubContainersManager.java:109)
+  [6] jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+  [7] java.lang.reflect.Method.invoke(Method.java:580)
+  [8] org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:360)
+  [9] org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:196)
+========================================================
+
+================= 2025-12-22T08:51:40.301197 =================
+错误类型：java.lang.IllegalStateException
+错误消息：Ambiguous mapping. Cannot map 'com.ljf.greatplan.docking.plugins.aiSecretary.ChatController@6b07ef0d' method 
+com.ljf.greatplan.docking.plugins.aiSecretary.ChatController#chat(String)
+to {POST [/api/chat]}: There is already 'com.ljf.greatplan.docking.plugins.aiSecretary.ChatController@38789188' bean method
+com.ljf.greatplan.docking.plugins.aiSecretary.ChatController#chat(String) mapped.
+位置：org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry.validateMethodMapping (AbstractHandlerMethodMapping.java:676)
+调用链：
+  [0] org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry.validateMethodMapping(AbstractHandlerMethodMapping.java:676)
+  [1] org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry.register(AbstractHandlerMethodMapping.java:637)
+  [2] org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.registerMapping(AbstractHandlerMethodMapping.java:188)
+  [3] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping.registerMapping(RequestMappingHandlerMapping.java:488)
+  [4] com.ljf.greatplan.general.tools.pluginsTools.SubContainersManager.RegisterControllerMap(SubContainersManager.java:188)
+  [5] com.ljf.greatplan.general.tools.pluginsTools.SubContainersManager.mountSubContainer(SubContainersManager.java:109)
+  [6] jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+  [7] java.lang.reflect.Method.invoke(Method.java:580)
+  [8] org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:360)
+  [9] org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:196)
+========================================================
+
+================= 2025-12-22T08:52:02.655251100 =================
+错误类型：java.lang.IllegalStateException
+错误消息：Ambiguous mapping. Cannot map 'com.ljf.greatplan.docking.plugins.aiSecretary.ChatController@167a1487' method 
+com.ljf.greatplan.docking.plugins.aiSecretary.ChatController#chat(String)
+to {POST [/api/chat]}: There is already 'com.ljf.greatplan.docking.plugins.aiSecretary.ChatController@55a49e86' bean method
+com.ljf.greatplan.docking.plugins.aiSecretary.ChatController#chat(String) mapped.
+位置：org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry.validateMethodMapping (AbstractHandlerMethodMapping.java:676)
+调用链：
+  [0] org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry.validateMethodMapping(AbstractHandlerMethodMapping.java:676)
+  [1] org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry.register(AbstractHandlerMethodMapping.java:637)
+  [2] org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.registerMapping(AbstractHandlerMethodMapping.java:188)
+  [3] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping.registerMapping(RequestMappingHandlerMapping.java:488)
+  [4] com.ljf.greatplan.general.tools.pluginsTools.SubContainersManager.RegisterControllerMap(SubContainersManager.java:188)
+  [5] com.ljf.greatplan.general.tools.pluginsTools.SubContainersManager.mountSubContainer(SubContainersManager.java:109)
+  [6] jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+  [7] java.lang.reflect.Method.invoke(Method.java:580)
+  [8] org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:360)
+  [9] org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:196)
+========================================================
+
+================= 2025-12-22T08:52:32.032005 =================
+错误类型：java.lang.IllegalStateException
+错误消息：Ambiguous mapping. Cannot map 'com.ljf.greatplan.docking.plugins.aiSecretary.ChatController@69b3a9a1' method 
+com.ljf.greatplan.docking.plugins.aiSecretary.ChatController#chat(String)
+to {POST [/api/chat]}: There is already 'com.ljf.greatplan.docking.plugins.aiSecretary.ChatController@6ade5a98' bean method
+com.ljf.greatplan.docking.plugins.aiSecretary.ChatController#chat(String) mapped.
+位置：org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry.validateMethodMapping (AbstractHandlerMethodMapping.java:676)
+调用链：
+  [0] org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry.validateMethodMapping(AbstractHandlerMethodMapping.java:676)
+  [1] org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry.register(AbstractHandlerMethodMapping.java:637)
+  [2] org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.registerMapping(AbstractHandlerMethodMapping.java:188)
+  [3] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping.registerMapping(RequestMappingHandlerMapping.java:488)
+  [4] com.ljf.greatplan.general.tools.pluginsTools.SubContainersManager.RegisterControllerMap(SubContainersManager.java:188)
+  [5] com.ljf.greatplan.general.tools.pluginsTools.SubContainersManager.mountSubContainer(SubContainersManager.java:109)
+  [6] jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+  [7] java.lang.reflect.Method.invoke(Method.java:580)
+  [8] org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:360)
+  [9] org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:196)
+========================================================
+
+================= 2025-12-22T08:53:25.690803 =================
+错误类型：java.lang.IllegalStateException
+错误消息：Ambiguous mapping. Cannot map 'com.ljf.greatplan.docking.plugins.aiSecretary.ChatController@2e775ddd' method 
+com.ljf.greatplan.docking.plugins.aiSecretary.ChatController#chat(String)
+to {POST [/api/chat]}: There is already 'com.ljf.greatplan.docking.plugins.aiSecretary.ChatController@3d2edaf' bean method
+com.ljf.greatplan.docking.plugins.aiSecretary.ChatController#chat(String) mapped.
+位置：org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry.validateMethodMapping (AbstractHandlerMethodMapping.java:676)
+调用链：
+  [0] org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry.validateMethodMapping(AbstractHandlerMethodMapping.java:676)
+  [1] org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry.register(AbstractHandlerMethodMapping.java:637)
+  [2] org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.registerMapping(AbstractHandlerMethodMapping.java:188)
+  [3] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping.registerMapping(RequestMappingHandlerMapping.java:488)
+  [4] com.ljf.greatplan.general.tools.pluginsTools.SubContainersManager.RegisterControllerMap(SubContainersManager.java:188)
+  [5] com.ljf.greatplan.general.tools.pluginsTools.SubContainersManager.mountSubContainer(SubContainersManager.java:109)
+  [6] jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+  [7] java.lang.reflect.Method.invoke(Method.java:580)
+  [8] org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:360)
+  [9] org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:196)
+========================================================
+
+================= 2025-12-22T08:53:56.097895300 =================
+错误类型：java.lang.IllegalStateException
+错误消息：Ambiguous mapping. Cannot map 'com.ljf.greatplan.docking.plugins.aiSecretary.ChatController@3339b2e' method 
+com.ljf.greatplan.docking.plugins.aiSecretary.ChatController#chat(String)
+to {POST [/api/chat]}: There is already 'com.ljf.greatplan.docking.plugins.aiSecretary.ChatController@5eff3f9c' bean method
+com.ljf.greatplan.docking.plugins.aiSecretary.ChatController#chat(String) mapped.
+位置：org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry.validateMethodMapping (AbstractHandlerMethodMapping.java:676)
+调用链：
+  [0] org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry.validateMethodMapping(AbstractHandlerMethodMapping.java:676)
+  [1] org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry.register(AbstractHandlerMethodMapping.java:637)
+  [2] org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.registerMapping(AbstractHandlerMethodMapping.java:188)
+  [3] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping.registerMapping(RequestMappingHandlerMapping.java:488)
+  [4] com.ljf.greatplan.general.tools.pluginsTools.SubContainersManager.RegisterControllerMap(SubContainersManager.java:188)
+  [5] com.ljf.greatplan.general.tools.pluginsTools.SubContainersManager.mountSubContainer(SubContainersManager.java:109)
+  [6] jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+  [7] java.lang.reflect.Method.invoke(Method.java:580)
+  [8] org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:360)
+  [9] org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:196)
+========================================================
+
+================= 2025-12-22T08:54:18.443247300 =================
+错误类型：java.lang.IllegalStateException
+错误消息：Ambiguous mapping. Cannot map 'com.ljf.greatplan.docking.plugins.aiSecretary.ChatController@6d8aa0e' method 
+com.ljf.greatplan.docking.plugins.aiSecretary.ChatController#chat(String)
+to {POST [/api/chat]}: There is already 'com.ljf.greatplan.docking.plugins.aiSecretary.ChatController@286e12db' bean method
+com.ljf.greatplan.docking.plugins.aiSecretary.ChatController#chat(String) mapped.
+位置：org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry.validateMethodMapping (AbstractHandlerMethodMapping.java:676)
+调用链：
+  [0] org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry.validateMethodMapping(AbstractHandlerMethodMapping.java:676)
+  [1] org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry.register(AbstractHandlerMethodMapping.java:637)
+  [2] org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.registerMapping(AbstractHandlerMethodMapping.java:188)
+  [3] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping.registerMapping(RequestMappingHandlerMapping.java:488)
+  [4] com.ljf.greatplan.general.tools.pluginsTools.SubContainersManager.RegisterControllerMap(SubContainersManager.java:188)
+  [5] com.ljf.greatplan.general.tools.pluginsTools.SubContainersManager.mountSubContainer(SubContainersManager.java:109)
+  [6] jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+  [7] java.lang.reflect.Method.invoke(Method.java:580)
+  [8] org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:360)
+  [9] org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:196)
+========================================================
+
+================= 2025-12-22T08:54:30.074551200 =================
+错误类型：java.lang.IllegalStateException
+错误消息：Ambiguous mapping. Cannot map 'com.ljf.greatplan.docking.plugins.aiSecretary.ChatController@1bd2fc2c' method 
+com.ljf.greatplan.docking.plugins.aiSecretary.ChatController#chat(String)
+to {POST [/api/chat]}: There is already 'com.ljf.greatplan.docking.plugins.aiSecretary.ChatController@2e48e4ca' bean method
+com.ljf.greatplan.docking.plugins.aiSecretary.ChatController#chat(String) mapped.
+位置：org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry.validateMethodMapping (AbstractHandlerMethodMapping.java:676)
+调用链：
+  [0] org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry.validateMethodMapping(AbstractHandlerMethodMapping.java:676)
+  [1] org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry.register(AbstractHandlerMethodMapping.java:637)
+  [2] org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.registerMapping(AbstractHandlerMethodMapping.java:188)
+  [3] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping.registerMapping(RequestMappingHandlerMapping.java:488)
+  [4] com.ljf.greatplan.general.tools.pluginsTools.SubContainersManager.RegisterControllerMap(SubContainersManager.java:188)
+  [5] com.ljf.greatplan.general.tools.pluginsTools.SubContainersManager.mountSubContainer(SubContainersManager.java:109)
+  [6] jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+  [7] java.lang.reflect.Method.invoke(Method.java:580)
+  [8] org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:360)
+  [9] org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:196)
+========================================================
+
+================= 2025-12-22T08:55:08.178679 =================
+错误类型：java.lang.IllegalStateException
+错误消息：Ambiguous mapping. Cannot map 'com.ljf.greatplan.docking.plugins.aiSecretary.ChatController@5285c503' method 
+com.ljf.greatplan.docking.plugins.aiSecretary.ChatController#chat(String)
+to {POST [/api/chat]}: There is already 'com.ljf.greatplan.docking.plugins.aiSecretary.ChatController@39f39a11' bean method
+com.ljf.greatplan.docking.plugins.aiSecretary.ChatController#chat(String) mapped.
+位置：org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry.validateMethodMapping (AbstractHandlerMethodMapping.java:676)
+调用链：
+  [0] org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry.validateMethodMapping(AbstractHandlerMethodMapping.java:676)
+  [1] org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry.register(AbstractHandlerMethodMapping.java:637)
+  [2] org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.registerMapping(AbstractHandlerMethodMapping.java:188)
+  [3] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping.registerMapping(RequestMappingHandlerMapping.java:488)
+  [4] com.ljf.greatplan.general.tools.pluginsTools.SubContainersManager.RegisterControllerMap(SubContainersManager.java:188)
+  [5] com.ljf.greatplan.general.tools.pluginsTools.SubContainersManager.mountSubContainer(SubContainersManager.java:109)
+  [6] jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+  [7] java.lang.reflect.Method.invoke(Method.java:580)
+  [8] org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:360)
+  [9] org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:196)
+========================================================
+
+================= 2025-12-22T08:55:23.718855600 =================
+错误类型：java.lang.IllegalStateException
+错误消息：Ambiguous mapping. Cannot map 'com.ljf.greatplan.docking.plugins.aiSecretary.ChatController@16380cf1' method 
+com.ljf.greatplan.docking.plugins.aiSecretary.ChatController#chat(String)
+to {POST [/api/chat]}: There is already 'com.ljf.greatplan.docking.plugins.aiSecretary.ChatController@229039ac' bean method
+com.ljf.greatplan.docking.plugins.aiSecretary.ChatController#chat(String) mapped.
+位置：org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry.validateMethodMapping (AbstractHandlerMethodMapping.java:676)
+调用链：
+  [0] org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry.validateMethodMapping(AbstractHandlerMethodMapping.java:676)
+  [1] org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry.register(AbstractHandlerMethodMapping.java:637)
+  [2] org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.registerMapping(AbstractHandlerMethodMapping.java:188)
+  [3] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping.registerMapping(RequestMappingHandlerMapping.java:488)
+  [4] com.ljf.greatplan.general.tools.pluginsTools.SubContainersManager.RegisterControllerMap(SubContainersManager.java:188)
+  [5] com.ljf.greatplan.general.tools.pluginsTools.SubContainersManager.mountSubContainer(SubContainersManager.java:109)
+  [6] jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+  [7] java.lang.reflect.Method.invoke(Method.java:580)
+  [8] org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:360)
+  [9] org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:196)
+========================================================
+
+================= 2025-12-22T08:55:52.111430500 =================
+错误类型：java.lang.IllegalStateException
+错误消息：Ambiguous mapping. Cannot map 'com.ljf.greatplan.docking.plugins.aiSecretary.ChatController@424393a6' method 
+com.ljf.greatplan.docking.plugins.aiSecretary.ChatController#chat(String)
+to {POST [/api/chat]}: There is already 'com.ljf.greatplan.docking.plugins.aiSecretary.ChatController@296b3a4e' bean method
+com.ljf.greatplan.docking.plugins.aiSecretary.ChatController#chat(String) mapped.
+位置：org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry.validateMethodMapping (AbstractHandlerMethodMapping.java:676)
+调用链：
+  [0] org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry.validateMethodMapping(AbstractHandlerMethodMapping.java:676)
+  [1] org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry.register(AbstractHandlerMethodMapping.java:637)
+  [2] org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.registerMapping(AbstractHandlerMethodMapping.java:188)
+  [3] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping.registerMapping(RequestMappingHandlerMapping.java:488)
+  [4] com.ljf.greatplan.general.tools.pluginsTools.SubContainersManager.RegisterControllerMap(SubContainersManager.java:188)
+  [5] com.ljf.greatplan.general.tools.pluginsTools.SubContainersManager.mountSubContainer(SubContainersManager.java:109)
+  [6] jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+  [7] java.lang.reflect.Method.invoke(Method.java:580)
+  [8] org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:360)
+  [9] org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:196)
+========================================================
+
+================= 2025-12-22T08:56:15.583862700 =================
+错误类型：java.lang.IllegalStateException
+错误消息：Ambiguous mapping. Cannot map 'com.ljf.greatplan.docking.plugins.aiSecretary.ChatController@62c52f5a' method 
+com.ljf.greatplan.docking.plugins.aiSecretary.ChatController#chat(String)
+to {POST [/api/chat]}: There is already 'com.ljf.greatplan.docking.plugins.aiSecretary.ChatController@5e147b1' bean method
+com.ljf.greatplan.docking.plugins.aiSecretary.ChatController#chat(String) mapped.
+位置：org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry.validateMethodMapping (AbstractHandlerMethodMapping.java:676)
+调用链：
+  [0] org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry.validateMethodMapping(AbstractHandlerMethodMapping.java:676)
+  [1] org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry.register(AbstractHandlerMethodMapping.java:637)
+  [2] org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.registerMapping(AbstractHandlerMethodMapping.java:188)
+  [3] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping.registerMapping(RequestMappingHandlerMapping.java:488)
+  [4] com.ljf.greatplan.general.tools.pluginsTools.SubContainersManager.RegisterControllerMap(SubContainersManager.java:188)
+  [5] com.ljf.greatplan.general.tools.pluginsTools.SubContainersManager.mountSubContainer(SubContainersManager.java:109)
+  [6] jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+  [7] java.lang.reflect.Method.invoke(Method.java:580)
+  [8] org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:360)
+  [9] org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:196)
+========================================================
+
+================= 2025-12-22T08:56:20.353320 =================
+错误类型：java.lang.IllegalStateException
+错误消息：Ambiguous mapping. Cannot map 'com.ljf.greatplan.docking.plugins.aiSecretary.ChatController@3a4a3aec' method 
+com.ljf.greatplan.docking.plugins.aiSecretary.ChatController#chat(String)
+to {POST [/api/chat]}: There is already 'com.ljf.greatplan.docking.plugins.aiSecretary.ChatController@1cd7aed0' bean method
+com.ljf.greatplan.docking.plugins.aiSecretary.ChatController#chat(String) mapped.
+位置：org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry.validateMethodMapping (AbstractHandlerMethodMapping.java:676)
+调用链：
+  [0] org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry.validateMethodMapping(AbstractHandlerMethodMapping.java:676)
+  [1] org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry.register(AbstractHandlerMethodMapping.java:637)
+  [2] org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.registerMapping(AbstractHandlerMethodMapping.java:188)
+  [3] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping.registerMapping(RequestMappingHandlerMapping.java:488)
+  [4] com.ljf.greatplan.general.tools.pluginsTools.SubContainersManager.RegisterControllerMap(SubContainersManager.java:188)
+  [5] com.ljf.greatplan.general.tools.pluginsTools.SubContainersManager.mountSubContainer(SubContainersManager.java:109)
+  [6] jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+  [7] java.lang.reflect.Method.invoke(Method.java:580)
+  [8] org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:360)
+  [9] org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:196)
+========================================================
+
+================= 2025-12-22T08:59:06.978030100 =================
+错误类型：java.lang.IllegalStateException
+错误消息：Ambiguous mapping. Cannot map 'com.ljf.greatplan.docking.plugins.aiSecretary.ChatController@330de79' method 
+com.ljf.greatplan.docking.plugins.aiSecretary.ChatController#chat(String)
+to {POST [/api/chat]}: There is already 'com.ljf.greatplan.docking.plugins.aiSecretary.ChatController@3a033ff0' bean method
+com.ljf.greatplan.docking.plugins.aiSecretary.ChatController#chat(String) mapped.
+位置：org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry.validateMethodMapping (AbstractHandlerMethodMapping.java:676)
+调用链：
+  [0] org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry.validateMethodMapping(AbstractHandlerMethodMapping.java:676)
+  [1] org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry.register(AbstractHandlerMethodMapping.java:637)
+  [2] org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.registerMapping(AbstractHandlerMethodMapping.java:188)
+  [3] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping.registerMapping(RequestMappingHandlerMapping.java:488)
+  [4] com.ljf.greatplan.general.tools.pluginsTools.SubContainersManager.RegisterControllerMap(SubContainersManager.java:188)
+  [5] com.ljf.greatplan.general.tools.pluginsTools.SubContainersManager.mountSubContainer(SubContainersManager.java:109)
+  [6] jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+  [7] java.lang.reflect.Method.invoke(Method.java:580)
+  [8] org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:360)
+  [9] org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:196)
+========================================================
+
+================= 2025-12-22T08:59:07.920004100 =================
+错误类型：java.lang.IllegalStateException
+错误消息：Ambiguous mapping. Cannot map 'com.ljf.greatplan.docking.plugins.aiSecretary.ChatController@c96858e' method 
+com.ljf.greatplan.docking.plugins.aiSecretary.ChatController#chat(String)
+to {POST [/api/chat]}: There is already 'com.ljf.greatplan.docking.plugins.aiSecretary.ChatController@7329d5a7' bean method
+com.ljf.greatplan.docking.plugins.aiSecretary.ChatController#chat(String) mapped.
+位置：org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry.validateMethodMapping (AbstractHandlerMethodMapping.java:676)
+调用链：
+  [0] org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry.validateMethodMapping(AbstractHandlerMethodMapping.java:676)
+  [1] org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry.register(AbstractHandlerMethodMapping.java:637)
+  [2] org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.registerMapping(AbstractHandlerMethodMapping.java:188)
+  [3] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping.registerMapping(RequestMappingHandlerMapping.java:488)
+  [4] com.ljf.greatplan.general.tools.pluginsTools.SubContainersManager.RegisterControllerMap(SubContainersManager.java:188)
+  [5] com.ljf.greatplan.general.tools.pluginsTools.SubContainersManager.mountSubContainer(SubContainersManager.java:109)
+  [6] jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+  [7] java.lang.reflect.Method.invoke(Method.java:580)
+  [8] org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:360)
+  [9] org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:196)
+========================================================
+
+================= 2025-12-22T09:02:12.388788600 =================
+错误类型：java.lang.IllegalStateException
+错误消息：Ambiguous mapping. Cannot map 'com.ljf.greatplan.docking.plugins.aiSecretary.ChatController@4bab8a38' method 
+com.ljf.greatplan.docking.plugins.aiSecretary.ChatController#chat(String)
+to {POST [/api/chat]}: There is already 'com.ljf.greatplan.docking.plugins.aiSecretary.ChatController@49b0e33a' bean method
+com.ljf.greatplan.docking.plugins.aiSecretary.ChatController#chat(String) mapped.
+位置：org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry.validateMethodMapping (AbstractHandlerMethodMapping.java:676)
+调用链：
+  [0] org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry.validateMethodMapping(AbstractHandlerMethodMapping.java:676)
+  [1] org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry.register(AbstractHandlerMethodMapping.java:637)
+  [2] org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.registerMapping(AbstractHandlerMethodMapping.java:188)
+  [3] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping.registerMapping(RequestMappingHandlerMapping.java:488)
+  [4] com.ljf.greatplan.general.tools.pluginsTools.SubContainersManager.RegisterControllerMap(SubContainersManager.java:188)
+  [5] com.ljf.greatplan.general.tools.pluginsTools.SubContainersManager.mountSubContainer(SubContainersManager.java:109)
+  [6] jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+  [7] java.lang.reflect.Method.invoke(Method.java:580)
+  [8] org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:360)
+  [9] org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:196)
+========================================================
+
+================= 2025-12-22T09:03:51.757857600 =================
+错误类型：java.lang.IllegalStateException
+错误消息：Ambiguous mapping. Cannot map 'com.ljf.greatplan.docking.plugins.aiSecretary.ChatController@19224d04' method 
+com.ljf.greatplan.docking.plugins.aiSecretary.ChatController#chat(String)
+to {POST [/api/chat]}: There is already 'com.ljf.greatplan.docking.plugins.aiSecretary.ChatController@1aef02c1' bean method
+com.ljf.greatplan.docking.plugins.aiSecretary.ChatController#chat(String) mapped.
+位置：org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry.validateMethodMapping (AbstractHandlerMethodMapping.java:676)
+调用链：
+  [0] org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry.validateMethodMapping(AbstractHandlerMethodMapping.java:676)
+  [1] org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry.register(AbstractHandlerMethodMapping.java:637)
+  [2] org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.registerMapping(AbstractHandlerMethodMapping.java:188)
+  [3] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping.registerMapping(RequestMappingHandlerMapping.java:488)
+  [4] com.ljf.greatplan.general.tools.pluginsTools.SubContainersManager.RegisterControllerMap(SubContainersManager.java:188)
+  [5] com.ljf.greatplan.general.tools.pluginsTools.SubContainersManager.mountSubContainer(SubContainersManager.java:109)
+  [6] jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+  [7] java.lang.reflect.Method.invoke(Method.java:580)
+  [8] org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:360)
+  [9] org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:196)
+========================================================
+
+================= 2025-12-22T09:04:06.548622200 =================
+错误类型：java.lang.IllegalStateException
+错误消息：Ambiguous mapping. Cannot map 'com.ljf.greatplan.docking.plugins.aiSecretary.ChatController@536e008a' method 
+com.ljf.greatplan.docking.plugins.aiSecretary.ChatController#chat(String)
+to {POST [/api/chat]}: There is already 'com.ljf.greatplan.docking.plugins.aiSecretary.ChatController@712cb2d8' bean method
+com.ljf.greatplan.docking.plugins.aiSecretary.ChatController#chat(String) mapped.
+位置：org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry.validateMethodMapping (AbstractHandlerMethodMapping.java:676)
+调用链：
+  [0] org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry.validateMethodMapping(AbstractHandlerMethodMapping.java:676)
+  [1] org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry.register(AbstractHandlerMethodMapping.java:637)
+  [2] org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.registerMapping(AbstractHandlerMethodMapping.java:188)
+  [3] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping.registerMapping(RequestMappingHandlerMapping.java:488)
+  [4] com.ljf.greatplan.general.tools.pluginsTools.SubContainersManager.RegisterControllerMap(SubContainersManager.java:188)
+  [5] com.ljf.greatplan.general.tools.pluginsTools.SubContainersManager.mountSubContainer(SubContainersManager.java:109)
+  [6] jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+  [7] java.lang.reflect.Method.invoke(Method.java:580)
+  [8] org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:360)
+  [9] org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:196)
+========================================================
+
+================= 2025-12-22T09:04:22.130364 =================
+错误类型：java.lang.IllegalStateException
+错误消息：Ambiguous mapping. Cannot map 'com.ljf.greatplan.docking.plugins.aiSecretary.ChatController@34bb40e1' method 
+com.ljf.greatplan.docking.plugins.aiSecretary.ChatController#chat(String)
+to {POST [/api/chat]}: There is already 'com.ljf.greatplan.docking.plugins.aiSecretary.ChatController@5e2b286e' bean method
+com.ljf.greatplan.docking.plugins.aiSecretary.ChatController#chat(String) mapped.
+位置：org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry.validateMethodMapping (AbstractHandlerMethodMapping.java:676)
+调用链：
+  [0] org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry.validateMethodMapping(AbstractHandlerMethodMapping.java:676)
+  [1] org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry.register(AbstractHandlerMethodMapping.java:637)
+  [2] org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.registerMapping(AbstractHandlerMethodMapping.java:188)
+  [3] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping.registerMapping(RequestMappingHandlerMapping.java:488)
+  [4] com.ljf.greatplan.general.tools.pluginsTools.SubContainersManager.RegisterControllerMap(SubContainersManager.java:188)
+  [5] com.ljf.greatplan.general.tools.pluginsTools.SubContainersManager.mountSubContainer(SubContainersManager.java:109)
+  [6] jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+  [7] java.lang.reflect.Method.invoke(Method.java:580)
+  [8] org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:360)
+  [9] org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:196)
+========================================================
+
+================= 2025-12-22T09:04:34.851626 =================
+错误类型：java.lang.IllegalStateException
+错误消息：Ambiguous mapping. Cannot map 'com.ljf.greatplan.docking.plugins.aiSecretary.ChatController@3535c28c' method 
+com.ljf.greatplan.docking.plugins.aiSecretary.ChatController#chat(String)
+to {POST [/api/chat]}: There is already 'com.ljf.greatplan.docking.plugins.aiSecretary.ChatController@4fb4524a' bean method
+com.ljf.greatplan.docking.plugins.aiSecretary.ChatController#chat(String) mapped.
+位置：org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry.validateMethodMapping (AbstractHandlerMethodMapping.java:676)
+调用链：
+  [0] org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry.validateMethodMapping(AbstractHandlerMethodMapping.java:676)
+  [1] org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry.register(AbstractHandlerMethodMapping.java:637)
+  [2] org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.registerMapping(AbstractHandlerMethodMapping.java:188)
+  [3] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping.registerMapping(RequestMappingHandlerMapping.java:488)
+  [4] com.ljf.greatplan.general.tools.pluginsTools.SubContainersManager.RegisterControllerMap(SubContainersManager.java:188)
+  [5] com.ljf.greatplan.general.tools.pluginsTools.SubContainersManager.mountSubContainer(SubContainersManager.java:109)
+  [6] jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+  [7] java.lang.reflect.Method.invoke(Method.java:580)
+  [8] org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:360)
+  [9] org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:196)
+========================================================
+
+================= 2025-12-22T09:04:36.853904500 =================
+错误类型：java.lang.IllegalStateException
+错误消息：Ambiguous mapping. Cannot map 'com.ljf.greatplan.docking.plugins.aiSecretary.ChatController@70a49198' method 
+com.ljf.greatplan.docking.plugins.aiSecretary.ChatController#chat(String)
+to {POST [/api/chat]}: There is already 'com.ljf.greatplan.docking.plugins.aiSecretary.ChatController@79339cea' bean method
+com.ljf.greatplan.docking.plugins.aiSecretary.ChatController#chat(String) mapped.
+位置：org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry.validateMethodMapping (AbstractHandlerMethodMapping.java:676)
+调用链：
+  [0] org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry.validateMethodMapping(AbstractHandlerMethodMapping.java:676)
+  [1] org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry.register(AbstractHandlerMethodMapping.java:637)
+  [2] org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.registerMapping(AbstractHandlerMethodMapping.java:188)
+  [3] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping.registerMapping(RequestMappingHandlerMapping.java:488)
+  [4] com.ljf.greatplan.general.tools.pluginsTools.SubContainersManager.RegisterControllerMap(SubContainersManager.java:188)
+  [5] com.ljf.greatplan.general.tools.pluginsTools.SubContainersManager.mountSubContainer(SubContainersManager.java:109)
+  [6] jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+  [7] java.lang.reflect.Method.invoke(Method.java:580)
+  [8] org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:360)
+  [9] org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:196)
+========================================================
+
+================= 2025-12-22T09:04:37.781531 =================
+错误类型：java.lang.IllegalStateException
+错误消息：Ambiguous mapping. Cannot map 'com.ljf.greatplan.docking.plugins.aiSecretary.ChatController@6f747947' method 
+com.ljf.greatplan.docking.plugins.aiSecretary.ChatController#chat(String)
+to {POST [/api/chat]}: There is already 'com.ljf.greatplan.docking.plugins.aiSecretary.ChatController@657c98bd' bean method
+com.ljf.greatplan.docking.plugins.aiSecretary.ChatController#chat(String) mapped.
+位置：org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry.validateMethodMapping (AbstractHandlerMethodMapping.java:676)
+调用链：
+  [0] org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry.validateMethodMapping(AbstractHandlerMethodMapping.java:676)
+  [1] org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry.register(AbstractHandlerMethodMapping.java:637)
+  [2] org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.registerMapping(AbstractHandlerMethodMapping.java:188)
+  [3] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping.registerMapping(RequestMappingHandlerMapping.java:488)
+  [4] com.ljf.greatplan.general.tools.pluginsTools.SubContainersManager.RegisterControllerMap(SubContainersManager.java:188)
+  [5] com.ljf.greatplan.general.tools.pluginsTools.SubContainersManager.mountSubContainer(SubContainersManager.java:109)
+  [6] jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+  [7] java.lang.reflect.Method.invoke(Method.java:580)
+  [8] org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:360)
+  [9] org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:196)
+========================================================
+
+================= 2025-12-22T09:04:52.532817200 =================
+错误类型：java.lang.IllegalStateException
+错误消息：Ambiguous mapping. Cannot map 'com.ljf.greatplan.docking.plugins.aiSecretary.ChatController@2bba9ed2' method 
+com.ljf.greatplan.docking.plugins.aiSecretary.ChatController#chat(String)
+to {POST [/api/chat]}: There is already 'com.ljf.greatplan.docking.plugins.aiSecretary.ChatController@65aafcfc' bean method
+com.ljf.greatplan.docking.plugins.aiSecretary.ChatController#chat(String) mapped.
+位置：org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry.validateMethodMapping (AbstractHandlerMethodMapping.java:676)
+调用链：
+  [0] org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry.validateMethodMapping(AbstractHandlerMethodMapping.java:676)
+  [1] org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry.register(AbstractHandlerMethodMapping.java:637)
+  [2] org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.registerMapping(AbstractHandlerMethodMapping.java:188)
+  [3] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping.registerMapping(RequestMappingHandlerMapping.java:488)
+  [4] com.ljf.greatplan.general.tools.pluginsTools.SubContainersManager.RegisterControllerMap(SubContainersManager.java:188)
+  [5] com.ljf.greatplan.general.tools.pluginsTools.SubContainersManager.mountSubContainer(SubContainersManager.java:109)
+  [6] jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+  [7] java.lang.reflect.Method.invoke(Method.java:580)
+  [8] org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:360)
+  [9] org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:196)
+========================================================
+
+================= 2025-12-22T09:05:06.241591800 =================
+错误类型：java.lang.IllegalStateException
+错误消息：Ambiguous mapping. Cannot map 'com.ljf.greatplan.docking.plugins.aiSecretary.ChatController@43c24dc8' method 
+com.ljf.greatplan.docking.plugins.aiSecretary.ChatController#chat(String)
+to {POST [/api/chat]}: There is already 'chatController' bean method
+com.ljf.greatplan.docking.plugins.aiSecretary.ChatController#chat(String) mapped.
+位置：org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry.validateMethodMapping (AbstractHandlerMethodMapping.java:676)
+调用链：
+  [0] org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry.validateMethodMapping(AbstractHandlerMethodMapping.java:676)
+  [1] org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry.register(AbstractHandlerMethodMapping.java:637)
+  [2] org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.registerMapping(AbstractHandlerMethodMapping.java:188)
+  [3] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping.registerMapping(RequestMappingHandlerMapping.java:488)
+  [4] com.ljf.greatplan.general.tools.pluginsTools.SubContainersManager.RegisterControllerMap(SubContainersManager.java:188)
+  [5] com.ljf.greatplan.general.tools.pluginsTools.SubContainersManager.mountSubContainer(SubContainersManager.java:109)
+  [6] jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+  [7] java.lang.reflect.Method.invoke(Method.java:580)
+  [8] org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:360)
+  [9] org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:196)
+========================================================
+
+================= 2025-12-22T09:05:06.241591800 =================
+错误类型：java.lang.IllegalStateException
+错误消息：Ambiguous mapping. Cannot map 'com.ljf.greatplan.docking.plugins.aiSecretary.ChatController@4e4a7fb0' method 
+com.ljf.greatplan.docking.plugins.aiSecretary.ChatController#chat(String)
+to {POST [/api/chat]}: There is already 'chatController' bean method
+com.ljf.greatplan.docking.plugins.aiSecretary.ChatController#chat(String) mapped.
+位置：org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry.validateMethodMapping (AbstractHandlerMethodMapping.java:676)
+调用链：
+  [0] org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry.validateMethodMapping(AbstractHandlerMethodMapping.java:676)
+  [1] org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry.register(AbstractHandlerMethodMapping.java:637)
+  [2] org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.registerMapping(AbstractHandlerMethodMapping.java:188)
+  [3] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping.registerMapping(RequestMappingHandlerMapping.java:488)
+  [4] com.ljf.greatplan.general.tools.pluginsTools.SubContainersManager.RegisterControllerMap(SubContainersManager.java:188)
+  [5] com.ljf.greatplan.general.tools.pluginsTools.SubContainersManager.mountSubContainer(SubContainersManager.java:109)
+  [6] jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+  [7] java.lang.reflect.Method.invoke(Method.java:580)
+  [8] org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:360)
+  [9] org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:196)
+========================================================
+
+================= 2025-12-22T09:05:07.148936700 =================
+错误类型：java.lang.IllegalStateException
+错误消息：Ambiguous mapping. Cannot map 'com.ljf.greatplan.docking.plugins.aiSecretary.ChatController@2dc751a9' method 
+com.ljf.greatplan.docking.plugins.aiSecretary.ChatController#chat(String)
+to {POST [/api/chat]}: There is already 'chatController' bean method
+com.ljf.greatplan.docking.plugins.aiSecretary.ChatController#chat(String) mapped.
+位置：org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry.validateMethodMapping (AbstractHandlerMethodMapping.java:676)
+调用链：
+  [0] org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry.validateMethodMapping(AbstractHandlerMethodMapping.java:676)
+  [1] org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry.register(AbstractHandlerMethodMapping.java:637)
+  [2] org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.registerMapping(AbstractHandlerMethodMapping.java:188)
+  [3] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping.registerMapping(RequestMappingHandlerMapping.java:488)
+  [4] com.ljf.greatplan.general.tools.pluginsTools.SubContainersManager.RegisterControllerMap(SubContainersManager.java:188)
+  [5] com.ljf.greatplan.general.tools.pluginsTools.SubContainersManager.mountSubContainer(SubContainersManager.java:109)
+  [6] jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+  [7] java.lang.reflect.Method.invoke(Method.java:580)
+  [8] org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:360)
+  [9] org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:196)
+========================================================
+
+================= 2025-12-22T09:05:20.996064600 =================
+错误类型：java.lang.IllegalStateException
+错误消息：Ambiguous mapping. Cannot map 'com.ljf.greatplan.docking.plugins.aiSecretary.ChatController@796dba22' method 
+com.ljf.greatplan.docking.plugins.aiSecretary.ChatController#chat(String)
+to {POST [/api/chat]}: There is already 'chatController' bean method
+com.ljf.greatplan.docking.plugins.aiSecretary.ChatController#chat(String) mapped.
+位置：org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry.validateMethodMapping (AbstractHandlerMethodMapping.java:676)
+调用链：
+  [0] org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry.validateMethodMapping(AbstractHandlerMethodMapping.java:676)
+  [1] org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry.register(AbstractHandlerMethodMapping.java:637)
+  [2] org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.registerMapping(AbstractHandlerMethodMapping.java:188)
+  [3] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping.registerMapping(RequestMappingHandlerMapping.java:488)
+  [4] com.ljf.greatplan.general.tools.pluginsTools.SubContainersManager.RegisterControllerMap(SubContainersManager.java:188)
+  [5] com.ljf.greatplan.general.tools.pluginsTools.SubContainersManager.mountSubContainer(SubContainersManager.java:109)
+  [6] jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+  [7] java.lang.reflect.Method.invoke(Method.java:580)
+  [8] org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:360)
+  [9] org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:196)
+========================================================
+
+================= 2025-12-22T09:05:20.998651500 =================
+错误类型：java.lang.IllegalStateException
+错误消息：Ambiguous mapping. Cannot map 'com.ljf.greatplan.docking.plugins.aiSecretary.ChatController@20619045' method 
+com.ljf.greatplan.docking.plugins.aiSecretary.ChatController#chat(String)
+to {POST [/api/chat]}: There is already 'chatController' bean method
+com.ljf.greatplan.docking.plugins.aiSecretary.ChatController#chat(String) mapped.
+位置：org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry.validateMethodMapping (AbstractHandlerMethodMapping.java:676)
+调用链：
+  [0] org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry.validateMethodMapping(AbstractHandlerMethodMapping.java:676)
+  [1] org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry.register(AbstractHandlerMethodMapping.java:637)
+  [2] org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.registerMapping(AbstractHandlerMethodMapping.java:188)
+  [3] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping.registerMapping(RequestMappingHandlerMapping.java:488)
+  [4] com.ljf.greatplan.general.tools.pluginsTools.SubContainersManager.RegisterControllerMap(SubContainersManager.java:188)
+  [5] com.ljf.greatplan.general.tools.pluginsTools.SubContainersManager.mountSubContainer(SubContainersManager.java:109)
+  [6] jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+  [7] java.lang.reflect.Method.invoke(Method.java:580)
+  [8] org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:360)
+  [9] org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:196)
+========================================================
+
+================= 2025-12-22T09:05:24.591419700 =================
+错误类型：java.lang.IllegalStateException
+错误消息：Ambiguous mapping. Cannot map 'com.ljf.greatplan.docking.plugins.aiSecretary.ChatController@4b35ac09' method 
+com.ljf.greatplan.docking.plugins.aiSecretary.ChatController#chat(String)
+to {POST [/api/chat]}: There is already 'chatController' bean method
+com.ljf.greatplan.docking.plugins.aiSecretary.ChatController#chat(String) mapped.
+位置：org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry.validateMethodMapping (AbstractHandlerMethodMapping.java:676)
+调用链：
+  [0] org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry.validateMethodMapping(AbstractHandlerMethodMapping.java:676)
+  [1] org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry.register(AbstractHandlerMethodMapping.java:637)
+  [2] org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.registerMapping(AbstractHandlerMethodMapping.java:188)
+  [3] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping.registerMapping(RequestMappingHandlerMapping.java:488)
+  [4] com.ljf.greatplan.general.tools.pluginsTools.SubContainersManager.RegisterControllerMap(SubContainersManager.java:188)
+  [5] com.ljf.greatplan.general.tools.pluginsTools.SubContainersManager.mountSubContainer(SubContainersManager.java:109)
+  [6] jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+  [7] java.lang.reflect.Method.invoke(Method.java:580)
+  [8] org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:360)
+  [9] org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:196)
+========================================================
+
+================= 2025-12-22T09:05:24.597952100 =================
+错误类型：java.lang.IllegalStateException
+错误消息：Ambiguous mapping. Cannot map 'com.ljf.greatplan.docking.plugins.aiSecretary.ChatController@432dbcb0' method 
+com.ljf.greatplan.docking.plugins.aiSecretary.ChatController#chat(String)
+to {POST [/api/chat]}: There is already 'chatController' bean method
+com.ljf.greatplan.docking.plugins.aiSecretary.ChatController#chat(String) mapped.
+位置：org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry.validateMethodMapping (AbstractHandlerMethodMapping.java:676)
+调用链：
+  [0] org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry.validateMethodMapping(AbstractHandlerMethodMapping.java:676)
+  [1] org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry.register(AbstractHandlerMethodMapping.java:637)
+  [2] org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.registerMapping(AbstractHandlerMethodMapping.java:188)
+  [3] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping.registerMapping(RequestMappingHandlerMapping.java:488)
+  [4] com.ljf.greatplan.general.tools.pluginsTools.SubContainersManager.RegisterControllerMap(SubContainersManager.java:188)
+  [5] com.ljf.greatplan.general.tools.pluginsTools.SubContainersManager.mountSubContainer(SubContainersManager.java:109)
+  [6] jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+  [7] java.lang.reflect.Method.invoke(Method.java:580)
+  [8] org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:360)
+  [9] org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:196)
+========================================================
+
+================= 2025-12-22T09:05:35.745310 =================
+错误类型：java.lang.IllegalStateException
+错误消息：Ambiguous mapping. Cannot map 'com.ljf.greatplan.docking.plugins.aiSecretary.ChatController@243c06e0' method 
+com.ljf.greatplan.docking.plugins.aiSecretary.ChatController#chat(String)
+to {POST [/api/chat]}: There is already 'chatController' bean method
+com.ljf.greatplan.docking.plugins.aiSecretary.ChatController#chat(String) mapped.
+位置：org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry.validateMethodMapping (AbstractHandlerMethodMapping.java:676)
+调用链：
+  [0] org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry.validateMethodMapping(AbstractHandlerMethodMapping.java:676)
+  [1] org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry.register(AbstractHandlerMethodMapping.java:637)
+  [2] org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.registerMapping(AbstractHandlerMethodMapping.java:188)
+  [3] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping.registerMapping(RequestMappingHandlerMapping.java:488)
+  [4] com.ljf.greatplan.general.tools.pluginsTools.SubContainersManager.RegisterControllerMap(SubContainersManager.java:188)
+  [5] com.ljf.greatplan.general.tools.pluginsTools.SubContainersManager.mountSubContainer(SubContainersManager.java:109)
+  [6] jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+  [7] java.lang.reflect.Method.invoke(Method.java:580)
+  [8] org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:360)
+  [9] org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:196)
+========================================================
+
+================= 2025-12-22T09:05:35.745310 =================
+错误类型：java.lang.IllegalStateException
+错误消息：Ambiguous mapping. Cannot map 'com.ljf.greatplan.docking.plugins.aiSecretary.ChatController@7935a026' method 
+com.ljf.greatplan.docking.plugins.aiSecretary.ChatController#chat(String)
+to {POST [/api/chat]}: There is already 'chatController' bean method
+com.ljf.greatplan.docking.plugins.aiSecretary.ChatController#chat(String) mapped.
+位置：org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry.validateMethodMapping (AbstractHandlerMethodMapping.java:676)
+调用链：
+  [0] org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry.validateMethodMapping(AbstractHandlerMethodMapping.java:676)
+  [1] org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry.register(AbstractHandlerMethodMapping.java:637)
+  [2] org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.registerMapping(AbstractHandlerMethodMapping.java:188)
+  [3] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping.registerMapping(RequestMappingHandlerMapping.java:488)
+  [4] com.ljf.greatplan.general.tools.pluginsTools.SubContainersManager.RegisterControllerMap(SubContainersManager.java:188)
+  [5] com.ljf.greatplan.general.tools.pluginsTools.SubContainersManager.mountSubContainer(SubContainersManager.java:109)
+  [6] jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+  [7] java.lang.reflect.Method.invoke(Method.java:580)
+  [8] org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:360)
+  [9] org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:196)
+========================================================
+
+================= 2025-12-22T09:05:46.839829800 =================
+错误类型：org.springframework.ai.tool.execution.ToolExecutionException
+错误消息：null
+位置：org.springframework.ai.tool.method.MethodToolCallback.callMethod (MethodToolCallback.java:191)
+调用链：
+  [0] org.springframework.ai.tool.method.MethodToolCallback.callMethod(MethodToolCallback.java:191)
+  [1] org.springframework.ai.tool.method.MethodToolCallback.call(MethodToolCallback.java:112)
+  [2] org.springframework.ai.model.tool.DefaultToolCallingManager.lambda$executeToolCall$5(DefaultToolCallingManager.java:241)
+  [3] io.micrometer.observation.Observation.observe(Observation.java:564)
+  [4] org.springframework.ai.model.tool.DefaultToolCallingManager.executeToolCall(DefaultToolCallingManager.java:238)
+  [5] org.springframework.ai.model.tool.DefaultToolCallingManager.executeToolCalls(DefaultToolCallingManager.java:143)
+  [6] org.springframework.ai.openai.OpenAiChatModel.internalCall(OpenAiChatModel.java:245)
+  [7] org.springframework.ai.openai.OpenAiChatModel.call(OpenAiChatModel.java:182)
+  [8] org.springframework.ai.chat.client.advisor.ChatModelCallAdvisor.adviseCall(ChatModelCallAdvisor.java:56)
+  [9] org.springframework.ai.chat.client.advisor.DefaultAroundAdvisorChain.lambda$nextCall$1(DefaultAroundAdvisorChain.java:114)
+========================================================
+
+================= 2025-12-22T09:05:46.841584900 =================
+错误类型：org.springframework.ai.tool.execution.ToolExecutionException
+错误消息：null
+位置：org.springframework.ai.tool.method.MethodToolCallback.callMethod (MethodToolCallback.java:191)
+调用链：
+  [0] org.springframework.ai.tool.method.MethodToolCallback.callMethod(MethodToolCallback.java:191)
+  [1] org.springframework.ai.tool.method.MethodToolCallback.call(MethodToolCallback.java:112)
+  [2] org.springframework.ai.model.tool.DefaultToolCallingManager.lambda$executeToolCall$5(DefaultToolCallingManager.java:241)
+  [3] io.micrometer.observation.Observation.observe(Observation.java:564)
+  [4] org.springframework.ai.model.tool.DefaultToolCallingManager.executeToolCall(DefaultToolCallingManager.java:238)
+  [5] org.springframework.ai.model.tool.DefaultToolCallingManager.executeToolCalls(DefaultToolCallingManager.java:143)
+  [6] org.springframework.ai.openai.OpenAiChatModel.internalCall(OpenAiChatModel.java:245)
+  [7] org.springframework.ai.openai.OpenAiChatModel.call(OpenAiChatModel.java:182)
+  [8] org.springframework.ai.chat.client.advisor.ChatModelCallAdvisor.adviseCall(ChatModelCallAdvisor.java:56)
+  [9] org.springframework.ai.chat.client.advisor.DefaultAroundAdvisorChain.lambda$nextCall$1(DefaultAroundAdvisorChain.java:114)
+========================================================

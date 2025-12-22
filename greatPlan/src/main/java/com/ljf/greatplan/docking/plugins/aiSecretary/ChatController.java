@@ -55,7 +55,7 @@ public class ChatController extends BaseController {
      * @return AI返回
      */
     @PostMapping
-    public StandardViewResponseObject<String> chat(@RequestParam String str) {
+    public StandardViewResponseObject<String> chat(@RequestParam("str") String str) {
         log.info("__________试图进行一次AI对话的请求");
         // 首次推理
         StandardViewResponseObject<String> success = success(chat.startChat(str));

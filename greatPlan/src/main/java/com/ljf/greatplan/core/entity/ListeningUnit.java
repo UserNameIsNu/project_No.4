@@ -8,11 +8,15 @@
 package com.ljf.greatplan.core.entity;
 
 import com.ljf.greatplan.general.listener.fileSystemListener.FileSystemListener;
+import com.ljf.greatplan.general.listener.pluginsListener.PluginSourceListener;
+import com.ljf.greatplan.general.tools.pluginsTools.SubContainersManager;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.context.annotation.Scope;
 import org.springframework.stereotype.Component;
 
+import java.io.File;
 import java.io.IOException;
 import java.nio.file.*;
 import java.util.HashMap;
@@ -51,12 +55,30 @@ public class ListeningUnit extends Thread{
     private FileSystemListener fileSystemListener;
 
     /**
+     * 插件源码地址
+     */
+    @Value("${great-plan.plugin.source-dir}")
+    private String pluginSourceDir;
+
+    /**
+     * 子容器管理器
+     */
+    private final SubContainersManager subContainersManager;
+
+    /**
+     * 插件（源码）监听器
+     */
+    private final PluginSourceListener pluginSourceListener;
+
+    /**
      * 构造器
      * @param fileSystemListener 文件系统监听器
      */
     @Autowired
-    public ListeningUnit(FileSystemListener fileSystemListener) {
+    public ListeningUnit(FileSystemListener fileSystemListener, SubContainersManager subContainersManager, PluginSourceListener pluginSourceListener) {
         this.fileSystemListener = fileSystemListener;
+        this.subContainersManager = subContainersManager;
+        this.pluginSourceListener = pluginSourceListener;
     }
 
     /**
@@ -109,6 +131,20 @@ public class ListeningUnit extends Thread{
                                 StandardWatchEventKinds.ENTRY_DELETE,
                                 StandardWatchEventKinds.ENTRY_MODIFY);
                         keyMap.put(key, path);
+                    }
+
+                    // 若为AI插件的补充工具方法目录
+                    if(path.toAbsolutePath().toString().equals("D:\\planOfElectronicHamster\\9_GreatPlan\\4_第四次尝试（进行中）\\greatPlan\\src\\main\\java\\com\\ljf\\greatplan\\docking\\plugins\\aiSecretary\\toolMethodFromAI")) {
+                        // 强行卸载插件
+                        subContainersManager.unloadSubContainer("aiSecretary");
+                        // 创建路径对象
+                        File dir = new File(pluginSourceDir);
+                        File newPluginDir = new File(dir, "aiSecretary");
+                        // 重编译，强制刷新，让新加入的工具类也能被编译进来
+                        // 现在缺少专门面向单个文件的热编译逻辑，只能复用全量热编译
+                        // 毕设要截至了，一个丑陋的补丁
+                        // 史山就是这么堆出来的
+                        pluginSourceListener.registerPluginBeans(newPluginDir);
                     }
                 }
 

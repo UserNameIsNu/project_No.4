@@ -5,8 +5,9 @@
  *
  */
 
-package com.ljf.greatplan.docking.plugins.aiSecretary;
+package com.ljf.greatplan.docking.plugins.aiSecretary.toolMethodFromAI;
 
+import com.ljf.greatplan.docking.plugins.aiSecretary.Chat;
 import org.springframework.ai.tool.annotation.Tool;
 
 import java.util.ArrayList;

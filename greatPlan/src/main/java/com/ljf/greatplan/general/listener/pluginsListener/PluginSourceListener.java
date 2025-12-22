@@ -110,7 +110,7 @@ public class PluginSourceListener {
      * 会试图把所有的java做成Bean
      * @param pluginDir 存在需要注册Bean的目录
      */
-    private void registerPluginBeans(File pluginDir) {
+    public void registerPluginBeans(File pluginDir) {
         try {
             // 根据给定的地址，试图将这里面的所有玩意转成class对象
             List<Class<?>> classes = pluginCompiler.sourceHotCompiler(pluginDir);

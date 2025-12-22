@@ -17,8 +17,6 @@ import org.springframework.stereotype.Component;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
-import org.springframework.web.method.HandlerMethod;
-import org.springframework.web.servlet.HandlerAdapter;
 import org.springframework.web.servlet.mvc.method.RequestMappingInfo;
 import org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping;
 
@@ -145,39 +143,69 @@ public class SubContainersManager {
      * @param pluginName 插件名
      */
     public void RegisterControllerMap(Object controller, String pluginName) {
-        // 若Controller注册映射中没有这个插件，那么新建一个位置给它
-        // 否则不管，免得覆盖插件对应的controller
-        // 这里是备份映射表，主映射表在DispatcherServlet里面
         controllerRegisteredMappings.computeIfAbsent(pluginName, k -> new HashSet<>());
 
-        // DispatcherServlet里面的主映射表
-        RequestMappingHandlerMapping handlerMapping = parentContext.getBean(RequestMappingHandlerMapping.class);
+        RequestMappingHandlerMapping handlerMapping =
+                parentContext.getBean(RequestMappingHandlerMapping.class);
 
-        // 取插件Controller中的所有方法
-        Method[] methods = controller.getClass().getDeclaredMethods();
-        // 遍历
-        for(Method method : methods) {
-            // 取出RequestMapping注解的controller方法
-            RequestMapping requestMapping = method.getAnnotation(RequestMapping.class);
-            // 可能抓不到，若真的没抓到，那就抓全部类型的controller方法
-            if (requestMapping == null) {
-                requestMapping = AnnotatedElementUtils.findMergedAnnotation(method, RequestMapping.class);
+        Class<?> controllerClass = controller.getClass();
+
+        // ① 取类级 RequestMapping（没有就当作根）
+        RequestMapping classMapping =
+                AnnotatedElementUtils.findMergedAnnotation(controllerClass, RequestMapping.class);
+
+        String[] classPaths =
+                (classMapping != null && classMapping.value().length > 0)
+                        ? classMapping.value()
+                        : new String[]{""};
+
+        // ② 遍历方法
+        for (Method method : controllerClass.getDeclaredMethods()) {
+
+            RequestMapping methodMapping =
+                    AnnotatedElementUtils.findMergedAnnotation(method, RequestMapping.class);
+
+            if (methodMapping == null) {
+                continue;
             }
-            // 若抓到controller方法了，那么就创建一个映射对象
-            if(requestMapping != null) {
-                RequestMappingInfo info = RequestMappingInfo.
-                        paths(requestMapping.value()).
-                        methods(requestMapping.method()).
-                        build();
 
-                // 加入主映射表
-                handlerMapping.registerMapping(info, controller, method);
-                // 加入备份映射表
-                controllerRegisteredMappings.get(pluginName).add(info);
+            String[] methodPaths =
+                    (methodMapping.value().length > 0)
+                            ? methodMapping.value()
+                            : new String[]{""};
+
+            // ③ 类级 × 方法级 拼接
+            for (String classPath : classPaths) {
+                for (String methodPath : methodPaths) {
+
+                    String fullPath = normalizePath(classPath, methodPath);
+
+                    RequestMappingInfo info = RequestMappingInfo
+                            .paths(fullPath)
+                            .methods(methodMapping.method())
+                            .build();
+
+                    handlerMapping.registerMapping(info, controller, method);
+                    controllerRegisteredMappings.get(pluginName).add(info);
+
+                    log.info("插件 [{}] 注册接口 {}", pluginName, fullPath);
+                }
             }
         }
+    }
 
-        log.info("__________{}已补充至DispatcherServlet主映射表", pluginName);
+    /**
+     * 拼接路径</br>
+     * 把拉出来的类路径和方法路径拼起来。
+     * @param classPath 类路径
+     * @param methodPath 方法路径
+     * @return 完整路径
+     */
+    private String normalizePath(String classPath, String methodPath) {
+        String p1 = classPath.startsWith("/") ? classPath : "/" + classPath;
+        String p2 = methodPath.startsWith("/") ? methodPath : "/" + methodPath;
+        String path = (p1 + p2).replaceAll("//+", "/");
+        return path.equals("/") ? path : path.replaceAll("/$", "");
     }
 
     /**

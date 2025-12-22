@@ -27,7 +27,6 @@ import java.lang.reflect.Method;
 import java.lang.reflect.Modifier;
 import java.nio.file.Files;
 import java.util.*;
-import java.util.concurrent.ConcurrentHashMap;
 
 /**
  * 工具方法代理生成器</br>
@@ -113,6 +112,13 @@ public class ToolMethodProxyGenerator {
                     .replace(".class", ".java");
             return new File(javaPath);
         }
+
+        if (classPath.contains("out-classes")) {
+            String javaPath = classPath
+                    .replace("out-classes\\com\\ljf\\greatplan\\docking\\plugins\\aiSecretary\\", "")
+                    .replace(".class", ".java");
+            return new File(javaPath);
+        }
         return null;
     }
 
@@ -184,8 +190,11 @@ public class ToolMethodProxyGenerator {
 
             // 创建代理类，执行构建器实例
             Class<?> dynamicClass = builder.make()
-                    // 加载到类加载器里面，使用与源类一致的类加载器，注入策略就是将这个代理类加入到现有的类加载器里
-                    .load(clazz.getClassLoader(), ClassLoadingStrategy.Default.INJECTION)
+                    // 加载到类加载器里面，使用独立类加载器，注入策略就是将这个代理类加入到现有的类加载器里
+                    .load(
+                            ProxyInterceptor.class.getClassLoader(),
+                            ClassLoadingStrategy.Default.INJECTION
+                    )
                     // 获取加载后的代理类
                     .getLoaded();
 
